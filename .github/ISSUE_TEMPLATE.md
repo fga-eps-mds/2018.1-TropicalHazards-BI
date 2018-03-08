@@ -1,4 +1,4 @@
-# US #{{user story number}} - {{US name}}
+# US - {{US name}}
 
 ## Description
 |         |             |
