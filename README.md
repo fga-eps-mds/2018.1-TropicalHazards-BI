@@ -20,5 +20,8 @@
   #### Configuração
   TODO
 
+## Sobre a equipe
+  [TODO]()
+
 ## Licença
- [MIT]()
+ [MIT](https://github.com/fga-gpp-mds/2018.1-Grupo3/blob/development/LICENSE)
