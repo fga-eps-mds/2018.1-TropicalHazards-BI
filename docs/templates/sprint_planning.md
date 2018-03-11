@@ -18,3 +18,8 @@ Issue | História | Pontuação | Status |
 ## Papéis
 
 ## Pareamento
+
+## Focos de melhoria 
+O que a equipe planeja melhorar na gestão do projeto durante essa sprint.  
+* Melhorar a comunicação através do slack
+* Commits mais atômicos 
