@@ -17,10 +17,11 @@
   * [ADD] = use quando adicionar novos metodos, classes ou arquivos;
   * [DEL] = use quando remover metodos, classes ou arquivos;
   * [MERGE] = use para sinalizar *merges*;
-  * [UPDATE] = use quando fizer mudanças em um arquivos;
+  * [UPDATE] = use quando fizer mudanças em métodos ou classes;
   * [FIX] = use quando consertar *bugs* ou falhas no projeto;
   * [RENAME] = use quando renomear um arquivo;
-  * [TEST] = use quando trabalhar com testes
+  * [TEST] = use quando trabalhar com testes;
+  * [DOC] = use quando for trabalhar com arquivos de documentação;
 
 
 ### Exemplos de boas mensgens de *commits*
