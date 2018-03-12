@@ -7,6 +7,7 @@
 
 ## Backlog
 Histórias devem estar listadas por ordem de prioridade 
+
 Issue | História | Pontuação | Status | 
 :---:|:---:|:---:|:---:| 
 [03](https://github.com/fga-gpp-mds/2018.1-Grupo3/issues/00) | Eu, como --, desejo --, para -- | 13 | Débito [Sprint 0]()| 
