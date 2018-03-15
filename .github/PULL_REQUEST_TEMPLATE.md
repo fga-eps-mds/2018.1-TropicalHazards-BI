@@ -1,9 +1,8 @@
-## Tipo da mudança 
-- [ ] resolve bug 
-- [ ] adiciona nova funcionalidade 
+## Type of the changes
+- [ ] bug solve
+- [ ] adding a new functionality
 
-## Descrição das mudanças 
+## Proposed changes
 
-
-## Issue  
-- [#01]()
+## Issue Link
+Link your issue with GitHub below
