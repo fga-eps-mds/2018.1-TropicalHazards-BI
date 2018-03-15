@@ -1,17 +1,9 @@
-## Type of the changes
-- [ ] bug solve
-- [ ] adding a new functionality
+## Tipo da mudança 
+- [ ] resolve bug 
+- [ ] adiciona nova funcionalidade 
 
-## Proposed changes
-{describe your changes here}
+## Descrição das mudanças 
 
-## Checklist
-{mark those that apply}
 
-- [ ] Pull request name is explicit.
-- [ ] This pull request is anchored to it's respective issue.
-- [ ] **ALL** commits follow the [repo's commit policy]().
-- [ ] Build is passing or there's a very good explanation about why it isn't.
-
-## Issue Link
-{{link the issue here}}
+## Issue  
+- [#01]()
