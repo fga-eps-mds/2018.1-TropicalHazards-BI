@@ -1,10 +1,33 @@
 ### Histórico de Versões
 
 
-| Data | Versão | Descrição | Autor(es) |
-|------------|--------|-------------------------------------------------------------------|---------------|
-| 14/03/2018 | 1.0 | Início do documento/ Template | João Pedro Gomes |
+<table>
 
+   <tr>
+	   	<td> <strong>Data</strong> </td>
+	   	<td> <strong>Versão</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+	   	<td> <strong>Autor(es)</strong> </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+	   	<td> linha, 2  Coluna 4 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+	   	<td> linha 3, Coluna 4 </td>
+   </tr>
+</table>
+
+<hr>
 
 ## Sumário
 1. [Introdução](#)
@@ -106,91 +129,293 @@ Para o profissional de saúde e pesquisadores o <em>webapp</em> terá uma série
 
 Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicáis.</p>
 
+
 ## 2.2 Descrição do problema
 
+<table>
 
-| O problema de | Descrição |
-|-----------------------|--------------------------------|
-| afeta | Descrição |
-| cujo impacto é | Descrição |
-| uma solução seria | Descrição |
-| afeta | Descrição |
+   <tr>
+	   	<td><strong>O problema de</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>afeta</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>cujo imacto é</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+   <tr>
+	   	<td><strong>uma solução seria</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+   
+</table>
 
 ## 2.3 Instrução de Posição do Produto
 
-| Para | Descrição |
-|-----------------------|--------------------------------|
-| Que | Descrição |
-| Webapp | Descrição |
-| Que  | Descrição |
-| Diferente de | Descrição |
-| Nosso produto | Descrição |
+<table>
+
+   <tr>
+	   	<td><strong>Para</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+   <tr>
+	   	<td><strong>que</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong><em>Webapp</em></strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>Diferente de</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+   
+
+   <tr>
+	   	<td><strong>Nosso produto</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
+
+</table>
 
 # 3. Descrições da parte interessada e dos Usuários
 
 
-| Nome | Descrição | Responsabilidade |
-|---------------------------|-------------------------------------------------------------------|------------------------------|
-| Equipe de Desenvolvimento | Estudantes da disciplina MDS |  Desenvolvimento |
-| Equipe de Gestão de processo | Estudantes da disciplina MDS |  Desenvolvimento |
-| Cliente | Profissionais de saúde |  Desenvolvimento |
-| Coachs | Estudantes da disciplina MDS |  Desenvolvimento |
-| Professora | Estudantes da disciplina MDS |  Desenvolvimento |
+<table>
+
+   <tr>
+	   	<td> <strong>Nome</strong></td>
+	   	<td> <strong>Descrição</strong> </td>
+	   	<td><strong> Responsabilidade</strong></td>
+   </tr>
+
+   
+   <tr>
+	   	<td> <strong>Equipe de desenvolvimento</strong> </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>Equipe de gestão de projeto</strong</td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+ 
+   <tr>
+	   	<td><strong>Cliente</strong></td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+
+   <tr>
+	   	<td><strong>Coachs</strong></td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+
+</table>
+
 
 ## 3.1 Resumo dos Usuários
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+
+<table>
+
+   <tr>
+	   	<td><strong>Nome</strong></td>
+	   	<td><strong>Descrição</strong> </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> <strong>Público em geral</strong> </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>Profissionais de Saúde</strong></td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+
+</table>
 
 ## 3.2 Ambiente do Usuário
 O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer, Firefox, Opera e Edge.
 
+<table>
+
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+</table>
+
 ## 3.3 Perfis dos Envolvidos
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<table>
 
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+</table>
 
 ## 3.3.1 Equipe de Desenvolvimento
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<table>
 
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+</table>
 
 ## 3.3.2 Equipe de Gestão de Projeto
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<table>
 
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+
+</table>
 ## 3.3.3 Cliente
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<table>
+
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+</table>
 
 ## 3.4 Perfis dos Usuários
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<table>
+
+   <tr>
+	   	<td> linha 1, Coluna 1 </td>
+	   	<td> linha 1, Coluna 2 </td>
+	   	<td> linha 1, Coluna 3 </td>
+   </tr>
+
+   
+   <tr>
+	   	<td> linha  2, Coluna 1 </td>
+	   	<td> linha  2, Coluna 2 </td>
+	   	<td> linha, 2  Coluna 3 </td>
+   </tr>
+
+
+   <tr>
+	   	<td> linha 3, Coluna 1 </td>
+	   	<td> linha 3, Coluna 2 </td>
+	   	<td> linha 3, Coluna 3 </td>
+   </tr>
+ </table>
 
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
-| Nome | Descrição |
-|------------------------------|-------------------------------|
-Público em geral| Saber informações |
-|Profissionais da saúde| Organizar dados|
+<p align="justify"> Organização de dados</p>
 
 ## 3.6 Alternativas e Concorrência
+
+Pesquisar Concorrentes
 
 ## 3.5.1 Dengue BI
 
@@ -213,3 +438,4 @@ Público em geral| Saber informações |
 
 ## 6.4 Restrições de Uso
 
+#FIM
