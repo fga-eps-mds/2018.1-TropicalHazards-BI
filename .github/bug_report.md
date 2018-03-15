@@ -1,15 +1,8 @@
-## Expected behavior
-{Describe here the expected behavior of the application}
+## Comportamento esperado 
 
-## Actual behavior
-{Describe here the behavior you've identified}
+## Comportamento atual 
 
-## Steps leading to bug
-{What have you done before the error? List the steps here.}
+## Passos para chegar no bug
 
-## Print (optional)
+## Print (opcional)
 
-
-## Checklist
-- [ ] this issue is labeled.
-- [ ] this issue have a screenshot attached.
