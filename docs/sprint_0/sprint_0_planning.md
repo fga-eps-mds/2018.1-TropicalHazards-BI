@@ -29,7 +29,6 @@ Devops: Arthur Assis
 ## Descrição de responsabilidades dos papeis
 
 <table>
-
   <tr>
     <th>Scrum Master</th>
     <th>Product Owner</th>
@@ -38,7 +37,6 @@ Devops: Arthur Assis
     <th>Especialista de Escopo</th>
     <th>Devops</th>
   </tr>
-
   <tr>
     <td>
       <ul>
@@ -49,7 +47,6 @@ Devops: Arthur Assis
         <li>Motiva a equipe para resolver impedimentos</li>
       </ul>
     </td>
-
     <td>
       <ul>
         <li>Representa a visão e expectativas do cliente dentro do projeto</li>
@@ -57,7 +54,6 @@ Devops: Arthur Assis
         <li>Este papel é fixo e representado pelo coach da disciplina</li>
       </ul>
     </td>
-
     <td>
       <ul>
         <li>Garante o estudo e aprimoramento da arquitetura do projeto</li>
@@ -65,7 +61,6 @@ Devops: Arthur Assis
         <li>Garante que o sistema siga a arquitetura proposta</li>
       </ul>
     </td>
-
     <td>
       <ul>
         <li>Garante que o sistema seja amigável ao usuário</li>
@@ -73,7 +68,6 @@ Devops: Arthur Assis
         <li>Garante que a expectativa de interação com o usuário se satisfaça</li>
       </ul>
     </td>
-
     <td>
       <ul>
         <li>Comunica-se mais fortemente como o Produt Owner do projeto (o coach)</li>
@@ -81,7 +75,6 @@ Devops: Arthur Assis
         <li>Revisa os Pull Requests, com base nos Critérios de Aceitação definidos pelo Product Owner</li>
       </ul>
     </td>
-
     <td>
       <ul>
         <li>Entende como implementar a automatização dos processo de pipeline</li>
@@ -93,7 +86,7 @@ Devops: Arthur Assis
 </table>
 
 ## Pareamento
---
+Não foram definidos pareamentos nesta sprint.
 
 ## Focos de melhoria
---
+Não houveram focos de melhoria nesta sprint, pois não houve uma sprint passada para levantá-los.
