@@ -299,202 +299,180 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 ## 3.3.1 Equipe de Desenvolvimento
 <table>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>**André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel**</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Desenvolvedores</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Estudantes de Métodos de Desenvolvimento de Software na FGA</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Documentação, Desenvolvimento, Testes e Implementação do Sistema</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Entregar o Software com os requisitos especificados pelo cliente dentro do prazo</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Alto</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Problemas/Comentários</strong></td>
 	   	<td>A equipe é inexperiente nas linguagens e frameworks utilizados para implementar o sistema</td>
-    </tr>
+   </tr>
+
 </table>
 
 ## 3.3.2 Equipe de Gestão de Projeto
 
 <table>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>**André Filho, Arthur Assis, Iago Carvalho, Mateus Batista, Renata Souza**</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Gerentes de Projeto</td>
-    </tr>
+   </tr>
 
 
-    <tr>
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Estudantes de Engenharia de Produto de Software na FGA</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Gerir o desenvolvimento do produto, identificando problemas, apontando caminhos e soluções, estabelecendo prazos e metas, organizando a equipe de desenvolvimento a fim de completar os objetivos propostos</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Manter a equipe focada no projeto, contribuir com a evolução profissional da equipe de desenvolvimento, estabelecer um processo de desenvolvimento de software bem definido e entregar o produto dentro do prazo, custo e nível de qualidade</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Alto</td>
-    </tr>
+   </tr>
 
-    <tr>
+   <tr>
 	   	<td><strong>Problemas/Comentários</strong></td>
 	   	<td>-</td>
-    </tr>
+   </tr>
 </table>
 
 ## 3.3.3 Equipe de Avaliação e Suporte
 
 <table>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>**Dra. Carla Rocha, Coaches de EPS, Coaches de MDS**</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Equipe de avaliação e orientação das equipes de gestão e de desenvolvimento</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Professor e Coaches das disciplinas EPS e MDS</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Avaliar e orientar os alunos durante o semestre, quanto aos assuntos relacionados as disciplinas de EPS e MDS em referidos projetos</td>
-    </tr>
+   </tr>
 
 
-    <tr>
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>A entrega do projeto e sua referente documentação de forma completa e correta para o cliente</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Médio</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Problemas</strong></td>
 	   	<td>-</td>
-    </tr>
+   </tr>
 </table>
 
 ## 3.3.4 Cliente
 
 <table>
 
-    <tr>
-
+   
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>
-    </tr>
+	 	<td>Lorem impsom</td>
+   </tr>
 
 
-    <tr>
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Problemas</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 </table>
 
 ## 3.4 Perfis dos Usuários
@@ -503,104 +481,90 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 <table>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Problemas</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 </table>
 
 ## 3.4.2 Profissionais de saúde
 
 <table>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td> <strong>Descrição</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Envolvimento</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 
-    <tr>
-
+   <tr>
 	   	<td><strong>Problemas</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>
+   </tr>
 </table>
 
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
