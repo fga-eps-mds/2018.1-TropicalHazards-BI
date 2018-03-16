@@ -12,10 +12,11 @@
 
 
    <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-	   	<td> linha, 2  Coluna 4 </td>
+	   	<td>16/03/2018</td>
+                <td>1.0.0</td>
+	   	<td>Adicionando template com informações iniciais</td>
+	   	<td>João Pedro, Andre Bargas, Yoshida, Pedro Daniel</td>
+	   	
    </tr>
 
 
@@ -29,7 +30,8 @@
 
 <hr>
 
-## Sumário
+# Sumário
+
 1.[Introdução](#)
 
  1.1 [Propósito](#)
@@ -570,7 +572,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
-<p align="justify"> Organização de dados</p>
+<p align="justify"> Organização de dados, mostrar gráficos, apontar localidades com maior risco de doenças tropicais.</p>
 
 ## 3.6 Alternativas e Concorrência
 
@@ -587,14 +589,19 @@ O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem loca
 
 # 6. Restrições
 
+A definir
+
 ## 6.1 Restrições de Design
+
+A definir
 
 ## 6.2 Restrições de Implementação
 <p align="justify">O presente sistema será desenvolvido utilizando a linguagem Python e a <em>framework</em> Django REST. Será utilizada uma arquitetura MVT.</p>
 
 ## 6.3 Restrições de Segurança
 
+A definir
 
 ## 6.4 Restrições de Uso
 
-#FIM
+A definir
