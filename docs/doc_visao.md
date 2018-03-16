@@ -10,7 +10,7 @@
 	   	<td> <strong>Autor(es)</strong> </td>
    </tr>
 
-   
+
    <tr>
 	   	<td> linha  2, Coluna 1 </td>
 	   	<td> linha  2, Coluna 2 </td>
@@ -30,7 +30,7 @@
 <hr>
 
 ## Sumário
-1. [Introdução](#)
+1.[Introdução](#)
 
  1.1 [Propósito](#)
 
@@ -42,7 +42,7 @@
 
  1.5 [Visão Geral](#)
 
-2. [Posicionamento](#)
+2.[Posicionamento](#)
 
  2.1 [Oportunidade de Negócio](#)
 
@@ -50,10 +50,10 @@
 
  2.3 [Instrução de Posição do Produto](#)
 
-3. [Descrições da parte interessada e dos Usuários](#)
+3.[Descrições da parte interessada e dos Usuários](#)
 
  3.1 [Resumo dos Usuários](#)
- 
+
  3.2 [Ambiente do Usuário](#)
 
  3.3 [Perfis dos Envolvidos](#)
@@ -64,16 +64,16 @@
 
  3.6 [Alternativas e Concorrência](#)
 
-4. [Visão Geral do Produto](#)
+4.[Visão Geral do Produto](#)
 
-5. [Recursos do Produto](#)
+5.[Recursos do Produto](#)
 
-6. [Restrições](#)
+6.[Restrições](#)
 
  6.1 [Restrições de Design](#)
 
  6.2 [Restrições de Implementação](#)
- 
+
  6.3 [Restrições de Segurança](#)
 
  6.4 [Restrições de Uso](#)
@@ -81,20 +81,22 @@
 # 1. Introdução
 
 ## 1.1	Propósito
+
 <p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>webapp</em> Tropical BI deixando claro sua proposta, características e utilidade;</p>
 
-
 ## 1.2	Escopo
+
 <ul>
 <li>Receber dados referentes a doenças tropicais</li>
 <li>Fazer análise estatística dos dados recebidos</li>
 <li>Profissionais da saúde devem possuir perfis para gerencias (dashboards)</li>
 <li>Mostar metadados, onde os profissionais poderam submeter dados para serem analisados</li>
-</li>Plataforma para visualização dos indicadores e dados para o público interassado</li>
+<li>Plataforma para visualização dos indicadores e dados para o público interessados</li>
 <li>Gerar relatórios exportáveis</li>
 </ul>
 
 ## 1.3	Definições, acrônimos e abreviações
+
 <ul>
 <li>FGA - Faculdade do Gama (UnB)</li>
 <li>UnB - Universidade de Brasília</li>
@@ -102,10 +104,11 @@
 <li>EPS - Engenharia de produto de software</li>
 </ul>
 
-## 1.4 Referências:
-IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_3.0.1/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.htm. Acesso em: 22 ago. 2017;
+## 1.4 Referências
 
-# 1.5 Visão geral
+IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: <https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_3.0.1/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.htm>. Acesso em: 22 ago. 2017;
+
+## 1.5 Visão geral
 
 <p align ="justify">Este documento é dividido em 7 tópicos descrevendo os detalhes das características do software proposto. Sendo dividido em:</p>
 <ul>
@@ -117,17 +120,17 @@ IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento
 <li><strong>Restrições</strong>: as restrições de design, restrições externas, como requisitos operacionais ou regulamentares;</li>
 </ul>
 
-
 # 2. Posicionamento
 
 ## 2.1 Oportunidade de Negócio
+
 <p align = "justify"> Pesquisadores da Universidade de Brasília(Unb) precisam resolver um problema de automatizar a análise estatística de dados referentes as doenças tropicais, sendo que esses dados não possuem um padrão definido.
 
 Nosso projeto irá oferecer uma análise dos fatores determinantes de proteção, os mecanismos envolvidos na imunopatologia e possíveis mecanismos envolvendo drogas imunomoduladoras que poderiam auxiliar na diminuição da morbidade e mortalidade de doenças tropicais.
 
 Para o profissional de saúde e pesquisadores o <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
 
-Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicáis.</p>
+Para os usuários serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicáis.</p>
 
 
 ## 2.2 Descrição do problema
@@ -136,26 +139,26 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>O problema de</strong> </td>
-	   	<td> <strong>Descrição</strong></td>
+	   	<td>Descrição</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>afeta</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>cujo imacto é</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
    <tr>
 	   	<td><strong>uma solução seria</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
-   
+
 </table>
 
 ## 2.3 Instrução de Posição do Produto
@@ -164,34 +167,34 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>Para</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
    <tr>
 	   	<td><strong>que</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
 
    <tr>
 	   	<td><strong><em>O Webapp</em></strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
    <tr>
 	   	<td><strong>que</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
    <tr>
 	   	<td><strong>Diferente de</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
-   
+
 
    <tr>
 	   	<td><strong>Nosso produto</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td>Descrição</td>
    </tr>
 
 </table>
@@ -207,7 +210,7 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 	   	<td><strong> Responsabilidade</strong></td>
    </tr>
 
-   
+
    <tr>
 	   	<td> <strong>Equipe de desenvolvimento</strong> </td>
 	   	<td> linha  2, Coluna 2 </td>
@@ -216,11 +219,11 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
 
    <tr>
-	   	<td><strong>Equipe de gestão de projeto</strong</td>
+	   	<td><strong>Equipe de gestão de projeto</strong></td>
 	   	<td> linha 3, Coluna 2 </td>
 	   	<td> linha 3, Coluna 3 </td>
    </tr>
- 
+
    <tr>
 	   	<td><strong>Cliente</strong></td>
 	   	<td> linha 3, Coluna 2 </td>
@@ -243,21 +246,18 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
    <tr>
 	   	<td><strong>Nome</strong></td>
 	   	<td><strong>Descrição</strong> </td>
-	   	<td> linha 1, Coluna 3 </td>
    </tr>
 
-   
+
    <tr>
 	   	<td> <strong>Pesquisadores/Interessados</strong> </td>
 	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Profissionais de Saúde</strong></td>
 	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
    </tr>
 
 </table>
@@ -273,50 +273,50 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 <table>
 
     <tr>
-	   	
-	   	<td><strong>Representante</strong>strong> </td>
-	   	<td>Nome dos componentes do grupo</td><
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>Nome dos componentes do grupo</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Desenvolvedores</td>   	
+	   	<td>Desenvolvedores</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Estudantes de Software</td>	   	
+	   	<td>Estudantes de Software</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Responsabilidade</strong></td>
 	   	<td>Entrega</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td><strong>Critérios de Sucesso</strong></td>
 	   	<td>Terminar no prazo</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td><strong>Grande</strong></td>
+	   	<td>Grande</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Problemas</strong></td>
-	   	<td><strong>Equipe não treinada</strong></td>   	
-    </tr>   
+	   	<td>Equipe não treinada</td>
+    </tr>
 </table>
 
 ## 3.3.2 Equipe de Gestão de Projeto
@@ -324,48 +324,48 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 <table>
 
     <tr>
-	   	
-	   	<td><strong>Representante</strong>strong> </td>
-	   	<td>Nome dos componentes do grupo</td><	   	
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>Nome dos componentes do grupo</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Desenvolvedores</td>   	
+	   	<td>Desenvolvedores</td>
     </tr>
 
 
-    <tr>   	
+    <tr>
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Estudantes de Software</td>	
+	   	<td>Estudantes de Software</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Entrega</td>   	
+	   	<td>Entrega</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Terminar no prazo</td>	   	
+	   	<td>Terminar no prazo</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td><strong>Grande</strong></td>   	
+	   	<td>Grande</td>
     </tr>
 
-    <tr>   	
+    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td><strong>Equipe não treinada</strong></td>	   	
-    </tr>   
+	   	<td>Equipe não treinada</td>
+    </tr>
 </table>
 
 ## 3.3.3 Cliente
@@ -373,50 +373,50 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 <table>
 
     <tr>
-	   	
-	   	<td><strong>Representante</strong>strong> </td>
-	   	<td>Lorem impsom</td><   	
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
-    <tr>   	
+
+    <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Problemas</strong></td>
-	   	<td>Lorem impsom</td>   	
-    </tr>   
+	   	<td>Lorem impsom</td>
+    </tr>
 </table>
 
 ## 3.4 Perfis dos Usuários
@@ -426,51 +426,51 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 <table>
 
     <tr>
-	   	
-	   	<td><strong>Representante</strong>strong> </td>
-	   	<td>Lorem impsom</td><   	
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>	   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Problemas</strong></td>
-	   	<td>Lorem impsom</td>   	
-    </tr>   
+	   	<td>Lorem impsom</td>
+    </tr>
 </table>
 
 ## 3.4.2 Profissionais de saúde
@@ -478,52 +478,53 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 <table>
 
     <tr>
-	   	
-	   	<td><strong>Representante</strong>strong> </td>
-	   	<td>Lorem impsom</td><   	
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Tipo</strong></td>
 	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>	   	
+	   	<td>Lorem impsom</td>
     </tr>
 
-   
+
     <tr>
-	   	
+
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>	   	
+	   	<td>Lorem impsom</td>
     </tr>
 
 
     <tr>
-	   	
+
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>	   	
+	   	<td>Lorem impsom</td>
     </tr>
 
     <tr>
-	   	
+
 	   	<td><strong>Problemas</strong></td>
 	   	<td>Lorem impsom</td>
-    </tr>   
+    </tr>
 </table>
+
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
 <p align="justify"> Organização de dados</p>
