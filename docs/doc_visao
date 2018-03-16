@@ -136,7 +136,7 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>O problema de</strong> </td>
-	   	<td> <strong>Descrição</strong> </td>
+	   	<td> <strong>Descrição</strong></td>
    </tr>
 
 
@@ -174,10 +174,14 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
 
    <tr>
-	   	<td><strong><em>Webapp</em></strong> </td>
+	   	<td><strong><em>O Webapp</em></strong> </td>
 	   	<td> <strong>Descrição</strong> </td>
    </tr>
 
+   <tr>
+	   	<td><strong>que</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+   </tr>
 
    <tr>
 	   	<td><strong>Diferente de</strong> </td>
@@ -244,7 +248,7 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 
    
    <tr>
-	   	<td> <strong>Público em geral</strong> </td>
+	   	<td> <strong>Pesquisadores/Interessados</strong> </td>
 	   	<td> linha  2, Coluna 2 </td>
 	   	<td> linha, 2  Coluna 3 </td>
    </tr>
@@ -261,154 +265,265 @@ Para os úsuarios serão disponibilizados infográficos(não sei), gráficos, e 
 ## 3.2 Ambiente do Usuário
 O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer, Firefox, Opera e Edge.
 
-<table>
-
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
-
-   
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
-
-
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
-</table>
 
 ## 3.3 Perfis dos Envolvidos
 
-<table>
-
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
-
-   
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
-
-
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
-</table>
 
 ## 3.3.1 Equipe de Desenvolvimento
-
 <table>
 
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Representante</strong>strong> </td>
+	   	<td>Nome dos componentes do grupo</td><
+    </tr>
 
    
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Desenvolvedores</td>   	
+    </tr>
 
 
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Estudantes de Software</td>	   	
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Entrega</td>
+    </tr>
+
+   
+    <tr>
+	   	
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>Terminar no prazo</td>
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td><strong>Grande</strong></td>
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Problemas</strong></td>
+	   	<td><strong>Equipe não treinada</strong></td>   	
+    </tr>   
 </table>
 
 ## 3.3.2 Equipe de Gestão de Projeto
 
 <table>
 
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Representante</strong>strong> </td>
+	   	<td>Nome dos componentes do grupo</td><	   	
+    </tr>
 
    
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Desenvolvedores</td>   	
+    </tr>
 
 
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
+    <tr>   	
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Estudantes de Software</td>	
+    </tr>
 
+
+    <tr>
+	   	
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Entrega</td>   	
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>Terminar no prazo</td>	   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td><strong>Grande</strong></td>   	
+    </tr>
+
+    <tr>   	
+	   	<td><strong>Problemas</strong></td>
+	   	<td><strong>Equipe não treinada</strong></td>	   	
+    </tr>   
 </table>
+
 ## 3.3.3 Cliente
 
 <table>
 
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Representante</strong>strong> </td>
+	   	<td>Lorem impsom</td><   	
+    </tr>
 
    
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
 
 
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+   
+    <tr>   	
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Problemas</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>   
 </table>
 
 ## 3.4 Perfis dos Usuários
 
+## 3.4.1 Pesquisadores
+
 <table>
 
-   <tr>
-	   	<td> linha 1, Coluna 1 </td>
-	   	<td> linha 1, Coluna 2 </td>
-	   	<td> linha 1, Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td><strong>Representante</strong>strong> </td>
+	   	<td>Lorem impsom</td><   	
+    </tr>
 
    
-   <tr>
-	   	<td> linha  2, Coluna 1 </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
-   </tr>
+    <tr>
+	   	
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
 
 
-   <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
- </table>
+    <tr>
+	   	
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
 
+
+    <tr>
+	   	
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+   
+    <tr>
+	   	
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>Lorem impsom</td>	   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Problemas</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>   
+</table>
+
+## 3.4.2 Profissionais de saúde
+
+<table>
+
+    <tr>
+	   	
+	   	<td><strong>Representante</strong>strong> </td>
+	   	<td>Lorem impsom</td><   	
+    </tr>
+
+   
+    <tr>
+	   	
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Lorem impsom</td>   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Lorem impsom</td>
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Lorem impsom</td>	   	
+    </tr>
+
+   
+    <tr>
+	   	
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>Lorem impsom</td>	   	
+    </tr>
+
+
+    <tr>
+	   	
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td>Lorem impsom</td>	   	
+    </tr>
+
+    <tr>
+	   	
+	   	<td><strong>Problemas</strong></td>
+	   	<td>Lorem impsom</td>
+    </tr>   
+</table>
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
 <p align="justify"> Organização de dados</p>
