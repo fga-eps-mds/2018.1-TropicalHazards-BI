@@ -101,7 +101,7 @@
 <li>FGA - Faculdade do Gama (UnB)</li>
 <li>UnB - Universidade de Brasília</li>
 <li>MDS - Métodos de Desenvolvimento de Software</li>
-<li>EPS - Engenharia de produto de software</li>
+<li>EPS - Engenharia de Produto de software</li>
 </ul>
 
 ## 1.4 Referências
@@ -130,7 +130,7 @@ Nosso projeto irá oferecer uma análise dos fatores determinantes de proteção
 
 Para o profissional de saúde e pesquisadores o <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
 
-Para os usuários serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicáis.</p>
+Para os usuários serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicais.</p>
 
 
 ## 2.2 Descrição do problema
@@ -150,7 +150,7 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
 
    <tr>
-	   	<td><strong>cujo imacto é</strong> </td>
+	   	<td><strong>cujo impacto é</strong> </td>
 	   	<td>Descrição</td>
    </tr>
 
@@ -213,25 +213,25 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td> <strong>Equipe de desenvolvimento</strong> </td>
-	   	<td> linha  2, Coluna 2 </td>
-	   	<td> linha, 2  Coluna 3 </td>
+	   	<td> Estudantes da disciplina Métodos de Desenvolvimento de Software da FGA </td>
+	   	<td> Desenvolvimento, Testes, Documentação e Implementação do Sistema </td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Equipe de gestão de projeto</strong></td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
+	   	<td> Estudantes da disciplina Engenharia de Produto de Software da FGA </td>
+	   	<td> Gerir o desenvolvimento do produto identificando problemas e apontando caminhos e soluções </td>
+   </tr>
+
+   <tr>
+	   	<td><strong>Equipe de avaliação e suporte</strong></td>
+	   	<td> Professor e Coaches das disciplinas EPS e MDS </td>
+	   	<td> Auxiliar as equipes durante o desenvolvimento do projeto </td>
    </tr>
 
    <tr>
 	   	<td><strong>Cliente</strong></td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-   </tr>
-
-   <tr>
-	   	<td><strong>Coachs</strong></td>
 	   	<td> linha 3, Coluna 2 </td>
 	   	<td> linha 3, Coluna 3 </td>
    </tr>
@@ -275,7 +275,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
     <tr>
 
 	   	<td><strong>Representante</strong></td>
-	   	<td>Nome dos componentes do grupo</td>
+	   	<td>**André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel**</td>
     </tr>
 
 
@@ -289,33 +289,33 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
     <tr>
 
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Estudantes de Software</td>
+	   	<td>Estudantes de Métodos de Desenvolvimento de Software na FGA</td>
     </tr>
 
     <tr>
 
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Entrega</td>
+	   	<td>Documentação, Desenvolvimento, Testes e Implementação do Sistema</td>
     </tr>
 
 
     <tr>
 
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Terminar no prazo</td>
+	   	<td>Entregar o Software com os requisitos especificados pelo cliente dentro do prazo</td>
     </tr>
 
 
     <tr>
 
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Grande</td>
+	   	<td>Alto</td>
     </tr>
 
     <tr>
 
-	   	<td><strong>Problemas</strong></td>
-	   	<td>Equipe não treinada</td>
+	   	<td><strong>Problemas/Comentários</strong></td>
+	   	<td>A equipe é inexperiente nas linguagens e frameworks utilizados para implementar o sistema</td>
     </tr>
 </table>
 
@@ -326,49 +326,100 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
     <tr>
 
 	   	<td><strong>Representante</strong></td>
-	   	<td>Nome dos componentes do grupo</td>
+	   	<td>**André Filho, Arthur Assis, Iago Carvalho, Mateus Batista, Renata Souza**</td>
     </tr>
 
 
     <tr>
 
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Desenvolvedores</td>
+	   	<td>Gerentes de Projeto</td>
     </tr>
 
 
     <tr>
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Estudantes de Software</td>
+	   	<td>Estudantes de Engenharia de Produto de Software na FGA</td>
     </tr>
 
 
     <tr>
 
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Entrega</td>
+	   	<td>Gerir o desenvolvimento do produto, identificando problemas, apontando caminhos e soluções, estabelecendo prazos e metas, organizando a equipe de desenvolvimento a fim de completar os objetivos propostos</td>
     </tr>
 
     <tr>
 
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Terminar no prazo</td>
+	   	<td>Manter a equipe focada no projeto, contribuir com a evolução profissional da equipe de desenvolvimento, estabelecer um processo de desenvolvimento de software bem definido e entregar o produto dentro do prazo, custo e nível de qualidade</td>
     </tr>
 
 
     <tr>
 
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Grande</td>
+	   	<td>Alto</td>
     </tr>
 
     <tr>
-	   	<td><strong>Problemas</strong></td>
-	   	<td>Equipe não treinada</td>
+	   	<td><strong>Problemas/Comentários</strong></td>
+	   	<td>-</td>
     </tr>
 </table>
 
-## 3.3.3 Cliente
+## 3.3.3 Equipe de Avaliação e Suporte
+
+<table>
+
+    <tr>
+
+	   	<td><strong>Representante</strong></td>
+	   	<td>**Dra. Carla Rocha, Coaches de EPS, Coaches de MDS**</td>
+    </tr>
+
+
+    <tr>
+
+	   	<td> <strong>Descrição</strong></td>
+	   	<td>Equipe de avaliação e orientação das equipes de gestão e de desenvolvimento</td>
+    </tr>
+
+
+    <tr>
+
+	   	<td><strong>Tipo</strong></td>
+	   	<td>Professor e Coaches das disciplinas EPS e MDS</td>
+    </tr>
+
+
+    <tr>
+
+	   	<td><strong>Responsabilidade</strong></td>
+	   	<td>Avaliar e orientar os alunos durante o semestre, quanto aos assuntos relacionados as disciplinas de EPS e MDS em referidos projetos</td>
+    </tr>
+
+
+    <tr>
+	   	<td><strong>Critérios de Sucesso</strong></td>
+	   	<td>A entrega do projeto e sua referente documentação de forma completa e correta para o cliente</td>
+    </tr>
+
+
+    <tr>
+
+	   	<td><strong>Envolvimento</strong></td>
+	   	<td>Médio</td>
+    </tr>
+
+    <tr>
+
+	   	<td><strong>Problemas</strong></td>
+	   	<td>-</td>
+    </tr>
+</table>
+
+## 3.3.4 Cliente
 
 <table>
 
