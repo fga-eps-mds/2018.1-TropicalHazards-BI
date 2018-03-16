@@ -139,24 +139,51 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>O problema de</strong> </td>
-	   	<td>Descrição</td>
+	   	<td><strong>Falta de informações sobre doenças tropicais</strong></td>
    </tr>
 
 
    <tr>
 	   	<td><strong>afeta</strong> </td>
-	   	<td>Descrição</td>
+	   	<td>População geral</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>cujo impacto é</strong> </td>
-	   	<td>Descrição</td>
+	   	<td> Mais casos de surtos de doenças tropicais, devido a falta de informações</td>
    </tr>
 
    <tr>
 	   	<td><strong>uma solução seria</strong> </td>
-	   	<td>Descrição</td>
+	   	<td>Um sistema para o estudo e geração de indicativos a respeito de doenças tropicais</td>
+   </tr>
+
+</table>
+
+<table>
+
+   <tr>
+	   	<td><strong>O problema de</strong> </td>
+	   	<td><strong>Disperção de dados e dificuldade de processamento de dados a respeito
+      de doenças tropicais</strong></td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>afeta</strong> </td>
+	   	<td>Profissionais da saude</td>
+   </tr>
+
+
+   <tr>
+	   	<td><strong>cujo impacto é</strong> </td>
+	   	<td> Inacessibilidade a dados de pesquisas a respeito de doenças tropicais </td>
+   </tr>
+
+   <tr>
+	   	<td><strong>uma solução seria</strong> </td>
+	   	<td>Um sistema onde profissionais da saude pudessem amazenar e processar seus dados</td>
    </tr>
 
 </table>
@@ -167,12 +194,12 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>Para</strong> </td>
-	   	<td>Descrição</td>
+	   	<td><strong>Profissonais da saude e População Geral</strong></td>
    </tr>
 
    <tr>
 	   	<td><strong>que</strong> </td>
-	   	<td>Descrição</td>
+	   	<td>Desejam um plataforma para consulta e analise de dados a respeito de doenças tropicais</td>
    </tr>
 
 
@@ -232,8 +259,8 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>Cliente</strong></td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
+	   	<td> Profissionais da Saude </td>
+	   	<td> Esclarecer os requisitos e validar o software. </td>
    </tr>
 
 </table>
@@ -251,13 +278,13 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td> <strong>Pesquisadores/Interessados</strong> </td>
-	   	<td> linha  2, Coluna 2 </td>
+	   	<td> Publico geral que desejam saber sobre doenças tropicais </td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Profissionais de Saúde</strong></td>
-	   	<td> linha 3, Coluna 2 </td>
+	   	<td> Profissionais que utilizam a plataforma para fins de consulta e analise de dados. </td>
    </tr>
 
 </table>
