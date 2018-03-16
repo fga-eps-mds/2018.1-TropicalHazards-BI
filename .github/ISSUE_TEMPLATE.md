@@ -1,16 +1,13 @@
-# US - {{US name}}
+# US 
 
-## Description
-|         |             |
-| ------- | :---------: |
-| As      | {persona}   |
-| I want  | {what?}     |
-| so that | {why?}      |
+**Eu**, como --, **desejo** --, **para** --.
 
-## Acceptance criteria
-- [ ] unit tests with over 90% test coverage.
-- [ ] 
+## Tarefas
+- [ ] Primeira tarefa
 
-### Related to:
-- Belongs to this [Epic]({{insert url into '()'}}.
-- Related to this [Feature]({insert url to feature here '()'}
+## Critérios de aceitação 
+- [ ] Cobertura de teste acima de 90%  
+
+### Relacionado:
+- [Feature #00]()
+- [Épico #00]()
