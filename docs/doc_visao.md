@@ -102,6 +102,7 @@
 <li>UnB - Universidade de Brasília</li>
 <li>MDS - Métodos de Desenvolvimento de Software</li>
 <li>EPS - Engenharia de Produto de software</li>
+<li>MVT - Model View Template</li>
 </ul>
 
 ## 1.4 Referências
@@ -172,7 +173,7 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>afeta</strong> </td>
-	   	<td>Profissionais da saude</td>
+	   	<td>Profissionais da saúde</td>
    </tr>
 
 
@@ -183,7 +184,7 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>uma solução seria</strong> </td>
-	   	<td>Um sistema onde profissionais da saude pudessem amazenar e processar seus dados</td>
+	   	<td>Um sistema onde profissionais da saúde pudessem amazenar e processar seus dados</td>
    </tr>
 
 </table>
@@ -194,7 +195,7 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>Para</strong> </td>
-	   	<td><strong>Profissonais da saude e População Geral</strong></td>
+	   	<td><strong>Profissonais da saúde e População Geral</strong></td>
    </tr>
 
    <tr>
@@ -259,7 +260,7 @@ Para os usuários serão disponibilizados infográficos(não sei), gráficos, e 
 
    <tr>
 	   	<td><strong>Cliente</strong></td>
-	   	<td> Profissionais da Saude </td>
+	   	<td> Profissionais da saúde </td>
 	   	<td> Esclarecer os requisitos e validar o software. </td>
    </tr>
 
@@ -433,7 +434,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 <table>
 
-   
+
    <tr>
 	   	<td><strong>Representante</strong></td>
 	   	<td>Lorem impsom</td>
@@ -573,14 +574,14 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 ## 3.6 Alternativas e Concorrência
 
-Pesquisar Concorrentes
-
-## 3.5.1 Dengue BI
-
+##### 3.6.1 Aplicativo Mobile: <em>Sem Dengue</em>
+<p align ="justify">
+O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti.  
+</p>
 
 # 4. Visão Geral do Produto
 
-<p align="justify">análise dos fatores determinantes de proteção, os mecanismos envolvidos na imunopatologia e possíveis mecanismos envolvendo drogas imunomoduladoras que poderiam auxiliar na diminuição da morbidade e mortalidade de doenças tropicais.</p>
+<p align="justify">O sistema contará com uma API que permitirá o acesso dos indicadores e dados processados, além de uma plataforma através da qual o público geral poderá visualizá-los. Os profissionais de saúde e pesquisadores possuirão perfis de usuário através dos quais serão capazes de inserir os dados para que sejam analisados.</p>
 
 # 5. Recursos do Produto
 
@@ -589,7 +590,7 @@ Pesquisar Concorrentes
 ## 6.1 Restrições de Design
 
 ## 6.2 Restrições de Implementação
-<p align="justify">O sistema será desenvolvido utilizando a linguagem Python e o framework Django. Além disso, o sistema será desenvolvido com base no modelo de arquitetura conhecido como MTV que é considerada uma variação do MVC.</p>
+<p align="justify">O presente sistema será desenvolvido utilizando a linguagem Python e a <em>framework</em> Django REST. Será utilizada uma arquitetura MVT.</p>
 
 ## 6.3 Restrições de Segurança
 
