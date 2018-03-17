@@ -1,0 +1,216 @@
+.btn-large {
+  margin: .4em;
+}
+
+#bug-btn {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.row a,
+footer a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IBM Plex Sans', 'Roboto', sans-serif;
+  color: #3f3f3f;
+  padding-top: .5em;
+  padding-bottom: .7em;
+  margin-top: .2em;
+  margin-bottom: .2em;
+  margin-left: 0;
+  margin-right: 0;  
+  word-break: break-word;
+}
+
+p {
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+  color: #303030;
+}
+
+footer {
+  margin-top: 2em;
+  color: #fafafa;
+  padding-top: 4em !important;
+  padding-bottom: 4em;
+  font-size: .7em;
+}
+
+.col .s12 h1,
+.col .s12 h2,
+.col .s12 h3,
+.col .s12 h4,
+.col .s12 h5,
+.col .s12 h6,
+.col .s12 p {
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+header h1,
+header p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-top: none;
+}
+
+#has-background {
+  padding-bottom: 3em;
+  background: rgba(14, 14, 14, .7);
+  color: #fefefe;
+  height: 100%;
+}
+
+/* #has-background .container {
+  background: rgba(32, 32, 32, 0.733);  
+} */
+
+#has-background .container h1 {
+  padding: .3em;
+  color: inherit;
+}
+
+.nav-wrapper {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.btn-large .fa {
+  font-size: 1.5em;
+}
+
+main .container .row {
+  background-color: #fefefe;
+}
+
+#index-header {
+  background-image: none;
+}
+
+header {
+  margin-bottom: 2em;
+  background: url(https://www.iaspaper.net/wp-content/uploads/2017/01/Library.jpg) no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  font-weight: bold;
+}
+
+header h2 {
+  color: inherit;  
+  margin: 0;
+}
+header h5 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: inherit;
+}
+
+.collection a {
+  text-decoration: none;
+}
+
+.collection-header {
+  margin: 0;
+}
+
+hr {
+  border-color: #aaa;
+  width: 45%;
+}
+
+.row h2 {
+  margin: 0 auto .2em auto;
+  padding: .2em;
+}
+
+#section2 {
+  padding-top: 43em;
+}
+
+
+.hide-on-small-only {
+  font-size: 1.2em;
+}
+
+.marginate {
+  margin: 2em auto 2em auto;
+}
+
+/* .marginate :not(:last-of-type){
+  margin-bottom: 2em;
+}
+
+.marginate :not(:first-of-type){
+  margin-top: 2em;
+} */
+
+.selection {
+  /* top right bottom left */
+  padding: 4em 2.5em;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  #explanation {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #explanation .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  #function {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #function .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+  #haz {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #haz .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  #dev-team {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #dev-team .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+}
