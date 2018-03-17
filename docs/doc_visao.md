@@ -16,16 +16,17 @@
                 <td>1.0.0</td>
 	   	<td>Adicionando template com informações iniciais</td>
 	   	<td>João Pedro, Andre Bargas, Yoshida, Pedro Daniel</td>
-	   	
-   </tr>
 
+   </tr>
 
    <tr>
-	   	<td> linha 3, Coluna 1 </td>
-	   	<td> linha 3, Coluna 2 </td>
-	   	<td> linha 3, Coluna 3 </td>
-	   	<td> linha 3, Coluna 4 </td>
+	   	<td>17/03/2018</td>
+                <td>1.0.1</td>
+	   	<td>Corrigindo erros da primeira versão</td>
+	   	<td>Andre Bargas</td>
+
    </tr>
+
 </table>
 
 <hr>
@@ -84,7 +85,7 @@
 
 ## 1.1	Propósito
 
-<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>webapp</em> Tropical BI deixando claro sua proposta, características e utilidade;</p>
+<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>webapp</em> Tropical Hazards BI deixando claro sua proposta, características e utilidade;</p>
 
 ## 1.2	Escopo
 
@@ -133,7 +134,7 @@ Nosso projeto irá oferecer uma análise dos fatores determinantes de proteção
 
 Para o profissional de saúde e pesquisadores o <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
 
-Para os usuários serão disponibilizados infográficos(não sei), gráficos, e informações referentes a prevenção das principais doenças tropicais.</p>
+Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
 
 
 ## 2.2 Descrição do problema
@@ -578,29 +579,30 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 ##### 3.6.1 Aplicativo Mobile: <em>Sem Dengue</em>
 <p align ="justify">
-O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti.  
+O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti. Oferecem também a possibilidade 
 </p>
 
 # 4. Visão Geral do Produto
 
-<p align="justify">O sistema contará com uma API que permitirá o acesso dos indicadores e dados processados, além de uma plataforma através da qual o público geral poderá visualizá-los. Os profissionais de saúde e pesquisadores possuirão perfis de usuário através dos quais serão capazes de inserir os dados para que sejam analisados.</p>
+<p align="justify">O sistema contará com uma plataforma capaz de comunhar diferentes dados a respeito de doenças tropicais, fornecendo uma interface para pesquisadores e profissionais da saude submeterem dados para analise. Alem disso esta plataforma contemplara com uma interface/ dashboard para usuarios da web ter acesso a dados e inidicadores de doenças tropicais.
+</p>
 
 # 5. Recursos do Produto
 
 # 6. Restrições
 
-A definir
 
 ## 6.1 Restrições de Design
 
-A definir
+Interface/ dashboard para publico geral e para profissionais/ pesquisadores da area da saúde.
 
 ## 6.2 Restrições de Implementação
-<p align="justify">O presente sistema será desenvolvido utilizando a linguagem Python e a <em>framework</em> Django REST. Será utilizada uma arquitetura MVT.</p>
+<p align="justify">Criação de um modelo padronizado de observatório/dashboard através de uma plataforma web e disponibilizar dados através de ponto de acesso remoto (API).</p>
 
 ## 6.3 Restrições de Segurança
 
 A definir
+
 
 ## 6.4 Restrições de Uso
 
