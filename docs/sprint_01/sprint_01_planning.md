@@ -75,6 +75,7 @@
   </tbody>
 </table>
 
+
 ## Papéis
 Scrum Master: Matheus Batista
 
@@ -87,6 +88,7 @@ UX\UI: André Filho
 Especialista de escopo: Renata Souza
 
 ## Pareamento
+
 Não foram definidas duplas de pareamentos para essa sprint.
 
 ## Focos de melhoria
@@ -95,3 +97,4 @@ Não foram definidas duplas de pareamentos para essa sprint.
   <li>Melhorar a comunicação com a equipe e com os Coachs.</li>
   <li>Deixar claro o escopo do projeto para toda equipe.</li>
 </ul>
+
