@@ -85,18 +85,12 @@
 
 ## 1.1	Propósito
 
-<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>webapp</em> Tropical Hazards BI deixando claro sua proposta, características e utilidade;</p>
+<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>Webapp</em> Tropical Hazards BI deixando claro o seu escopo, funcionalidade e objetivo da aplicação.</p>
 
 ## 1.2	Escopo
 
-<ul>
-<li>Receber dados referentes a doenças tropicais</li>
-<li>Fazer análise estatística dos dados recebidos</li>
-<li>Profissionais da saúde devem possuir perfis para gerencias (dashboards)</li>
-<li>Mostar metadados, onde os profissionais poderam submeter dados para serem analisados</li>
-<li>Plataforma para visualização dos indicadores e dados para o público interessados</li>
-<li>Gerar relatórios exportáveis</li>
-</ul>
+<p align= "justify">O projeto Tropical Hazards BI tem como finalidade suprir uma necessidade dos pesquisadores e profissionais de saúde da NMT da Unb de receber dados referentes a doenças tropicais, fazer uma análise estatística dos dados recebidos, mostrar indicadores e dados para os profissionais e público interessado.</p>
+<p align="justif">O software, a ser implementado, deve permirit que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores e exportar/compartilhar relatórios</p>
 
 ## 1.3	Definições, acrônimos e abreviações
 
@@ -106,11 +100,17 @@
 <li>MDS - Métodos de Desenvolvimento de Software</li>
 <li>EPS - Engenharia de Produto de software</li>
 <li>MVT - Model View Template</li>
+<li>NMT - Núcleo de medicina tropical</li>
 </ul>
 
 ## 1.4 Referências
 
 IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: <https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_3.0.1/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.htm>. Acesso em: 22 ago. 2017;
+
+PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. - EUA: Project Management Institute, 2013
+
+BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELOS, Filipe; SOUSA, André. Projeto Escola X: Documento de Visão. Disponível em: https://github.com/fga-gpp-mds/2017.1-Escola-X/wiki. Acesso em 22 ago. 2017;
+
 
 ## 1.5 Visão geral
 
@@ -263,7 +263,7 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td><strong>Cliente</strong></td>
-	   	<td> Profissionais da saúde </td>
+	   	<td> Profissionais da saúde/ Pesquisadores da NMT </td>
 	   	<td> Esclarecer os requisitos e validar o software. </td>
    </tr>
 
@@ -305,7 +305,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>**André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel**</td>
+	   	<td>André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel</td>
    </tr>
 
 
@@ -394,7 +394,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>**Dra. Carla Rocha, Coaches de EPS, Coaches de MDS**</td>
+	   	<td>Dra. Carla Rocha, Coaches de EPS, Coaches de MDS</td>
    </tr>
 
 
@@ -588,6 +588,17 @@ O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem loca
 </p>
 
 # 5. Recursos do Produto
+
+<p>O sistema oferece as seguintes funcionalidades aos usúarios:</p>
+<ul>
+	<li>Gerenciar e manter usúarios: Tanto os pesquisadores e profissionais de saúde quanto os interessados poderão ser cadastrados no sistema, de forma que consegue adicionar, remover, ou alterar informações relacionadas aos seus perfis.</li>
+	<li>Facilitar para os pesquisadores e profissionais de saúde o gerenciamento de dados, levantamento de indicadores e exportação de dados.</li>
+	<li>Diminuir os erros causados devido a falta de organização e padronização dos dados</li>
+	<li>Disponibilizar indicadores que auxiliam da prevenção de tais doenças tropicais</li>
+	<li>Resolver o problema de visualização de dados dos diferentes projetos da NMT. Não há comunhão de tecnologias e não há nenhum modelo padronizado de observatório/dashboard.</li>
+	<li>Muito das vezes a apresentação é offline, via arquivo ou na máquina do pesquisador.Isso gera uma bagunça enorme e uma grande dificuldade de compartilhar informação, nosso Software procura resolver esse problema de compartilhamento da informação.</li>
+	<li>Centralizar a análise dos dados e dos indicadores, para poder compartilhar isso entre os próprios profissionais da saúde e a população em geral.</li>
+</ul>
 
 # 6. Restrições
 
