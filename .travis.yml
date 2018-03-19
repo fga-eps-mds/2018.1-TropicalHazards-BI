@@ -13,9 +13,14 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
 
+before_script:
+  - cp TropicalHazards_BI/.env_test TropicalHazards_BI/.env
+
 script:
   - docker-compose up -d
-  - docker-compose exec web ./check_migrations.sh
-  - docker-compose exec web flake8 --exclude='ipython_log.py*,migrations,templates, manage.py .
+  - docker-compose exec web flake8 --exclude='ipython_log.py*,migrations,templates, manage.py' .
   - docker-compose exec web ./manage.py migrate
   - docker-compose exec web py.test --create-db
+
+notifications:
+  email: false
