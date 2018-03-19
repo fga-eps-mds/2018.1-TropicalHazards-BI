@@ -1,0 +1,21 @@
+sudo: required
+
+services:
+  - docker
+  - sqlite3
+
+env:
+  - DOCKER_COMPOSE_VERSION=1.14.0
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+script:
+  - docker-compose up -d
+  - docker-compose exec web ./check_migrations.sh
+  - docker-compose exec web flake8 --exclude='ipython_log.py*,migrations,templates, manage.py .
+  - docker-compose exec web ./manage.py migrate
+  - docker-compose exec web py.test --create-db
