@@ -579,7 +579,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 ##### 3.6.1 Aplicativo Mobile: <em>Sem Dengue</em>
 <p align ="justify">
-O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti. Oferecem também a possibilidade 
+O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti. Oferecem também a possibilidade
 </p>
 
 # 4. Visão Geral do Produto
@@ -605,16 +605,16 @@ O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem loca
 
 ## 6.1 Restrições de Design
 
-Interface/ dashboard para publico geral e para profissionais/ pesquisadores da area da saúde.
+<p align="justify">O desing devera ser simples e elegante, visando também a facilidade do seu uso, para que os usuarios possam utilizar o sistema de forma intuitiva.</p>
 
 ## 6.2 Restrições de Implementação
-<p align="justify">Criação de um modelo padronizado de observatório/dashboard através de uma plataforma web e disponibilizar dados através de ponto de acesso remoto (API).</p>
+<p align="justify">Criação de um modelo padronizado de observatório/dashboard através de uma plataforma web, onde profissionais da saude possam submeter dados de pesquisa para o geramento de estatísticas e centralização dos dados a sobre o tema doenças tropicais. Além disso é necessario que haja um portal para que a população geral possa ter acesso a estes indicativos, disponibilizando também os dados através de um ponto de acesso remoto (API).</p>
 
 ## 6.3 Restrições de Segurança
 
-A definir
+<p align="justify">Devido o fato de que pesquisadores poderem ser cotribuidores para a alimentação da base de dados do sistema, é necessario que haja uma certificação que os usuarios contribuintes sejam somente pessoas credenciadas. Para que assim possamos garantir a qualidade dos dados armazenados.</p>
 
 
 ## 6.4 Restrições de Uso
 
-A definir
+<p align="justify">Para o uso do sistema é necessário que os usuários tenham acesso a um dispositivo conectado à internet e que possua um navegador web compatível com o sistema. Caso o usuário do sistema não possua acesso à internet, o sistema deve mostrar uma página de erro.</p>
