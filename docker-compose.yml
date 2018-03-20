@@ -1,0 +1,21 @@
+version: '2'
+services:
+  
+  tropical-hazards:
+    container_name: tropical-hazards
+    # image: image-name        <--- Change when your image is pushed to dockerhub
+    command: /bin/bash -lc "npm install && npm run dev"
+    volumes:
+      - .:/TropicalHazards-BI
+    external_links:
+      - network-name # <--- Change when you have your network ready (for API connection)
+    ports:
+      - 8080:8080
+    networks:
+      - default
+      - network-name # <--- Change when you have your network ready (for API connection)
+    ipc: host # <---- Exempts explict call, remove if you want.
+
+networks:
+  network-name: # <--- Change when you have your network ready (for API connection) 
+    external: true
