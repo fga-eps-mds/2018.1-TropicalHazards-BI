@@ -1,34 +1,63 @@
-## How to contribute to this project
+## Como contribuir para esse projeto
 
-#### **Did you find a bug?**
+### **Você achou um bug?**
 
-* **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/fga-gpp-mds/NOME/issues).
+* **Tenha certeza que o bug já não foi reportado** procurando no GitHub em [Issues](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues).
 
-* If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/fga-gpp-mds/NOME/issues/new?template=bug_report.md). Be sure to include a **title and clear description**, use one of the **templates** - providing at least all the information required there - and a **code sample** or an **screenshot** showing the problem.
+* Se você não encontrou nenhuma Issue aberta para esse problema, [abra uma nova](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md). Tenha certeza de incluir um **título e descrição claros**, use um dos **templates** - provendo ao menos a informação requerida - e uma **amostra de código** ou uma **sreenshot** mostrando o problema.
 
-#### **Did you write a patch that fixes a bug?**
+### **Você corrigiu um bug?**
 
-* Open a new GitHub pull request with the patch.
+* Abra um novo **Pull Request** no GitHub com a correção.
 
-* Ensure the PR description clearly describes the problem and solution. Provide all the info that
-is required on the template and be sure to include the relevant issue number, if applicable.
+* Garanta que o **PR** descreva claramento o problema e solução, que contenha toda a informação necessária para o template e que esteja relacionado a pelo menos uma Issue.
 
-* Be sure to commit following our [commit policy]()
+* Tenha certeza de que segue a [política de commit](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/blob/master/docs/policies/politica_de_commit.md)
 
-#### **Do you intend to add a new feature or change an existing one?**
+### **Você planeja adicionar uma nova funcionalidade ou mudar uma existente?**
 
-* First, check on the [issue list](https://github.com/fga-gpp-mds/NOME/issues) 
-and be sure no one is already making a feature like the
-one you intend. If there is no such a thing, you may proceed.
+* Primeiro, cheque na [lista de Issues](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues) e tenha certeza de que ninguém está implementando a funcionalidade que você planeja criar. Caso não exista, você pode prosseguir.
 
-* Open a new issue with a feature-custom template [here](https://github.com/fga-gpp-mds/NOME/issues/new?template=feature.md).
-GitHub issues are primarily intended for bug reports and fixes.
+* [Abra uma nova Issue](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new) com as informações necessárias ao template, seguindo o padrão User Story, Feature ou Epic.
 
-<!-- 
-#### **Do you have questions about the source code?**
+## **Contribuindo**
 
-* Ask any question about how to use Ruby on Rails in the [rubyonrails-talk mailing list](https://groups.google.com/forum/?fromgroups#!forum/rubyonrails-talk). -->
+#### 1 Configure o ambiente de desenvolvimento
+Siga os passos definidos no [README](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/blob/master/README.md) para configuração do ambiente de desenvolvimento.
 
-With :heart:,
+#### 2 Configurando o repositório 
+Para poder contribuir, você precisa fazer um [fork](https://guides.github.com/activities/forking/) do repositório [Tropical Hazards BI](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI)
 
-the NAME Team.
+Em seguida clone o fork para sua máquina local:
+```bash
+git clone https://github.com/user-name/2018.1-TropicalHazards-BI.git
+```
+Você deve também deve adicionar o repositório oficial do Tropical Hazards BI como um dos repositórios remotos:
+```bash
+git remote add tropicalhazards https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI.git
+```
+
+#### 3 Trabalhando em uma funcionalidade
+Quando estiver trabalhando em uma funcionalidade, crie uma nova branch seguindo a [política de branches](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/blob/master/docs/policies/politica_de_branches.md), e tome como base a branch master do repositório oficial(**tropicalhazards/master**): 
+```bash
+git checkout -b issue_59_funcionalidade_x tropicalhazards/master
+```
+Faça as alterações necessárias e realize os commits, seguindo a [política de commits](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/blob/master/docs/policies/politica_de_commit.md).
+
+Após finalizar os commits envie as alterações para o seu repositório remoto:
+```bash
+git push origin issue_59_funcionalidade_x
+```
+
+#### 4 Pull Request
+Acesse o seu fork do repositório oficial (ex: https://github.com/user-name/2018.1-TropicalHazards-BI) e clique em "Pull Requests" no painel. Na próxima página, pressione "New pull request" no canto superior direito.
+
+Seleciona como base a branch **development** do repositório oficial(**fga-ggp-mds/2018.1-TropicalHazards**) e compare com a branch referente a nova funcionalidade, por exemplo **issue_59_funcionalidade_x**, em seguida clique em "Create new pull request".
+
+Preencha o template sugerido com as informações necessárias para descrever a mudança proposta, conecte o Pull Request a **Issue** relacionada e confirme a criação do Pull Request.
+
+O seu Pull Request será analizado e a equipe responsável pelo projeto garante prover o feedback mais claro possível para sua proposta de mudança.
+
+Com :heart:,
+
+O time Tropical Hazards BI.
