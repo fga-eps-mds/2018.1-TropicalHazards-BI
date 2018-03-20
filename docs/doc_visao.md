@@ -24,7 +24,6 @@
                 <td>1.0.1</td>
 	   	<td>Corrigindo erros da primeira versão</td>
 	   	<td>Andre Bargas</td>
-
    </tr>
 
 </table>
@@ -263,7 +262,7 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td><strong>Cliente</strong></td>
-	   	<td> Profissionais da saúde </td>
+	   	<td> Núcle de Medicina Tropical </td>
 	   	<td> Esclarecer os requisitos e validar o software. </td>
    </tr>
 
@@ -282,13 +281,13 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td> <strong>Pesquisadores/Interessados</strong> </td>
-	   	<td> Publico geral que desejam saber sobre doenças tropicais </td>
+	   	<td> Pesquisadores relacionados a área de doenças tropicais </td>
    </tr>
 
 
    <tr>
-	   	<td><strong>Profissionais de Saúde</strong></td>
-	   	<td> Profissionais que utilizam a plataforma para fins de consulta e analise de dados. </td>
+	   	<td><strong>Público Geral</strong></td>
+	   	<td>Pessoas comuns interessadas em visualizar dados acerca de doenças tropicais </td>
    </tr>
 
 </table>
@@ -305,7 +304,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>**André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel**</td>
+	   	<td>André Bargas, Eduardo Yoshida, João Pedro, Max Henrique, Pedro Daniel</td>
    </tr>
 
 
@@ -350,7 +349,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>**André Filho, Arthur Assis, Iago Carvalho, Mateus Batista, Renata Souza**</td>
+	   	<td>André Filho, Arthur Assis, Iago Carvalho, Mateus Batista, Renata Souza</td>
    </tr>
 
 
@@ -394,7 +393,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>**Dra. Carla Rocha, Coaches de EPS, Coaches de MDS**</td>
+	   	<td>Dra. Carla Rocha, Coaches de EPS, Coaches de MDS</td>
    </tr>
 
 
@@ -440,13 +439,13 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Núcleo de Medicina Tropical</td>
    </tr>
 
 
    <tr>
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Cliente idealizador do projeto</td>
    </tr>
 
 
@@ -458,24 +457,24 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Responsabilidade</strong></td>
-	 	<td>Lorem impsom</td>
+	 	<td>Estabelecer os requisitos e validar o software </td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Descrever os requisitos de maneira clara</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Alto</td>
    </tr>
 
    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 </table>
 
@@ -487,99 +486,100 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Pesquisadores do NMT</td>
    </tr>
 
 
    <tr>
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Usuário que terá acesso ao dashboard</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Pesquisadores</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Realizar a inserção de dados no dashboard e delimitar quais dados serão de acesso ao público</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Alto</td>
    </tr>
 
    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 </table>
 
-## 3.4.2 Profissionais de saúde
+## 3.4.2 Público Geral
 
 <table>
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Público Geral</td>
    </tr>
 
 
    <tr>
 	   	<td> <strong>Descrição</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Pessoas comuns interessadas em doenças tropicais</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Usuário comum</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Responsabilidade</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Critérios de Sucesso</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Visualizar os dados no  observatório de dados</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Envolvimento</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 
    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>-</td>
    </tr>
 </table>
 
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
-<p align="justify"> Organização de dados, mostrar gráficos, apontar localidades com maior risco de doenças tropicais.</p>
+<p align="justify">Os pesquisadores do NMT possuem um problema de visualização dos dados de seus diferentes projetos, pois não há comunhão de tecnologias nem um modelo padronizado de dashboard e observatório de dados onde esses possam ser compartilhados de forma eficiente.</p>
+<p align="justify"> Logo a principal necessidade dos usuários é a criação de um sistema onde tais dados possam ser inseridos, analisados e compartilhadaos de forma organizada e eficiente. </p>
 
 ## 3.6 Alternativas e Concorrência
 
-##### 3.6.1 Aplicativo Mobile: <em>Sem Dengue</em>
-<p align ="justify">
-O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem locais com focos do mosquito Aedes Aegypti. Oferecem também a possibilidade 
+##### 3.6.1 Website: <em>World Health Organization</em>
+<p align ="justify"> O <em>website</em> da World Health Organization possui um dashboard que permite a visualização de estatísticas acerca de diversas doenças, inclusive doenças tropicais.
+![World Health Organization](https://i.imgur.com/JkPqNdD.png)
 </p>
 
 # 4. Visão Geral do Produto
