@@ -21,6 +21,17 @@ O Scrum Master é responsável por dar suporte a implementação do Scrum durant
 ### DevOps
 
 ### Especialista de UX/UI
+O especialista de UX/UI é responsável por monitorar, validar, providenciar consultoria e auxiliar a equipe de desenvolvimento durante a elaboração das interfaces com o usuário.
+
+**A principal responsabilide desse papel é auxiliar a equipe de desenvolvimento, com a prestação de serviços de consultoria, à implementar uma interface confortável para o usuário em suas macro e micro interações com o sistema.**
+
+**Responsabilidades:**
+- Auxiliar a equipe na produção dos documentos relacionados à UX ou UI.
+- Servir consultorias quanto ao design de interfaces.
+- Garantir a usabilidade da aplicação.
+- Providenciar treinamentos de design à equipe, quando necessário.
+- Identificar erros de front-end.
+- Garantir a qualidade visual da aplicação.
 
 ## Rituais
 ### Sprint Planning
