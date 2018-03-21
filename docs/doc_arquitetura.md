@@ -56,7 +56,19 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 
 ## 2. Representação da Arquitetura
 
-*[Esta seção descreve qual é a arquitetura de software do sistema atual e como ela é representada. Nas Visões de Casos de Uso, Lógica, do Processo, de Implantação e de Implementação, este documento enumera as visões necessárias e, para cada uma delas, explica os tipos de elementos do modelo que contém.]*
+O Django segue o padrão arquitetural próprio dele mesmo, mais conhecido como MVT. De acordo com o Django Book, o Django segue o padrão MVC suficientemente para ser considerado um framework MVC.
+
+Como funciona o MVT?
+
+O MVT separa de forma estrutural o projeto em Django em três partes: *<b>Model</b>,  <b>View</b>, <b>Template</b>.
+Model: As models do MVT e MVC podem ser consideradas equivalentes em questão de responsabilidade. O framework Django facilita na interface com o banco de dados. Esta camada contém qualquer coisa e tudo sobre os dado: acesso de dados, validação e quais comportamentos se relacionam entre os dados.
+
+View: As views são responsáveis pelas regras que serão apresentadas no nosso sistema. A camada view é onde ela irá se comunicar com a Model e a Template, cadastrando e tratando as informações recebidas. Retornando uma resposta para o usuário.
+
+Template:  Templates é a camada que retorna a visão para o usuário do programa. Essa camada é composta por, HTML,CSS, javascript e etc. Geralmente linguagens focadas na apresentação do site para o usuário.
+
+Detalhes arquiteturais do projeto Tropical Hazards:
+VueJS e Django Framework : No nosso projeto iremos utilizar essa composição entre esses dois fantásticos frameworks alinhando o poder do Django com a facilidade e potencial proporcionado pelo Vue. A escolha do Vue vem com o objetivo de facilitar o desenvolvimento de componentes reativos para interfaces na web. Isto significa dizer que as informações não serão mais renderizadas diretamente pelo Django, mas por meio de um componente que fará uma requisição via Ajax para uma view do Django.
 
 ## 3. Metas e Restrições de Arquitetura
 
@@ -81,7 +93,6 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 ### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 *[Para cada pacote significativo, inclua uma subseção com o respectivo nome, uma breve descrição e um diagrama com todos os pacotes e classes significativos nele contidos.
-
 Para cada classe significativa no pacote, inclua o respectivo nome, uma breve descrição e, opcionalmente, uma descrição de algumas de suas responsabilidades, operações e atributos mais importantes.]*
 
 ## 6. Visão de Processos
