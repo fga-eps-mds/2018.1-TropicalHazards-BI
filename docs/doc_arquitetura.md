@@ -60,7 +60,8 @@ O Django segue o padrão arquitetural próprio dele mesmo, mais conhecido como M
 
 Como funciona o MVT?
 
-O MVT separa de forma estrutural o projeto em Django em três partes: *<b>Model</b>,  <b>View</b>, <b>Template</b>.
+O MVT separa de forma estrutural o projeto em Django em três partes: <b>Model</b>,  <b>View</b>, <b>Template</b>.
+
 Model: As models do MVT e MVC podem ser consideradas equivalentes em questão de responsabilidade. O framework Django facilita na interface com o banco de dados. Esta camada contém qualquer coisa e tudo sobre os dado: acesso de dados, validação e quais comportamentos se relacionam entre os dados.
 
 View: As views são responsáveis pelas regras que serão apresentadas no nosso sistema. A camada view é onde ela irá se comunicar com a Model e a Template, cadastrando e tratando as informações recebidas. Retornando uma resposta para o usuário.
