@@ -584,7 +584,7 @@ O aplicativo <em>Sem Dengue</em> permite que usuários insiram e visualizem loca
 
 # 4. Visão Geral do Produto
 
-<p align="justify">O sistema contará com uma plataforma online capaz de disponibilizar dados a respeito de doenças tropicais, fornecendo mecanismos para pesquisadores e profissionais da saúde acessarem os indicadores gerados por meio de informações dos projetos do MNT. Além disso, esta plataforma terá uma interface/dashboard para os usuários visualizarem e gerenciarem os dados sobre doenças tropicais.
+<p align="justify">O sistema contará com uma plataforma online capaz de disponibilizar dados a respeito de doenças tropicais, fornecendo mecanismos para pesquisadores e profissionais da saúde acessarem através de um dashboard, os indicadores gerados por meio de informações dos projetos do NMT. Além disso, esta plataforma contará com uma interface para os usuários comuns visualizarem os dados sobre doenças tropicais.
 </p>
 
 # 5. Recursos do Produto
