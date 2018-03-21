@@ -16,7 +16,6 @@
                 <td>1.0.0</td>
 	   	<td>Adicionando template com informações iniciais</td>
 	   	<td>João Pedro, Andre Bargas, Yoshida, Pedro Daniel</td>
-
    </tr>
 
    <tr>
@@ -24,7 +23,13 @@
                 <td>1.0.1</td>
 	   	<td>Corrigindo erros da primeira versão</td>
 	   	<td>Andre Bargas</td>
+   </tr>
 
+   <tr>
+	   	<td>20/03/2018</td>
+                <td>1.0.2</td>
+	   	<td>Adicionando mais informações iniciais e corrigindo possíveis erros</td>
+	   	<td>Max Henrique</td>
    </tr>
 
 </table>
@@ -132,7 +137,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 Nosso projeto irá oferecer uma análise dos fatores determinantes de proteção, os mecanismos envolvidos na imunopatologia e possíveis mecanismos envolvendo drogas imunomoduladoras que poderiam auxiliar na diminuição da morbidade e mortalidade de doenças tropicais.
 
-Para o profissional de saúde e pesquisadores o <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
+Para o profissional de saúde e pesquisadores o, <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
 
 Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
 
@@ -142,25 +147,25 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 <table>
 
    <tr>
-	   	<td><strong>O problema de</strong> </td>
+	   	<td><strong>O problema </strong> </td>
 	   	<td><strong>Falta de informações sobre doenças tropicais</strong></td>
    </tr>
 
 
    <tr>
-	   	<td><strong>afeta</strong> </td>
-	   	<td>População geral</td>
+	   	<td><strong>Afeta</strong> </td>
+	   	<td>População geral.</td>
    </tr>
 
 
    <tr>
-	   	<td><strong>cujo impacto é</strong> </td>
-	   	<td> Mais casos de surtos de doenças tropicais, devido a falta de informações</td>
+	   	<td><strong>Cujo o Impacto é</strong> </td>
+	   	<td> Mais casos de surtos de doenças tropicais, devido a falta de informações.</td>
    </tr>
 
    <tr>
-	   	<td><strong>uma solução seria</strong> </td>
-	   	<td>Um sistema para o estudo e geração de indicativos a respeito de doenças tropicais</td>
+	   	<td><strong>Uma solução</strong> </td>
+	   	<td>Um sistema para o estudo e geração de indicativos a respeito de doenças tropicais.</td>
    </tr>
 
 </table>
@@ -168,26 +173,26 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 <table>
 
    <tr>
-	   	<td><strong>O problema de</strong> </td>
+	   	<td><strong>O problema</strong> </td>
 	   	<td><strong>Disperção de dados e dificuldade de processamento de dados a respeito
       de doenças tropicais</strong></td>
    </tr>
 
 
    <tr>
-	   	<td><strong>afeta</strong> </td>
-	   	<td>Profissionais da saúde</td>
+	   	<td><strong>Afeta</strong> </td>
+	   	<td>Profissionais da saúde.</td>
    </tr>
 
 
    <tr>
-	   	<td><strong>cujo impacto é</strong> </td>
-	   	<td> Inacessibilidade a dados de pesquisas a respeito de doenças tropicais </td>
+	   	<td><strong>Cujo o impacto é</strong> </td>
+	   	<td> Inacessibilidade a dados de pesquisas a respeito de doenças tropicais. </td>
    </tr>
 
    <tr>
-	   	<td><strong>uma solução seria</strong> </td>
-	   	<td>Um sistema onde profissionais da saúde pudessem amazenar e processar seus dados</td>
+	   	<td><strong>Uma solução</strong> </td>
+	   	<td>Um sistema onde profissionais da saúde pudessem amazenar e processar seus dados.</td>
    </tr>
 
 </table>
@@ -202,30 +207,30 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
    </tr>
 
    <tr>
-	   	<td><strong>que</strong> </td>
-	   	<td>Desejam um plataforma para consulta e analise de dados a respeito de doenças tropicais</td>
+	   	<td><strong>Necessidade</strong> </td>
+	   	<td>Desejam uma plataforma para consulta e analise de dados a respeito de doenças tropicais</td>
    </tr>
 
 
    <tr>
-	   	<td><strong><em>O Webapp</em></strong> </td>
-	   	<td>Descrição</td>
+	   	<td><strong><em>O Tropical Hazards</em></strong> </td>
+	   	<td>É um Web App.</td>
    </tr>
 
    <tr>
-	   	<td><strong>que</strong> </td>
-	   	<td>Descrição</td>
+	   	<td><strong>Que</strong> </td>
+	   	<td>Permite que os profissionais de saúde realizem pesquisas e levantamentos de informações a respeito de regiões de forma organizada. Gerando dessa forma indicadores, para melhor descrever ou condicionar a população de uma certa área.</td>
    </tr>
 
    <tr>
 	   	<td><strong>Diferente de</strong> </td>
-	   	<td>Descrição</td>
+	   	<td>Prescrições e tabelas manuais, além de aplicações como Docsnote</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Nosso produto</strong> </td>
-	   	<td>Descrição</td>
+	   	<td>é uma solução que busca centralizar a análise de dados para melhorar a forma de compartilhamento entre os pesquisadores e ṕrofissionais de saúde da NMT</td>
    </tr>
 
 </table>
