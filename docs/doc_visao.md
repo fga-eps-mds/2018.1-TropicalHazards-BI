@@ -18,13 +18,6 @@
 	   	<td>João Pedro, Andre Bargas, Yoshida, Pedro Daniel</td>
    </tr>
 
-   <tr>
-	   	<td>17/03/2018</td>
-                <td>1.0.1</td>
-	   	<td>Corrigindo erros da primeira versão</td>
-	   	<td>Andre Bargas</td>
-   </tr>
-
 </table>
 
 <hr>
@@ -88,7 +81,7 @@
 ## 1.2	Escopo
 
 <p align= "justify">O projeto Tropical Hazards BI tem como finalidade suprir uma necessidade dos pesquisadores e profissionais de saúde da NMT da Unb de receber dados referentes a doenças tropicais, fazer uma análise estatística dos dados recebidos, mostrar indicadores e dados para os profissionais e público interessado.</p>
-<p align="justif">O software, a ser implementado, deve permirit que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores e exportar/compartilhar relatórios</p>
+<p align="justif">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios</p>
 
 ## 1.3	Definições, acrônimos e abreviações
 
@@ -122,26 +115,26 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 <li><strong>Restrições</strong>: as restrições de design, restrições externas, como requisitos operacionais ou regulamentares;</li>
 </ul>
 
-# 2. Posicionamento
 
-## 2.1 Oportunidade de Negócio
-
-<p align = "justify"> Pesquisadores da Universidade de Brasília(Unb) precisam resolver um problema de automatizar a análise estatística de dados referentes as doenças tropicais, sendo que esses dados não possuem um padrão definido.
-
-Nosso projeto irá oferecer uma análise dos fatores determinantes de proteção, os mecanismos envolvidos na imunopatologia e possíveis mecanismos envolvendo drogas imunomoduladoras que poderiam auxiliar na diminuição da morbidade e mortalidade de doenças tropicais.
-
-Para o profissional de saúde e pesquisadores o, <em>webapp</em> terá uma série de ferramentas para utilizar e gerar gráficos com indicadores.
-
-Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
+<h1>2. Posicionamento</h1>
 
 
-## 2.2 Descrição do problema
+<h2>2.1 Oportunidade de Negócio</h2>
+
+<p align = "justify"> Pesquisadores da Universidade de Brasília(Unb) precisam resolver um problema de automatizar a análise estatística de dados referentes as doenças tropicais, sendo que esses dados não possuem um padrão definido.</p>
+
+<p align = "justify">Para o profissional de saúde e pesquisadores o, <em>webapp</em> terá uma série de ferramentas para utilizar e gerenciar dados com indicadores.</p>
+
+<p align = "justify">Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
+
+
+### 2.2 Descrição do problema
 
 <table>
 
    <tr>
 	   	<td><strong>O problema </strong> </td>
-	   	<td><strong>Falta de informações sobre doenças tropicais</strong></td>
+	   	<td>Falta de informações sobre doenças tropicais.></td>
    </tr>
 
 
@@ -167,8 +160,8 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td><strong>O problema</strong> </td>
-	   	<td><strong>Disperção de dados e dificuldade de processamento de dados a respeito
-      de doenças tropicais</strong></td>
+	   	<td>Disperção de dados e dificuldade de processamento de dados a respeito
+      de doenças tropicais.</td>
    </tr>
 
 
@@ -201,7 +194,7 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td><strong>Necessidade</strong> </td>
-	   	<td>Desejam uma plataforma para consulta e analise de dados a respeito de doenças tropicais</td>
+	   	<td>Desejam uma plataforma para consulta e analise de dados a respeito de doenças tropicais.</td>
    </tr>
 
 
@@ -217,13 +210,13 @@ Para os usuários serão disponibilizados uma interface web onde podera ser enco
 
    <tr>
 	   	<td><strong>Diferente de</strong> </td>
-	   	<td>Prescrições e tabelas manuais, além de aplicações como Docsnote</td>
+	   	<td>Prescrições e tabelas manuais, além de aplicações como Docsnote.</td>
    </tr>
 
 
    <tr>
 	   	<td><strong>Nosso produto</strong> </td>
-	   	<td>é uma solução que busca centralizar a análise de dados para melhorar a forma de compartilhamento entre os pesquisadores e ṕrofissionais de saúde da NMT</td>
+	   	<td>é uma solução que busca centralizar a análise de dados para melhorar a forma de compartilhamento entre os pesquisadores e profissionais de saúde da NMT.</td>
    </tr>
 
 </table>
@@ -296,6 +289,9 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 
 ## 3.3 Perfis dos Envolvidos
+
+O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada ao ensino de pós-graduação, pesquisa e extensão na área de Doenças Tropicais e demais temas de interesse amazônico.
+
 
 
 ## 3.3.1 Equipe de Desenvolvimento
@@ -427,7 +423,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td>-</td>
+	   	<td>Nenhum</td>
    </tr>
 </table>
 
@@ -450,7 +446,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Tipo</strong></td>
-	   	<td>Lorem impsom</td>
+	   	<td>Pesquisadores/Profissionais de saúde</td>
    </tr>
 
 
@@ -473,11 +469,13 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
    <tr>
 	   	<td><strong>Problemas</strong></td>
-	   	<td>-</td>
+	   	<td>Falta de comunicação</td>
    </tr>
 </table>
 
 ## 3.4 Perfis dos Usuários
+
+Usúarios interessados em saber sobre as doenças tropicais.
 
 ## 3.4.1 Pesquisadores
 
@@ -577,7 +575,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 ## 3.6 Alternativas e Concorrência
 
 ##### 3.6.1 Website: <em>World Health Organization</em>
-<p align ="justify"> O <em>website</em> da World Health Organization possui um dashboard que permite a visualização de estatísticas acerca de diversas doenças, inclusive doenças tropicais.
+<p align ="justify"> O <em>website</em> da World Health Organization possui um dashboard que permite a visualização de estatísticas acerca de diversas doenças, inclusive doenças tropicais.<br><br>
 ![World Health Organization](https://i.imgur.com/JkPqNdD.png)
 </p>
 
@@ -599,10 +597,9 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 	<li>Centralizar a análise dos dados e dos indicadores, para poder compartilhar isso entre os próprios profissionais da saúde e a população em geral.</li>
 </ul>
 
-# 6. Restrições
+<h1> 6. Restrições</h1>
 
-
-## 6.1 Restrições de Design
+<h2>6.1 Restrições de Design</h2>
 
 <p align="justify">O desing devera ser simples e elegante, visando também a facilidade do seu uso, para que os usuarios possam utilizar o sistema de forma intuitiva.</p>
 
