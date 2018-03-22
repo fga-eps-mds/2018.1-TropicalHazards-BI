@@ -1,5 +1,5 @@
 <!-- Template de Documento de Arquitetura de Software versão em Markdown-->
-\<Nome do Projeto\>
+\<Tropical Hazards\>
 ===================
 Índice Analítico
 ----------------
@@ -56,20 +56,40 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 
 ## 2. Representação da Arquitetura
 
+O projeto Tropical Hazards utiliza a  arquitetura MVC, que organiza o sistema em três partes distintas: Model, Controller e View. Para isso, iremos usar das ferramentas de trabalho (frameworks) Django Rest, VueJS e JSon.
+
+No padrão MVC, os componentes estruturais podem ser definidos como:
+  Model: Responsável pela estruturação, definição das consultas e validação dos dados. Também é neste nível que são definidos a lógica de aplicação e as regras de negócio referente ao banco de dados do sistema.
+
+  View: É responsável pela definição de como serão feitas todas as interações com o usuário, fazendo contato direto com a camada de controle de onde recebe quais informações serão mostradas. Ou seja, a principal função da View é mostrar a interface gráfica para os usuários e fazer a comunicação com a camada de controle.
+
+  Controller: É responsável pela integração da camada View com a Model, é nela que todas as requisições do usuário são recebidas e as ações dentro do sistema são definidas. Nesta camada também são definidas as regras de negócio referentes à manipulação do sistema.
+
+  ![Figure 2-1](http://abap101.com/wp-content/uploads/2011/08/mvc.png "Figura 2.1 - Padrão MVC (Fonte: http://abap101.com/wp-content/uploads/2011/08/mvc.png)")
+
+  <p>Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)</p>
+
 O Django segue o padrão arquitetural próprio dele mesmo, mais conhecido como MVT. De acordo com o Django Book, o Django segue o padrão MVC suficientemente para ser considerado um framework MVC.
 
-Como funciona o MVT?
+Como funciona o MTV?
 
-O MVT separa de forma estrutural o projeto em Django em três partes: <b>Model</b>,  <b>View</b>, <b>Template</b>.
+O MTV separa de forma estrutural o projeto em Django em três partes: <b>Model</b>,  <b>View</b>, <b>Template</b>. Fazendo um paralelo com o modelo MVC clássico, as View agora irão fazer o mesmo papel da Controller, e a camada Template o papel das Views. Assim podemos as seguintes definições:
 
-Model: As models do MVT e MVC podem ser consideradas equivalentes em questão de responsabilidade. O framework Django facilita na interface com o banco de dados. Esta camada contém qualquer coisa e tudo sobre os dado: acesso de dados, validação e quais comportamentos se relacionam entre os dados.
+Model: As models do MTV e MVC podem ser consideradas equivalentes em questão de responsabilidade. O framework Django facilita na interface com o banco de dados. Esta camada contém qualquer coisa e tudo sobre os dado: acesso de dados, validação e quais comportamentos se relacionam entre os dados.
 
 View: As views são responsáveis pelas regras que serão apresentadas no nosso sistema. A camada view é onde ela irá se comunicar com a Model e a Template, cadastrando e tratando as informações recebidas. Retornando uma resposta para o usuário.
 
 Template:  Templates é a camada que retorna a visão para o usuário do programa. Essa camada é composta por, HTML,CSS, javascript e etc. Geralmente linguagens focadas na apresentação do site para o usuário.
 
-Detalhes arquiteturais do projeto Tropical Hazards:
-VueJS e Django Framework : No nosso projeto iremos utilizar essa composição entre esses dois fantásticos frameworks alinhando o poder do Django com a facilidade e potencial proporcionado pelo Vue. A escolha do Vue vem com o objetivo de facilitar o desenvolvimento de componentes reativos para interfaces na web. Isto significa dizer que as informações não serão mais renderizadas diretamente pelo Django, mas por meio de um componente que fará uma requisição via Ajax para uma view do Django.
+![Figure 2-2](https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png "Figura 2.2 - Padrão MTV")
+<p>Figura 2.2 - Padrão MTV (Fonte : https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png)</p>
+
+Apesar do Django fornecer um apoio para a criação de templates e formas de definir interações com os usuários, há ferramentas mais atuais que oferecem mais recursos principalmente quanto a parte de front-end do sistema. Devido a este fato, utilizaremos a ferramenta VueJS para a criação de interfaces.
+
+O VueJS  é um framework de JavaScript, progressivo para a construção de interfaces de usuário, onde é possível construir sistemas com interfaces reativas, modularizadas e de sintaxe clara. Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django. Assim, é necessário que haja uma integração entre as duas ferramentas. Para isso utilizaremos a formatação JSON.
+
+O JSON é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
+
 
 ## 3. Metas e Restrições de Arquitetura
 
