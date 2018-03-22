@@ -1,10 +1,23 @@
 <!-- Template de Documento de Arquitetura de Software versão em Markdown-->
-# Documento de Arquitetura
+# **Tropical Hazards**
 
-<Tropical Hazards\>
+Documento de Arquitetura
 ===================
+
+----------
+## Histórico  de Revisões
+
+| Data | Versão | Descrição | Autores |
+|:----:|:------:|:---------:|:-------:|
+| **/03/2018 | 1.0 | Abertura do documento | - |
+| **/03/2018 | 1.1 | - | - |
+| **/03/2018 | 1.2 | - | - |
+| **/03/2018 | 1.3 | - | - |
+-----------
+
 Sumário
 ----------------
+
 * 1. [Introdução](#1-introdução)
     * 1.1 [Finalidade](#11-finalidade)
     * 1.2 [Escopo](#12-escopo)
@@ -26,7 +39,7 @@ Sumário
 * 9. [Visão de Dados (opcional)](#9-visão-de-dados-opcional)
 * 10. [Tamanho e Desempenho](#10-tamanho-e-desempenho)
 * 11. [Qualidade](#11-qualidade)
-
+-----------
 
 ## 1. Introdução
 
