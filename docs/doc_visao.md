@@ -583,7 +583,7 @@ O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer,
 
 # 4. Visão Geral do Produto
 
-<p align="justify">O sistema contará com uma plataforma capaz de comunhar diferentes dados a respeito de doenças tropicais, fornecendo uma interface para pesquisadores e profissionais da saude submeterem dados para analise. Alem disso esta plataforma contemplara com uma interface/ dashboard para usuarios da web ter acesso a dados e inidicadores de doenças tropicais.
+<p align="justify">O sistema contará com uma plataforma online capaz de disponibilizar dados a respeito de doenças tropicais, fornecendo mecanismos para pesquisadores e profissionais da saúde acessarem através de um dashboard, os indicadores gerados por meio de informações dos projetos do NMT. Além disso, esta plataforma contará com uma interface para os usuários comuns visualizarem os dados sobre doenças tropicais.
 </p>
 
 # 5. Recursos do Produto
