@@ -95,7 +95,14 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 </ul>
 
 
-## 8. Resumo de orçamento
+## 8. Custo Estimado do Projeto
+### 8.1. Recursos Humanos
+<p align="justify">
+  Os custos relacionados à recursos humanos abrangem a equipe de desenvolvimento e a equipe de gerência.
+</p>
+<p align="justify">
+  
+</p>
 <p align="justify"></p>
 
 
@@ -117,8 +124,8 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
     <td>andre.filho001@outlook.com</td>
   </tr>
   <tr>
-    <td>Arthur Assis</td>
-    <td></td>
+    <td>Arthur José Benedito de Oliveira Assis</td>
+    <td>arthur120496@gmail.com</td>
   </tr>
   <tr>
     <td>Iago Vasconcelos de Carvalho </td>
@@ -158,8 +165,8 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
     <td>maxhb.df@gmail.com</td>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
+    <td>Pedro Daniel Carvalho Matias</td>
+    <td>pedrodaniel.unb@gmail.com</td>
   </tr>
 </table>
 
@@ -186,3 +193,11 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
 
 
 ## 12. Referências
+
+<ul>
+  <li>PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. - EUA: Project Management Institute, 2013</li>
+
+  <li>MONTES, Eduardo. TERMO DE ABERTURA DO PROJETO. Disponível em <https://escritoriodeprojetos.com.br/termo-de-abertura-do-projeto> Acesso em 05/04/2017</li>
+
+  <li>BUILDER, Project. O QUE É TERMO DE ABERTURA DO PROJETO. Disponível em <http://www.projectbuilder.com.br/blog-home/entry/projetos/o-que-e-o-termo-de-abertura-do-projeto> Acesso em 05/04/2017</li>
+</ul>
