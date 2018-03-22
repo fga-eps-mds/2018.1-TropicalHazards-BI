@@ -1,0 +1,45 @@
+[]
+
+
+# Usage:
+# [TAG] BRIEF DESCRIPTION OF CHANGES DONE ACCORDING TO THAT TAG
+# (filepaths are optional)
+#	
+# Tags:
+# ADD 	 -> use for new files or methods
+# DEL 	 -> use for excluded files or methods
+# MERGE  -> use for signal merges
+# DOC    -> use for documentation files (better with another tag)
+# UPDATE -> use for when you makes a change in the file
+# FIX    -> use for solving issues, bugs or failures in file
+# RENAME -> use for when you rename a file
+# TEST   -> use for test files (requires another tag alongside it)
+#
+# Examples:
+# [ADD] creates model file for person with initial validations.
+#
+# [TEST ADD] creates test file for person's model. test/models/person_test.rb
+# 
+# [FIX] bug on foo function from class RocksController.
+# [UPDATE] README.md
+#
+# bug was described in issue #21, also added a new cakes section at README.
+#
+# -----------------------------------------------------------------------------
+# Co-authors (GitHub only)
+#	use this when in pair programming
+#
+# Co-authored-by: John Doe <johndoe@example.com>
+#
+# use git's no-reply mail address to keep e-mail privacy.
+#
+# -----------------------------------------------------------------------------
+# 
+# How to make a good commit message:
+# 
+# 1- the first line must be short and assertive.
+# 2- never use $ git commit -m "" or $ git commit --message=<>.
+# 3- link the commit to it's respective issue at the comment section of msg.
+# 4- use line breaks godd@mn!
+# 
+
