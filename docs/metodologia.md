@@ -14,11 +14,21 @@ O Scrum Master é responsável por dar suporte a implementação do Scrum durant
 - Identificar os riscos do projeto
 - Mover equipe para resolver impedimentos
 
-### Product Owner 
+### Product Owner
 
 ### Arquiteto
 
 ### DevOps
+O especialista *DevOps* é o responsável pela criação, manutenção e evolução da infraestrutura operacional do projeto, evitando que problemas relacionados a mesma afetem a equipe de desenvolvimento ou o produto.
+
+**A principal responsabilide desse papel é viabilisar a integração e o *deploy* continuos e automatizados do software produzido pela equipe.**
+
+**Responsabilidades:**
+- Fornecer consultoria para a equipe em questões relacionadas a infraestrutura operacional
+- Identificar e propor soluções para problemas relacionados infraestrutura operacional
+- Disponibilizar ambiente de desenvolvimento estavel e homogênio pra equipe
+- Configurar ferramentas para automatizar a itegração continua do software produzido
+- Configurar ferramentas para automatizar o deploy continuo do software produzido
 
 ### Especialista de UX/UI
 O especialista de UX/UI é responsável por monitorar, validar, providenciar consultoria e auxiliar a equipe de desenvolvimento durante a elaboração das interfaces com o usuário.
@@ -39,21 +49,21 @@ Tem como objetivo identificar o foco e planejar o trabalho que será realizado d
 
 - Qual o foco dessa Sprint?
 - O que pode ser entregue como resultado para atingir o foco planejado?
-- Como o trabalho necessário para entregar o incremento será realizado? Ou seja, quais tarefas serão executadas? 
+- Como o trabalho necessário para entregar o incremento será realizado? Ou seja, quais tarefas serão executadas?
 
 :alarm_clock:**Time-box: 2 horas**
 
 **Artefatos produzidos:**
 - Documento de planejamento de Sprint
-- Sprint Backlog 
+- Sprint Backlog
 
 ### Daily Meeting
-A reunião diária tem como objetivo inspecionar o progresso em direção ao objetivo da sprint, planejar as próximas 24 horas do Time de Desenvolvimento e identificar impedimentos que podem ameaçar a entrega do incremento planejado. 
+A reunião diária tem como objetivo inspecionar o progresso em direção ao objetivo da sprint, planejar as próximas 24 horas do Time de Desenvolvimento e identificar impedimentos que podem ameaçar a entrega do incremento planejado.
 
 Cada membro do time deve responder:
 - O que eu fiz ontem que contribui para o time atingir o planejado para a Sprint?
-- O que eu planejo fazer hoje? 
-- Quais impedimentos podem ameaçar a entrega do incremento planejado? 
+- O que eu planejo fazer hoje?
+- Quais impedimentos podem ameaçar a entrega do incremento planejado?
 
 :alarm_clock:**Time-box: 15 minutos**
 
@@ -91,7 +101,7 @@ Cada membro do time deve responder:
     </tr>
 </table>
 
-### Sprint Review 
+### Sprint Review
 A Revisão da Sprint é realizada no final da Sprint e tem como objetivo inspecionar o incremento produzido e adaptar o **Backlog do Produto** se necessário.É apresentado para as partes interessadas o resultado gerado na Sprint com o propósito de obter feedback e promover a colaboração.
 
 Elementos da revisão de Sprint:
@@ -150,4 +160,3 @@ Ao final da retrospectiva o Time Scrum deverá identificar quais ações serão 
         <td>12:30</td>
     </tr>
 </table>
-
