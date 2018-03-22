@@ -1,6 +1,8 @@
 version: '3'
 
 services:
+  db:
+    image: postgres
   web:
     build: .
     command: /bin/sh ./boot.sh
@@ -8,3 +10,5 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+    depends_on:
+      - db

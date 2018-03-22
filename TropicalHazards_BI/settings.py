@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd8oitr*x2tshh4^qsv++f*6ggmp&$uo=)_5&^lz7g$9h$-qmn_'
+SECRET_KEY = 'o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -74,10 +74,13 @@ WSGI_APPLICATION = 'TropicalHazards_BI.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+  'default': {
+      'ENGINE': 'django.db.backends.postgresql',
+      'NAME': 'postgres',
+      'USER': 'postgres',
+      'HOST': 'db',
+      'PORT': 5432,
+  }
 }
 
 
