@@ -1,7 +1,9 @@
 <!-- Template de Documento de Arquitetura de Software versão em Markdown-->
-\<Tropical Hazards\>
+# Documento de Arquitetura
+
+<Tropical Hazards\>
 ===================
-Índice Analítico
+Sumário
 ----------------
 * 1. [Introdução](#1-introdução)
     * 1.1 [Finalidade](#11-finalidade)
@@ -25,8 +27,6 @@
 * 10. [Tamanho e Desempenho](#10-tamanho-e-desempenho)
 * 11. [Qualidade](#11-qualidade)
 
-Documento de Arquitetura de Software
-------------------------------------
 
 ## 1. Introdução
 
@@ -71,7 +71,7 @@ No padrão MVC, os componentes estruturais podem ser definidos como:
 
 O Django segue o padrão arquitetural próprio dele mesmo, mais conhecido como MVT. De acordo com o Django Book, o Django segue o padrão MVC suficientemente para ser considerado um framework MVC.
 
-Como funciona o MTV?
+#### Como funciona o MTV?
 
 O MTV separa de forma estrutural o projeto em Django em três partes: <b>Model</b>,  <b>View</b>, <b>Template</b>. Fazendo um paralelo com o modelo MVC clássico, as View agora irão fazer o mesmo papel da Controller, e a camada Template o papel das Views. Assim podemos as seguintes definições:
 
