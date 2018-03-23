@@ -68,34 +68,25 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 *[Esta subseção deve descrever o conteúdo restante do Documento de Arquitetura de Software e explicar como o Documento de Arquitetura de Software está organizado.]*
 
 ## 2. Representação da Arquitetura
+O projeto **Tropical Hazards** será desenvolvido utilizando as frameworks Django, Django Rest e Vue.Js, além do padrão de formatação Json. É importante ressaltar que o framework Django conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
 
-O projeto **Tropical Hazards** utiliza a  arquitetura **MVC**, que organiza o sistema em três partes distintas: Model, Controller e View. Para isso, iremos usar das ferramentas de trabalho (frameworks) Django Rest, VueJS e JSon.
+Apesar da utilização de um padrão arquitetural próprio, o Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
 
-No padrão MVC, os componentes estruturais podem ser definidos como:
+No padrão MVC clássico a aplicação é dividida em três principais componentes interconectados, sendo estes:
+<ul>
+  <li>**Model**: é incumbido de tratar a parte lógica relacionada aos dados, sendo encarregado por definir sua estrutura, consultas e validação destes, atentando, obviamente, às regras de negócio relacionadas ao banco de dados.</li>
+  <li>**View**: é responsável pela visualização gráfica da interface de usuário, definindo, portanto, como ocorrerão as interações com o usuário. Deve-se salientar que a View está em contato direto com a Controller, sendo esta última responsável por provêr os dados que serão renderizadas pela View.</li>
+  <li>**Controller**: efetua a comunicação entre a Model e View. As requisições de usuário são processadas pela Controller que efetua as interações necessárias com a Model, enviando as demandas e recebendo dados que são posteriormente enviados para a View. É nesta camada são definidas as regras de negócio referentes à manipulação do sistema.</li>
 
+![Figure 2-1](http://abap101.com/wp-content/uploads/2011/08/mvc.png "Figura 2.1 - Padrão MVC (Fonte: http://abap101.com/wp-content/uploads/2011/08/mvc.png)")
 
-  **Model**: Responsável pela estruturação, definição das consultas e validação dos dados. Também é neste nível que são definidos a lógica de aplicação e as regras de negócio referente ao banco de dados do sistema.
+<p>Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)</p>
 
-  **View**: É responsável pela definição de como serão feitas todas as interações com o usuário, fazendo contato direto com a camada de controle de onde recebe quais informações serão mostradas. Ou seja, a principal função da View é mostrar a interface gráfica para os usuários e fazer a comunicação com a camada de controle.
-
-  **Controller**: É responsável pela integração da camada View com a Model, é nela que todas as requisições do usuário são recebidas e as ações dentro do sistema são definidas. Nesta camada também são definidas as regras de negócio referentes à manipulação do sistema.
-
-  ![Figure 2-1](http://abap101.com/wp-content/uploads/2011/08/mvc.png "Figura 2.1 - Padrão MVC (Fonte: http://abap101.com/wp-content/uploads/2011/08/mvc.png)")
-
-  <p>Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)</p>
-
-O **Django** segue o padrão arquitetural próprio dele mesmo, mais conhecido como **MVT**. De acordo com o Django Book, o Django segue o padrão MVC suficientemente para ser considerado um framework MVC.
-
-#### Como funciona o MTV?
-
-O MTV separa de forma estrutural o projeto em Django em três partes: **Model**,  **View**, **Template**. Fazendo um paralelo com o modelo MVC clássico, as View agora irão fazer o mesmo papel da Controller, e a camada Template o papel das Views. Assim podemos as seguintes definições:
-
-**Model**: As models do MTV e MVC podem ser consideradas equivalentes em questão de responsabilidade. O framework Django facilita na interface com o banco de dados. Esta camada contém qualquer coisa e tudo sobre os dado: acesso de dados, validação e quais comportamentos se relacionam entre os dados.
-
-**View**: As views são responsáveis pelas regras que serão apresentadas no nosso sistema. A camada view é onde ela irá se comunicar com a Model e a Template, cadastrando e tratando as informações recebidas. Retornando uma resposta para o usuário.
-
-**Template**:  Templates é a camada que retorna a visão para o usuário do programa. Essa camada é composta por, HTML,CSS, javascript e etc. Geralmente linguagens focadas na apresentação do site para o usuário.
-
+No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Model**, **View**, **Template**. Fazendo um paralelo com o modelo MVC clássico, a View e o Template do MVT assemelham-se, respectivamente, com a Controller e a View do MVC. Essas partes podem ser melhor definidas como:
+<ul>
+  <li>**Model**: a Model do MVT pode ser considerada equivalende a do MVC em termos de responsabilidade, entretanto deve-se notar que o Framework Django facilita na interface com o banco de dados.</li>
+  <li>**View**: na View está contida a lógica de negócio, possuindo a lógica que define o acesso a Model e sendo responsável por enviar e definidos quais dados serão exibidos na camada de Template, assemelhando-se, conforme dito anteriormente, a camada Controller do MVC clássico.</li>
+  <li>**Template**: nesta camada são definidos como os dados recebidos através da View serão exibidos ao usuário, sendo, esta camada, responsável por renderizar a interface gráfica do usuário, tal qual a camada View no MVC clássico.</li>
 ![Figure 2-2](https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png "Figura 2.2 - Padrão MTV")
 <p>Figura 2.2 - Padrão MTV (Fonte : https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png)</p>
 
