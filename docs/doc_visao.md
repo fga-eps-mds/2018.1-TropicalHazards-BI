@@ -24,65 +24,69 @@
 
 # Sumário
 
-1.[Introdução](#)
+1.[Introdução](#introducao)
 
- 1.1 [Propósito](#)
+ 1.1 [Propósito](#proposito)
 
- 1.2 [Escopo](#)
+ 1.2 [Escopo](#escopo)
 
- 1.3 [Definições, acrônimos e abreviações](#)
+ 1.3 [Definições, acrônimos e abreviações](#definicoes)
 
- 1.4 [Referências](#)
+ 1.4 [Referências](#referencias)
 
- 1.5 [Visão Geral](#)
+ 1.5 [Visão Geral](#visaogeral)
 
-2.[Posicionamento](#)
+2.[Posicionamento](#posicionamento)
 
- 2.1 [Oportunidade de Negócio](#)
+ 2.1 [Oportunidade de Negócio](#oportunidade)
 
- 2.2 [Descrição do Problema](#)
+ 2.2 [Descrição do Problema](#descricaoproblema)
 
- 2.3 [Instrução de Posição do Produto](#)
+ 2.3 [Instrução de Posição do Produto](#introducaoposicao)
 
-3.[Descrições da parte interessada e dos Usuários](#)
+3.[Descrições da parte interessada e dos Usuários](#descricaoparteinteressada)
 
- 3.1 [Resumo dos Usuários](#)
+ 3.1 [Resumo dos Usuários](#resumousuario)
 
- 3.2 [Ambiente do Usuário](#)
+ 3.2 [Ambiente do Usuário](#ambienteusuario)
 
- 3.3 [Perfis dos Envolvidos](#)
+ 3.3 [Perfis dos Envolvidos](#perfisenvolvidos)
 
- 3.4 [Perfis dos Usuários](#)
+ 3.4 [Perfis dos Usuários](#perfisusuarios)
 
- 3.5 [Principais Necessidades dos Usuários ou dos Envolvidos](#)
+ 3.5 [Principais Necessidades dos Usuários ou dos Envolvidos](#principainecessidades)
 
- 3.6 [Alternativas e Concorrência](#)
+ 3.6 [Alternativas e Concorrência](#alternativasconcorrencia)
 
-4.[Visão Geral do Produto](#)
+4.[Visão Geral do Produto](#visaogeral)
 
-5.[Recursos do Produto](#)
+5.[Recursos do Produto](#recursoproduto)
 
-6.[Restrições](#)
+6.[Restrições](#restricoes)
 
- 6.1 [Restrições de Design](#)
+ 6.1 [Restrições de Design](#restricoesdesign)
 
- 6.2 [Restrições de Implementação](#)
+ 6.2 [Restrições de Implementação](#restricoesimplementacao)
 
- 6.3 [Restrições de Segurança](#)
+ 6.3 [Restrições de Segurança](#restricaoseguranca)
 
- 6.4 [Restrições de Uso](#)
+ 6.4 [Restrições de Uso](#restricoesuso)
 
+ <a name="introducao"></a>
 # 1. Introdução
 
+<a name="proposito"></a>
 ## 1.1	Propósito
 
 <p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>Webapp</em> Tropical Hazards BI deixando claro o seu escopo, funcionalidade e objetivo da aplicação.</p>
 
+<a name="escopo"></a>
 ## 1.2	Escopo
 
 <p align= "justify">O projeto Tropical Hazards BI tem como finalidade suprir uma necessidade dos pesquisadores e profissionais de saúde da NMT da Unb de receber dados referentes a doenças tropicais, fazer uma análise estatística dos dados recebidos, mostrar indicadores e dados para os profissionais e público interessado.</p>
 <p align="justif">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios.</p>
 
+<a name="definicoes"></a>
 ## 1.3	Definições, acrônimos e abreviações
 
 <ul>
@@ -94,6 +98,7 @@
 <li>NMT - Núcleo de medicina tropical</li>
 </ul>
 
+<a name="referencias"></a>
 ## 1.4 Referências
 
 IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: <https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_3.0.1/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.htm>. Acesso em: 22 ago. 2017;
@@ -103,6 +108,7 @@ PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. 
 BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELOS, Filipe; SOUSA, André. Projeto Escola X: Documento de Visão. Disponível em: https://github.com/fga-gpp-mds/2017.1-Escola-X/wiki. Acesso em 22 ago. 2017;
 
 
+<a name="visaogeral"></a>
 ## 1.5 Visão geral
 
 <p align ="justify">Este documento é dividido em 7 tópicos descrevendo os detalhes das características do software proposto. Sendo dividido em:</p>
@@ -115,10 +121,11 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 <li><strong>Restrições</strong>: as restrições de design, restrições externas, como requisitos operacionais ou regulamentares;</li>
 </ul>
 
-
+<a name ="posicionamento"></a>
 <h1>2. Posicionamento</h1>
 
 
+<a name="oportunidade"></a>
 <h2>2.1 Oportunidade de Negócio</h2>
 
 <p align = "justify"> Pesquisadores da Universidade de Brasília(Unb) precisam resolver um problema de automatizar a análise estatística de dados referentes as doenças tropicais, sendo que esses dados não possuem um padrão definido.</p>
@@ -128,6 +135,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 <p align = "justify">Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
 
 
+<a name="descricaoproblema"></a>
 ### 2.2 Descrição do problema
 
 <table>
@@ -183,8 +191,8 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 </table>
 
+<a name="introducaoposicao"></a>
 ## 2.3 Instrução de Posição do Produto
-
 <table>
 
    <tr>
@@ -221,6 +229,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 </table>
 
+<a name="descricaoparteinteressada"></a>
 # 3. Descrições da parte interessada e dos Usuários
 
 
@@ -261,6 +270,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 </table>
 
 
+<a name="resumousuario"></a>
 ## 3.1 Resumo dos Usuários
 
 <table>
@@ -284,14 +294,15 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 </table>
 
+<a name="ambienteusuario"></a>
 ## 3.2 Ambiente do Usuário
 O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer, Firefox, Opera e Edge.
 
 
+<a name="perfisusuarios"></a>
 ## 3.3 Perfis dos Envolvidos
 
 O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada ao ensino de pós-graduação, pesquisa e extensão na área de Doenças Tropicais e demais temas de interesse amazônico.
-
 
 
 ## 3.3.1 Equipe de Desenvolvimento
@@ -427,6 +438,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
    </tr>
 </table>
 
+<a name="cliente"></a>
 ## 3.3.4 Cliente
 
 <table>
@@ -473,6 +485,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
    </tr>
 </table>
 
+<a name="perfisusuarios"></a>
 ## 3.4 Perfis dos Usuários
 
 ## 3.4.1 Pesquisadores
@@ -565,11 +578,13 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
    </tr>
 </table>
 
+<a name="principainecessidades"></a>
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
 <p align="justify">Os pesquisadores do NMT possuem um problema de visualização dos dados de seus diferentes projetos, pois não há comunhão de tecnologias nem um modelo padronizado de dashboard e observatório de dados onde esses possam ser compartilhados de forma eficiente.</p>
 <p align="justify"> Logo a principal necessidade dos usuários é a criação de um sistema onde tais dados possam ser inseridos, analisados e compartilhadaos de forma organizada e eficiente. </p>
 
+<a name="alternativasconcorrencia"></a>
 ## 3.6 Alternativas e Concorrência
 
 ##### 3.6.1 Website: <em>World Health Organization</em>
@@ -577,11 +592,13 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 ![World Health Organization](https://i.imgur.com/JkPqNdD.png)
 </p>
 
+<a name="visaogeral"></a>
 # 4. Visão Geral do Produto
 
 <p align="justify">O sistema contará com uma plataforma online capaz de disponibilizar dados a respeito de doenças tropicais, fornecendo mecanismos para pesquisadores e profissionais da saúde acessarem através de um dashboard, os indicadores gerados por meio de informações dos projetos do NMT. Além disso, esta plataforma contará com uma interface para os usuários comuns visualizarem os dados sobre doenças tropicais.
 </p>
 
+<a name="recursoproduto"></a>
 # 5. Recursos do Produto
 
 <p>O sistema oferece as seguintes funcionalidades aos usúarios:</p>
@@ -600,14 +617,17 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
 <p align="justify">O desing devera ser simples e elegante, visando também a facilidade do seu uso, para que os usuarios possam utilizar o sistema de forma intuitiva.</p>
 
+<a name="restricoesimplementacao"></a>
 ## 6.2 Restrições de Implementação
 <p align="justify">Criação de um modelo padronizado de observatório/dashboard através de uma plataforma web, onde profissionais da saude possam submeter dados de pesquisa para o geramento de estatísticas e centralização dos dados a sobre o tema doenças tropicais. Além disso é necessario que haja um portal para que a população geral possa ter acesso a estes indicativos, disponibilizando também os dados através de um ponto de acesso remoto (API).</p>
 
+<a name="restricaoseguranca"></a>
 ## 6.3 Restrições de Segurança
 
 <p align="justify">Devido o fato de que pesquisadores poderem ser contribuidores para a alimentação da base de dados do sistema, é necessario que haja uma certificação que os usuarios contribuintes sejam somente pessoas credenciadas. Para que assim possamos garantir a qualidade dos dados armazenados.</p>
 
 
+<a name="restricoesuso"></a>
 ## 6.4 Restrições de Uso
 
 <p align="justify">Para o uso do sistema é necessário que os usuários tenham acesso a um dispositivo conectado à internet e que possua um navegador web compatível com o sistema. Caso o usuário do sistema não possua acesso à internet, o sistema deve mostrar uma página de erro.</p>
