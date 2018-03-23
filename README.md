@@ -17,6 +17,9 @@
 
   Se você quiser saber como utilizar o sistema ou como o mesmo foi projetado, a [documentação](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/tree/master/docs) do projeto pode ser encontrada no link em destaque ou pode ser acessada através do [github pages](https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI) do projeto. Para contribuir com o projeto solicitamos que acesse o nosso [guia de contribuição]().
 
+## Repositórios
+  Foram criados dois repositórios para o desenvolvimento do sistema, divididos em back-end e [front-end](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd). No segundo repositório estão as dependências e configurações para o ambiente de desenvolvimento com vue.js . O repositório atual é dedicado ao back-end, assim como a documentação do sistema.
+
 ## Instalação
   Nesta seção está descrito cada passo necessário para a configuração e utilização da aplicação.
 
