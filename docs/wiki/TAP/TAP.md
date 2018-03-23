@@ -103,7 +103,80 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 <p align="justify">
   
 </p>
-<p align="justify"></p>
+
+### 8.2. Equipamentos de Trabalho
+<p align="justify">
+  Para a efetiva realização das atividades relacionadas ao projeto, cada integrante da equipe de trabalho necessitará
+  de um notebook, para a codificação do projeto e para a elaboração de documentos; e um smartphone, para garantir a comunicação entre os membros da equipe.<br>
+  Os requisitos mínimos para cada um desses aparelhos são:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Equipamento</th>
+      <th>Requisitos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Smartphone</td>
+      <td>
+        <ul>
+          <li>Sistema Operacional Android versão 6 ou superior.</li>
+          <li>2Gb de memória RAM.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Notebook</td>
+      <td>
+        <ul>
+          <li>500Gb de HDD.</li>
+          <li>Mínimo de 4Gb de memória RAM</li>
+          <li>Processador core i5-7200u ou superior.</li>
+          <li>Sistema operacional Linux baseado em Debian.</li>
+          <li>Carregador bivolt.</li>          
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="justify">
+  Com base nos requisitos listados acima, e após minuciosa pesquisa no mercado nacional, foi levantada a seguinte tabela de custos de equipamento:
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Equipamento</th>
+      <th>Nome</th>
+      <th>Preço unit.</th>
+      <th>Quantidade</th>
+      <th>Custo final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Smartphone</td>
+      <td>Xiaomi Redmi4x</td>
+      <td>R$ 669,50</td>
+      <td>10</td>
+      <td>R$ 6.695,00</td>
+    </tr>
+    <tr>
+      <td>Notebook</td>
+      <td>Acer aspire ES1-572-52M5</td>
+      <td>R$ 1.999,99</td>
+      <td>10</td>
+      <td>R$ 19.999,90</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="justify">
+  Assim, o orçamento a ser gasto com os equipamentos de trabalho é de <strong>R$ 26.694,90</strong>.
+</p>
 
 
 ## 9. Lista das partes interessadas
