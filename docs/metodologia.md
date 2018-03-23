@@ -3,7 +3,7 @@
 ### Scrum Master
 O Scrum Master é responsável por dar suporte a implementação do Scrum durante todo o processo. O Scrum master faz isso ajudando todos os membros do time a entender quais os valores, práticas e regras do Scrum.
 
-**A principal responsabilide desse papel é identificar os riscos e impedimentos enfretados pelos membros do time e responder o mais rápido possível com o objetivo de mitigá-los.**
+**A principal responsabilidade desse papel é identificar os riscos e impedimentos enfrentados pelos membros do time e responder o mais rápido possível com o objetivo de mitigá-los.**
 
 **Responsabilidades:**
 - Garantir que o Time Scrum entenda os rituais e regras da metodologia
@@ -16,7 +16,19 @@ O Scrum Master é responsável por dar suporte a implementação do Scrum durant
 
 ### Product Owner
 
+
 ### Arquiteto
+O Arquiteto do Software é o responsável por conhecer profundamente o projeto e negócio do sistema desenvolvido, necessitando de um alto conhecimento técnico para garantir a visualização da arquitetura do sistema em alto nível para o resto da equipe, permitindo a compreensão de componentes, conectores e interfaces do software.
+
+**A principal responsabilidade desse papel é garantir que a estrutura do software esteja organizada de modo que os componentes mais significantes do sistema sejam compostos de sistemas e interfaces sucessivamente menores.**
+
+**Responsabilidades:**
+* Garantir que a equipe possa visualizar o que é fundamental para a compreensão de um sistema em seu ambiente.
+* Estar sempre atualizado em relação a evolução do código e do produto.
+* Definir/Criar e especificar frameworks, padrões e técnicas para o projeto.
+* Garantir que a equipe adote um design de componentização.
+* Promover o desenvolvimento de um sistema com mais pontos de reutilização.
+* Comunicar interações e dependências de componentes para os desenvolvedores.
 
 ### DevOps
 O especialista *DevOps* é o responsável pela criação, manutenção e evolução da infraestrutura operacional do projeto, evitando que problemas relacionados a mesma afetem a equipe de desenvolvimento ou o produto.
