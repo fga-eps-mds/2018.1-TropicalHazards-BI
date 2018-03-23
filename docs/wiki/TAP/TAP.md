@@ -178,6 +178,59 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
   Assim, o orçamento a ser gasto com os equipamentos de trabalho é de <strong>R$ 26.694,90</strong>.
 </p>
 
+### 8.3. Licenças de serviços
+<p align="justify">
+  A equipe do projeto optou pelo uso de softwares livres para serem usados durante toda a vida útil do projeto, acarretando em nenhum custo com a aquisição de softwares.
+</p>
+
+### 8.4. Serviços
+<p align="justify">
+  Não será necessário para a equipe de projeto que sejam feitos contratos de serviços externos.
+</p>
+
+### 8.5. Totais
+<p align="justify">
+  Levando em conta os custos retratados anteriormente, e levando em conta uma margem de segurança de orçamento de 15% do valor total, se obtém a seguinte tabela contendo o resultado orçamentário final:
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Área</th>
+      <th>Custo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recursos humanos</td>
+      <td>R$ ,</td>
+    </tr>
+    <tr>
+      <td>Equipamentos</td>
+      <td>R$ 26.694,90</td>
+    </tr>
+    <tr>
+      <td>Licensas</td>
+      <td>R$ 0,00</td>
+    </tr>
+    <tr>
+      <td>Serviços</td>
+      <td>R$ ,</td>
+    </tr>
+    <tr>
+      <td><strong>Custo previsto</strong></td>
+      <td>R$ ,</td>
+    </tr>
+    <tr>
+      <td><strong>Margem de segurança (15%)</strong></td>
+      <td>R$ ,</td>
+    </tr>
+    <tr>
+      <td><strong>Custo total</strong></td>
+      <td><strong>R$ ,</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ## 9. Lista das partes interessadas
 <ul>
