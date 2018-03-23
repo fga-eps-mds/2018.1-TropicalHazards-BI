@@ -81,7 +81,7 @@
 ## 1.2	Escopo
 
 <p align= "justify">O projeto Tropical Hazards BI tem como finalidade suprir uma necessidade dos pesquisadores e profissionais de saúde da NMT da Unb de receber dados referentes a doenças tropicais, fazer uma análise estatística dos dados recebidos, mostrar indicadores e dados para os profissionais e público interessado.</p>
-<p align="justif">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios</p>
+<p align="justif">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios.</p>
 
 ## 1.3	Definições, acrônimos e abreviações
 
@@ -123,7 +123,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 <p align = "justify"> Pesquisadores da Universidade de Brasília(Unb) precisam resolver um problema de automatizar a análise estatística de dados referentes as doenças tropicais, sendo que esses dados não possuem um padrão definido.</p>
 
-<p align = "justify">Para o profissional de saúde e pesquisadores o, <em>webapp</em> terá uma série de ferramentas para utilizar e gerenciar dados com indicadores.</p>
+<p align = "justify">Para o profissional de saúde e pesquisadore, o <em>webapp</em> serão disponibilizadas ferramentas para utilizar e gerenciar dados.</p>
 
 <p align = "justify">Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
 
@@ -134,7 +134,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
    <tr>
 	   	<td><strong>O problema </strong> </td>
-	   	<td>Falta de informações sobre doenças tropicais.></td>
+	   	<td>Compartilhar as informações tanto para os profissionais da NMT quanto para a população.></td>
    </tr>
 
 
@@ -194,7 +194,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
    <tr>
 	   	<td><strong>Necessidade</strong> </td>
-	   	<td>Desejam uma plataforma para consulta e analise de dados a respeito de doenças tropicais.</td>
+	   	<td>Desejam uma plataforma para consulta e análise de dados a respeito de doenças tropicais.</td>
    </tr>
 
 
@@ -344,7 +344,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>André Filho, Arthur Assis, Iago Carvalho, Mateus Batista, Renata Souza</td>
+	   	<td>André Filho, Arthur Assis, Iago Carvalho, Matheus Batista, Renata Souza</td>
    </tr>
 
 
@@ -388,7 +388,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
    <tr>
 	   	<td><strong>Representante</strong></td>
-	   	<td>Dra. Carla Rocha, Coaches de EPS, Coaches de MDS</td>
+	   	<td>Dra. Carla Rocha, Coachs</td>
    </tr>
 
 
@@ -474,8 +474,6 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 </table>
 
 ## 3.4 Perfis dos Usuários
-
-Usúarios interessados em saber sobre as doenças tropicais.
 
 ## 3.4.1 Pesquisadores
 
@@ -588,13 +586,12 @@ Usúarios interessados em saber sobre as doenças tropicais.
 
 <p>O sistema oferece as seguintes funcionalidades aos usúarios:</p>
 <ul>
-	<li>Gerenciar e manter usúarios: Tanto os pesquisadores e profissionais de saúde quanto os interessados poderão ser cadastrados no sistema, de forma que consegue adicionar, remover, ou alterar informações relacionadas aos seus perfis.</li>
+	<li>Gerenciar e manter usúarios: Tanto os pesquisadores quanto os profissionais de saúde poderão ser cadastrados no sistema, de forma que consegue adicionar, remover, ou alterar informações relacionadas aos seus perfis.</li>
 	<li>Facilitar para os pesquisadores e profissionais de saúde o gerenciamento de dados, levantamento de indicadores e exportação de dados.</li>
-	<li>Diminuir os erros causados devido a falta de organização e padronização dos dados</li>
-	<li>Disponibilizar indicadores que auxiliam da prevenção de tais doenças tropicais</li>
-	<li>Resolver o problema de visualização de dados dos diferentes projetos da NMT. Não há comunhão de tecnologias e não há nenhum modelo padronizado de observatório/dashboard.</li>
-	<li>Muito das vezes a apresentação é offline, via arquivo ou na máquina do pesquisador.Isso gera uma bagunça enorme e uma grande dificuldade de compartilhar informação, nosso Software procura resolver esse problema de compartilhamento da informação.</li>
-	<li>Centralizar a análise dos dados e dos indicadores, para poder compartilhar isso entre os próprios profissionais da saúde e a população em geral.</li>
+	<li>Otimizar o tempo gasto pelo usuário profissional da saúde e Pesquisadores para fazer o compartilhamento de dados</li>
+	<li>Permitir a visualização de dados dos diferentes projetos da NMT.</li>
+	<li>Padronizar os dados fornecidos pelos Profissionais de saúde e Pesquisadores da NMT.</li>
+	<li>Disponibilizar para o usuário comum informações que sejam do seu interesse</li>
 </ul>
 
 <h1> 6. Restrições</h1>
@@ -608,7 +605,7 @@ Usúarios interessados em saber sobre as doenças tropicais.
 
 ## 6.3 Restrições de Segurança
 
-<p align="justify">Devido o fato de que pesquisadores poderem ser cotribuidores para a alimentação da base de dados do sistema, é necessario que haja uma certificação que os usuarios contribuintes sejam somente pessoas credenciadas. Para que assim possamos garantir a qualidade dos dados armazenados.</p>
+<p align="justify">Devido o fato de que pesquisadores poderem ser contribuidores para a alimentação da base de dados do sistema, é necessario que haja uma certificação que os usuarios contribuintes sejam somente pessoas credenciadas. Para que assim possamos garantir a qualidade dos dados armazenados.</p>
 
 
 ## 6.4 Restrições de Uso
