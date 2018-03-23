@@ -1,30 +1,7 @@
-<style>
-    table a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    tr td:last-child {
-      font-size: 0.85em; 
-      font-weight: bold;
-      background: #339933; 
-      color: white; 
-      text-align: center;
-    }
-
-    tr td:last-child.tdDebito {
-      background: #991111; 
-    }
-
-    .tdDebito a {
-      color: white;
-    }
-</style>
-
 # Planejamento da [Sprint 02](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/6)
 
 ### Foco 
-Preparando time para codar
+Preparando time para codar.
 
 ## Datas
 **Data de início:** 17/03/2018
@@ -32,29 +9,6 @@ Preparando time para codar
 **Data de termino:** 23/03/2018
 
 ## Backlog
-
-<style>
-table a {
-  text-decoration: none;
-  color: inherit;
-}
-
-tr td:last-child {
-  font-size: 0.85em; 
-  font-weight: bold;
-  background: #339933; 
-  color: white; 
-  text-align: center;
-}
-
-tr td:last-child.tdDebito {
-  background: #991111; 
-}
-
-.tdDebito a {
-  color: white;
-}
-</style>
 
 <table style="text-align:center">
   <thead>
@@ -179,9 +133,19 @@ Especialista de UX\UI: André de Sousa
 Product Owner: Renata Souza
 
 ## Pareamento
+Sem pareamentos definidos ainda, a equipe está se auto-organizando de forma entregar as documentações necessárias.
 
 ## Focos de melhoria
 
-### Deixar claro o escopo do projeto para toda equipe.
-O escopo do projeto permanece obscuro para os membros da equipe.
+### Comunicação
+A comunicação entre a equipe ainda está deixando a desejar, alguns membros não adotaram completamente o Slack, que está sendo utilizado como principal meio de comunicação.
+
+### Escopo
+O escopo ainda não está claro para a equipe, existe muitas dúvidas sobre o que entrará ou não no escopo do projeto, pois o problema gira em torno de vários sub-projetos.
+
+### Organização
+O planejamento da Sprint passada deixou muito a desejar, pois não foi feito de forma organizada, foi uma reunião emergencial.
+
+### Organização de MDS
+Os membros do time de MDS estão sofrendo com problemas de comunicação entre os membros do time, logo eles não conseguem organizar a realização das tarefas.
 
