@@ -68,9 +68,12 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 *[Esta subseção deve descrever o conteúdo restante do Documento de Arquitetura de Software e explicar como o Documento de Arquitetura de Software está organizado.]*
 
 ## 2. Representação da Arquitetura
-O projeto **Tropical Hazards** será desenvolvido utilizando as frameworks Django, Django Rest e Vue.Js, além do padrão de formatação Json. É importante ressaltar que o framework Django conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
 
-Apesar da utilização de um padrão arquitetural próprio, o Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
+A arquitetura utilizada contém dois ambientes diferentes para a nossa aplicação, o ambiente de controle de dados que é conhecido como API e o ambiente para interação com o usuário, conhecido popularmente como frontend.
+
+Com relação a API o  projeto **Tropical Hazards** será desenvolvido utilizando o framework Django Rest, que conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
+
+Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
 
 No padrão MVC clássico a aplicação é dividida em três principais componentes interconectados, sendo estes:
 <ul>
@@ -90,11 +93,13 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
 ![Figure 2-2](https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png "Figura 2.2 - Padrão MTV")
 <p>Figura 2.2 - Padrão MTV (Fonte : https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png)</p>
 
-Apesar do Django fornecer um apoio para a criação de templates e formas de definir interações com os usuários, há ferramentas mais atuais que oferecem mais recursos principalmente quanto a parte de front-end do sistema. Devido a este fato, utilizaremos a ferramenta VueJS para a criação de interfaces.
 
-O **VueJS**  é um framework de JavaScript, progressivo para a construção de interfaces de usuário, onde é possível construir sistemas com interfaces reativas, modularizadas e de sintaxe clara. Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django. Assim, é necessário que haja uma integração entre as duas ferramentas. Para isso utilizaremos a formatação JSON.
+No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
+
+Este framework de JavaScript possibilita o desenvolvimento de interfaces para o usuários com componentes reativos, ou seja pedaços de código reaproveitáveis formados por marcação, estilo e comportamento.  Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django, para isso utilizaremos a formatação JSON.  
 
 O **JSON** é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
+
 
 
 ## 3. Metas e Restrições de Arquitetura
