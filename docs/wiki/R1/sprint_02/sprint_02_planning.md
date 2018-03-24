@@ -102,10 +102,17 @@ Preparando time para codar.
     </tr>
     <tr>
       <td>
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/18">18</a>
+      </td>
+      <td>Treinamento de Vue.ks</td>
+      <td><b>3</b></td>
+      <td>Nova</td>      
+    <tr>
+      <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/7">7</a>
       </td>
       <td>Produzir artefato RoadMap</td>
-      <td><b>7</b></td>
+      <td><b>8</b></td>
       <td class="tdDebito">Débito - <a href="">Sprint 01</a></td>      
     </tr>
     <tr>
@@ -119,7 +126,7 @@ Preparando time para codar.
   </tbody>
 </table>
 
-**Total de pontos**: 31 
+**Total de pontos**: 35 
 
 ## Papéis
 Scrum Master: Matheus Batista
