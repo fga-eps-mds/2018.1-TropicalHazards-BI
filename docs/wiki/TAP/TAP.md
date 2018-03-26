@@ -25,12 +25,11 @@
 [12. Referências]()
 
 
-## 1. Introdução.
-<p align = "justify">O presente documento apresenta um panorama inicial do projeto Tropical Hazards BI com a apresentação das partes interessadas, contexto de sua aplicação e viabilidade de sua implementação.
-
+## 1. Introdução
+<p align = "justify">O presente documento tem como objetivo fomalizar o início do projeto Tropical Hazards BI, descrevendo o planejamento inicial de custos, riscos, tempo, restrições e cronograma de marcos. Assim como expor os objetivos e contexto de aplicação da solução e as partes interessadas envolvidas no projeto.
 
 ## 2.Descrição do Projeto
-<p align = "justify">O Tropical Hazards BI é um sistema de Observatório de Dados direcionado para pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical (NMT) da Universidade de Brasília (UNB) que visa atender à necessidade de visualização de dados dos seus diferentes projetos em uma mesma plataforma.
+<p align = "justify">O Tropical Hazards BI é um sistema de Observatório de Dados direcionado para pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical (NMT) da Universidade de Brasília (UNB) que visa atender à necessidade de visualização de dados e geração de indicadores dos seus diferentes projetos em uma mesma plataforma.
 
 
 ## 3. Propósito e Justificativa do Projeto
@@ -38,9 +37,8 @@
 <p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.
 
 
-## 4. Objetivos do Projeto
-<p align = "justify">O objetivo do projeto Tropical Hazards BI é fornecer uma melhor visualização dos dados relacionados às pesquisas de diferentes projetos do NMT  e ainda permitir a análise estatística dos dados recebidos, exibir indicadores e dados para os profissionais e público interessado em uma plataforma de informações centralizada.
-
+## 4. Objetivos do Projeto(SMART)
+<p align = "justify">O objetivo do projeto é criar um obeservatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. E tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados 
 
 ## 5. Requisitos de Alto Nível
 <p align = "justify"> O Tropical Hazards BI será uma plataforma web que concentre a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:
@@ -97,29 +95,57 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 
 ## 8. Custo Estimado do Projeto
 ### 8.1. Recursos Humanos
-<p align="justify">
-  Os custos relacionados à recursos humanos abrangem a equipe de desenvolvimento e a equipe de gerência.
-</p>
-<p align="justify">
-  A fórmula para cálculo do custo por hora trabalhada de cada integrante da equipe se dá pela seguinte fórmula:
-</p>
-![fórmula 1](https://raw.githubusercontent.com/wiki/fga-gpp-mds/2017.2-Grupo8/images/eq_1.png)
-<p align="justify">
-  Sendo que <b>Ch</b> representa o custo por hora de trabalho, <b>Ca</b> o custo anual mΰedio de um aluno da UnB e <b>Ha</b> o número de horas gastos por um aluno de Engenharia de Software em um ano, calculado da seguinte forma:
-</p>
-![formula 2](https://raw.githubusercontent.com/wiki/fga-gpp-mds/2017.2-Grupo8/images/eq_2.png)
-<p align="justify">
-  
-</p>
+<p align="justify">O valor médio de um aluno de Engenharia de Software da UnB, de acordo com o Relatório de Gestão 2016<a href="">³</a>, é R$ 26.040,00. Levando em consideração o tempo de curso de 5 anos (10 semestres) e a necessidade da obtenção de 240 créditos para a graduação, estima-se que cada aluno pegue 24 créditos por semestre,e, por isso, 48 por ano. Como cada crédito é estimado em 15 horas por aula tem-se o seguinte custo por hora de cada aluno:
+<p align="justify"><b>26.040 / (15*48) = 36,17</b>
+
+A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenharia de Software da UnB. Considerando que cada membro trabalhará 10 horas por semanae cada Coach auxiliará a equipe durante 2 horas por semana durante as 18 semanas de desenvolvimento do projeto, temos o seguinte custo: 
+<table style="text-align: center">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Quantidade</th>
+            <th>Horas/semana</th>
+            <th>Semanas</th>
+            <th>Preço por membro</th>
+            <th>Custo Final</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Membros</b></td>
+            <td>10</td>
+            <td>10</td>
+            <td>18</td>
+            <td>36,17</td>
+            <td>65.106,00</td>
+        </tr>
+        <tr>
+            <td><b>Coachs</b></td>
+            <td>3</td>
+            <td>2</td>
+            <td>18</td>
+            <td>36,17</td>
+            <td>3.906,36</td>
+        </tr>
+        <tr>
+            <td><b>Total</b></td>
+            <td>13</td>
+            <td>12</td>
+            <td>18</td>
+            <td>36,17</td>
+            <td><b>69.012,36</b></td>
+        </tr>
+    </tbody>
+</table>
 
 ### 8.2. Equipamentos de Trabalho
 <p align="justify">
   Para a efetiva realização das atividades relacionadas ao projeto, cada integrante da equipe de trabalho necessitará
-  de um notebook, para a codificação do projeto e para a elaboração de documentos; e um smartphone, para garantir a comunicação entre os membros da equipe.<br>
-  Os requisitos mínimos para cada um desses aparelhos são:
+  de um notebook, para a codificação do projeto e para a elaboração de documentos e internet banda larga.<br>
+  Os requisitos mínimos para cada um desses aparelhos e serviços são:
 </p>
 
-<table>
+<table style="text-align: center">
   <thead>
     <tr>
       <th>Equipamento</th>
@@ -127,15 +153,6 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Smartphone</td>
-      <td>
-        <ul>
-          <li>Sistema Operacional Android versão 6 ou superior.</li>
-          <li>2Gb de memória RAM.</li>
-        </ul>
-      </td>
-    </tr>
     <tr>
       <td>Notebook</td>
       <td>
@@ -148,13 +165,13 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
         </ul>
       </td>
     </tr>
-  </tbody>
+      </tbody>
 </table>
 
 <p align="justify">
   Com base nos requisitos listados acima, e após minuciosa pesquisa no mercado nacional, foi levantada a seguinte tabela de custos de equipamento:
 </p>
-<table>
+<table style="text-align: center">
   <thead>
     <tr>
       <th>Equipamento</th>
@@ -166,20 +183,13 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
   </thead>
   <tbody>
     <tr>
-      <td>Smartphone</td>
-      <td>Xiaomi Redmi4x</td>
-      <td>R$ 669,50</td>
-      <td>10</td>
-      <td>R$ 6.695,00</td>
-    </tr>
-    <tr>
       <td>Notebook</td>
       <td>Acer aspire ES1-572-52M5</td>
       <td>R$ 1.999,99</td>
       <td>10</td>
       <td>R$ 19.999,90</td>
     </tr>
-  </tbody>
+   </tbody>
 </table>
 
 <p align="justify">
@@ -193,9 +203,52 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 
 ### 8.4. Serviços
 <p align="justify">
-  Não será necessário para a equipe de projeto que sejam feitos contratos de serviços externos.
+ Para a realização das atividades do projeto é necessário acesso a Internet Banda larga com o seguintes requisitos mínimos:
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Equipamento</th>
+      <th>Requisitos</th>
+  <tbody>
+    <tr>
+      <td>Internet</td>
+      <td>
+        <ul>
+          <li>Banda Larga.</li>
+          <li>20MB de velocidade.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p align="justify">
+  Com base nos requisitos listados acima, e após análise de mercado, foi levantada a seguinte tabela de custos:
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Serviço</th>
+      <th>Nome</th>
+      <th>Preço unit.</th>
+      <th>Quantidade</th>
+      <th>Tempo(meses)</th>
+      <th>Custo final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Internet</td>
+      <td>NET Banda larga de 20MB</td>
+      <td>R$ 59,90</td>
+      <td>10</td>
+      <td>5</td>
+      <td>R$ 2.995,00</td>
+    </tr>
+  </tbody>
+</table>
+   
 ### 8.5. Totais
 <p align="justify">
   Levando em conta os custos retratados anteriormente, e levando em conta uma margem de segurança de orçamento de 15% do valor total, se obtém a seguinte tabela contendo o resultado orçamentário final:
@@ -211,11 +264,11 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
   <tbody>
     <tr>
       <td>Recursos humanos</td>
-      <td>R$ ,</td>
+      <td>R$ 69.012,36</td>
     </tr>
     <tr>
       <td>Equipamentos</td>
-      <td>R$ 26.694,90</td>
+      <td>R$ 19.999,90</td>
     </tr>
     <tr>
       <td>Licensas</td>
@@ -223,19 +276,19 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
     </tr>
     <tr>
       <td>Serviços</td>
-      <td>R$ ,</td>
+      <td>R$ 2.995,00</td>
     </tr>
     <tr>
       <td><strong>Custo previsto</strong></td>
-      <td>R$ ,</td>
+      <td>R$ 92.007,26</td>
     </tr>
     <tr>
       <td><strong>Margem de segurança (15%)</strong></td>
-      <td>R$ ,</td>
+      <td>R$ 13.801,09</td>
     </tr>
     <tr>
       <td><strong>Custo total</strong></td>
-      <td><strong>R$ ,</strong></td>
+      <td><strong>R$ 105.808,35</strong></td>
     </tr>
   </tbody>
 </table>
@@ -331,7 +384,9 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
 <ul>
   <li>PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. - EUA: Project Management Institute, 2013</li>
 
-  <li>MONTES, Eduardo. TERMO DE ABERTURA DO PROJETO. Disponível em <https://escritoriodeprojetos.com.br/termo-de-abertura-do-projeto> Acesso em 05/04/2017</li>
+  <li>Relatório de Gestão, Universidade de Brasília. Disponível em &lthttp://www.dpo.unb.br/index.php?option=com_phocadownload&view=category&download=558:relatorio-2016&id=1:relatorio-de-gestao&Itemid=675&gt</li>
 
-  <li>BUILDER, Project. O QUE É TERMO DE ABERTURA DO PROJETO. Disponível em <http://www.projectbuilder.com.br/blog-home/entry/projetos/o-que-e-o-termo-de-abertura-do-projeto> Acesso em 05/04/2017</li>
+  <li>MONTES, Eduardo. TERMO DE ABERTURA DO PROJETO. Disponível em &lthttps://escritoriodeprojetos.com.br/termo-de-abertura-do-projeto> Acesso em 05/04/2017</li>
+
+  <li>BUILDER, Project. O QUE É TERMO DE ABERTURA DO PROJETO. Disponível em &lthttp://www.projectbuilder.com.br/blog-home/entry/projetos/o-que-e-o-termo-de-abertura-do-projeto&gt Acesso em 05/04/2017</li>
 </ul>
