@@ -101,6 +101,14 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
   Os custos relacionados à recursos humanos abrangem a equipe de desenvolvimento e a equipe de gerência.
 </p>
 <p align="justify">
+  A fórmula para cálculo do custo por hora trabalhada de cada integrante da equipe se dá pela seguinte fórmula:
+</p>
+![fórmula 1](https://raw.githubusercontent.com/wiki/fga-gpp-mds/2017.2-Grupo8/images/eq_1.png)
+<p align="justify">
+  Sendo que <b>Ch</b> representa o custo por hora de trabalho, <b>Ca</b> o custo anual mΰedio de um aluno da UnB e <b>Ha</b> o número de horas gastos por um aluno de Engenharia de Software em um ano, calculado da seguinte forma:
+</p>
+![formula 2](https://raw.githubusercontent.com/wiki/fga-gpp-mds/2017.2-Grupo8/images/eq_2.png)
+<p align="justify">
   
 </p>
 
