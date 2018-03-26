@@ -43,8 +43,6 @@ Sumário
 
 ## 1. Introdução
 
-*[A introdução do Documento de Arquitetura de Software deve apresentar uma visão geral de todo o Documento de Arquitetura de Software. Ela deve incluir a finalidade, o escopo, as definições, os acrônimos, as abreviações, as referências e uma visão geral do Documento de Arquitetura de Software.]*
-
 ### 1.1 Finalidade
 
 Este documento apresenta uma visão geral abrangente da arquitetura do sistema e utiliza uma série de visões arquiteturais diferentes para ilustrar os diversos aspectos do sistema. Sua intenção é capturar e transmitir as decisões significativas do ponto de vista da arquitetura que foram tomadas em relação ao sistema.
@@ -53,19 +51,32 @@ Este documento apresenta uma visão geral abrangente da arquitetura do sistema e
 
 ### 1.2 Escopo
 
-*[Faça uma breve descrição da aplicação do Documento de Arquitetura de Software; o que é afetado ou influenciado por este documento.]*
+Neste documento serão descritos os componentes de software, padrões arquiteturais adotados e *frameworks* escolhidos para o desenvolvimento do projeto que tem por objetivo a criação de um sistema que permita acesso e compartilhamento de dados acerca de doenças tropicais. O documento explora a fundo as características da arquitetura e como estas se relacionam com o projeto.
 
 ### 1.3 Definições, Acrônimos e Abreviações
-
-*[Esta subseção deve apresentar as definições de todos os termos, acrônimos e abreviações necessários para a correta interpretação do Documento de Arquitetura de Software. Essas informações podem ser fornecidas mediante referência ao Glossário do projeto.]*
+<ul>
+  <li>MVC: <em>Model-View-Controller</em></li>
+  <li>MVT: <em>Model-View-Template</em></li/>
+</ul>
 
 ### 1.4 Referências
 
-*[Esta subseção deve apresentar uma lista completa de todos os documentos mencionados no Documento de Arquitetura de Software. Cada documento deve ser identificado por título, número de relatório (se aplicável), data e organização responsável pela publicação. Especifique as fontes das quais é possível obter referências. Essas informações podem ser fornecidas por um anexo ou outro documento.]*
+Fundação Universidade Federal do Paraná - Documento de Arquitetura: A estrutura de tópicos do documento de Arquitetura.  http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/a_and_d/rup_sad.htm
 
 ### 1.5 Visão Geral
-
-*[Esta subseção deve descrever o conteúdo restante do Documento de Arquitetura de Software e explicar como o Documento de Arquitetura de Software está organizado.]*
+O presente documento está dividido nas seguintes seções:
+<ul>
+  <li><b>Representação da Arquitetura</b>: apresenta o padrão arquitetural adotado;</li>
+  <li><b>Metas e Restrições de Arquitetura</b>: descreve requisitos com impacto significativo na arquitetura;</li>
+  <li><b>Visão de Casos de Uso</b>: lista os casos de uso;</li>
+  <li><b>Visão Lógica</b>: descreve as partes significativas do ponto de vista da arquitetura do modelo de design;</li>
+  <li><b>Visão de Processos</b>: descreve a decomposição do sistema em processos;</li>
+  <li><b>Visão de Implantação</b>: descreve as configurações de rede física no qual o software é implantado e executado;</li>
+  <li><b>Visão de Implementação</b>: descreve a estrutura geral do modelo de implementação;</li>
+  <li><b>Visão de Dados</b>: descreve a perspectiva de armazenamento de dados persistentes do sistema;</li>
+  <li><b>Tamanho e Desempenho</b>: descreve as principais características de dimensionamento do software que impactam na arquitetura;</li>
+  <li><b>Qualidade</b>: descreve como a arquitetura do software contribui para os recursos do sistema;</li>
+</ul>
 
 ## 2. Representação da Arquitetura
 
