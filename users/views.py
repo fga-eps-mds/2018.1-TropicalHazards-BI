@@ -21,7 +21,7 @@ def create_user(request):
         return JsonResponse(serializers.data, status=200, safe=False)
 
 
-class CreateUser(generics.CreateAPIView):
+class CreateUser(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
