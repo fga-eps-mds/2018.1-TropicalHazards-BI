@@ -8,6 +8,17 @@
   right: 1em;
 }
 
+main .collection a.disabled {
+  color: #aaa;
+  background-color: #eee;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+main .collection a {
+  /* this is to use when theme colors are defined */
+}
+
 .row a,
 footer a {
   color: inherit;
