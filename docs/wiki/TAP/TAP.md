@@ -26,19 +26,19 @@
 
 
 ## 1. Introdução
-<p align = "justify">O presente documento tem como objetivo fomalizar o início do projeto Tropical Hazards BI, descrevendo o planejamento inicial de custos, riscos, tempo, restrições e cronograma de marcos. Assim como expor os objetivos e contexto de aplicação da solução e as partes interessadas envolvidas no projeto.
+<p align = "justify">O presente documento tem como objetivo formalizar o início do projeto Tropical Hazards BI, descrevendo o planejamento inicial de custos, riscos, tempo, restrições e cronograma de marcos. Assim como expor os objetivos e contexto de aplicação da solução e as partes interessadas envolvidas no projeto.
 
 ## 2. Descrição do Projeto
 <p align = "justify">O Tropical Hazards BI é um sistema de Observatório de Dados direcionado para pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical (NMT) da Universidade de Brasília (UNB) que visa atender à necessidade de visualização de dados e geração de indicadores dos seus diferentes projetos em uma mesma plataforma.
 
 
 ## 3. Propósito e Justificativa do Projeto
-<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo de responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dos dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.
-<p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.
+<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo de responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.
+<p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística, a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.
 
 
-## 4. Objetivos do Projeto(SMART)
-<p align = "justify">O objetivo do projeto é criar um obeservatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. E tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados 
+## 4. Objetivos do Projeto (SMART)
+<p align = "justify">O objetivo do projeto é criar um observatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. E tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados. 
 
 ## 5. Requisitos de Alto Nível
 <p align = "justify"> O Tropical Hazards BI será uma plataforma web que concentre a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:
