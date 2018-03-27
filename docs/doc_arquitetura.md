@@ -106,14 +106,27 @@ Este framework de JavaScript possibilita o desenvolvimento de interfaces para o 
 
 O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
 
-
-
-
-
-
 ## 3. Metas e Restrições de Arquitetura
 
-*[Esta seção descreve os requisitos de software e os objetivos que têm um impacto significativo na arquitetura, como proteção, segurança, privacidade, uso de um produto desenvolvido internamente e adquirido pronto para ser usado, portabilidade, distribuição e reutilização. Ela também captura as restrições especiais que podem ser aplicáveis: estratégia de design e implementação, ferramentas de desenvolvimento, estrutura das equipes, cronograma, código-fonte legado e assim por diante.]*
+A aplicação Tropical Hazads BI vai utilizar como base da sua arquitetura a utilização do framework Django 2.0.3 que é baseado na linguagem de programação python (3.5.2) juntamente com  Djangorest que vai ser utilizado para a criação da API da aplicação.
+
+Django proporciona uma melhor manipulação e organização do projeto em termos de arquitetura de software. O banco de dados utilizado será o PostgreeSQL, para o armazenamento de dados dos usuários e demais informações a serem utilizadas, o que faz o acesso à internet obrigatório para o uso da aplicação.
+
+### Suportabilidade:
+
+As principáis plataformas para o uso do sistema serão o Google Chrome, Mozilla FIrefox, Internet explorer. Assim, sistema deverá ser compatível com as versões mais atuais.
+<br>
+### Usabilidade:
+
+O sistema deve ser intuitivo e simples. Deve permitir que os usuários da NMT aprendam a usar sem necessidade de treinamento.
+<br>
+### Ferramentas de desenvolvimento:
+A linguagem utilizada para o desenvolvimento do sistema será o Python (versão 3.5.3) e o framework Django (versão 2.0.3)
+<br>
+### Confiabilidade:
+Para garantir a qualidade e que o sistema foi suficientemente testado, o sistema deve ter uma cobertura de testes, mínimo de 90%
+
+
 
 ## 4. Visão de Casos de Uso
 
