@@ -368,6 +368,14 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
     <td> Jonathan Henrique Maia de Moraes</td>
     <td>arkyebr@gmail.com</td>
   </tr>
+  <tr>
+    <td> Lucas Brilhante</td>
+    <td>brilhante82@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Pedro Ivo Andrade</td>
+    <td>andradepedroivo@gmail.com</td>
+  </tr>
 </table>
 
 
