@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 # from django.views.decorators.csrf import csrf_exempt
 # from rest_framework.renderers import JSONRenderer
 # from rest_framework.parsers import JSONParser
-from users.serializers import UserSerializer
+from users.serializers import UserCreateSerializer, UserUpdateSerializer
 from rest_framework.decorators import permission_classes
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -20,13 +20,13 @@ class UserList(APIView):
     def get(self, request, format=None):
 
         users = User.objects.all()
-        serializer = UserSerializer(users, many=True)
+        serializer = UserCreateSerializer(users, many=True)
 
         return Response(serializer.data)
 
     def post(self, request, format=None):
 
-        serializer = UserSerializer(data=request.data)
+        serializer = UserCreateSerializer(data=request.data)
 
         if serializer.is_valid():
             serializer.save()
@@ -46,12 +46,12 @@ class UserDetail(APIView):
 
     def get(self, request, pk, format=None):
         user = self.get_object(pk)
-        serializer = UserSerializer(user)
+        serializer = UserCreateSerializer(user)
         return Response(serializer.data)
 
     def put(self, request, pk, format=None):
-        user = self.get_object(pk)
-        serializer = UserSerializer(user, data=request.data)
+        user = self.get_object(pk=pk)
+        serializer = UserUpdateSerializer(user, data=request.data)
 
         if serializer.is_valid():
             serializer.save()

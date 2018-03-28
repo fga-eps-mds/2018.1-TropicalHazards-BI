@@ -3,7 +3,7 @@ from rest_framework import serializers
 from django.contrib.auth.hashers import make_password
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserCreateSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'email', 'password')
@@ -11,9 +11,21 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     def create(self, validated_data):
         user = User(
-            email=validated_data['email'],
-            username=validated_data['username'],
-            password=make_password(validated_data['password'])
+            email = validated_data['email'],
+            username = validated_data['username'],
+            password = make_password(validated_data['password'])
         )
         user.save()
         return user
+
+class UserUpdateSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'password')
+
+    def update(self, instance, validated_data):
+        instance.email = validated_data.get('email', instance.email)
+        instance.username = validated_data.get('username', instance.username)
+        instance.password = make_password(validated_data.get('password', instance.password))
+        instance.save()
+        return instance
