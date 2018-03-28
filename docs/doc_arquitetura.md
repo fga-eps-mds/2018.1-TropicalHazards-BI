@@ -108,25 +108,18 @@ O **JSON** (Java Script Object Notation) é uma formatação leve de troca de da
 
 ## 3. Metas e Restrições de Arquitetura
 
-A aplicação Tropical Hazads BI vai utilizar como base da sua arquitetura a utilização do framework Django 2.0.3 que é baseado na linguagem de programação python (3.5.2) juntamente com  Djangorest que vai ser utilizado para a criação da API da aplicação.
-
-Django proporciona uma melhor manipulação e organização do projeto em termos de arquitetura de software. O banco de dados utilizado será o PostgreeSQL, para o armazenamento de dados dos usuários e demais informações a serem utilizadas, o que faz o acesso à internet obrigatório para o uso da aplicação.
-
-### Suportabilidade:
-
-As principáis plataformas para o uso do sistema serão o Google Chrome, Mozilla FIrefox, Internet explorer. Assim, sistema deverá ser compatível com as versões mais atuais.
-<br>
-### Usabilidade:
-
-O sistema deve ser intuitivo e simples. Deve permitir que os usuários da NMT aprendam a usar sem necessidade de treinamento.
-<br>
-### Ferramentas de desenvolvimento:
-A linguagem utilizada para o desenvolvimento do sistema será o Python (versão 3.5.3) e o framework Django (versão 2.0.3)
-<br>
-### Confiabilidade:
-Para garantir a qualidade e que o sistema foi suficientemente testado, o sistema deve ter uma cobertura de testes, mínimo de 90%
-
-
+A arquitetura adotada pelo projeto Tropical Hazards possui as seguintes restrições:
+<ul>
+  <li>Framework Django 2.0.3 com Python 3.5.2</li>
+  <li>Django REST: uma framework utilizada para construção de WEB APIs</li>
+  <li>Banco de dados relacional PostgreSQL</li>
+  <li>Padrão MVT, utilizado pelo framework Django</li>
+  <li>Vue.js: uma framework javascript para construção de interfaces de usuário, no sistema irá substituir a camada Template do padrão MVT</li>
+  <li>Compatibilidade com os principais browsers da atualidade: Mozilla Firefox, Google Chrome e Internet Explorer</li>
+  <li>Cobertura de testes mínima de 90%</li>
+  <li>Usabilidade: o sistema deve ser utilizado por usuários do NMT sem necessidade de um treinamento prévio aprofundado</li>
+  <li>Modularidade: o código deve ter baixo acoplamento e alta modularidade</li>
+</ul>
 
 ## 4. Visão de Casos de Uso
 
