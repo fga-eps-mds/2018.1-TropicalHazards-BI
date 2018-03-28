@@ -29,7 +29,14 @@ Uma _issue_ deve ser criada toda vez que forem identificados um dos subsequentes
 
 
 ## Labels em Issues
+Todas as _issues_ devem possuir _labels_ para melhor sinalização e organização do repositório.
+Cada _label_ deve ser utilizada segundo seu contexto, de forma que abranja a _issue_ a ser marcada.
+
+As _labels_ disponíveis podem ser encontradas [aqui](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/labels)
 
 
 ## Pull Requests
+Assim como as _issues_, os _Pull Requests_ devem ser corretamente demarcados com _labels_,
+sendo que algumas _labels_ são passíveis de serem usadas apenas por PR's - como a _label_ de **pending review**.
 
+_Pull requests_ 
