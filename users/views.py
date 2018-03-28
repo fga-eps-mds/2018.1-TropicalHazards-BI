@@ -35,7 +35,7 @@ class UserList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@permission_classes((permissions.AllowAny,))
+@permission_classes((permissions.IsAuthenticatedOrReadOnly,))
 class UserDetail(APIView):
 
     def get_object(self, pk):
