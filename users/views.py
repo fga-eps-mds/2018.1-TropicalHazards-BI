@@ -24,14 +24,3 @@ def create_user(request):
 class CreateUser(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-
-
-class UserList(generics.ListCreateAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-    def list(self, request):
-        # Note the use of `get_queryset()` instead of `self.queryset`
-        queryset = self.get_queryset()
-        serializers = UserSerializer(queryset, many=True)
-        return JsonResponse(serializers.data, status=200, safe=False)
