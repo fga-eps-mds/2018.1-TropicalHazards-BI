@@ -1,9 +1,11 @@
 version: '3'
 
 services:
-  db:
+  th_bi-database:
     image: postgres
-  web:
+    
+  th_bi-server:
+    container_name: tropical-hazard-server
     build: .
     command: /bin/sh ./boot.sh
     volumes:
@@ -11,4 +13,4 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - db
+      - th_bi-database

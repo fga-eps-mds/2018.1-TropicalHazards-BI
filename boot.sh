@@ -6,7 +6,7 @@ python << END
 import sys
 import psycopg2
 try:
-    conn = psycopg2.connect(dbname="postgres", user="postgres", password="", host="db")
+    conn = psycopg2.connect(dbname="postgres", user="postgres", password="", host="th_bi-database")
 except psycopg2.OperationalError:
     sys.exit(-1)
 sys.exit(0)
