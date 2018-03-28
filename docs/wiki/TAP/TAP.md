@@ -33,12 +33,12 @@
 
 
 ## 3. Propósito e Justificativa do Projeto
-<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo de responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.
+<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.
 <p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística, a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.
 
 
 ## 4. Objetivos do Projeto (SMART)
-<p align = "justify">O objetivo do projeto é criar um observatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. E tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados. 
+<p align = "justify">O objetivo do projeto é criar um observatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. O projeto tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados.
 
 ## 5. Requisitos de Alto Nível
 <p align = "justify"> O Tropical Hazards BI será uma plataforma web que concentre a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:
@@ -95,10 +95,10 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 
 ## 8. Custo Estimado do Projeto
 ### 8.1. Recursos Humanos
-<p align="justify">O valor médio de um aluno de Engenharia de Software da UnB, de acordo com o Relatório de Gestão 2016<a href="">³</a>, é R$ 26.040,00. Levando em consideração o tempo de curso de 5 anos (10 semestres) e a necessidade da obtenção de 240 créditos para a graduação, estima-se que cada aluno pegue 24 créditos por semestre,e, por isso, 48 por ano. Como cada crédito é estimado em 15 horas por aula tem-se o seguinte custo por hora de cada aluno:
+<p align="justify">O valor médio de um aluno de Engenharia de Software da UnB, de acordo com o Relatório de Gestão 2016<a href="">³</a>, é R$ 26.040,00. Levando em consideração o tempo de curso de 5 anos (10 semestres) e a necessidade da obtenção de 240 créditos para a graduação, estima-se que cada aluno pegue 24 créditos por semestre, totalizando 48 créditos por ano. Como cada crédito é estimado em 15 horas por aula tem-se o seguinte custo por hora de cada aluno:
 <p align="justify"><b>26.040 / (15*48) = 36,17</b>
 
-A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenharia de Software da UnB. Considerando que cada membro trabalhará 10 horas por semanae cada Coach auxiliará a equipe durante 2 horas por semana durante as 18 semanas de desenvolvimento do projeto, temos o seguinte custo: 
+A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenharia de Software da UnB. Considerando que cada membro trabalhará 10 horas por semana e cada Coach auxiliará a equipe durante 2 horas por semana durante as 18 semanas de desenvolvimento do projeto, temos o seguinte custo:
 <table style="text-align: center">
     <thead>
         <tr>
@@ -248,7 +248,7 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
     </tr>
   </tbody>
 </table>
-   
+
 ### 8.5. Totais
 <p align="justify">
   Levando em conta os custos retratados anteriormente, e levando em conta uma margem de segurança de orçamento de 15% do valor total, se obtém a seguinte tabela contendo o resultado orçamentário final:
@@ -380,7 +380,7 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
 
 
 ## 10. Requisitos para a aprovação do projeto
-<p align = "justify">O projeto deverá ser aprovado e acordado pelo cliente após sua finalização.
+<p align = "justify">O principal critério para aprovação do projeto é sua validação pelo cliente após sua finalização. Para que o projeto possa ser validado o mesmo deve apresentar os requisitos funcionais e não funcionais solicitados pelo cliente, assim como a documentação necessária para sua utilização. O projeto deve ainda satisfazer as exigências e necessidades de ambas as disciplinas envolvidas em seu desenvolvimento, cumprindo as datas estabelecidas para entrega dos diversos artefatos.
 
 
 ## 11. Gerência do Projeto
