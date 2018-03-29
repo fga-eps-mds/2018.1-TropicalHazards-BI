@@ -4,27 +4,27 @@
 
 [2. Termos e definições](#2-termos-e-definições)
 
-[3. Descrição do Projeto](#2-descrição-do-projeto)
+[3. Descrição do Projeto](#3-descrição-do-projeto)
 
-[4. Propósito e justificativa do projeto](#3-propósito-e-justificativa-do-projeto)  
+[4. Propósito e justificativa do projeto](#4-propósito-e-justificativa-do-projeto)  
 
-[5. Objetivos do projeto](#4-objetivos-do-projetosmart)  
+[5. Objetivos do projeto](#5-objetivos-do-projetosmart)  
 
-[6. Requisitos de alto nível](#5-requisitos-de-alto-nível)
+[6. Requisitos de alto nível](#6-requisitos-de-alto-nível)
 
-[7. Riscos](#6-riscos)
+[7. Riscos](#7-riscos)
 
-[8. Resumo do cronograma de marcos](#7-resumo-do-cronograma-de-marcos)
+[8. Resumo do cronograma de marcos](#8-resumo-do-cronograma-de-marcos)
 
-[9. Resumo do orçamento](#8-custo-estimado-do-projeto)  
+[9. Resumo do orçamento](#9-custo-estimado-do-projeto)  
 
-[10. Partes interessadas](#9-lista-das-partes-interessadas)
+[10. Partes interessadas](#10-lista-das-partes-interessadas)
 
-[11. Requisitos para aprovação do projeto](#10-requisitos-para-a-aprovação-do-projeto)
+[11. Requisitos para aprovação do projeto](#11-requisitos-para-a-aprovação-do-projeto)
 
-[12. Gerência do projeto](#11-gerência-do-projeto)
+[12. Gerência do projeto](#12-gerência-do-projeto)
 
-[13. Referências](#12-referências)
+[13. Referências](#13-referências)
 
 
 ## 1. Introdução
@@ -57,7 +57,6 @@
         <td>Projeto</td>
         <td>No contexto de um usuário do NMT utilizando o sistema, um projeto possui funcionamento semelhante a um repositório de dados, ou seja, existe uma organização principal onde cada profissional pode criar um projeto pessoal que disponibiliza dados de pesquisas para diferentes observatórios.</td>
       </tr>
-
 </table>
 
 ## 3. Descrição do Projeto
