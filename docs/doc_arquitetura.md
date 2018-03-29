@@ -43,9 +43,7 @@ Sumário
 
 ### 1.1 Finalidade
 
-Este documento apresenta uma visão geral abrangente da arquitetura do sistema e utiliza uma série de visões arquiteturais diferentes para ilustrar os diversos aspectos do sistema. Sua intenção é capturar e transmitir as decisões significativas do ponto de vista da arquitetura que foram tomadas em relação ao sistema.
-
-*[Esta seção define a finalidade do Documento de Arquitetura de Software, na documentação geral do projeto, e contém uma breve descrição da estrutura do documento. Os públicos específicos do documento devem ser identificados, com uma indicação de como devem usá-lo.]*
+Este documento apresenta uma visão geral abrangente da arquitetura do projeto Tropical Hazards, utilizando de uma série de visões arquiteturais diferentes para ilustrar os diversos aspectos do sistema. Este projeto fora realizado na disciplina Métodos de Densenvolvimento de Software em conjunto com a disciplina Gestão de Produção de Software, e possui como principal cliente o Núcleo de Medicina Tropical da Faculdade de Medicina da Universidade de Brasília.
 
 ### 1.2 Escopo
 
@@ -53,6 +51,8 @@ Neste documento serão descritos os componentes de software, padrões arquitetur
 
 ### 1.3 Definições, Acrônimos e Abreviações
 <ul>
+  <li>NMT: <em>Núcleo de Medicina Tropical</em></li>
+  <li>UNB: <em>Universidade de Brasília</em></li>
   <li>MVC: <em>Model-View-Controller</em></li>
   <li>MVT: <em>Model-View-Template</em></li/>
 </ul>
