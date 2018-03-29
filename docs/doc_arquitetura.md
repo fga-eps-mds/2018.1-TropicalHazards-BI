@@ -129,7 +129,7 @@ O **JSON** (Java Script Object Notation) é uma formatação leve de troca de da
 
 ### 5.1 Visão Geral
 
-O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades representadas por meio destes.
+O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
 ### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
