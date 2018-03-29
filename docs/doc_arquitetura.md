@@ -26,19 +26,17 @@ Sumário
     * 1.5 [Visão Geral](#15-visão-geral)
 * 2 . [Representação da Arquitetura](#2-representação-da-arquitetura)
 * 3 . [Metas e Restrições de Arquitetura](#3-metas-e-restrições-de-arquitetura)
-* 4 . [Visão de Casos de Uso](#4-visão-de-casos-de-uso)
-    * 4.1 [Realizações de Casos de Uso](#41-realizações-de-casos-de-uso)
-* 5 . [Visão Lógica](#5-visão-lógica)
-    * 5.1 [Visão Geral](#51-visão-geral)
-    * 5.2 [Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura)
-* 6 . [Visão de Processos](#6-visão-de-processos)
-* 7 . [Visão de Implantação](#7-visão-de-implantação)
-* 8 . [Visão de Implementação](#8-visão-de-implementação)
-    * 8.1 [Visão Geral](#81-visão-geral)
-    * 8.2 [Camadas](#82-camadas)
-* 9 . [Visão de Dados (opcional)](#9-visão-de-dados-opcional)
-* 10 . [Tamanho e Desempenho](#10-tamanho-e-desempenho)
-* 11 . [Qualidade](#11-qualidade)
+* 4 . [Visão Lógica](#5-visão-lógica)
+    * 4.1 [Visão Geral](#51-visão-geral)
+    * 4.2 [Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura)
+* 5 . [Visão de Processos](#6-visão-de-processos)
+* 6 . [Visão de Implantação](#7-visão-de-implantação)
+* 7 . [Visão de Implementação](#8-visão-de-implementação)
+    * 7.1 [Visão Geral](#81-visão-geral)
+    * 7.2 [Camadas](#82-camadas)
+* 8 . [Visão de Dados (opcional)](#9-visão-de-dados-opcional)
+* 9 . [Tamanho e Desempenho](#10-tamanho-e-desempenho)
+* 10 . [Qualidade](#11-qualidade)
 -----------
 
 ## 1. Introdução
@@ -64,19 +62,7 @@ Neste documento serão descritos os componentes de software, padrões arquitetur
 Fundação Universidade Federal do Paraná - Documento de Arquitetura: A estrutura de tópicos do documento de Arquitetura.  http://www.funpar.ufpr.br:8080/rup/webtmpl/templates/a_and_d/rup_sad.htm
 
 ### 1.5 Visão Geral
-O presente documento está dividido nas seguintes seções:
-<ul>
-  <li><b>Representação da Arquitetura</b>: apresenta o padrão arquitetural adotado;</li>
-  <li><b>Metas e Restrições de Arquitetura</b>: descreve requisitos com impacto significativo na arquitetura;</li>
-  <li><b>Visão de Casos de Uso</b>: lista os casos de uso;</li>
-  <li><b>Visão Lógica</b>: descreve as partes significativas do ponto de vista da arquitetura do modelo de design;</li>
-  <li><b>Visão de Processos</b>: descreve a decomposição do sistema em processos;</li>
-  <li><b>Visão de Implantação</b>: descreve as configurações de rede física no qual o software é implantado e executado;</li>
-  <li><b>Visão de Implementação</b>: descreve a estrutura geral do modelo de implementação;</li>
-  <li><b>Visão de Dados</b>: descreve a perspectiva de armazenamento de dados persistentes do sistema;</li>
-  <li><b>Tamanho e Desempenho</b>: descreve as principais características de dimensionamento do software que impactam na arquitetura;</li>
-  <li><b>Qualidade</b>: descreve como a arquitetura do software contribui para os recursos do sistema;</li>
-</ul>
+O presente documento faz o detalhamento e descrição de características da arquitetura escolhidas pela equipe de desenvolvimento para a solução no software do projeto Tropical Hazards. Nele estará presente:  Representação da Arquitetura, Metas e Restrições de Arquitetura, Visão Lógica, Visão de Lógica, Visão de Processos, Visão de Implantação, Visão de Implementação, Visão de Dados, Tamanho e Desempenho, Qualidade e Referências bibliográficas.
 
 ## 2. Representação da Arquitetura
 
@@ -118,63 +104,51 @@ Este framework de JavaScript possibilita o desenvolvimento de interfaces para o 
 O **JSON** é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
 
 
-
-
-
-
 ## 3. Metas e Restrições de Arquitetura
 
 *[Esta seção descreve os requisitos de software e os objetivos que têm um impacto significativo na arquitetura, como proteção, segurança, privacidade, uso de um produto desenvolvido internamente e adquirido pronto para ser usado, portabilidade, distribuição e reutilização. Ela também captura as restrições especiais que podem ser aplicáveis: estratégia de design e implementação, ferramentas de desenvolvimento, estrutura das equipes, cronograma, código-fonte legado e assim por diante.]*
 
-## 4. Visão de Casos de Uso
-
-*[Esta seção lista os casos de uso ou cenários do modelo de casos de uso se eles representam uma funcionalidade central e significativa do sistema final ou se têm uma ampla cobertura de arquitetura, ou seja, se experimentam muitos elementos arquiteturais ou se enfatizam ou ilustram um determinado ponto frágil da arquitetura.]*
-
-### 4.1 Realizações de Casos de Uso
-
-*[Esta seção ilustra o funcionamento do software, apresentando algumas realizações (ou cenários) de casos de uso selecionadas e explica como os diversos elementos do modelo de design contribuem para a respectiva funcionalidade.]*
-
-## 5. Visão Lógica
+## 4. Visão Lógica
 
 *[Esta seção descreve as partes significativas do ponto de vista da arquitetura do modelo de design, como sua divisão em subsistemas e pacotes. Além disso, para cada pacote significativo, ela mostra sua divisão em classes e utilitários de classe. Apresente as classes significativas do ponto de vista da arquitetura e descreva suas responsabilidades, bem como alguns relacionamentos, operações e atributos de grande importância.]*
 
-### 5.1 Visão Geral
+### 4.1 Visão Geral
 
 [Esta subseção descreve toda a decomposição do modelo de design em termos de camadas e de hierarquia de pacotes.]
 
-### 5.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
+### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 *[Para cada pacote significativo, inclua uma subseção com o respectivo nome, uma breve descrição e um diagrama com todos os pacotes e classes significativos nele contidos.
 Para cada classe significativa no pacote, inclua o respectivo nome, uma breve descrição e, opcionalmente, uma descrição de algumas de suas responsabilidades, operações e atributos mais importantes.]*
 
-## 6. Visão de Processos
+## 5. Visão de Processos
 
 *[Esta seção descreve a decomposição do sistema em processos leves (threads simples de controle) e processos pesados (agrupamentos de processos leves). Organize a seção em grupos de processos que se comunicam ou interagem. Descreva os modos principais de comunicação entre processos, como transmissão de mensagens e interrupções.]*
 
-## 7. Visão de Implantação
+## 6. Visão de Implantação
 
 *[Esta seção descreve uma ou mais configurações da rede física (hardware) na qual o software é implantado e executado. Ela é uma visão do Modelo de Implantação. Para cada configuração, ela deve indicar no mínimo os nós físicos (computadores, CPUs) que executam o software e as respectivas interconexões (barramento, LAN, ponto a ponto e assim por diante.) Inclua também um mapeamento dos processos da Visão de Processos nos nós físicos.]*
 
-## 8. Visão de Implementação
+## 7. Visão de Implementação
 
 *[Esta seção descreve a estrutura geral do modelo de implementação, a divisão do software em camadas e subsistemas no modelo de implementação e todos os componentes significativos do ponto de vista da arquitetura.]*
 
-### 8.1 Visão Geral
+### 7.1 Visão Geral
 
 *[Esta subseção nomeia e define as diversas camadas e o seu conteúdo, as regras que determinam a inclusão em uma camada específica e as fronteiras entre as camadas. Inclua um diagrama de componentes que mostre os relacionamentos entre as camadas.]*
 
-### 8.2 Camadas
+### 7.2 Camadas
 
 *[Para cada camada, inclua uma subseção com o respectivo nome, uma lista dos subsistemas localizados na camada e um diagrama de componentes.]*
 
-## 9. Visão de Dados (opcional)
+## 8. Visão de Dados (opcional)
 
 *[Uma descrição da perspectiva de armazenamento de dados persistentes do sistema. Esta seção será opcional se os dados persistentes forem poucos ou inexistentes ou se a conversão entre o Modelo de Design e o Modelo de Dados for trivial.]*
 
-## 10. Tamanho e Desempenho
+## 9. Tamanho e Desempenho
 
 *[Uma descrição das principais características de dimensionamento do software que têm um impacto na arquitetura, bem como as restrições do desempenho desejado.]*
 
-## 11. Qualidade
+## 10. Qualidade
 
 *[Uma descrição de como a arquitetura do software contribui para todos os recursos (exceto a funcionalidade) do sistema: extensibilidade, confiabilidade, portabilidade e assim por diante. Se essas características tiverem significado especial, como, por exemplo, implicações de proteção, segurança ou privacidade, elas devem ser claramente delineadas.]*
