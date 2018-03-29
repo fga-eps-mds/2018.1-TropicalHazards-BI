@@ -2,56 +2,88 @@
 
 [1. Introdução](#1-introdução)
 
-[2. Descrição do Projeto](#2-descrição-do-projeto)
+[2. Termos e definições](#2-termos-e-definições)
 
-[3. Propósito e justificativa do projeto](#3-propósito-e-justificativa-do-projeto)  
+[3. Descrição do Projeto](#2-descrição-do-projeto)
 
-[4. Objetivos do projeto](#4-objetivos-do-projetosmart)  
+[4. Propósito e justificativa do projeto](#3-propósito-e-justificativa-do-projeto)  
 
-[5. Requisitos de alto nível](#5-requisitos-de-alto-nível)
+[5. Objetivos do projeto](#4-objetivos-do-projetosmart)  
 
-[6. Riscos](#6-riscos)
+[6. Requisitos de alto nível](#5-requisitos-de-alto-nível)
 
-[7. Resumo do cronograma de marcos](#7-resumo-do-cronograma-de-marcos)
+[7. Riscos](#6-riscos)
 
-[8. Resumo do orçamento](#8-custo-estimado-do-projeto)  
+[8. Resumo do cronograma de marcos](#7-resumo-do-cronograma-de-marcos)
 
-[9. Partes interessadas](#9-lista-das-partes-interessadas)
+[9. Resumo do orçamento](#8-custo-estimado-do-projeto)  
 
-[10. Requisitos para aprovação do projeto](#10-requisitos-para-a-aprovação-do-projeto)
+[10. Partes interessadas](#9-lista-das-partes-interessadas)
 
-[11. Gerência do projeto](#11-gerência-do-projeto)
+[11. Requisitos para aprovação do projeto](#10-requisitos-para-a-aprovação-do-projeto)
 
-[12. Referências](#12-referências)
+[12. Gerência do projeto](#11-gerência-do-projeto)
+
+[13. Referências](#12-referências)
 
 
 ## 1. Introdução
-<p align = "justify">O presente documento tem como objetivo formalizar o início do projeto Tropical Hazards BI, descrevendo o planejamento inicial de custos, riscos, tempo, restrições e cronograma de marcos. Assim como expor os objetivos e contexto de aplicação da solução e as partes interessadas envolvidas no projeto.
+<p align = "justify">O presente documento tem como objetivo formalizar o início do projeto Tropical Hazards BI, descrevendo o planejamento inicial de custos, riscos, tempo, restrições e cronograma de marcos. Assim como expor os objetivos e contexto de aplicação da solução e as partes interessadas envolvidas no projeto.</p>
 
-## 2. Descrição do Projeto
-<p align = "justify">O Tropical Hazards BI é um sistema de Observatório de Dados direcionado para pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical (NMT) da Universidade de Brasília (UNB) que visa atender à necessidade de visualização de dados e geração de indicadores dos seus diferentes projetos em uma mesma plataforma.
+## 2. Termos e definições
+<p align = "justify">Esta seção representa um dicionário dos diversos  termos utilizados na descrição do projeto, procurando apresentar suas respectivas definições de acordo com os contextos do problema e organização.</p>
+
+<table>
+    <thead>
+      <tr>
+        <th>Termo</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dados de pesquisas</td>
+        <td>Coleção de dados e informações relacionadas a doenças tropicais que foram previamente tratadas e devem ser disponibilizadas.</td>
+      </tr>  
+      <tr>
+        <td>Indicadores</td>
+        <td>São levantados a partir da seleção de certos dados de pesquisas e consistem em métricas objetivas, de claro entendimento e compreensão, que transmitem informações relevantes para um determinado contexto ou estudo.</td>
+      </tr>
+      <tr>
+        <td>Observatório ou Dashboard</td>
+        <td>Funcionalidade do sistema responsável pela apresentação dos indicadores para os profissionais do NMT ou interessados.</td>
+      </tr>   
+      <tr>
+        <td>Projeto</td>
+        <td>No contexto de um usuário do NMT utilizando o sistema, um projeto possui funcionamento semelhante a um repositório de dados, ou seja, existe uma organização principal onde cada profissional pode criar um projeto pessoal que disponibiliza dados de pesquisas para diferentes observatórios.</td>
+      </tr>
+
+</table>
+
+## 3. Descrição do Projeto
+<p align = "justify">O Tropical Hazards BI é um sistema de Observatório de Dados direcionado para pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical (NMT) da Universidade de Brasília (UNB) que visa atender à necessidade de visualização de dados e geração de indicadores dos seus diferentes projetos em uma mesma plataforma.</p>
 
 
-## 3. Propósito e Justificativa do Projeto
-<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.
-<p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística, a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.
+## 4. Propósito e Justificativa do Projeto
+<p align = "justify">O Núcleo de Medicina Tropical possui um núcleo responsável por desenvolver pesquisas relacionadas a doenças tropicais. Os vários projetos de pesquisa não possuem tecnologias em comum nem um observatório/dashboard padronizado. Além disso, os pesquisadores apresentam os dados obtidos entre si por meio de arquivos ou no próprio computador pessoal, sem acesso remoto ou padronização de visualização.</p>
+<p align = "justify">Dessa forma, o software Tropical Hazards BI propõe uma exibição de dados coletados pelos pesquisadores de forma centralizada, assim como a geração de indicadores relevantes para as pesquisas e sua análise estatística, a fim de melhorar a visualização de informações relevantes para os pesquisadores de diferentes frentes de pesquisas do NMT.</p>
 
 
-## 4. Objetivos do Projeto (SMART)
-<p align = "justify">O objetivo do projeto é criar um observatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. O projeto tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados.
+## 5. Objetivos do Projeto (SMART)
+<p align = "justify">O objetivo do projeto é criar um observatório de dados e indicadores baseado em dashboards pessoais compartilháveis para os profissionais do Núcleo de Medicina Tropical da UnB até a data de entrega da Release 2. O projeto tem como critério de sucesso trabalhar com os diferentes contextos de dados relacionados a doenças tropicais, além de aceitar os seguintes padrões de armazenamento de dados utilizados pelo NMT: JSON, CSV, EXCEL e Banco de Dados.</p>
 
-## 5. Requisitos de Alto Nível
-<p align = "justify"> O Tropical Hazards BI será uma plataforma web que concentre a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:
+## 6. Requisitos de Alto Nível
+<p align = "justify"> O Tropical Hazards BI será uma plataforma web que concentra a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:</p>
      <ul>
         <li>O sistema dever ser de fácil manuseio;</li>
-        <li>Os dados de pesquisas devem ser exibidos por meio de um dashboard;</li>
+        <li>Os indicadores levantadas devem ser apresentados por meio de um dashboard;</li>
         <li>O design deve ser simples e minimalista;</li>
-        <li>O dashboard deve permitir o acesso a dados de diferentes projetos;</li>
+        <li>Um projeto criado por um profissional do NMT deve disponibilizar acesso aos seus dados para os diversos observatórios;</li>
     </ul>
 
 
-## 6. Riscos
-Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações preventivas são:
+## 7. Riscos
+<p align = "justify">Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações preventivas são:</p>
 <table>
     <thead>
       <tr>
@@ -84,8 +116,8 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 </table>
 
 
-## 7. Resumo do cronograma de marcos
-<p align = "justify">As disciplinas de Métodos de Desenvolvimento de Software (MDS) e Engenharia de Produto de Software (EPS) definem eventos importantes para o projeto desenvolvido por seus alunos. São eles:
+## 8. Resumo do cronograma de marcos
+<p align = "justify">As disciplinas de Métodos de Desenvolvimento de Software (MDS) e Engenharia de Produto de Software (EPS) definem eventos importantes para o projeto desenvolvido por seus alunos. São eles:</p>
 <ul>
   <li>Início do projeto (06/03/2018): Início das disciplinas e preparação para o projeto.</li>
   <li>Release 1 (19/04/2018): Apresentação das funcionalidades implementadas, bem como documentação referente a esse período.</li>
@@ -93,12 +125,12 @@ Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações pr
 </ul>
 
 
-## 8. Custo Estimado do Projeto
-### 8.1. Recursos Humanos
-<p align="justify">O valor médio de um aluno de Engenharia de Software da UnB, de acordo com o Relatório de Gestão 2016<a href="">³</a>, é R$ 26.040,00. Levando em consideração o tempo de curso de 5 anos (10 semestres) e a necessidade da obtenção de 240 créditos para a graduação, estima-se que cada aluno pegue 24 créditos por semestre, totalizando 48 créditos por ano. Como cada crédito é estimado em 15 horas por aula tem-se o seguinte custo por hora de cada aluno:
-<p align="justify"><b>26.040 / (15*48) = 36,17</b>
+## 9. Custo Estimado do Projeto
+### 9.1. Recursos Humanos
+<p align="justify">O valor médio de um aluno de Engenharia de Software da UnB, de acordo com o Relatório de Gestão 2016<a href="">³</a>, é R$ 26.040,00. Levando em consideração o tempo de curso de 5 anos (10 semestres) e a necessidade da obtenção de 240 créditos para a graduação, estima-se que cada aluno pegue 24 créditos por semestre, totalizando 48 créditos por ano. Como cada crédito é estimado em 15 horas por aula tem-se o seguinte custo por hora de cada aluno:</p>
+<p align="justify"><b>26.040 / (15*48) = 36,17</b></p>
 
-A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenharia de Software da UnB. Considerando que cada membro trabalhará 10 horas por semana e cada Coach auxiliará a equipe durante 2 horas por semana durante as 18 semanas de desenvolvimento do projeto, temos o seguinte custo:
+<p align="justify">A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenharia de Software da UnB. Considerando que cada membro trabalhará 10 horas por semana e cada Coach auxiliará a equipe durante 2 horas por semana durante as 18 semanas de desenvolvimento do projeto, temos o seguinte custo:</p>
 <table style="text-align: center">
     <thead>
         <tr>
@@ -138,7 +170,7 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
     </tbody>
 </table>
 
-### 8.2. Equipamentos de Trabalho
+### 9.2. Equipamentos de Trabalho
 <p align="justify">
   Para a efetiva realização das atividades relacionadas ao projeto, cada integrante da equipe de trabalho necessitará
   de um notebook, para a codificação do projeto e para a elaboração de documentos e internet banda larga.<br>
@@ -196,12 +228,12 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
   Assim, o orçamento a ser gasto com os equipamentos de trabalho é de <strong>R$ 26.694,90</strong>.
 </p>
 
-### 8.3. Licenças de serviços
+### 9.3. Licenças de serviços
 <p align="justify">
   A equipe do projeto optou pelo uso de softwares livres para serem usados durante toda a vida útil do projeto, acarretando em nenhum custo com a aquisição de softwares.
 </p>
 
-### 8.4. Serviços
+### 9.4. Serviços
 <p align="justify">
  Para a realização das atividades do projeto é necessário acesso a Internet Banda larga com o seguintes requisitos mínimos:
 </p>
@@ -249,7 +281,7 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
   </tbody>
 </table>
 
-### 8.5. Totais
+### 9.5. Totais
 <p align="justify">
   Levando em conta os custos retratados anteriormente, e levando em conta uma margem de segurança de orçamento de 15% do valor total, se obtém a seguinte tabela contendo o resultado orçamentário final:
 </p>
@@ -293,7 +325,7 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
   </tbody>
 </table>
 
-## 9. Lista das partes interessadas
+## 10. Lista das partes interessadas
 <ul>
   <li>Profissionais da área da saúde: Profissionais que desejam conhecer os dados estatísticos referentes a pesquisas de doenças tropicais.</li>
   <li>Pesquisadores do Núcleo de Medicina Tropical (NMT): Pesquisadores que desejam visualizar os dados, gerar indicadores, e analisar estatisticamente informações de doenças relevantes para suas pesquisas.</li>
@@ -379,15 +411,15 @@ Alunos do curso de Engenharia de Software da Universidade de Brasília (UNB) da 
 </table>
 
 
-## 10. Requisitos para a aprovação do projeto
-<p align = "justify">O principal critério para aprovação do projeto é sua validação pelo cliente após sua finalização. Para que o projeto possa ser validado o mesmo deve apresentar os requisitos funcionais e não funcionais solicitados pelo cliente, assim como a documentação necessária para sua utilização. O projeto deve ainda satisfazer as exigências e necessidades de ambas as disciplinas envolvidas em seu desenvolvimento, cumprindo as datas estabelecidas para entrega dos diversos artefatos.
+## 11. Requisitos para a aprovação do projeto
+<p align = "justify">O principal critério para aprovação do projeto é sua validação pelo cliente após sua finalização. Para que o projeto possa ser validado o mesmo deve apresentar os requisitos funcionais e não funcionais solicitados pelo cliente, assim como a documentação necessária para sua utilização. O projeto deve ainda satisfazer as exigências e necessidades de ambas as disciplinas envolvidas em seu desenvolvimento, cumprindo as datas estabelecidas para entrega dos diversos artefatos.</p>
 
 
-## 11. Gerência do Projeto
-<p align = "justify">A equipe de gerência do projeto é formada por alunos de graduação de Engenharia de Software da Universidade de Brasília, campus Gama, que cursam a disciplina Engenharia de Produto de Software. Os alunos são responsáveis por planejar, executar e monitorar os processos relacionados ao projeto.
+## 12. Gerência do Projeto
+<p align = "justify">A equipe de gerência do projeto é formada por alunos de graduação de Engenharia de Software da Universidade de Brasília, campus Gama, que cursam a disciplina Engenharia de Produto de Software. Os alunos são responsáveis por planejar, executar e monitorar os processos relacionados ao projeto.</p>
 
 
-## 12. Referências
+## 13. Referências
 
 <ul>
   <li>PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. - EUA: Project Management Institute, 2013</li>
