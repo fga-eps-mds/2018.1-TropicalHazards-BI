@@ -2,8 +2,8 @@
 
 ## O Problema
 
-<p style="text-align:justify">A equipe composta pelos alunos da disciplina de Engenharia de Produto de Software (EPS) necessita gerenciar o projeto Tropical Hazards BI e manter o bom desempenho da equipe de desenvolvimento.
-<p style="text-align:justify">Os prazos das entregas de cada versão do produto são curtos. Assim, é necessário acompanhar, além das demandas acordadas com o cliente, o progresso do time de desenvolvimento, composto pelos alunos de Métodos de Desenvolvimento de Software (MDS) para garantir um produto final entregável com qualidade satisfatória.</p>
+A equipe composta pelos alunos da disciplina de Engenharia de Produto de Software (EPS) necessita gerenciar o projeto Tropical Hazards BI e manter o bom desempenho da equipe de desenvolvimento.
+Os prazos das entregas de cada versão do produto são curtos. Assim, é necessário acompanhar, além das demandas acordadas com o cliente, o progresso do time de desenvolvimento, composto pelos alunos de Métodos de Desenvolvimento de Software (MDS) para garantir um produto final entregável com qualidade satisfatória.
 Do ponto de vista de projeto, alguns riscos podem acontecer:
 
 * Time desestimulado;
@@ -11,20 +11,19 @@ Do ponto de vista de projeto, alguns riscos podem acontecer:
 * Dificuldades com a implementação da tecnologia no contexto do projeto;
 * Produto entregue incompleto;
 
-<p style="text-align:justify">Dessa forma, o plano de Medição visa reduzir a ocorrência desses riscos e possibilitar a identificação de oportunidades de melhoria do processo e do produto no decorrer do projeto.
-</p>
+Dessa forma, o plano de Medição visa reduzir a ocorrência desses riscos e possibilitar a identificação de oportunidades de melhoria do processo e do produto no decorrer do projeto.
 
 ## 1. Objetivos Estratégicos
-<p style="text-align:justify">A parte de gerência do projeto possui o objetivo principal de conduzir o projeto a fim de gerar um produto de qualidade e satisfação ao cliente, de acordo com o escopo definido. Alguns objetivos de gestão que necessitam do auxílio da medição:
-</p>
+A parte de gerência do projeto possui o objetivo principal de conduzir o projeto a fim de gerar um produto de qualidade e satisfação ao cliente, de acordo com o escopo definido. Alguns objetivos de gestão que necessitam do auxílio da medição:
+
 ● Produtividade da equipe;<br>
 ● Qualidade do código;<br>
 ● Produção de código manutenível<br>
 
 ## 2. Planejamento de Medição
 
-<p style="text-align:justify">A abordagem GQM (Goal Question Metric) será adotada para identificar as métricas que atinjam os objetivos propostos para o contexto do projeto Tropical Hazards BI.
-</p>
+A abordagem GQM (Goal Question Metric) será adotada para identificar as métricas que atinjam os objetivos propostos para o contexto do projeto Tropical Hazards BI.
+
 ## 3. Definição dos Objetivos de Medição
 
 ## 3.1 Objetivo de Equipe
