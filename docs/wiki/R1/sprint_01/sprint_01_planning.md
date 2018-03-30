@@ -1,7 +1,7 @@
 # Planejamento da [Sprint 01](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/2)
 
 ## Foco
-<p>Fechar documentação referente ao escopo do projeto e fazer treinamentos.</p>
+Fechar documentação referente ao escopo do projeto e fazer treinamentos.
 
 ## Datas
 <b>Data de início:</b> 12/03/2018  
