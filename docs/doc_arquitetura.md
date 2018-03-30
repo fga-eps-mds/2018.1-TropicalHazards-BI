@@ -143,12 +143,11 @@ A View será responsável por gerenciar os dados e os comportamentos da aplicaç
 #### 5.2.2 Model
 A pasta denominada model trará o conceito de abstração à situação apresentada no mundo real, identificando as entidades a serem utilizadas na aplicação. Além disso, a model deverá garantir a comunicação com o banco de dados.
 
-#### 5.2.4 Database(Banco de Dados)
-Neste pacote haverá as configurações e o estado do banco de dados. Nela estará o responsável por manter, em tabelas, e fazer as alterações dos dados quando necessário.
+#### 5.2.3 Test (Teste)
+A aplicação de testes durante a implementação de uma aplicação é de extrema importância, por esse motivo, vão ser utilizados dois tipos de testes no projeto: teste de unidade e teste de integração. Haverá no projeto uma pasta teste a fim de englobar os arquivos desenvolvidos para tal atividade.
 
-#### 5.2.5 Test (Teste)
-A aplicação de testes durante a implementação de uma aplicação é de extrema importância, por esse motivo, haverá no projeto uma pasta teste a fim de englobar os arquivos desenvolvidos para tal atividade.
-
+#### 5.2.4 Serializers
+Serializers permitem que os dados complexos, tais como QuerySets e instâncias da model sejam convertidos para tipos de dados Python que podem ser facilmente fundidas em JSON, XML ou outros tipos de conteúdo. Os serializadores também fornecem desserialização, permitindo que os dados analisados ​​sejam convertidos novamente em tipos complexos, após a primeira validação dos dados recebidos.
 
 ## 6. Visão de Processos
 
