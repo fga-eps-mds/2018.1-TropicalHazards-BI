@@ -43,7 +43,7 @@ Sumário
 
 ### 1.1 Finalidade
 
-Este documento apresenta uma visão geral abrangente da arquitetura do projeto Tropical Hazards, utilizando de uma série de visões arquiteturais diferentes para ilustrar os diversos aspectos do sistema. Este projeto fora realizado na disciplina Métodos de Densenvolvimento de Software em conjunto com a disciplina Gestão de Produção de Software, e possui como principal cliente o Núcleo de Medicina Tropical da Faculdade de Medicina da Universidade de Brasília.
+Este documento apresenta uma visão geral abrangente da arquitetura do projeto Tropical Hazards, utilizando de uma série de visões arquiteturais diferentes para ilustrar os diversos aspectos do sistema. Este projeto fora realizado na disciplina Métodos de Densenvolvimento de Software em conjunto com a disciplina Engenharia de Produto de Software, e possui como principal cliente o Núcleo de Medicina Tropical da Faculdade de Medicina da Universidade de Brasília.
 
 ### 1.2 Escopo
 
