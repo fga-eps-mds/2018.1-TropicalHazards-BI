@@ -1,6 +1,7 @@
 import pytest
 from django.shortcuts import reverse
 from django.contrib.auth.models import User
+import json
 
 pytestmark = pytest.mark.django_db
 
@@ -52,3 +53,59 @@ def test_post_user_persist_db(client):
     users = User.objects.all()
 
     assert users.count() == 1
+
+
+def test_get_user_detail_return_200(client):
+
+    user = User.objects.create(username='username',
+                               email='email', password='password')
+    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    response = client.get(url)
+
+    assert response.status_code == 200
+    assert response.data['id'] == user.id
+
+
+def test_get_user_detail_return_404(client):
+    url = reverse('users:users-detail', kwargs={'pk': 1})
+    response = client.get(url)
+
+    assert response.status_code == 404
+
+
+def test_put_user_detail_return_200(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    data = {'username': "username", 'email': "email@email.com",
+            'password': "password"}
+    json_data = json.dumps(data)
+    client.login(username='username', password='password')
+    response = client.put(url, data=json_data, content_type='application/json')
+    assert response.status_code == 200
+
+
+def test_put_user_detail_return_400(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    data = {'username': "", 'email': "email_edit@email.com",
+            'password': "password_edit"}
+    json_data = json.dumps(data)
+    client.login(username='username', password='password')
+    response = client.put(url, data=json_data, content_type='application/json')
+
+    assert response.status_code == 400
+
+
+def test_delete_user_detail_return_204(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    client.login(username='username', password='password')
+    response = client.delete(url, content_type='application/json')
+
+    assert response.status_code == 204
