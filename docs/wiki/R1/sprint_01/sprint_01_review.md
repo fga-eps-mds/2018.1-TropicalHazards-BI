@@ -1,8 +1,10 @@
-**Obersavação:** A Sprint 01 foi planejada de forma emergencial, logo ocorreram as seguintes falhas no planejamento:
-* Histórias não pontuadas
-* Velocity não calculado
+# Review/Retrospectiva [Sprint 01](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/2)
+<b>Observação</b>: A Sprint 01 foi planejada de forma emergencial, logo ocorreram as seguintes falhas no planejamento:
+- Histórias não pontuadas
+- Velocity não calculado
 
-# Status das Histórias
+## Status das Histórias
+
 <table>
   <thead>
     <tr>
@@ -141,8 +143,9 @@
   </thead>
 </table>
 
-# Retrospectiva
-![](https://i.imgur.com/0i0Acnp.jpg)
+## Retrospectiva
+
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint01/retro_sp01.jpg" class="responsive-img">
 
 ## Resultado dos focos de melhoria 
 
@@ -175,7 +178,7 @@
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>
-            <td</td>
+            <td></td>
         </tr>
     </thead>
     <tbody style="text-align:center">
@@ -191,19 +194,21 @@
 </table>
 
 
-# Indicadores
-## Burndown
-**Pontos Planejados:** 32
+## Indicadores
+### Burndown
+<b>Pontos Planejados</b>: 32
 
-**Pontos Concluídos:** 21
+<b>Pontos Concluídos</b>: 21
 
-![](https://i.imgur.com/DiQrfJF.png)
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint01/burndown_sp01.png" class="responsive-img">
 
-## Evolução de Conhecimento
-### Gráfico evolutivo
-![](https://i.imgur.com/TsC4KzO.png)
+### Evolução de Conhecimento
+#### Quadro de Habilidades
 
-### Quadro de Habilidades
-![](https://i.imgur.com/nxKmGcw.png)
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint01/quadro_conhecimento_sp01.png" class="responsive-img">
 
+#### Gráfico evolutivo
+O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a Sprint anterior e a completada. A porcentagem de conhecimento geral é calculada utilzando o Quadro de Habilidades, logo o gráfico abaixo é gerado a partir da comparação das porcentagens de cada membro do time.
+
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint01/grafico_ev_sp01.png" class="responsive-img">
 
