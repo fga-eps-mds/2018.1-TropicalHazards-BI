@@ -3,6 +3,8 @@ version: '3'
 services:
   db:
     image: postgres
+    ports:
+      - 5000:5432
   web:
     build: .
     command: /bin/sh ./boot.sh

@@ -1,11 +1,11 @@
 # Planejamento da [Sprint 01](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/2)
 
-### Foco 
-Fechar documentação referente ao escopo do projeto e fazer treinamentos. 
+## Foco
+Fechar documentação referente ao escopo do projeto e fazer treinamentos.
 
 ## Datas
-**Data de início:** 12/03/2018
-**Data de termino:** 17/03/2018
+<b>Data de início:</b> 12/03/2018  
+<b>Data de termino:</b> 17/03/2018
 
 ## Backlog
 
@@ -25,7 +25,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Treinamento em Git</td>
       <td><b>1</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -33,7 +33,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Criar pasta docs com o GH pages</td>
       <td><b>13</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -41,7 +41,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Treinamento em metodologias ágeis</td>
       <td><b>2</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -49,7 +49,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Treinamento em python/django/django-rest</td>
       <td><b>5</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -57,7 +57,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Revisão de Orientação a Objetos</td>
       <td></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -65,7 +65,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Produzir o artefato de TAP</td>
       <td><b>3</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -73,7 +73,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Produzir artefato RoadMap</td>
       <td><b>8</b></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
     <tr>
       <td>
@@ -81,25 +81,26 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
       </td>
       <td>Produzir artefato Documento da visão</td>
       <td></td>
-      <td>Nova</td>      
+      <td>Nova</td>
     </tr>
   </tbody>
 </table>
 
-    **Observação:**Algumas tarefas não foram pontuadas pois o planejamento da Sprint 01 não ocorreu com toda a equipe, foi uma reunião emergencial para fazer a organização inicial do projeto.
+    
+<b>Observação:</b> Algumas tarefas não foram pontuadas pois o planejamento da Sprint 01 não ocorreu com toda a equipe, foi uma reunião emergencial para fazer a organização inicial do projeto.
 
-**Total de pontos**: 32
+<b>Total de pontos:</b> 32
 
 ## Papéis
-Scrum Master: Matheus Batista
+<b>Scrum Master:</b> Matheus Batista
 
-Devops: Arthur Assis
+<b>Devops:</b> Arthur Assis
 
-Arquitetura: Iago Carvalho
+<b>Arquitetura:</b> Iago Carvalho
 
-UX\UI: André Filho
+<b>UX\UI:</b> André Filho
 
-Especialista de escopo: Renata Souza
+<b>Product Owner:</b> Renata Souza
 
 ## Pareamento
 
