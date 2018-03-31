@@ -18,7 +18,6 @@ A parte de gerência do projeto possui o objetivo principal de conduzir o projet
 
 ● Produtividade da equipe;<br>
 ● Qualidade do código;<br>
-● Produção de código manutenível<br>
 
 ## 2. Planejamento de Medição
 
@@ -232,7 +231,22 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
   </tr>
   <tr>
     <td><b>Fórmula de Obtenção</b></td>
-    <td> - </td>  
+    <td> Cada avaliação possui o seguinte peso:<br><br>
+        Mito -> 1<br>
+        Sei bastante -> 0,755<br>
+        Me viro -> 0,55<br>
+        Sei pouco -> 0,35<br>
+        Socorro -> 0<br><br>
+        E a fórmula para o cálculo geral de cada membro é a seguinte:<br><br>
+        Pconhecimento = (((num_mito * 1) + (num_bastante * 0,755) + (num_viro * 0,55) + (num_pouco * 0,35) + (num_socorro * 0)) / num_areas) * 100<br><br>
+        Onde:<br><br>
+        num_mito - É a quantidade de áreas com avaliação do tipo "Mito"<br>
+        num_bastante - É a quantidade de áreas com avaliação do tipo "Sei bastante"<br>
+        num_viro - É a quantidade de áreas com avaliação do tipo "Me viro"<br>
+        num_pouco - É a quantidade de áreas com avaliação do tipo "Sei pouco"<br>
+        num_socorro - É a quantidade de áreas com avaliação do tipo "Socorro"<br>
+        num_areas - É a quantidade de áreas de conhecimento avaliadas<br>
+        Pconhecimento = Porcentagem geral de conhecimento de um determinado membro </td>  
   </tr>
   <tr>
     <td><b>Escala de Medição</b></td>
