@@ -683,7 +683,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 
 ## Referências
 
-[Critérios do Code Climate para Manutenibilidade](https://docs.codeclimate.com/docs/maintainability)
-[Critérios do Code Climate para Cobertura de Testes](https://docs.codeclimate.com/docs/cognitive-complexity)
-[Duplicação de Código](https://docs.codeclimate.com/docs/duplication-concept)
-[Complexidade Ciclomática](https://docs.codeclimate.com/docs/radon)
+[Critérios do Code Climate para Manutenibilidade](https://docs.codeclimate.com/docs/maintainability)<br>
+[Critérios do Code Climate para Cobertura de Testes](https://docs.codeclimate.com/docs/cognitive-complexity)<br>
+[Duplicação de Código](https://docs.codeclimate.com/docs/duplication-concept)<br>
+[Complexidade Ciclomática](https://docs.codeclimate.com/docs/radon)<br>
