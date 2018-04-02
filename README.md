@@ -1,11 +1,13 @@
 # Tropical Hazards BI
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![](https://i.imgur.com/OhSvJLM.jpg)
+
+[![Python 3](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/python-3-shield.svg)](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/)
+[![Updates](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/shield.svg)](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/)
 [![Build Status](https://travis-ci.org/fga-gpp-mds/2018.1-TropicalHazards-BI.svg?branch=master)](https://travis-ci.org/fga-gpp-mds/2018.1-TropicalHazards-BI)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7fc5f5cd8fcb47c363f8/test_coverage)](https://codeclimate.com/github/fga-gpp-mds/2018.1-TropicalHazards-BI/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7fc5f5cd8fcb47c363f8/maintainability)](https://codeclimate.com/github/fga-gpp-mds/2018.1-TropicalHazards-BI/maintainability)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 
 ## Sobre
 
