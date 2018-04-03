@@ -7,6 +7,8 @@ engines:
       - python
   radon:
     enabled: true
+    config:
+      threshold: "A"
 ratings:
   paths:
   - "**.py"
