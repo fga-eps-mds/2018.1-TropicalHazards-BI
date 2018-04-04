@@ -9,3 +9,4 @@ dj-database-url
 psycopg2
 djangorestframework
 psycopg2-binary==2.7.4
+coveralls

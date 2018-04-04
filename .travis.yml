@@ -19,7 +19,10 @@ before_script:
 script:
   - docker-compose up -d
   - docker-compose exec web flake8 --exclude='ipython_log.py*,migrations,templates, settings.py, manage.py' .
-  - docker-compose exec web pytest
+  - docker-compose exec web pytest --cov
+
+after_sucess:
+  - coveralls
 
 notifications:
   email: false
