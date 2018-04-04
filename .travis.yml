@@ -22,7 +22,7 @@ script:
   - docker-compose exec web pytest --cov
 
 after_sucess:
-  - coveralls
+  - docker-compose exec web coveralls
 
 notifications:
   email: false
