@@ -1,86 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Armata|Pontano+Sans" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i|Shadows+Into+Light" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>topricalhazards</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+      #card-container{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      #default_footer{
+        width: 100%
+        height: 40px;
+        text-align: center;
+      }
+      #main_content{
+        padding-top: 45px;
+        width: 28%;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        text-shadow: 0px 4px 3px rgb(0,0,4),
+                    0px 8px 13px rgb(0,0,1),
+                    0px 1px 2px rgb(0,0,1);
+
+      }
+    </style>
   </head>
+
   <body>
-    <nav class="brown darken-5" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo"><img src="https://i.imgur.com/xbqKZQx.png" />Tropical Hazards</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Login</a></li>
+    <!--inicio nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="img/biohazard2.png" id="navicon" alt="img">Tropical Hazzards</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projetos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato<span class="sr-only">(current)</span></a>
+          </li>
         </ul>
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Login</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Procurar no Site">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
+        <a class="nav-link text-white" href="#"><i class="fas fa-sign-in-alt"></i> Login<span class="sr-only">(current)</span></a>
       </div>
     </nav>
-    <div id="index-banner" class="parallax-container" style="height: 350px;">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <h1 class="header center grey-text text-darken-4 " style="font-family: Pontano Sans">Núcleo de Medicina Tropical</h1>
-          <div class="row center">
-            <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
-          </div>
+    <!--fim nav bar  -->
+
+    <!--conteudo  -->
+    <div class="card bg-dark text-white text-center" id="cardfdp">
+      <img class="card-img" src="img/jumble.png" alt="Card image">
+      <div class="card-img-overlay">
+        <div class="container-fluid" id="main_content">
+          <h1 class="card-title">Tropical Hazzards</h5>
+          <p class="card-text">Breve descrição...</p>
+          <a href="#" class="btn btn-outline-light ">Saiba mais</a>
         </div>
-      </div>
-      <div class="parallax"><img src="https://i.imgur.com/fCGAJLg.png" style="transform: translate3d(-50%, 203.424px, 0px); opacity: 1;"></div>
-    </div>
-    <div class="container">
-      <div class="section">
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="center icon-block">
-              <img src="https://i.imgur.com/i4i9qbC.png" />
-              <h5 class="center">Doenças Tropicais</h5>
-
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="center icon-block">
-              <img src="https://i.imgur.com/wvN3tFQ.png" />
-              <h5 class="center">Indicadores</h5>
-
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="center icon-block">
-              <img src="https://i.imgur.com/hu62l50.png" />
-              <h5 class="center">Comunidade</h5>
-
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-    <div class="parallax-container valign-wrapper" style="height: auto;">
-        <div class="parallax"><img src="https://i.imgur.com/joGPVQS.png" alt="Unsplashed background img 2" style="opacity: 1;"></div>
-      </div>
-      <footer class="page-footer brown darken-5">
-      <div class="footer-copyright">
-        <div class="container">
-          <p class="center">UnB</p>
+
+
+    <div class="container" id="card-container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/i4i9qbC.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Doenças Tropicais</h5>
+              <p class="card-text">No entanto, não podemos esquecer que o entendimento das metas propostas maximiza as possibilidades por conta dos índices pretendidos. Podemos já vislumbrar o modo pelo qual a complexidade dos estudos efetuados cumpre um papel essencial na formulação do processo de comunicação como um todo.</p>
+              <a href="#" class="btn btn-warning btn-block">Nossos Projetos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/wvN3tFQ.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Indicadores</h5>
+              <p class="card-text">As experiências acumuladas demonstram que a hegemonia do ambiente político possibilita uma melhor visão global do impacto na agilidade decisória. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a adoção de políticas descentralizadoras cumpre um papel essencial na formulação dos níveis de motivação departamental. </p>
+              <a href="#" class="btn btn-warning btn-block" >Nossos Dashboards</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://i.imgur.com/hu62l50.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Comunidade</h5>
+              <p class="card-text">ensando mais a longo prazo, a hegemonia do ambiente político maximiza as possibilidades por conta dos conhecimentos estratégicos para atingir a excelência. O incentivo ao avanço tecnológico, assim como a complexidade dos estudos efetuados causa impacto indireto na reavaliação de todos os recursos funcionais envolvidos. </p>
+              <a href="#" class="btn btn-warning btn-block">Entre em contato conosco</a>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../../dist/js/materialize.js"></script>
-    <script src="js/init.js"></script>
-
-
-
-  <div class="sidenav-overlay"></div><div class="drag-target"></div></body>
+    </div>
+    <!--MAPA  -->
+    <div id="map"></div>
+    <script>
+     function initMap() {
+       var uluru = {lat: -15.769, lng: -47.870};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 4,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgi1e5CtYvalAcnhrkZ8q7hUA_UdHnHz0&callback=initMap">
+    </script>
+    <!--Fim mapa  -->
+    <!--fim conteudo  -->
+    <!--Footer  -->
+    <div class="footer p-3 mb-2 bg-dark text-white" id="default_footer">
+      <span class="text">UNB</span>
+    </div>
+    <!--Fim Footer  -->
+  <!-- Scripts para o JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--Fins scripts-->
+  </body>
 </html>
