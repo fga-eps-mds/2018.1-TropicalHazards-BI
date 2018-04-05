@@ -31,11 +31,6 @@
                     0px 1px 2px rgb(0,0,1);
 
       }
-
-      .card-img{
-        max-height: 430px;
-      }
-      }
     </style>
   </head>
 
@@ -72,72 +67,71 @@
     <!--fim nav bar  -->
 
     <!--conteudo  -->
-    <div class="card bg-dark text-white text-center">
-      <img class="card-img" src="img/rresized.png" alt="Card image">
-      <div class="card-img-overlay">
-        <div class="container-fluid" id="main_content">
-          <h1 class="card-title">Tropical Hazzards</h1>
-          <p class="card-text">Breve descrição...</p>
-          <a href="#" class="btn btn-outline-light ">Saiba mais</a>
-        </div>
-      </div>
+    <div class="card-columns">
+      <div class="card">
+        <img class="card-img-top" src="http://thomasvconti.com.br/wp-content/uploads/2017/04/gapminder-dados-historicos-fonte-pesquisa-thomas-victor-conti.jpg" alt="Card image cap">
+        <div class="card-body">
+      <h5 class="card-title">Card title that wraps to a new line</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
-
-
-    <div class="container" id="card-container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/i4i9qbC.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Doenças Tropicais</h5>
-              <p class="card-text">No entanto, não podemos esquecer que o entendimento das metas propostas maximiza as possibilidades por conta dos índices pretendidos. Podemos já vislumbrar o modo pelo qual a complexidade dos estudos efetuados cumpre um papel essencial na formulação do processo de comunicação como um todo.</p>
-              <a href="projects.html" class="btn btn-warning btn-block">Nossos Projetos</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/wvN3tFQ.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Indicadores</h5>
-              <p class="card-text">As experiências acumuladas demonstram que a hegemonia do ambiente político possibilita uma melhor visão global do impacto na agilidade decisória. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a adoção de políticas descentralizadoras cumpre um papel essencial na formulação dos níveis de motivação departamental. </p>
-              <a href="#" class="btn btn-warning btn-block" >Nossos Dashboards</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/hu62l50.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Comunidade</h5>
-              <p class="card-text">ensando mais a longo prazo, a hegemonia do ambiente político maximiza as possibilidades por conta dos conhecimentos estratégicos para atingir a excelência. O incentivo ao avanço tecnológico, assim como a complexidade dos estudos efetuados causa impacto indireto na reavaliação de todos os recursos funcionais envolvidos. </p>
-              <a href="#" class="btn btn-warning btn-block">Entre em contato conosco</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
-    <!--MAPA  -->
-    <div id="map"></div>
-    <script>
-     function initMap() {
-       var uluru = {lat: -15.769, lng: -47.870};
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 15,
-         center: uluru
-       });
-       var marker = new google.maps.Marker({
-         position: uluru,
-         map: map
-       });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgi1e5CtYvalAcnhrkZ8q7hUA_UdHnHz0&callback=initMap">
-    </script>
-    <!--Fim mapa  -->
-    <!--fim conteudo  -->
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer class="blockquote-footer">
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="..." alt="Card image">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
     <!--Footer  -->
     <div class="footer p-3 mb-2 bg-dark text-white" id="default_footer">
       <span class="text">Nucleo de Medicina Tropical - UNB</span>
