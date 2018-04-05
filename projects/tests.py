@@ -39,4 +39,41 @@ def test_post_project_is_not_valid_return_400(client):
 
     assert response.status_code == 400
 
+def test_post_project_persist_db(client):
+    url = reverse('projects:projects')
+    data = {'name':"name", 'description':"description"}
+    client.post(url, data=data)
+    
+    projects = Project.objects.all()
+
+    assert projects.count() == 1
 # Create your tests here.
+
+def test_get_project_detail_return_200(client):
+
+    project = Project.objects.create(name='name', description='description')
+    url = reverse ('projects:projects-detail', kwargs={'pk': project.id})
+    response = client.get(url)
+
+    assert response.status_code == 200
+    assert response.data['id'] == project.id
+
+
+# def test_get_project_detail_return_404(client):
+    
+#     url = reverse('project:projects-detail', kwargs={'pk': project.1})
+#     response = client.get(url)
+
+#     assert response.status_code == 404
+
+def test_put_project_detail_return_200(client):
+    project = Project.objects.create(name='name', description='description')
+    project.save()
+    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    data = {'name': "name", 'description': "description"}
+    json_data = json.dumps(data)
+    response = client.put(url, data=json_data, content_type='application/json')
+    assert response.status_code == 200
+
+
+    
