@@ -1,6 +1,8 @@
 # Tropical Hazards BI
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![](https://i.imgur.com/OhSvJLM.jpg)
+[![Python 3](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/python-3-shield.svg)](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/)
+[![Updates](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/shield.svg)](https://pyup.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/)
 [![Build Status](https://travis-ci.org/fga-gpp-mds/2018.1-TropicalHazards-BI.svg?branch=master)](https://travis-ci.org/fga-gpp-mds/2018.1-TropicalHazards-BI)
 [![Coverage Status](https://coveralls.io/repos/github/fga-gpp-mds/2018.1-TropicalHazards-BI/badge.svg?branch=master)](https://coveralls.io/github/fga-gpp-mds/2018.1-TropicalHazards-BI?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7fc5f5cd8fcb47c363f8/maintainability)](https://codeclimate.com/github/fga-gpp-mds/2018.1-TropicalHazards-BI/maintainability)
