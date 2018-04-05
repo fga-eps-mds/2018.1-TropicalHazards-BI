@@ -28,12 +28,12 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>F01</td>
     <td>Implementação de Sistema de Autenticação</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -47,15 +47,15 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>F02</td>
     <td>Gerenciamento de Projetos</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -72,9 +72,9 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -94,8 +94,8 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -114,11 +114,11 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
   </tr>
   <tr>
     <td>F06</td>
@@ -133,11 +133,11 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
   </tr>
   <tr>
     <td><b>US</b></td>
@@ -164,7 +164,7 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US02</td>
     <td>Deletar Usuário (API)</td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -183,7 +183,7 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US03</td>
     <td>Editar Usuário (API)</td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td><td></td>
@@ -201,7 +201,7 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US04</td>
     <td>Criação de Usuário (front-end)</td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td><td></td>
@@ -219,8 +219,8 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US05</td>
     <td>Deletar Usuário (front-end)</td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td><td></td>
     <td></td>
@@ -237,9 +237,9 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US06</td>
     <td>Editar Usuário (front-end)</td>
+    <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -256,12 +256,12 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US07</td>
     <td>Criar Projeto</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td><td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -274,13 +274,13 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US08</td>
     <td>Deletar Projeto</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -293,13 +293,13 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
   <tr>
     <td>US09</td>
     <td>Editar Projeto</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -318,9 +318,9 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -337,9 +337,9 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -356,15 +356,15 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
   </tr>
   <tr>
     <td>US13</td>
@@ -380,10 +380,10 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
   </tr>
   <tr>
     <td>US14</td>
@@ -394,11 +394,11 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td>
     <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
     <td></td>
     <td></td>
     <td></td>
@@ -412,14 +412,19 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
     <td></td>
     <td></td><td></td>
     <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
     <td></td>
   </tr>
 </table>
+
+
+## Referências
+
+[Uma metodologia para engenharia de requisitos para pequenas equipes de desenvolvimento de software](http://revistas.unipar.br/index.php/empresarial/article/viewFile/302/273)
