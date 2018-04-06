@@ -3,7 +3,6 @@ from rest_framework import serializers
 from django.contrib.auth.hashers import make_password
 
 
-
 class UserCreateSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
@@ -37,12 +36,6 @@ class UserUpdateSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class UserDetailsSerializer(serializers.ModelSerializer):
-    """
-    User model w/o password
-    """
     class Meta:
         model = User
         fields = ('pk', 'username', 'email', 'password', 'is_staff')
-        read_only_fields = ('email',)
-
-        
