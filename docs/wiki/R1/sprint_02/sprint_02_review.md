@@ -242,6 +242,7 @@
 
 ### Velocity
 
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint02/velocity_sp02.png" class="responsive-img">
 
 
 ### Evolução de Conhecimento
