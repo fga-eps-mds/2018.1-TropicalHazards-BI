@@ -59,12 +59,12 @@ def test_get_project_detail_return_200(client):
     assert response.data['id'] == project.id
 
 
-# def test_get_project_detail_return_404(client):
+def test_get_project_detail_return_404(client):
     
-#     url = reverse('project:projects-detail', kwargs={'pk': project.1})
-#     response = client.get(url)
+    url = reverse('projects:projects-detail', kwargs={'pk': 1})
+    response = client.get(url)
 
-#     assert response.status_code == 404
+    assert response.status_code == 404
 
 def test_put_project_detail_return_200(client):
     project = Project.objects.create(name='name', description='description')
@@ -76,4 +76,21 @@ def test_put_project_detail_return_200(client):
     assert response.status_code == 200
 
 
+def test_put_project_detail_return400(client):
+    project = Project.objects.create(name='name', description='description')
+    project.save()
+    url = reverse('projects:projects-detail', kwargs = {'pk': project.id})
+    data = {'name':"", 'description':"description"}
+    json_data = json.dumps(data)
+    response =client.put(url, data = json_data, content_type='application/json')
     
+    assert response.status_code == 400
+
+def test_delete_project_detail_return_204(client):
+    project = Project.objects.create(name='name', description='description')
+    project.save()
+    url = reverse('projects:projects-detail', kwargs = {'pk': project.id})
+    response = client.delete(url, content_type='application/json')
+
+    assert response.status_code == 204
+
