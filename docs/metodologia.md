@@ -217,4 +217,23 @@ Algumas práticas do Extreme Programming(XP) foram incorporadas à execução do
 
 - Escrita de critérios de aceitação: No projeto é feito pelo PO, baseado nas expectativas do cliente.
 
-- Planejamento: O time se reune, seleciona as atividades e realiza estimativas. Os desenvolvedores irão definir as estimativas. É utilizado o Planning Poker, com o sistema de pontuação de fibonacci: 1, 2, 3, 5, 8, 13.... Cada estimativa leva em consideração uma tarefa inicialmente definida como correspondente ao valor "1" em esforço e dificuldade. Para documentação foi definida a tarefa tópico 2 do documento de visão. A nível de tarefas de desenvolvimento, a tarefa de Criação de usuário somente no backend foi estimada em "1".
+- Planejamento: O time se reune, seleciona as atividades e realiza estimativas. Os desenvolvedores irão definir as estimativas. É utilizado o Planning Poker, com o sistema de pontuação de fibonacci: 1, 2, 3, 5, 8, 13.... Cada estimativa leva em consideração uma tarefa inicialmente definida como correspondente ao valor "1", conforme detalhado a seguir:  
+
+<table>
+    <tr>
+        <th>Tipo da User Storie</th>
+        <th>Issue base da pontuação</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>Documentação</td>
+        <td align='center'><a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/46">#46</a></li></td>
+        <td>Elaborar o Posicionamento do Documento de Visão</td>
+    </tr>    
+    <tr>
+        <td>Código</td>
+        <td align='center'><a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/88">#88</a></td>
+        <td>Criar usuário no backend</td>
+    </tr>
+</table>    
+
