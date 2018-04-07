@@ -1,12 +1,12 @@
 # Planejamento da [Sprint 02](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/6)
 
-### Foco 
+## Foco 
 Preparando time para codar.
 
 ## Datas
-**Data de início:** 17/03/2018
+<b>Data de início:</b> 17/03/2018
 
-**Data de termino:** 23/03/2018
+<b>Data de termino:</b> 23/03/2018
 
 ## Backlog
 
@@ -107,6 +107,7 @@ Preparando time para codar.
       <td>Treinamento de Vue.ks</td>
       <td><b>3</b></td>
       <td>Nova</td>      
+    </tr>
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/7">7</a>
@@ -126,18 +127,18 @@ Preparando time para codar.
   </tbody>
 </table>
 
-**Total de pontos**: 35 
+<b>Total de pontos:</b> 35 
 
 ## Papéis
-Scrum Master: Matheus Batista
+<b>Scrum Master:</b> Matheus Batista
 
-Devops: Arthur Assis
+<b>DevOps:</b> Arthur Assis
 
-Arquiteto: Iago Carvalho
+<b>Arquiteto:</b> Iago Carvalho
 
-Especialista de UX\UI: André de Sousa
+<b>Especialista de UX\UI:</b> André de Sousa
 
-Product Owner: Renata Souza
+<b>Product Owner:</b> Renata Souza
 
 ## Pareamento
 Sem pareamentos definidos ainda, a equipe está se auto-organizando de forma entregar as documentações necessárias.
