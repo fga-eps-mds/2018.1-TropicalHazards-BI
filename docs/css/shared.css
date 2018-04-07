@@ -15,8 +15,14 @@ main .collection a.disabled {
   cursor: not-allowed;
 }
 
-main .collection a {
+main .collection .collection-item {
   /* this is to use when theme colors are defined */
+  color: #666 !important;
+}
+
+main .collection .collection-item:hover {
+  color: #fff176 !important;
+  background-color: #3f3f3f !important;
 }
 
 .row a,
