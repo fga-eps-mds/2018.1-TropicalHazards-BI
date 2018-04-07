@@ -16,7 +16,7 @@
 
 ### Product Owner
 
-<p align = "justify">O Product Owner tem o papel de colaborar e intermediar a comunicação entre o time de desenvolvimento e o cliente. Para isso, é necessária uma sólida compreensão do domínio do negócio e das diferentes necessidades das partes interessadas. 
+<p align = "justify">O Product Owner tem o papel de colaborar e intermediar a comunicação entre o time de desenvolvimento e o cliente. Para isso, é necessária uma sólida compreensão do domínio do negócio e das diferentes necessidades das partes interessadas.
 
 <p align = "justify">Deve ser capaz de compreender as capacidades da equipe de desenvolvimento para que haja uma negociação consciente com o cliente e auxiliar o time para obter resultados que satisfaçam as expectativas e necessidades do cliente. Ou seja, deve consciliar a realidade da equipe de desenvolvimento com as expectativas dos stakeholders.
 
@@ -29,7 +29,7 @@
 - Comunicar-se diretamente com o cliente do projeto e entender suas necessidades para o projeto.
 - Garantir que as novas funcionalidades sigam a visão do projeto.
 - Garantir que os requisitos definidos junto com o cliente sejam seguidos pelo time.
-- Definir o escopo do projeto. 
+- Definir o escopo do projeto.
 - Validar o escopo do projeto para o time de desenvolvimento.
 - Validar as entregas do produto durante a execução do projeto.
 
@@ -44,7 +44,7 @@
 - Motivar a equipe para propor soluções que realmente atendam as necessidades do cliente.
 - Transmitir e priorizar os requisitos ou recursos do aplicação para o time de desenvolvimento.
 - Definir os itens que compõem o Product Backlog.
-- Ajudar a priorizar as Histórias de Usuário do Backlog da Sprint, durante o Planejamento da Sprint, esclarescendo quaisquer detalhes para a execução do trabalho. 
+- Ajudar a priorizar as Histórias de Usuário do Backlog da Sprint, durante o Planejamento da Sprint, esclarescendo quaisquer detalhes para a execução do trabalho.
 - Apresentar as Histórias de Usuário priorizadas ao Product Owner Externo, para que sejam validadas por ele.
 
 **O Product Owner não deve levar novas Histórias de Usuário durante uma Sprint em execução. O planejamento da Sprint deve ser mantido até sua conclusão.**
@@ -204,3 +204,36 @@ Ao final da retrospectiva o Time Scrum deverá identificar quais ações serão 
         <td>12:30</td>
     </tr>
 </table>
+
+## XP
+
+Algumas práticas do Extreme Programming(XP) foram incorporadas à execução do projeto.
+
+- Programação em pares:: Quando são formadas duplas ou trios de desenvolvedores a executar uma mesma atividade. Proporciona a disseminação de conhecimento, em especial se um dos integrantes possui maior conhecimento para desenvolver a tarefa. Essa prática, no projeto, é essencial nas sprints iniciais, em que acontece o aprendizado das tecnologias.
+
+- Refatoração: São observados os pontos de melhoria do código do software, a fim de melhorar a qualidade, e o trecho de código é então reescrito, sem alterar a funcionalidade existente.
+
+- Integração Contínua: Todo o código desenvolvido é integrado diariamente e todos os testes devem passar antes e depois da integração, para garantir o bom funcionamento do software. Um erro identificado deve ser corrigido o quanto antes. No projeto, é utilizada a ferramenta automatizada "Travis CI" para integração contínua.
+
+- Escrita de critérios de aceitação: No projeto é feito pelo PO, baseado nas expectativas do cliente.
+
+- Planejamento: O time se reune, seleciona as atividades e realiza estimativas. Os desenvolvedores irão definir as estimativas. É utilizado o Planning Poker, com o sistema de pontuação de fibonacci: 1, 2, 3, 5, 8, 13.... Cada estimativa leva em consideração uma tarefa inicialmente definida como correspondente ao valor "1", conforme detalhado a seguir:  
+
+<table>
+    <tr>
+        <th>Tipo da User Storie</th>
+        <th>Issue base da pontuação</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>Documentação</td>
+        <td align='center'><a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/46">#46</a></li></td>
+        <td>Elaborar o Posicionamento do Documento de Visão</td>
+    </tr>    
+    <tr>
+        <td>Código</td>
+        <td align='center'><a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/88">#88</a></td>
+        <td>Criar usuário no backend</td>
+    </tr>
+</table>    
+
