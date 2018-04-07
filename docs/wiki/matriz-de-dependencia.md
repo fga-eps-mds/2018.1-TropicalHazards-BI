@@ -1,8 +1,6 @@
 ## Rastreabilidade e matriz de dependência
-<p align ="justify">  
 O objetivo deste artefato é  mapear as US que foram planejadas para o projeto Tropical Hazards em uma matriz, permitindo o rastreamento dos requisitos funcionais em relação aos requisitos de negócio identificados, garantindo também a visualização da dependência de tais requisitos através de intersecções simbolizada por um "X" na matriz.
-</p>
-<br>
+
 
 ###### Matriz de Dependência  
 <table>
