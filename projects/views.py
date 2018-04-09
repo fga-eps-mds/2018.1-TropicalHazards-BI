@@ -5,16 +5,19 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
-from rest_framework.authentication import SessionAuthentication
-from rest_framework.authentication import BasicAuthentication
+# from rest_framework.permissions import IsAuthenticated
+# from rest_framework.authentication import SessionAuthentication
+# from rest_framework.authentication import BasicAuthentication
 # from django.contrib.auth.models import Project
 # from django.core import serializers
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
 
 
+@permission_classes((IsAuthenticated, ))
 class ProjectList(APIView):
-    authentication_classes = (SessionAuthentication, BasicAuthentication)
-    permission_classes = (IsAuthenticated,)
+    # authentication_classes = (SessionAuthentication, BasicAuthentication)
+    # permission_classes = (IsAuthenticated,)
 
     def get(self, request, format=None):
 
@@ -35,10 +38,8 @@ class ProjectList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+@permission_classes((IsAuthenticated, ))
 class ProjectDetail(APIView):
-    authentication_classes = (SessionAuthentication, BasicAuthentication)
-    permission_classes = (IsAuthenticated)
-
     def get_object(self, pk):
 
         try:
