@@ -142,6 +142,5 @@ STATIC_URL = '/static/'
 #         'rest_framework.authentication.BasicAuthentication',
 #         'rest_framework.authentication.SessionAuthentication',
 #         'rest_framework.permissions.IsAuthenticated',
-
 #     )
 # }
