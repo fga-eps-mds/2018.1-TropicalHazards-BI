@@ -12,9 +12,10 @@ from rest_framework import status
 # from django.core import serializers
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
-@permission_classes((IsAuthenticated, ))
+@permission_classes((IsAuthenticatedOrReadOnly, ))
 class ProjectList(APIView):
     # authentication_classes = (SessionAuthentication, BasicAuthentication)
     # permission_classes = (IsAuthenticated,)
@@ -32,8 +33,10 @@ class ProjectList(APIView):
         request.data['user'] = request.user.id
 
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            if request.user.is_staff:
+                serializer.save()
+                return Response(serializer.data,
+                                status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
