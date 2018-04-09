@@ -33,3 +33,9 @@ class UserUpdateSerializer(serializers.HyperlinkedModelSerializer):
                                                             ))
         instance.save()
         return instance
+
+
+class UserDetailsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('pk', 'username', 'email', 'password', 'is_staff')
