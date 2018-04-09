@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls'), name='users'),
     path('rest-auth/', include('rest_auth.urls')),
-    path('refresh-token/', refresh_jwt_token)
+    path('refresh-token/', refresh_jwt_token),
+    path('projects/', include('projects.urls'), name='projects')
 ]
