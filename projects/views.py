@@ -29,8 +29,8 @@ class ProjectList(APIView):
 
     def post(self, request, format=None):
 
-        serializer = ProjectSerializer(data=request.data)
         request.data['user'] = request.user.id
+        serializer = ProjectSerializer(data=request.data)
 
         if serializer.is_valid():
             if request.user.is_staff:

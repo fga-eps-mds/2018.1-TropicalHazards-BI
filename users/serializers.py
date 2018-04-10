@@ -38,4 +38,4 @@ class UserUpdateSerializer(serializers.ModelSerializer):
 class UserDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('pk', 'username', 'email', 'password', 'is_staff')
+        fields = ('pk', 'username', 'email' ,'is_staff')
