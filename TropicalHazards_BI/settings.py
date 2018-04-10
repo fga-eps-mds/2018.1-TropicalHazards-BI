@@ -125,6 +125,8 @@ REST_AUTH_SERIALIZERS = {
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=1),
     'JWT_ALLOW_REFRESH': True,
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
+    'JWT_PAYLOAD_HANDLER': 'users.utils.jwt_payload_handler'
 }
 # Set jwt as default authentication class
 REST_FRAMEWORK = {
