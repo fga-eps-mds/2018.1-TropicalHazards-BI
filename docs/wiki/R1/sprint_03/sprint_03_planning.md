@@ -148,10 +148,10 @@ Não existe um padrão pré-definido para pareamento, os membros estão se auto-
 ## Planejamento do time
 O planejamento falho no início da Sprint está acarretando em demandas não entregues por conta de atividades não planejadas surgindo durante a Sprint.
 
-## Fluxo e revisão dos PR's
+## Fluxo e revisão dos PRs
 A revisão dos PR's não está ocorrendo da melhor maneira, pois não existe um fluxo definido, atualmente quando algum membro do time tem um tempo disponível as revisẽs são realizadas, caso contrário ficam em espera por um ou dois dias.
 
-## Planejamento de Comunicação de EPS
+## Planejamento e Comunicação de EPS
 A equipe de EPS não se comunicou bem em relação ao progresso das atividades planejadas na Sprint anterior, o que levou a tarefas não concluídas.
 
 
