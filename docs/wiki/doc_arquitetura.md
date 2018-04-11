@@ -144,6 +144,8 @@ Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serv
 ### 5.1 Visão Geral
 
 
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/servicos.png" class="responsive-img">
+
 ### 5.2 Micro Serviços e camadas
 <p align="justify">Os micro serviços presentes no diagrama estão detalhados abaixo, descrevendo suas comunicações, conexões e justificativas para a escolha dos mesmos.</p>
 
