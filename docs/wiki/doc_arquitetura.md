@@ -139,16 +139,32 @@ Serializers permitem que os dados complexos, tais como QuerySets e instâncias d
 
 
 ## 5. Arquitetura dos Serviços e visão de Implementação
-
-*[Esta seção descreve a estrutura geral do modelo de implementação, a divisão do software em camadas e subsistemas no modelo de implementação e todos os componentes significativos do ponto de vista da arquitetura.]*
+Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serviços integrados ao software, detalhando e apresentando a interação entre os diversos serviços e sistemas. Os principais componentes e sub-componentes estão descritos nos tópicos a seguir.
 
 ### 5.1 Visão Geral
 
-*[Esta subseção nomeia e define as diversas camadas e o seu conteúdo, as regras que determinam a inclusão em uma camada específica e as fronteiras entre as camadas. Inclua um diagrama de componentes que mostre os relacionamentos entre as camadas.]*
 
-### 5.2 Camadas
+### 5.2 Micro Serviços e camadas
 
-*[Para cada camada, inclua uma subseção com o respectivo nome, uma lista dos subsistemas localizados na camada e um diagrama de componentes.]*
+#### 5.2.1 TropicalHazards_BI (Back-end)
+
+<p align="justify">Arquitetura que utiliza o padrão MVT adaptado previamente detalhado e o framework Django Rest. Esta fronteira é responsável pelo tratamento das requisições do usuário para API e por estabelecer as conexões e comunicações com os demais serviços e API's externas. Nesta camada está presente o sistema de autenticação de usuário, gerenciamento de funcionalidades de projetos e dashboards, assim como os meios necessários para garantir a importação e persistência dos dados no banco.</p>
+
+#### 5.2.2 TropicalHazards_BI (Front-end)
+
+<p align="justify">Esta fronteira realiza a comunicação com a API do Back-end, lidando ao mesmo tempo com a interação com o usuário e a disponibilidade de informações. Os dados e indicadores gerados nos outros subsistemas são apresentados através desta camada.</p>
+
+#### 5.2.3 MongoDB
+
+<p align="justify">O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>. Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores. A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.</p>
+
+#### 5.2.4 Metabase
+<p align="justify">O serviço principal para o levantamento de indicadores a partir dos dados de pesquisas é o Metabase. Esse serviço faz a comunicação e recebe os dados do banco não relacional, permitindo filtrar, estabelecer conexões entre os dados e apresentar gráficos. O Metabase foi priorizado para integração com a API em relação a outros serviços semelhantes, pois foi testado de acordo com os recursos computacionais disponíveis para o desenvolvimento do projeto, garantindo uma eficiência para o gerenciamento dos dashboards e coleções de dados.</p>
+
+
+#### 5.2.5 PostgreSQL
+
+#### 5.2.6 Nginx
 
 ## 6. Visão de Dados
 
