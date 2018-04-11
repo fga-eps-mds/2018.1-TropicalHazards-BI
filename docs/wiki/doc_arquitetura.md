@@ -1,19 +1,9 @@
-<!-- Template de Documento de Arquitetura de Software versão em Markdown-->
 # **Tropical Hazards**
 
 Documento de Arquitetura
 ===================
 
-----------
-## Histórico  de Revisões
 
-| Data | Versão | Descrição | Autores |
-|:----:|:------:|:---------:|:-------:|
-| **/03/2018 | 1.0 | Abertura do documento | - |
-| **/03/2018 | 1.1 | - | - |
-| **/03/2018 | 1.2 | - | - |
-| **/03/2018 | 1.3 | - | - |
------------
 
 Sumário
 ----------------
@@ -88,9 +78,7 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
   <li> <b>View</b> : na View está contida a lógica de negócio, possuindo a lógica que define o acesso a Model e sendo responsável por enviar e definir quais dados serão exibidos na camada de Template, assemelhando-se, conforme dito anteriormente, a camada Controller do MVC clássico.</li>
   <li> <b>Template</b> : nesta camada são definidos como os dados recebidos através da View serão exibidos ao usuário, sendo, esta camada, responsável por renderizar a interface gráfica do usuário, tal qual a camada View no MVC clássico.</li>
 </ul>
-![Figure2-2](https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png "Figura 2.2 - Padrão MTV")
-
-Figura 2.2 - Padrão MTV (Fonte : https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png)</p>
+<br>
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
@@ -105,7 +93,6 @@ Este framework de JavaScript possibilita o desenvolvimento de interfaces para o 
 
 O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
 </p>
-<h2> 3. Metas e Restrições de Arquitetura</h2>
 
 
 ## 3. Metas e Restrições de Arquitetura
@@ -115,7 +102,7 @@ O projeto Tropical Hazards possui as seguintes metas:
   <li>Modularidade: o código deve ter baixo acoplamento e alta modularidade, para facilitar a manutenabilidade</li>
 </ul>
 <br>
-Há, também, as seguintes restrições: 
+Há, também, as seguintes restrições:
 <ul>
   <li>Framework Django 2.0.3 com Python 3.5.2</li>
   <li>Django REST: um framework utilizada para construção de WEB APIs</li>
@@ -130,7 +117,7 @@ Há, também, as seguintes restrições:
 
 ### 4.1 Visão Geral
 
-### 5.1.2 Diagrama de pacotess
+### 4.1.2 Diagrama de pacotess
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
@@ -138,46 +125,31 @@ O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É po
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
-#### 5.2.1. View
+#### 4.2.1. View
 A View será responsável por gerenciar os dados e os comportamentos da aplicação. Ela fará a ligação da model com o Vue JS .
 
-#### 5.2.2 Model
+#### 4.2.2 Model
 A pasta denominada model trará o conceito de abstração à situação apresentada no mundo real, identificando as entidades a serem utilizadas na aplicação. Além disso, a model deverá garantir a comunicação com o banco de dados.
 
-#### 5.2.3 Test (Teste)
+#### 4.2.3 Test (Teste)
 A aplicação de testes durante a implementação de uma aplicação é de extrema importância, por esse motivo, vão ser utilizados dois tipos de testes no projeto: teste de unidade e teste de integração. Haverá no projeto uma pasta teste a fim de englobar os arquivos desenvolvidos para tal atividade.
 
-#### 5.2.4 Serializers
+#### 4.2.4 Serializers
 Serializers permitem que os dados complexos, tais como QuerySets e instâncias da model sejam convertidos para tipos de dados Python que podem ser facilmente fundidas em JSON, XML ou outros tipos de conteúdo. Os serializadores também fornecem desserialização, permitindo que os dados analisados ​​sejam convertidos novamente em tipos complexos, após a primeira validação dos dados recebidos.
 
-## 5. Visão de Processos
 
-*[Esta seção descreve a decomposição do sistema em processos leves (threads simples de controle) e processos pesados (agrupamentos de processos leves). Organize a seção em grupos de processos que se comunicam ou interagem. Descreva os modos principais de comunicação entre processos, como transmissão de mensagens e interrupções.]*
-
-## 6. Visão de Implantação
-
-*[Esta seção descreve uma ou mais configurações da rede física (hardware) na qual o software é implantado e executado. Ela é uma visão do Modelo de Implantação. Para cada configuração, ela deve indicar no mínimo os nós físicos (computadores, CPUs) que executam o software e as respectivas interconexões (barramento, LAN, ponto a ponto e assim por diante.) Inclua também um mapeamento dos processos da Visão de Processos nos nós físicos.]*
-
-## 7. Visão de Implementação
+## 5. Arquitetura dos Serviços e visão de Implementação
 
 *[Esta seção descreve a estrutura geral do modelo de implementação, a divisão do software em camadas e subsistemas no modelo de implementação e todos os componentes significativos do ponto de vista da arquitetura.]*
 
-### 7.1 Visão Geral
+### 5.1 Visão Geral
 
 *[Esta subseção nomeia e define as diversas camadas e o seu conteúdo, as regras que determinam a inclusão em uma camada específica e as fronteiras entre as camadas. Inclua um diagrama de componentes que mostre os relacionamentos entre as camadas.]*
 
-### 7.2 Camadas
+### 5.2 Camadas
 
 *[Para cada camada, inclua uma subseção com o respectivo nome, uma lista dos subsistemas localizados na camada e um diagrama de componentes.]*
 
-## 8. Visão de Dados (opcional)
+## 6. Visão de Dados
 
 *[Uma descrição da perspectiva de armazenamento de dados persistentes do sistema. Esta seção será opcional se os dados persistentes forem poucos ou inexistentes ou se a conversão entre o Modelo de Design e o Modelo de Dados for trivial.]*
-
-## 9. Tamanho e Desempenho
-
-*[Uma descrição das principais características de dimensionamento do software que têm um impacto na arquitetura, bem como as restrições do desempenho desejado.]*
-
-## 10. Qualidade
-
-*[Uma descrição de como a arquitetura do software contribui para todos os recursos (exceto a funcionalidade) do sistema: extensibilidade, confiabilidade, portabilidade e assim por diante. Se essas características tiverem significado especial, como, por exemplo, implicações de proteção, segurança ou privacidade, elas devem ser claramente delineadas.]*
