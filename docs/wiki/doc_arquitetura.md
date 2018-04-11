@@ -117,7 +117,7 @@ Há, também, as seguintes restrições:
 
 ### 4.1 Visão Geral
 
-### 4.1.2 Diagrama de pacotess
+### 4.1.2 Diagrama de pacotes
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
@@ -145,6 +145,8 @@ Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serv
 
 
 ### 5.2 Micro Serviços e camadas
+<p align="justify">Os micro serviços presentes no diagrama estão detalhados abaixo, descrevendo suas comunicações, conexões e justificativas para a escolha dos mesmos.</p>
+
 
 #### 5.2.1 TropicalHazards_BI (Back-end)
 
@@ -156,15 +158,18 @@ Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serv
 
 #### 5.2.3 MongoDB
 
-<p align="justify">O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>. Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores. A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.</p>
+<p align="justify">O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados de pesquisas recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>. Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores. A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.</p>
 
 #### 5.2.4 Metabase
 <p align="justify">O serviço principal para o levantamento de indicadores a partir dos dados de pesquisas é o Metabase. Esse serviço faz a comunicação e recebe os dados do banco não relacional, permitindo filtrar, estabelecer conexões entre os dados e apresentar gráficos. O Metabase foi priorizado para integração com a API em relação a outros serviços semelhantes, pois foi testado de acordo com os recursos computacionais disponíveis para o desenvolvimento do projeto, garantindo uma eficiência para o gerenciamento dos dashboards e coleções de dados.</p>
 
 
 #### 5.2.5 PostgreSQL
+<p align="justify">O sistema utiliza o banco de dados PostgreSQL além do banco não relacional, para realizar uma conexão com o metabase e também salvar diversos dados referentes ao funcionamento da aplicação e sua estrutura básica, como os dados de usuários e projetos.</p>
+
 
 #### 5.2.6 Nginx
+<p align="justify">Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por ser gratuito, open source e ter alta performance.</p>
 
 ## 6. Visão de Dados
 
