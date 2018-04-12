@@ -19,32 +19,26 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 class ProjectList(APIView):
     # authentication_classes = (SessionAuthentication, BasicAuthentication)
     # permission_classes = (IsAuthenticated,)
-
     def get(self, request, format=None):
-
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
-
         return Response(serializer.data)
 
     def post(self, request, format=None):
 
         request.data['user'] = request.user.id
         serializer = ProjectSerializer(data=request.data)
-
         if serializer.is_valid():
             if request.user.is_staff:
                 serializer.save()
                 return Response(serializer.data,
                                 status=status.HTTP_201_CREATED)
-
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @permission_classes((IsAuthenticated, ))
 class ProjectDetail(APIView):
     def get_object(self, pk):
-
         try:
             return Project.objects.get(pk=pk)
         except Project.DoesNotExist:
@@ -58,14 +52,18 @@ class ProjectDetail(APIView):
     def put(self, request, pk, format=None):
         project = self.get_object(pk=pk)
         serializer = ProjectSerializer(project, data=request.data)
-
-        if serializer.is_valid():
+        request.data['user'] = request.user.id
+        if serializer.is_valid() and request.user == project.user:
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            return Response(serializer.errors,
+                            status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
         project = self.get_object(pk)
-        project.delete()
-
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        if request.user == project.user:
+            project.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
