@@ -121,7 +121,7 @@ Há, também, as seguintes restrições:
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
-<img src="images/Diagrams/diagrama_de_pacotes.png" alt="diagrama de arquitetura" class="responsive-img">
+![](https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issue_141_arquitetura_dos_servicos/docs/images/Diagrams/diagrama_de_pacotes.png)
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
@@ -174,5 +174,6 @@ Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serv
 <p align="justify">Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por ser gratuito, open source e ter alta performance.</p>
 
 ## 6. Visão de Dados
+<p align="justify">Esta seção apresenta a modelagem e perspectiva da persistência dos dados nos dois bancos integrados ao sistema. A fronteira do id do projeto representa a associação de cada projeto aos diversos dados de pesquisas importados e armazenados no banco não relacional.</p>
 
-*[Uma descrição da perspectiva de armazenamento de dados persistentes do sistema. Esta seção será opcional se os dados persistentes forem poucos ou inexistentes ou se a conversão entre o Modelo de Design e o Modelo de Dados for trivial.]*
+![](https://i.imgur.com/G3aCHUx.png)
