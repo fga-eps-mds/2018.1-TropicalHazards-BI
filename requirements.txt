@@ -11,3 +11,6 @@ djangorestframework
 psycopg2-binary==2.7.4
 coveralls
 django-cors-headers==2.2.0
+django-rest-auth
+djangorestframework-jwt
+model_mommy
