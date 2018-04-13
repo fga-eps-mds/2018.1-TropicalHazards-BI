@@ -9,5 +9,5 @@ dj-database-url
 psycopg2
 djangorestframework
 psycopg2-binary==2.7.4
-coveralls
+coveralls==1.3.0
 django-cors-headers==2.2.0
