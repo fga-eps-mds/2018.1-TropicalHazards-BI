@@ -16,17 +16,13 @@ Sumário
     * 1.5 [Visão Geral](#15-visão-geral)
 * 2 . [Representação da Arquitetura](#2-representação-da-arquitetura)
 * 3 . [Metas e Restrições de Arquitetura](#3-metas-e-restrições-de-arquitetura)
-* 4 . [Visão Lógica](#5-visão-lógica)
-    * 4.1 [Visão Geral](#51-visão-geral)
+* 4. [Visão Geral](#51-visão-geral)
+    * 4.1 [Diagrama de pacotes](#41-diagrama-de-pacotes)
     * 4.2 [Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura)
-* 5 . [Visão de Processos](#6-visão-de-processos)
-* 6 . [Visão de Implantação](#7-visão-de-implantação)
-* 7 . [Visão de Implementação](#8-visão-de-implementação)
-    * 7.1 [Visão Geral](#81-visão-geral)
-    * 7.2 [Camadas](#82-camadas)
-* 8 . [Visão de Dados (opcional)](#9-visão-de-dados-opcional)
-* 9 . [Tamanho e Desempenho](#10-tamanho-e-desempenho)
-* 10 . [Qualidade](#11-qualidade)
+* 5 . [Arquitetura dos Serviços e visão de Implementação](#5-arquitetura-dos-serviços-e-visão-de-implementação)
+    * 5.1 [Visão Geral](#51-visão-geral)
+    * 5.2 [Micro Serviços e camadas](#52-micro-serviços-e-camadas)
+* 6 . [Visão de Dados](#6-visão-de-dados)
 -----------
 
 ## 1. Introdução
@@ -111,13 +107,10 @@ Há, também, as seguintes restrições:
   <li>Vue.js: uma framework javascript para construção de interfaces de usuário, no sistema irá substituir a camada Template do padrão MVT</li>
 </ul>
 
-## 4. Visão Lógica
 
-*[Esta seção descreve as partes significativas do ponto de vista da arquitetura do modelo de design, como sua divisão em subsistemas e pacotes. Além disso, para cada pacote significativo, ela mostra sua divisão em classes e utilitários de classe. Apresente as classes significativas do ponto de vista da arquitetura e descreva suas responsabilidades, bem como alguns relacionamentos, operações e atributos de grande importância.]*
+### 4. Visão Geral
 
-### 4.1 Visão Geral
-
-### 4.1.2 Diagrama de pacotes
+### 4.1 Diagrama de pacotes
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
@@ -142,7 +135,6 @@ Serializers permitem que os dados complexos, tais como QuerySets e instâncias d
 Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serviços integrados ao software, detalhando e apresentando a interação entre os diversos serviços e sistemas. Os principais componentes e sub-componentes estão descritos nos tópicos a seguir.
 
 ### 5.1 Visão Geral
-
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/servicos.png" class="responsive-img">
 
