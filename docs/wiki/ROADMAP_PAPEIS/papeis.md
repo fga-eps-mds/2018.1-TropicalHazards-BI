@@ -17,3 +17,8 @@ Figura 2 - Atividades de Product Owner até a Release 2.
 Esta seção apresenta as responsabilidades e funções do arquiteto de software do sistema, detalhando as atividades necessárias para o integrante que for desempenhar este papel.
 
 ![Roadmap_arquiteto](Imagens/PAPEL_ARQUITETO.png)
+
+
+## Scrum Master
+Define atividades, responsabilidades e objetivos do Scrum Master visando maximizar a produtividade e mitigar os riscos enfretados pela equipe. 
+<img src="Imagens/scrum_master.png" class="responsive-img">
