@@ -12,25 +12,47 @@ Neste projeto, _milestones_ são usadas para a demarcação de _sprints_.
 
 ## Issues com Milestones
 _Issues_ que possuem _deadlines_ demarcadas por sprints deverão ser
-associadas ao _milestone_ da _sprint_. E tambem, para fins de rastreabilidade, a 
-issue deve ter a _label_ conexa à _sprint_, sendo que esta _label_ deverá ser mantida caso a _issue_ não seja finalizada no prazo determinado.
+associadas ao _milestone_ da _sprint_.
 
 ## Criação de Issues
 Uma _issue_ deve ser criada toda vez que forem identificados um dos subsequentes aspectos relacionados ao projeto:
+<ul>
+  <li>Identificação de bugs;</li>
+  <li>Sugestão de novas funcionalidades (_user stories_, _epics_, _tasks_ entre repositório de front/back);</li>
+  <li>Documentar dúvidas.</li>
+</ul>
 
-- Identificação de bugs;
-- Sugestão de novas funcionalidades (_user stories_, _epics_, _tasks_ entre repositório de front/back);
-- Documentar dúvidas.
-
-### Templates de Issue
-- [User Stories](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=issue_template.md)
-- [Bugs](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md)
-
-
+Lembrando que:
+<ul>
+  <li>Issues não planejadas que foram completadas durante a Sprint não devem ser pontuadas</li>
+  <li>Issues referente a documentação e back-end devem ser criadas no repositório do back-end, e as issues referente ao front-end devem ser criadas no repositório do front-end</li>
+  <li>
+    <ul>Associar a issue a pipeline correta:
+      <li>Pipeline Features: Para issues que corresponde a Features</li>
+      <li>Product Backlog: Novas issues são alocadas para o backlog do produto</li>
+      <li>Sprint Backlog: Issues que serão executadas na Sprint</li>
+      <li>In Progress: Issues sendo executadas</li>
+      <li>Pending Review: Issues que estão esperando ser revisadas, ou seja já existe um pull request associado</li>
+      <li>Done: Issues completadas, ou seja já revisadas</li>
+      <li>Closed: Issues fechadas após a finalização da Sprint</li>
+      <li>Questions: Issues que são perguntas</li>
+    </ul>
+  </li>
+  <li>Caso surja algum problema com uma atividade que já foi documentada em uma Issue reabra a issue, não crie uma nova</li>
+</ul>
 
 ## Labels em Issues
 Todas as _issues_ devem possuir _labels_ para melhor sinalização e organização do repositório.
 Cada _label_ deve ser utilizada segundo seu contexto, de forma que abranja a _issue_ a ser marcada.
+Algumas regras mais comuns para usar labels em issues são:
+<ul>
+  <li>Issues planejadas para uma milestone devem ser marcadas com a label Planned</li>
+  <li>Issues não planejadas que foram completadas durante a sprint, devem ser associadas a milestone correspondente a sprint e marcadas com a label Not Planned</li>
+  <li>Issues correspondentes a história de usuário devem ser sinalizadas com a label US, no caso de história técnica utilizar a label TS</li>
+  <li>Issues correspondentes a algum dos papéis(Scrum Master, PO, DevOps, Arquiteto e Ux/UI) devem ser sinalizadas com com as labels disponívels para representar os papéis.</li>
+  <li>Tarefas que se tornaram débitos devem ser marcadas com a label Debts</li>
+</ul>
+
 
 As _labels_ disponíveis podem ser encontradas [aqui](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/labels)
 
@@ -39,4 +61,8 @@ As _labels_ disponíveis podem ser encontradas [aqui](https://github.com/fga-gpp
 Assim como as _issues_, os _Pull Requests_ devem ser corretamente demarcados com _labels_,
 sendo que algumas _labels_ são passíveis de serem usadas apenas por PR's - como a _label_ de **pending review**.
 
-_Pull requests_ 
+Observações sobre _Pull requests_ :
+<ul>
+  <li>Pull requests não devem ser pontuados</li>
+  <li>Em Pull requests é necessário marcar ao menos um Reviewer</li>
+</ul>
