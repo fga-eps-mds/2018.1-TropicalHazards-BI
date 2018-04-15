@@ -20,5 +20,12 @@ Esta seção apresenta as responsabilidades e funções do arquiteto de software
 
 
 ## Scrum Master
-Define atividades, responsabilidades e objetivos do Scrum Master visando maximizar a produtividade e mitigar os riscos enfretados pela equipe. 
+Define atividades, responsabilidades e objetivos do Scrum Master visando maximizar a produtividade e mitigar os riscos enfretados pela equipe.
 <img src="Imagens/scrum_master.png" class="responsive-img">
+
+## Designer
+O papel de _designer_, dentro do projeto funciona de maneira diferenciada em relação aos outros papéis. Assim como o ciclo do _Scrum_, o ciclo de design é empírico, visando a experimentação de seus produtos e evoluindo-os continuamente. O papel de designer também funciona como um _Wild Card_ dentro do projeto.
+Abaixo as principais funções do papel de designer no projeto.
+
+Roadmap:
+<img src="Imagens/papel_design.png" alt="papel_design" class="responsive-img">
