@@ -4,16 +4,25 @@
 Documento de Especicação Suplementar
 ===================
 
-----------
-## Histórico  de Revisões
+<table>
 
-| Data | Versão | Descrição | Autores |
-|:----:|:------:|:---------:|:-------:|
-| **/04/2018 | 1.0 | Abertura do documento | - |
-| **/03/2018 | 1.1 | - | - |
-| **/03/2018 | 1.2 | - | - |
-| **/03/2018 | 1.3 | - | - |
------------
+   <tr>
+	   	<td> <strong>Data</strong> </td>
+	   	<td> <strong>Versão</strong> </td>
+	   	<td> <strong>Descrição</strong> </td>
+	   	<td> <strong>Autor(es)</strong> </td>
+   </tr>
+
+
+   <tr>
+	   	<td>15/04/2018</td>
+                <td>0.1</td>
+	   	<td>Criação do Documento</td>
+	   	<td>André Bargas</td>
+   </tr>
+
+</table>
+
 
 Sumário
 ----------------
@@ -36,41 +45,53 @@ Sumário
 
 ### 1.1 Finalidade
 
-Este documento captura os requisitos de qualidade relacionados ao sistema Observ que não foram contemplados nos documentos de Visão e de Arquitetura. A finalidade é definir os requisitos não funcionais e sspecicações suplementares relacionados ao aplicativo Observ.
+Este documento captura os requisitos relacionados ao sistema Observ, produto do projeto Tropical Hazards BI. A finalidade é definir os requisitos não funcionais e especicações suplementares que não foram identificados claramente nos documentos de visão geral e arquitetura referentes a qualidade, usuabilidade, confiabilidade, interface e requisitos legais do projeto.
 
 ### 1.2 Escopo
 
-Este artefato documenta as especificações e requisitos não funcionais relacionados ao sistema “Observ". Serão descritas, aqui, a usabilidade, a confiabilidade e a suportabilidade do sistema, assim como as restrições de design, requisitos de interface e, ainda, informações de legalidade, direitos autorais e outros.
+Este artefato documenta as especificações e requisitos não funcionais relacionados ao sistema “Observ". Serão descritas, aqui, a usabilidade, a confiabilidade e a suportabilidade do sistema, assim como as restrições de suportabilidade, requisitos de interface e, ainda, informações de legalidade, direitos autorais e outros.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 <ul>
-  <li>NMT: <em>Núcleo de Medicina Tropical</em></li>
-  <li>UNB: <em>Universidade de Brasília</em></li>
-  <li>MVC: <em>Model-View-Controller</em></li>
-  <li>MVT: <em>Model-View-Template</em></li/>
+
 </ul>
 
 ### 1.4 Referências
 
 SOUSA, André; WILLER, Guilherme; BATISTA, Matheus; BELCHIOR, Emanoel. Especificação Suplementar. Disponível em: https://github.com/fga-gpp-mds/2017.1-Escola-X/wiki/Especifica%C3%A7%C3%A3o-Suplementar. Acesso em 12 de Abril de 2018.
 
+KEVIL, Pedro; ALVES, Adrianne. Especifica Suplementar. Diponível em:
+https://github.com/fga-gpp-mds/Falko-2017.2-BackEnd/wiki/Especifica%C3%A7%C3%A3o-Suplementar. Acesso em 15 de abril de 2018.
+
 ## 2. Usabilidade
 
 O sistema contemplar uma interação simplificada e minimalista, sendo fácil aprender e ultilizar. A aplicação proverá funcionalidades relevantes e utilizáveis para os usuários, assim como a prevenção de erros e, em casos inevitáveis dos mesmo a exibição de mensagens informativas sobre tais. Ademais, o software possuirá linguagem intuitiva e inteligível para os usuários.
 
+### 2.1 Navegador Web
+
+Para a utilização do sistema, o usuário devera utilizar um navegador web e possuir domínio minimo para seu uso.
+
+### 2.2 Acesso a Internet
+
+O usuário devera possuir acesso a internet, a aplicação não funcionara offline.
+
 ## 3. Confiabilidade
 
-O sistema deverá garantir:
 
- * O armazenamento e manipulação de dados, de forma que somente usuários autorizados possam fazer tais ações.
+### 3.1 Disponibilidade
 
- * Deverá permitir a interação e utilização dos dados, de forma que esta não impacte na persistencia dos mesmo.
+A aplicação devera funcionar 24 horas por dia, nos 7 dias da semana.
+### 3.2 Armazenamento de Dados
 
- * Um sistema de login e autenticação de usuário, de forma que os dados pessoais dos usuários sejam protejidos.
+O armazenamento e manipulação de dados deve ser feito de forma que somente usuários autorizados possam fazer tais ações. O sistema deverá permitir a interação e utilização dos dados, de forma que esta não impacte na persistencia dos mesmos.
+
+### 3.3 Segurança e Autenticação de Usuário
+
+Um sistema de login e autenticação de usuário, de forma que os dados cadastrais dos usuários sejam protejidos.
 
 ## 4. Suportabilidade
 
-O sistema será suportado nos navegadores Google Chrome 60, Mozilla Firefox 55, Internet Explorer 8, ou superiores, em máquinas com acesso à Internet.
+O sistema será suportado nos navegadores Google Chrome 60, Mozilla Firefox 55, ou superiores, em máquinas com acesso à Internet.
 
 ## 5. Interfaces
 
@@ -86,8 +107,4 @@ As telas de interface para o usuário estão listada a seguir, para maiores deta
 
 ## 6. Avisos Legais, de Copyright e Outros
 
-Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU como publicada pela Fundação do Software Livre (FSF); na versão 3 da Licença, ou (a seu critério) qualquer versão posterior.
-
-Este programa é distribuído na esperança de que possa ser útil, mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral GNU para mais detalhes.
-
-Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa. Se não, veja http://www.gnu.org/licenses.
+Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da
