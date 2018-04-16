@@ -1,9 +1,4 @@
-# **Tropical Hazards**
-
-Documento de Arquitetura
-===================
-
-
+# Documento de Arquitetura
 
 Sumário
 ----------------
@@ -63,10 +58,11 @@ No padrão MVC clássico a aplicação é dividida em três principais component
   <li> <b>Model</b> : é incumbido de tratar a parte lógica relacionada aos dados, sendo encarregado por definir sua estrutura, consultas e validação destes, atentando, obviamente, às regras de negócio relacionadas ao banco de dados.</li>
   <li> <b>View</b> : é responsável pela visualização gráfica da interface de usuário, definindo, portanto, como ocorrerão as interações com o usuário. Deve-se salientar que a View está em contato direto com a Controller, sendo esta última responsável por provêr os dados que serão renderizadas pela View.</li>
   <li> <b>Controller</b> : efetua a comunicação entre a Model e View. As requisições de usuário são processadas pela Controller que efetua as interações necessárias com a Model, enviando as demandas e recebendo dados que são posteriormente enviados para a View. É nesta camada são definidas as regras de negócio referentes à manipulação do sistema.</li>
+</ul>
 
 ![Figure 2-1](http://abap101.com/wp-content/uploads/2011/08/mvc.png "Figura 2.1 - Padrão MVC (Fonte: http://abap101.com/wp-content/uploads/2011/08/mvc.png)")
 
-<p>Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)</p>
+Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)
 
 No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Model**, **View**, **Template**. Fazendo um paralelo com o modelo MVC clássico, a View e o Template do MVT assemelham-se, respectivamente, com a Controller e a View do MVC. Essas partes podem ser melhor definidas como:
 <ul>
@@ -74,7 +70,7 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
   <li> <b>View</b> : na View está contida a lógica de negócio, possuindo a lógica que define o acesso a Model e sendo responsável por enviar e definir quais dados serão exibidos na camada de Template, assemelhando-se, conforme dito anteriormente, a camada Controller do MVC clássico.</li>
   <li> <b>Template</b> : nesta camada são definidos como os dados recebidos através da View serão exibidos ao usuário, sendo, esta camada, responsável por renderizar a interface gráfica do usuário, tal qual a camada View no MVC clássico.</li>
 </ul>
-<br>
+
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
@@ -84,11 +80,11 @@ No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta
 ![Figure 2-3](https://i.imgur.com/CnyxnP4.png)
 <br>
 <br>
-<p align="justify">
+
 Este framework de JavaScript possibilita o desenvolvimento de interfaces para o usuários com componentes reativos, ou seja pedaços de código reaproveitáveis formados por marcação, estilo e comportamento.  Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django, para isso utilizaremos a formatação JSON.  
 
 O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
-</p>
+
 
 
 ## 3. Metas e Restrições de Arquitetura
@@ -97,7 +93,8 @@ O projeto Tropical Hazards possui as seguintes metas:
   <li>Compatibilidade com os principais browsers da atualidade: Mozilla Firefox, Google Chrome e Internet Explorer</li>
   <li>Modularidade: o código deve ter baixo acoplamento e alta modularidade, para facilitar a manutenabilidade</li>
 </ul>
-<br>
+
+
 Há, também, as seguintes restrições:
 <ul>
   <li>Framework Django 2.0.3 com Python 3.5.2</li>
@@ -114,12 +111,12 @@ Há, também, as seguintes restrições:
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
-![](https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issue_141_arquitetura_dos_servicos/docs/images/Diagrams/diagrama_de_pacotes.png)
+<img src="https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issue_141_arquitetura_dos_servicos/docs/images/Diagrams/diagrama_de_pacotes.png" class="responsive-img">
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 #### 4.2.1. View
-A View será responsável por gerenciar os dados e os comportamentos da aplicação. Ela fará a ligação da model com o Vue JS .
+A View será responsável por gerenciar os dados e os comportamentos da aplicação. Ela fará a ligação da model com o Vue JS.
 
 #### 4.2.2 Model
 A pasta denominada model trará o conceito de abstração à situação apresentada no mundo real, identificando as entidades a serem utilizadas na aplicação. Além disso, a model deverá garantir a comunicação com o banco de dados.
@@ -139,33 +136,35 @@ Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serv
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/servicos.png" class="responsive-img">
 
 ### 5.2 Micro Serviços e camadas
-<p align="justify">Os micro serviços presentes no diagrama estão detalhados abaixo, descrevendo suas comunicações, conexões e justificativas para a escolha dos mesmos.</p>
+Os micro serviços presentes no diagrama estão detalhados abaixo, descrevendo suas comunicações, conexões e justificativas para a escolha dos mesmos.
 
 
 #### 5.2.1 TropicalHazards_BI (Back-end)
 
-<p align="justify">Arquitetura que utiliza o padrão MVT adaptado previamente detalhado e o framework Django Rest. Esta fronteira é responsável pelo tratamento das requisições do usuário para API e por estabelecer as conexões e comunicações com os demais serviços e API's externas. Nesta camada está presente o sistema de autenticação de usuário, gerenciamento de funcionalidades de projetos e dashboards, assim como os meios necessários para garantir a importação e persistência dos dados no banco.</p>
+Arquitetura que utiliza o padrão MVT adaptado previamente detalhado e o framework Django Rest. Esta fronteira é responsável pelo tratamento das requisições do usuário para API e por estabelecer as conexões e comunicações com os demais serviços e API's externas. Nesta camada está presente o sistema de autenticação de usuário, gerenciamento de funcionalidades de projetos e dashboards, assim como os meios necessários para garantir a importação e persistência dos dados no banco.
 
 #### 5.2.2 TropicalHazards_BI (Front-end)
 
-<p align="justify">Esta fronteira realiza a comunicação com a API do Back-end, lidando ao mesmo tempo com a interação com o usuário e a disponibilidade de informações. Os dados e indicadores gerados nos outros subsistemas são apresentados através desta camada.</p>
+Esta fronteira realiza a comunicação com a API do Back-end, lidando ao mesmo tempo com a interação com o usuário e a disponibilidade de informações. Os dados e indicadores gerados nos outros subsistemas são apresentados através desta camada.
 
 #### 5.2.3 MongoDB
 
-<p align="justify">O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados de pesquisas recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>. Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores. A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.</p>
+O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados de pesquisas recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>.
+Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores.
+A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.
 
 #### 5.2.4 Metabase
-<p align="justify">O serviço principal para o levantamento de indicadores a partir dos dados de pesquisas é o Metabase. Esse serviço faz a comunicação e recebe os dados do banco não relacional, permitindo filtrar, estabelecer conexões entre os dados e apresentar gráficos. O Metabase foi priorizado para integração com a API em relação a outros serviços semelhantes, pois foi testado de acordo com os recursos computacionais disponíveis para o desenvolvimento do projeto, garantindo uma eficiência para o gerenciamento dos dashboards e coleções de dados.</p>
+O serviço principal para o levantamento de indicadores a partir dos dados de pesquisas é o Metabase. Esse serviço faz a comunicação e recebe os dados do banco não relacional, permitindo filtrar, estabelecer conexões entre os dados e apresentar gráficos. O Metabase foi priorizado para integração com a API em relação a outros serviços semelhantes, pois foi testado de acordo com os recursos computacionais disponíveis para o desenvolvimento do projeto, garantindo uma eficiência para o gerenciamento dos dashboards e coleções de dados.
 
 
 #### 5.2.5 PostgreSQL
-<p align="justify">O sistema utiliza o banco de dados PostgreSQL além do banco não relacional, para realizar uma conexão com o metabase e também salvar diversos dados referentes ao funcionamento da aplicação e sua estrutura básica, como os dados de usuários e projetos.</p>
+O sistema utiliza o banco de dados PostgreSQL além do banco não relacional, para realizar uma conexão com o metabase e também salvar diversos dados referentes ao funcionamento da aplicação e sua estrutura básica, como os dados de usuários e projetos.
 
 
 #### 5.2.6 Nginx
-<p align="justify">Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por ser gratuito, open source e ter alta performance.</p>
+Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por ser gratuito, open source e ter alta performance.
 
 ## 6. Visão de Dados
-<p align="justify">Esta seção apresenta a modelagem e perspectiva da persistência dos dados nos dois bancos integrados ao sistema. A fronteira do id do projeto representa a associação de cada projeto aos diversos dados de pesquisas importados e armazenados no banco não relacional.</p>
+Esta seção apresenta a modelagem e perspectiva da persistência dos dados nos dois bancos integrados ao sistema. A fronteira do id do projeto representa a associação de cada projeto aos diversos dados de pesquisas importados e armazenados no banco não relacional.
 
-![](https://i.imgur.com/G3aCHUx.png)
+<img src="https://i.imgur.com/G3aCHUx.png" class="responsive-img"/>
