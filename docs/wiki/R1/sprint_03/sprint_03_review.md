@@ -1,4 +1,4 @@
-# Review/Retrospectiva [Sprint 03](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/5)
+# Review/Retrospectiva [Sprint 03](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/4)
 
 ## Status das Histórias
 
@@ -224,7 +224,7 @@
 
 ### Velocity
 
-<b>Velocity</b>: 20
+<b>Velocity</b>: 26,33
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint03/velocity_sp03.png" class="responsive-img">
 
