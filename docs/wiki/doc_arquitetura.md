@@ -1,19 +1,9 @@
-<!-- Template de Documento de Arquitetura de Software versão em Markdown-->
 # **Tropical Hazards**
 
 Documento de Arquitetura
 ===================
 
-----------
-## Histórico  de Revisões
 
-| Data | Versão | Descrição | Autores |
-|:----:|:------:|:---------:|:-------:|
-| **/03/2018 | 1.0 | Abertura do documento | - |
-| **/03/2018 | 1.1 | - | - |
-| **/03/2018 | 1.2 | - | - |
-| **/03/2018 | 1.3 | - | - |
------------
 
 Sumário
 ----------------
@@ -26,17 +16,13 @@ Sumário
     * 1.5 [Visão Geral](#15-visão-geral)
 * 2 . [Representação da Arquitetura](#2-representação-da-arquitetura)
 * 3 . [Metas e Restrições de Arquitetura](#3-metas-e-restrições-de-arquitetura)
-* 4 . [Visão Lógica](#5-visão-lógica)
-    * 4.1 [Visão Geral](#51-visão-geral)
+* 4. [Visão Geral](#51-visão-geral)
+    * 4.1 [Diagrama de pacotes](#41-diagrama-de-pacotes)
     * 4.2 [Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#52-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura)
-* 5 . [Visão de Processos](#6-visão-de-processos)
-* 6 . [Visão de Implantação](#7-visão-de-implantação)
-* 7 . [Visão de Implementação](#8-visão-de-implementação)
-    * 7.1 [Visão Geral](#81-visão-geral)
-    * 7.2 [Camadas](#82-camadas)
-* 8 . [Visão de Dados (opcional)](#9-visão-de-dados-opcional)
-* 9 . [Tamanho e Desempenho](#10-tamanho-e-desempenho)
-* 10 . [Qualidade](#11-qualidade)
+* 5 . [Arquitetura dos Serviços e visão de Implementação](#5-arquitetura-dos-serviços-e-visão-de-implementação)
+    * 5.1 [Visão Geral](#51-visão-geral)
+    * 5.2 [Micro Serviços e camadas](#52-micro-serviços-e-camadas)
+* 6 . [Visão de Dados](#6-visão-de-dados)
 -----------
 
 ## 1. Introdução
@@ -88,9 +74,7 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
   <li> <b>View</b> : na View está contida a lógica de negócio, possuindo a lógica que define o acesso a Model e sendo responsável por enviar e definir quais dados serão exibidos na camada de Template, assemelhando-se, conforme dito anteriormente, a camada Controller do MVC clássico.</li>
   <li> <b>Template</b> : nesta camada são definidos como os dados recebidos através da View serão exibidos ao usuário, sendo, esta camada, responsável por renderizar a interface gráfica do usuário, tal qual a camada View no MVC clássico.</li>
 </ul>
-![Figure2-2](https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png "Figura 2.2 - Padrão MTV")
-
-Figura 2.2 - Padrão MTV (Fonte : https://arquivo.devmedia.com.br/artigos/guias/arquitetura_MTV.png)</p>
+<br>
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
@@ -105,7 +89,6 @@ Este framework de JavaScript possibilita o desenvolvimento de interfaces para o 
 
 O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
 </p>
-<h2> 3. Metas e Restrições de Arquitetura</h2>
 
 
 ## 3. Metas e Restrições de Arquitetura
@@ -115,7 +98,7 @@ O projeto Tropical Hazards possui as seguintes metas:
   <li>Modularidade: o código deve ter baixo acoplamento e alta modularidade, para facilitar a manutenabilidade</li>
 </ul>
 <br>
-Há, também, as seguintes restrições: 
+Há, também, as seguintes restrições:
 <ul>
   <li>Framework Django 2.0.3 com Python 3.5.2</li>
   <li>Django REST: um framework utilizada para construção de WEB APIs</li>
@@ -124,60 +107,65 @@ Há, também, as seguintes restrições:
   <li>Vue.js: uma framework javascript para construção de interfaces de usuário, no sistema irá substituir a camada Template do padrão MVT</li>
 </ul>
 
-## 4. Visão Lógica
 
-*[Esta seção descreve as partes significativas do ponto de vista da arquitetura do modelo de design, como sua divisão em subsistemas e pacotes. Além disso, para cada pacote significativo, ela mostra sua divisão em classes e utilitários de classe. Apresente as classes significativas do ponto de vista da arquitetura e descreva suas responsabilidades, bem como alguns relacionamentos, operações e atributos de grande importância.]*
+### 4. Visão Geral
 
-### 4.1 Visão Geral
-
-### 5.1.2 Diagrama de pacotess
+### 4.1 Diagrama de pacotes
 
 O diagrama abaixo representa a arquitetura de pacotes presente no sistema. É possivel notar como que as principais classes do sistema são representadas através destes pacotes, e suas funcionalidades implementadas por meio destes.
 
-<img src="images/Diagrams/diagrama_de_pacotes.png" alt="diagrama de arquitetura" class="responsive-img">
+![](https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issue_141_arquitetura_dos_servicos/docs/images/Diagrams/diagrama_de_pacotes.png)
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
-#### 5.2.1. View
+#### 4.2.1. View
 A View será responsável por gerenciar os dados e os comportamentos da aplicação. Ela fará a ligação da model com o Vue JS .
 
-#### 5.2.2 Model
+#### 4.2.2 Model
 A pasta denominada model trará o conceito de abstração à situação apresentada no mundo real, identificando as entidades a serem utilizadas na aplicação. Além disso, a model deverá garantir a comunicação com o banco de dados.
 
-#### 5.2.3 Test (Teste)
+#### 4.2.3 Test (Teste)
 A aplicação de testes durante a implementação de uma aplicação é de extrema importância, por esse motivo, vão ser utilizados dois tipos de testes no projeto: teste de unidade e teste de integração. Haverá no projeto uma pasta teste a fim de englobar os arquivos desenvolvidos para tal atividade.
 
-#### 5.2.4 Serializers
+#### 4.2.4 Serializers
 Serializers permitem que os dados complexos, tais como QuerySets e instâncias da model sejam convertidos para tipos de dados Python que podem ser facilmente fundidas em JSON, XML ou outros tipos de conteúdo. Os serializadores também fornecem desserialização, permitindo que os dados analisados ​​sejam convertidos novamente em tipos complexos, após a primeira validação dos dados recebidos.
 
-## 5. Visão de Processos
 
-*[Esta seção descreve a decomposição do sistema em processos leves (threads simples de controle) e processos pesados (agrupamentos de processos leves). Organize a seção em grupos de processos que se comunicam ou interagem. Descreva os modos principais de comunicação entre processos, como transmissão de mensagens e interrupções.]*
+## 5. Arquitetura dos Serviços e visão de Implementação
+Nesta seção está descrita descrita a estrutura geral das camadas e Micro Serviços integrados ao software, detalhando e apresentando a interação entre os diversos serviços e sistemas. Os principais componentes e sub-componentes estão descritos nos tópicos a seguir.
 
-## 6. Visão de Implantação
+### 5.1 Visão Geral
 
-*[Esta seção descreve uma ou mais configurações da rede física (hardware) na qual o software é implantado e executado. Ela é uma visão do Modelo de Implantação. Para cada configuração, ela deve indicar no mínimo os nós físicos (computadores, CPUs) que executam o software e as respectivas interconexões (barramento, LAN, ponto a ponto e assim por diante.) Inclua também um mapeamento dos processos da Visão de Processos nos nós físicos.]*
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/servicos.png" class="responsive-img">
 
-## 7. Visão de Implementação
+### 5.2 Micro Serviços e camadas
+<p align="justify">Os micro serviços presentes no diagrama estão detalhados abaixo, descrevendo suas comunicações, conexões e justificativas para a escolha dos mesmos.</p>
 
-*[Esta seção descreve a estrutura geral do modelo de implementação, a divisão do software em camadas e subsistemas no modelo de implementação e todos os componentes significativos do ponto de vista da arquitetura.]*
 
-### 7.1 Visão Geral
+#### 5.2.1 TropicalHazards_BI (Back-end)
 
-*[Esta subseção nomeia e define as diversas camadas e o seu conteúdo, as regras que determinam a inclusão em uma camada específica e as fronteiras entre as camadas. Inclua um diagrama de componentes que mostre os relacionamentos entre as camadas.]*
+<p align="justify">Arquitetura que utiliza o padrão MVT adaptado previamente detalhado e o framework Django Rest. Esta fronteira é responsável pelo tratamento das requisições do usuário para API e por estabelecer as conexões e comunicações com os demais serviços e API's externas. Nesta camada está presente o sistema de autenticação de usuário, gerenciamento de funcionalidades de projetos e dashboards, assim como os meios necessários para garantir a importação e persistência dos dados no banco.</p>
 
-### 7.2 Camadas
+#### 5.2.2 TropicalHazards_BI (Front-end)
 
-*[Para cada camada, inclua uma subseção com o respectivo nome, uma lista dos subsistemas localizados na camada e um diagrama de componentes.]*
+<p align="justify">Esta fronteira realiza a comunicação com a API do Back-end, lidando ao mesmo tempo com a interação com o usuário e a disponibilidade de informações. Os dados e indicadores gerados nos outros subsistemas são apresentados através desta camada.</p>
 
-## 8. Visão de Dados (opcional)
+#### 5.2.3 MongoDB
 
-*[Uma descrição da perspectiva de armazenamento de dados persistentes do sistema. Esta seção será opcional se os dados persistentes forem poucos ou inexistentes ou se a conversão entre o Modelo de Design e o Modelo de Dados for trivial.]*
+<p align="justify">O banco de dados não relacional escolhido para o sistema permite uma alta performance e disponibilidade dos dados, além de se adequar para a necessidade dos dados de pesquisas recebidos serem relativamente desestruturados e permitir uma <b>escalabilidade automática</b>. Com os dados estruturados de maneira semelhante a documentos (ou objetos JSON) é possível estabelecer a comunicação com o serviço do metabase para o processamento dos dados importados e geração de gráficos e indicadores. A alta disponibilidade devido as facilidades de replicação, redundância de dados, performance com esquemas de indexação e escalabilidade horizontal com sistema de shards foram os principais motivos para a escolha deste banco NoSQL.</p>
 
-## 9. Tamanho e Desempenho
+#### 5.2.4 Metabase
+<p align="justify">O serviço principal para o levantamento de indicadores a partir dos dados de pesquisas é o Metabase. Esse serviço faz a comunicação e recebe os dados do banco não relacional, permitindo filtrar, estabelecer conexões entre os dados e apresentar gráficos. O Metabase foi priorizado para integração com a API em relação a outros serviços semelhantes, pois foi testado de acordo com os recursos computacionais disponíveis para o desenvolvimento do projeto, garantindo uma eficiência para o gerenciamento dos dashboards e coleções de dados.</p>
 
-*[Uma descrição das principais características de dimensionamento do software que têm um impacto na arquitetura, bem como as restrições do desempenho desejado.]*
 
-## 10. Qualidade
+#### 5.2.5 PostgreSQL
+<p align="justify">O sistema utiliza o banco de dados PostgreSQL além do banco não relacional, para realizar uma conexão com o metabase e também salvar diversos dados referentes ao funcionamento da aplicação e sua estrutura básica, como os dados de usuários e projetos.</p>
 
-*[Uma descrição de como a arquitetura do software contribui para todos os recursos (exceto a funcionalidade) do sistema: extensibilidade, confiabilidade, portabilidade e assim por diante. Se essas características tiverem significado especial, como, por exemplo, implicações de proteção, segurança ou privacidade, elas devem ser claramente delineadas.]*
+
+#### 5.2.6 Nginx
+<p align="justify">Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por ser gratuito, open source e ter alta performance.</p>
+
+## 6. Visão de Dados
+<p align="justify">Esta seção apresenta a modelagem e perspectiva da persistência dos dados nos dois bancos integrados ao sistema. A fronteira do id do projeto representa a associação de cada projeto aos diversos dados de pesquisas importados e armazenados no banco não relacional.</p>
+
+![](https://i.imgur.com/G3aCHUx.png)
