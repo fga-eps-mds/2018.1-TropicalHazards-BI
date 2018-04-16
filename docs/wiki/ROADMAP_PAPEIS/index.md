@@ -29,3 +29,8 @@ Abaixo as principais funções do papel de designer no projeto.
 
 Roadmap:
 <img src="Imagens/papel_design.png" alt="papel_design" class="responsive-img">
+
+## Dev-Ops
+Uma breve descrição das tarefas desguiadas ao papel do Dev-ops:
+
+![Roadmap_devops](Imagens/papel_devops.png) 
