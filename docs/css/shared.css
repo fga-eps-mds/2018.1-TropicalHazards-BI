@@ -110,7 +110,7 @@ main .container .row {
 }
 
 #index-header {
-  background: url(optimized-banner.jpg) no-repeat center center;
+  background: url(https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/gh-pages/css/optimized-banner.jpg) no-repeat center center;
   background-size: cover;
   /* background-image: none; */
   height: 90vh;
