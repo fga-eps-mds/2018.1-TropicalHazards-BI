@@ -1,4 +1,2 @@
 label_prs: bot
 pr_prefix: "Dependencies auto Update"
-update: insecure
-schedule: "every week on thrusday"

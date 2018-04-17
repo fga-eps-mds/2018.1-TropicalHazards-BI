@@ -15,14 +15,8 @@ main .collection a.disabled {
   cursor: not-allowed;
 }
 
-main .collection .collection-item {
+main .collection a {
   /* this is to use when theme colors are defined */
-  color: #666 !important;
-}
-
-main .collection .collection-item:hover {
-  color: #fff176 !important;
-  background-color: #3f3f3f !important;
 }
 
 .row a,
@@ -59,7 +53,7 @@ p {
 }
 
 footer {
-  /* margin-top: 2em; */
+  margin-top: 2em;
   color: #fafafa;
   padding-top: 4em !important;
   padding-bottom: 4em;
@@ -91,6 +85,10 @@ header p {
   height: 100%;
 }
 
+/* #has-background .container {
+  background: rgba(32, 32, 32, 0.733);  
+} */
+
 #has-background .container h1 {
   padding: .3em;
   color: inherit;
@@ -110,30 +108,14 @@ main .container .row {
 }
 
 #index-header {
-  background: url(https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/gh-pages/css/optimized-banner.jpg) no-repeat center center;
-  background-size: cover;
-  /* background-image: none; */
-  height: 90vh;
-}
-
-#index-header .valign-wrapper {
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(60, 60, 60, .7), rgba(00, 00, 00, .7));
-}
-
-#index-header h1 {
-  margin-top: .5em;
-}
-
-#index-header h1,
-#index-header p {
-  color: #eee !important;
+  background-image: none;
 }
 
 header {
+  margin-bottom: 2em;
   background: url(https://www.iaspaper.net/wp-content/uploads/2017/01/Library.jpg) no-repeat center center;
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
   font-weight: bold;
 }
 
@@ -168,18 +150,22 @@ hr {
   padding-top: 28em;
 }
 
-#explanation {
-  padding: 10em 0;
-}
-
 
 .hide-on-small-only {
   font-size: 1.2em;
 }
 
-nav li a {
-  font-size: 1em;
+.marginate {
+  margin: 2em auto 2em auto;
 }
+
+/* .marginate :not(:last-of-type){
+  margin-bottom: 2em;
+}
+
+.marginate :not(:first-of-type){
+  margin-top: 2em;
+} */
 
 .selection {
   /* top right bottom left */
@@ -187,24 +173,55 @@ nav li a {
   background-color: #fff;
 }
 
-.row {
-  margin-bottom: 0;
-}
-
-@media (min-width: 600px) {
-  header div div h1 {
-    margin-top: 1.3em;
+@media (max-width: 600px) {
+  #explanation {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
   }
 
-  header div div p {
-    padding: 1em;
+  #explanation .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
   }
 
-  .nav-wrapper {
-    padding-right: 2vw;
+  #function {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
   }
-  
-  #menu-btn {
-    margin-right: 0;
+
+  #function .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+  #haz {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #haz .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  #dev-team {
+    background: url(http://via.placeholder.com/450x450) no-repeat center center;
+    background-size: cover;
+  }
+
+  #dev-team .s12 {
+    background-color: rgba(14, 14, 14, .7);
+    color: #fafafa;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
   }
 }

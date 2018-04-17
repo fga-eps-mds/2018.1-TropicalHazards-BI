@@ -54,7 +54,6 @@
       p {
         font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
         color: #303030;
-        text-align: justify;
       }
 
       footer {
@@ -100,9 +99,9 @@
         font-size: 1.5em;
       }
       
-      main .container .row {
+      /* main .container .row {
         background-color: #fefefe;
-      }
+      } */
       
       header {
         margin-bottom: 2em;
@@ -119,13 +118,9 @@
       #sidebar-md a {
         text-decoration: none;
       }
-      
-      nav ul li a {
-        font-size: 1em;
-      }
 
       nav .brand-logo ,
-      nav ul li a {
+      nav .hide-on-small-only {
         color: inherit;
       }
 
@@ -161,11 +156,6 @@
                 <span class="fa fa-github"></span> GitHub
               </a>
             </li>
-            <li class="hide-on-small-only">
-              <a href="#" style="display: block" data-activates="slide-out" class="button-collapse" id="menu-btn">
-                Docs
-              </a>
-            </li>
             <li>
               <a href="#" data-activates="slide-out" class="button-collapse grey-text text-darken-3" id="menu-btn">
                 <i class="material-icons">menu</i>
@@ -176,289 +166,208 @@
       </nav>
     </div>
 
-  <!-- this is the side-menu modafocka -->
-  <ul id="slide-out" class="side-nav collection">
-    <li class="no-padding collection-item 1">
-      <!-- <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI">
+    <!-- this is the side-menu modafocka -->
+    <ul id="slide-out" class="side-nav collection">
+      <li class="no-padding collection-item 1">
+        <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI">
           Home
-        </a> -->
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">
-            Home
-          </a>
-          <div class="collapsible-body">
-            <ul>
-              <li>
-                <a href="/2018.1-TropicalHazards-BI">
-                  <span class="fa fa-home"></span> Home
-                </a>
-              </li>
-              <li>
-                <a href="http://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI">
-                  <span class="fa fa-github"></span> GitHub API
-                </a>
-              </li>
-              <li>
-                <a href="http://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd">
-                  <span class="fa fa-github"></span> GitHub Front-End
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li class="no-padding collection-item">
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">
-            Planejamento
-          </a>
-          <div class="collapsible-body">
-            <ul>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/project_artefacts/eap" class="waves-effect">
-                  <span class="fa fa-file"></span> EAP
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/project_artefacts/tap" class="waves-effect">
-                  <span class="fa fa-file"></span> TAP
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/matriz-de-dependencia" class="waves-effect">
-                  <span class="fa fa-file"></span> Matriz de dependências
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/metodologia" class="waves-effect">
-                  <span class="fa fa-file"></span> Metodologia de desenvolvimento
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/plano-de-medicao" class="waves-effect">
-                  <span class="fa fa-file"></span> Plano de medição
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/riscos" class="waves-effect">
-                  <span class="fa fa-file"></span> Plano de riscos
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li class="no-padding collection-item">
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">
-            Roadmaps
-          </a>
-          <div class="collapsible-body">
-            <ul>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/roadmaps" class="waves-effect">
-                  <span class="fa fa-map"></span> Produto
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/roadmaps/papeis" class="waves-effect">
-                  <span class="fa fa-map"></span> Papéis
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li class="no-padding collection-item">
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">Sprints</a>
-          <div class="collapsible-body">
-            <ul>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_00/sprint_00_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 0
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_00/sprint_00_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 0
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_01/sprint_01_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 1
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_01/sprint_01_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 1
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_02/sprint_02_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 2
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_02/sprint_02_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 2
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_03/sprint_03_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 3
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_03/sprint_03_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 3
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_04/sprint_04_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 4
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_04/sprint_04_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 4
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_05/sprint_05_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 5
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_05/sprint_05_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 5
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_06/sprint_06_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 6
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_06/sprint_06_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 6
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_07/sprint_07_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 7
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_07/sprint_07_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 7
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_08/sprint_08_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 8
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_08/sprint_08_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 8
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_09/sprint_09_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 9
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_09/sprint_09_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 9
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_10/sprint_10_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 10
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_10/sprint_10_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 10
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_11/sprint_11_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 11
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_11/sprint_11_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 11
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_12/sprint_12_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 12
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_12/sprint_12_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 12
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_13/sprint_13_planning" class="waves-effect">
-                  <span class="fa fa-flag"></span> Planejamento Sprint 13
-                </a>
-              </li>
-              <li>
-                <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/metodology/sprints/sprint_13/sprint_13_review" class="waves-effect">
-                  <span class="fa fa-line-chart"></span> Review Sprint 13
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li class="no-padding collection-item">
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">
-            Workflow do repositório
-          </a>
-          <div class="collapsible-body">
-            <ul>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/politica_de_branches" class="waves-effect">
-                  <span class="fa fa-git"></span> Política de branches
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/politica_de_commit" class="waves-effect">
-                  <span class="fa fa-git"></span> Política de commits
-                </a>
-              </li>
-              <li>
-                <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/issue_workflow" class="waves-effect">
-                  <span class="fa fa-bug"></span> Issue Workflow
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-  </ul>
+        </a>
+      </li>
+      <li class="no-padding collection-item 1">
+        <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/docsmap">
+          Documentação
+        </a>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Gerência</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF GPP -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Desenvolvimento</a>
+            <div class="collapsible-body">
+              <ul>
+                <!-- DOCUMENTS OF MDS -->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Release 1</a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_00/sprint_00_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 0
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_00/sprint_00_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 0
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_01/sprint_01_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 1
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_01/sprint_01_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 1
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_02/sprint_02_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 2
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_02/sprint_02_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 2
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_03/sprint_03_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 3
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_03/sprint_03_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 3
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_04/sprint_04_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 4
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_04/sprint_04_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 4
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_05/sprint_05_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 5
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_05/sprint_05_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 5
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_06/sprint_06_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 6
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_06/sprint_06_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 6
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding collection-item">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Release 2</a>
+            <div class="collapsible-body">
+              <ul>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_07/sprint_07_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 7
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_07/sprint_07_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 7
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_08/sprint_08_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 8
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_08/sprint_08_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 8
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_09/sprint_09_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 9
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_09/sprint_09_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 9
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_10/sprint_10_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 10
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_10/sprint_10_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 10
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_11/sprint_11_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 11
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_11/sprint_11_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 11
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_12/sprint_12_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 12
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_12/sprint_12_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 12
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_13/sprint_13_planning" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Planejamento Sprint 13
+                  </a>
+                </li>
+                <li>
+                  <a href="http://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R2/sprint_13/sprint_13_review" class="collection-item waves-effect">
+                    <span class="fa fa-file"></span> Review Sprint 13
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
 
 
-
-    <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md&labels=bug" class="btn-floating btn-large waves-effect waves-light teal lighten-2 hoverable gray-text text-darken-3" id="bug-btn">
+    <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/new?template=bug_report.md&labels=bug" class="btn-floating btn-large waves-effect waves-light teal lighten-2 hoverable" id="bug-btn">
       <i class="material-icons">bug_report</i>
     </a>
 
@@ -495,15 +404,14 @@
 
     <script>
       $(".button-collapse").sideNav({
-        menuWidth: 280,
+        menuWidth: 250,
         draggable: true
       });
       
       $('.fixed-action-btn.toolbar').openToolbar();
       $('.fixed-action-btn.toolbar').closeToolbar();
 
-      $(document).find('table').addClass('responsive-table highlight bordered');
-      $(document).find('img').addClass('responsive-img');
+      $().find('table').addClass('responsive-table highlight bordered');
     </script>
 
 <!-- 
