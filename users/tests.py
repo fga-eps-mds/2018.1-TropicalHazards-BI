@@ -109,3 +109,27 @@ def test_delete_user_detail_return_204(client):
     response = client.delete(url, content_type='application/json')
 
     assert response.status_code == 204
+
+
+def test_login_user_return_200(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    url = reverse('rest_login')
+    data = {'username': "username",
+            'password': "password"}
+    response = client.post(url, data=data)
+
+    assert response.status_code == 200
+
+
+def test_login_user_return_400(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    url = reverse('rest_login')
+    data = {'username': "wronguser",
+            'password': "wrongpass"}
+    response = client.post(url, data=data)
+
+    assert response.status_code == 400
