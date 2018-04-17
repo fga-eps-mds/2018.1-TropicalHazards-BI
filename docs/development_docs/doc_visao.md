@@ -1,7 +1,9 @@
+# Documento de Visão
+----------
+
 ### Histórico de Versões
 
-
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td> <strong>Data</strong> </td>
@@ -91,10 +93,10 @@
 ## 1.2	Escopo
 
 <p align= "justify">O projeto Tropical Hazards BI tem como finalidade suprir uma necessidade dos pesquisadores e profissionais de saúde do NMT da Unb de receber dados referentes a doenças tropicais, fazer uma análise estatística dos dados recebidos e mostrar indicadores e dados através de observatórios.</p>
-<p align="justif">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores, assim como os colaboradores e usuários comuns possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios.</p>
+<p align="justify">O software, a ser implementado, deve permitir que os profissionais de saúde e pesquisadores, assim como os colaboradores e usuários comuns possuam perfis para gerenciar dados, levantar indicadores, exportar e compartilhar relatórios.</p>
 
 <a name="definicoes"></a>
-## 1.3	Definições, acrônimos e abreviações
+<h2>1.3	Definições, acrônimos e abreviações</h2>
 
 <ul>
 <li>FGA - Faculdade do Gama (UnB)</li>
@@ -106,7 +108,7 @@
 </ul>
 
 <a name="referencias"></a>
-## 1.4 Referências
+<h2>1.4 Referências</h2>
 
 IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: <https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_3.0.1/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.htm>. Acesso em: 22 ago. 2017;
 
@@ -116,16 +118,16 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 
 <a name="visaogeral"></a>
-## 1.5 Visão geral
+<h2>1.5 Visão geral</h2>
 
 <p align ="justify">Este documento é dividido em 7 tópicos descrevendo os detalhes das características do software proposto. Sendo dividido em:</p>
 <ul>
-<li><strong>Introdução</strong>: no qual é introduzido os detalhes gerais sobre a visão do projeto;</li>
-<li><strong>Posicionamento</strong>: descrevendo o problema e a oportunidade de negócio;</li>
-<li><strong>Descrições dos Envolvidos e dos Usuários</strong>: esta seção descreve o perfil das partes interessadas no projeto;</li>
-<li><strong>Visão Geral do Produto</strong>: Esta seção fornece uma visualização de alto nível das capacidades do produto, interfaces para outros aplicativos e configurações dos sistemas;</li>
-<li><strong>Recursos do Produto</strong>: breve descrição dos recursos do produto;</li>
-<li><strong>Restrições</strong>: as restrições de design, restrições externas, como requisitos operacionais ou regulamentares;</li>
+  <li><strong>Introdução</strong>: no qual é introduzido os detalhes gerais sobre a visão do projeto;</li>
+  <li><strong>Posicionamento</strong>: descrevendo o problema e a oportunidade de negócio;</li>
+  <li><strong>Descrições dos Envolvidos e dos Usuários</strong>: esta seção descreve o perfil das partes interessadas no projeto;</li>
+  <li><strong>Visão Geral do Produto</strong>: Esta seção fornece uma visualização de alto nível das capacidades do produto, interfaces para outros aplicativos e configurações dos sistemas;</li>
+  <li><strong>Recursos do Produto</strong>: breve descrição dos recursos do produto;</li>
+  <li><strong>Restrições</strong>: as restrições de design, restrições externas, como requisitos operacionais ou regulamentares;</li>
 </ul>
 
 <a name ="posicionamento"></a>
@@ -139,15 +141,15 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 <p align = "justify">Para o profissional de saúde e pesquisadores, o <em>webapp</em> serão disponibilizadas ferramentas para utilizar e gerenciar dados.</p>
 
-<p align ="justify">Para os colaborades serão disponibilizados observatórios onde podera gerar indicadores através de dados de um projeto ja criado pelos profissionais da NMT.
+<p align ="justify">Para os colaborades serão disponibilizados observatórios onde podera gerar indicadores através de dados de um projeto ja criado pelos profissionais da NMT.</p>
 
 <p align = "justify">Para os usuários serão disponibilizados uma interface web onde podera ser encontrar informações sobre as principais doenças tropicais e seus indicativos.</p>
 
 
 <a name="descricaoproblema"></a>
-### 2.2 Descrição do problema
+<h3>2.2 Descrição do problema</h3> 
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>O problema </strong> </td>
@@ -173,7 +175,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 </table>
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>O problema</strong> </td>
@@ -201,8 +203,8 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 </table>
 
 <a name="introducaoposicao"></a>
-## 2.3 Instrução de Posição do Produto
-<table>
+<h2>2.3 Instrução de Posição do Produto</h2>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Para</strong> </td>
@@ -239,10 +241,11 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 </table>
 
 <a name="descricaoparteinteressada"></a>
+
 # 3. Descrições da parte interessada e dos Usuários
 
 
-<table>
+<table class+"responsive-table highlight bordered">
 
    <tr>
 	   	<td> <strong>Nome</strong></td>
@@ -280,9 +283,10 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 
 <a name="resumousuario"></a>
+
 ## 3.1 Resumo dos Usuários
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Nome</strong></td>
@@ -309,18 +313,20 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 </table>
 
 <a name="ambienteusuario"></a>
+
 ## 3.2 Ambiente do Usuário
 O sistema será utilizado nos browsers Google Chrome, Safari, Internet Explorer, Firefox, Opera e Edge.
 
 
 <a name="perfisusuarios"></a>
+
 ## 3.3 Perfis dos Envolvidos
 
 O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada ao ensino de pós-graduação, pesquisa e extensão na área de Doenças Tropicais e demais temas de interesse amazônico.
 
 
 ## 3.3.1 Equipe de Desenvolvimento
-<table>
+<table  class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -365,7 +371,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
 ## 3.3.2 Equipe de Gestão de Projeto
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -409,7 +415,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
 ## 3.3.3 Equipe de Avaliação e Suporte
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -453,9 +459,10 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 </table>
 
 <a name="cliente"></a>
+
 ## 3.3.4 Cliente
 
-<table>
+<table class="responsive-table highlight bordered">
 
 
    <tr>
@@ -500,11 +507,12 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 </table>
 
 <a name="perfisusuarios"></a>
+
 ## 3.4 Perfis dos Usuários
 
 ## 3.4.1 Pesquisadores e Profissionais de saúde
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -549,7 +557,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
 ## 3.4.2 Colaboradores
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -594,7 +602,7 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 
 ## 3.4.2 Público Geral
 
-<table>
+<table class="responsive-table highlight bordered">
 
    <tr>
 	   	<td><strong>Representante</strong></td>
@@ -638,26 +646,30 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 </table>
 
 <a name="principainecessidades"></a>
+
 ## 3.5 Principais Necessidades dos Usuários ou dos Envolvidos
 
 <p align="justify">Os pesquisadores do NMT possuem um problema de visualização dos dados de seus diferentes projetos, pois não há comunhão de tecnologias nem um modelo padronizado de dashboard e observatório de dados onde esses possam ser compartilhados de forma eficiente.</p>
 <p align="justify"> Logo a principal necessidade dos usuários é a criação de um sistema onde tais dados possam ser inseridos, analisados e compartilhadaos de forma organizada e eficiente. </p>
 
 <a name="alternativasconcorrencia"></a>
+
 ## 3.6 Alternativas e Concorrência
 
 ##### 3.6.1 Website: <em>World Health Organization</em>
 <p align ="justify"> O <em>website</em> da World Health Organization possui um dashboard que permite a visualização de estatísticas acerca de diversas doenças, inclusive doenças tropicais.<br><br>
-![World Health Organization](https://i.imgur.com/JkPqNdD.png)
 </p>
+<img src="https://i.imgur.com/JkPqNdD.png" alt="World Health Organization" class="responsive-img">
 
 <a name="visaogeral"></a>
+
 # 4. Visão Geral do Produto
 
 <p align="justify">O sistema contará com uma plataforma online capaz de disponibilizar dados a respeito de doenças tropicais, fornecendo mecanismos para pesquisadores e profissionais da saúde acessarem através de um dashboard, os indicadores gerados por meio de informações dos projetos do NMT. Além disso, esta plataforma contará com uma interface para os usuários comuns visualizarem os dados sobre doenças tropicais.
 </p>
 
 <a name="recursoproduto"></a>
+
 # 5. Recursos do Produto
 
 <p>O sistema oferece as seguintes funcionalidades aos usúarios:</p>
@@ -677,16 +689,19 @@ O Núcleo de Medicina Tropical é uma unidade de integração da UFPA destinada 
 <p align="justify">O desing devera ser simples e elegante, visando também a facilidade do seu uso, para que os usuarios possam utilizar o sistema de forma intuitiva.</p>
 
 <a name="restricoesimplementacao"></a>
+
 ## 6.2 Restrições de Implementação
 <p align="justify">Criação de um modelo padronizado de observatório/dashboard através de uma plataforma web, onde profissionais da saude possam submeter dados de pesquisa para o geramento de estatísticas e centralização dos dados a sobre o tema doenças tropicais. Além disso é necessario que haja um portal para que a população geral possa ter acesso a estes indicativos, disponibilizando também os dados através de um ponto de acesso remoto (API).</p>
 
 <a name="restricaoseguranca"></a>
+
 ## 6.3 Restrições de Segurança
 
 <p align="justify">Devido o fato de que pesquisadores poderem ser contribuidores para a alimentação da base de dados do sistema, é necessario que haja uma certificação que os usuarios contribuintes sejam somente pessoas credenciadas. Para que assim possamos garantir a qualidade dos dados armazenados.</p>
 
 
 <a name="restricoesuso"></a>
+
 ## 6.4 Restrições de Uso
 
 <p align="justify">Para o uso do sistema é necessário que os usuários tenham acesso a um dispositivo conectado à internet e que possua um navegador web compatível com o sistema. Caso o usuário do sistema não possua acesso à internet, o sistema deve mostrar uma página de erro.</p>

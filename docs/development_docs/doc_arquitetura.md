@@ -60,7 +60,7 @@ No padrão MVC clássico a aplicação é dividida em três principais component
   <li> <b>Controller</b> : efetua a comunicação entre a Model e View. As requisições de usuário são processadas pela Controller que efetua as interações necessárias com a Model, enviando as demandas e recebendo dados que são posteriormente enviados para a View. É nesta camada são definidas as regras de negócio referentes à manipulação do sistema.</li>
 </ul>
 
-![Figure 2-1](http://abap101.com/wp-content/uploads/2011/08/mvc.png "Figura 2.1 - Padrão MVC (Fonte: http://abap101.com/wp-content/uploads/2011/08/mvc.png)")
+<img src="http://abap101.com/wp-content/uploads/2011/08/mvc.png" alt="Figure 2-1" class="responsive-img">
 
 Figura 2.1 - Padrão MVC (Fonte : http://abap101.com/wp-content/uploads/2011/08/mvc.png)
 
@@ -77,7 +77,7 @@ Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Fram
 No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
 <br>
 <br>
-![Figure 2-3](https://i.imgur.com/CnyxnP4.png)
+<img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-table highlight bordered"/>
 <br>
 <br>
 
