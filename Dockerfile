@@ -1,9 +1,15 @@
-FROM python:3.5
-ENV PYTHONUNBUFFERED 1
+FROM ruby:2.5
 
-RUN mkdir /code
-WORKDIR /code
+WORKDIR /ghpages
 
-ADD . /code/
-RUN pip install -r requirements.txt && \
-    chmod +x boot.sh
+RUN apt-get install -y git
+
+ADD . /ghpages/
+
+WORKDIR /ghpages/docs/
+
+RUN bundle install 
+
+RUN git init && git remote add origin https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI.git
+
+CMD bundle exec jekyll serve
