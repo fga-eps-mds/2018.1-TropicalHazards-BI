@@ -6,18 +6,18 @@ Este documento apresenta os Roadmaps com as responsabilidades e funções desemp
 
 A seguir, um breve detalhamento das atividades práticas de um Product Owner no projeto Tropical Hazards BI. A primeira figura detalha o período até a Release 1, datada para 19/04/2018, seguida da figurada referente ao período entre Release 1 e a Release 2.
 
-![Roadmap_PO_R1](Imagens/PAPEL_PO_R1.png)
+<img src="Imagens/PAPEL_PO_R1.png" alt="Roadmap_PO_R1"  class="responsive-img"/>
+
 Figura 1 - Atividades de Product Owner até a Release 1.
 
-![Roadmap_PO_R2](Imagens/PAPEL_PO_R2.png)
-Figura 2 - Atividades de Product Owner até a Release 2.
+<img src="Imagens/PAPEL_PO_R2.png" alt="Roadmap_PO_R2"  class="responsive-img"/>
 
+Figura 2 - Atividades de Product Owner até a Release 2.
 
 ## Arquiteto de Software
 Esta seção apresenta as responsabilidades e funções do arquiteto de software do sistema, detalhando as atividades necessárias para o integrante que for desempenhar este papel.
 
-![Roadmap_arquiteto](Imagens/PAPEL_ARQUITETO.png)
-
+<img src="Imagens/PAPEL_ARQUITETO.png" alt="Roadmap_arquiteto"  class="responsive-img"/>
 
 ## Scrum Master
 Define atividades, responsabilidades e objetivos do Scrum Master visando maximizar a produtividade e mitigar os riscos enfrentados pela equipe.
@@ -33,4 +33,4 @@ Roadmap:
 ## Dev-Ops
 Uma breve descrição das tarefas desguiadas ao papel do Dev-ops:
 
-![Roadmap_devops](Imagens/papel_devops.png)
+<img src="Imagens/papel_devops.png" alt="Roadmap_devops"  class="responsive-img"/>

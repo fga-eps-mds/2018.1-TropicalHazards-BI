@@ -77,7 +77,7 @@ Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Fram
 No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
 <br>
 <br>
-<img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-table highlight bordered"/>
+<img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-img"/>
 <br>
 <br>
 
