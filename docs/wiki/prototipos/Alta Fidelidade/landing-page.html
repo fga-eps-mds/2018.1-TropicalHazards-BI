@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/land.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Titillium+Web" rel="stylesheet">
+  <title>OBSERV</title>
+</head>
+<body id="page-top">
+
+
+
+  <a href="#page-top" id="to-page-top-btn" class="">
+    <span class="fa fa-chevron-up"></span>
+  </a>
+
+  <header class="parallax">
+    <div class="filter">
+
+      <!--
+        navbar e o header aqui estão juntos por conta do efeito desejado
+      -->
+      <nav class="navbar">
+        <div class="nav-wrapper">
+          <a href="landing-page.html" class="brand-logo">
+            <span class="fa fa-eye"></span> OBSERV
+          </a>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <a href="#login" class="modal-trigger">
+              <li class="navbar-item">
+                <span class="fa fa-sign-in"></span> Login
+              </li>
+            </a>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <a href="#signin" class="modal-trigger">
+              <li class="navbar-item">
+                <span class="fa fa-user"></span> Cadastrar
+              </li>
+            </a>
+          </ul>
+        </ul>
+        </div>
+      </nav>
+      <ul class="sidenav grey darken-4 grey-text text-lighten-4 collection" id="mobile-menu">
+        <a href="#login" class="modal-trigger">
+          <li class="collection-item">
+            <span class="fa fa-sign-in"></span> Login
+          </li>
+        </a>
+        <a href="#signin" class="modal-trigger">
+          <li class="navbar-item">
+            <span class="fa fa-user"></span> Cadastrar
+          </li>
+        </a>
+      </ul>
+
+
+      <div class="container center-align">
+        <h2>
+          Sua <b>pesquisa</b>, gerenciada do <b>seu</b> jeito
+        </h2>
+        <p>
+          <b>Observ</b> é uma plataforma que permite que pesquisadores
+          melhorem o <i>workflow</i> de sua pesquisa
+        </p>
+        <form action="" method="post">
+          <input type="text" placeholder="Procurar...">
+          <button type="submit" class="waves-effect waves-light btn-large cyan darken-2">
+            <span class="fa fa-search"></span>
+            Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="sobre">
+    <div class="container center-align">
+      <h2>Sobre</h2>
+      <p>
+        O <b>OBSERV</b> é uma ferramenta que permite pesquisadores de doenças tropicais
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Debitis, optio. Cumque, officiis esse!
+        Veritatis iusto beatae harum recusandae, libero eius,
+        nisi aspernatur et iste possimus dolor cum commodi dignissimos culpa!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magnam dolore cupiditate provident dolorem, obcaecati officia repellat necessitatibus ad. Maxime, accusamus! Molestias, esse eius maxime cupiditate voluptatem voluptates reiciendis hic.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8">
+          <div class="card">
+            <div class="card-content center-align">
+              <span class="metric">174.272</span> observatórios de dados
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-content center-align">
+              <span class="metric">357</span> pesquisadores
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="page-footer  blue lighten-1 grey-text text-lighten-5">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Para mais informações</h5>
+          <p class="grey-text text-lighten-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Documentação</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">Repositório GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="login" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <div class="row">
+        <img src="img/v3_rect.png" class="img-responsive">
+        <h4>
+          Fazer login
+        </h4>
+        <p>
+          Como visitante você tem acesso a funcionalidade de pesquisa de observatórios
+          e pode navegar entre estes observatórios.
+        </p>
+        <section class="modal-form">
+          <form>
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password" class="validate">
+              <label for="password">Senha</label>
+            </div>
+            <a href="homepage.html" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+              <span class="fa fa-sign-in"></span> Entrar
+            </a>
+          </form>
+        </section>
+        <a href="#forgotpassword" class="modal-close modal-trigger">Esqueci minha senha</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="signin" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <div class="row">
+        <img src="img/v3_rect.png" class="img-responsive">
+        <h4>
+          Cadastro
+        </h4>
+        <p>
+          <b>AVISO: </b>Como visitante você tem acesso a funcionalidade de pesquisa de observatórios e pode navegar entre estes observatórios.
+        </p>
+        <section class="modal-form">
+          <form>
+            <div class="input-field col s12">
+              <input type="text" id="name" class="validate">
+              <label for="name">Nome</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password" class="validate">
+              <label for="password">Senha</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password-confirmation" class="validate">
+              <label for="password-confirmation">Confirme a senha</label>
+            </div>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Li e concordo com os termos de uso</span>
+              </label>
+            </p>
+            <button type="submit" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+              <span class="fa fa-sign-in"></span> Entrar
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="forgotpassword" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <div class="row">
+        <img src="img/v3_rect.png" class="img-responsive">
+        <h4>
+          Esqueceu sua senha?
+        </h4>
+        <p>
+          Insira seu email utilizado no cadastro para cadastrar nova senha.
+        </p>
+        <section class="modal-form">
+          <form>
+            <div class="input-field col s12">
+              <input type="text" id="email" class="validate">
+              <label for="name">Email</label>
+            </div>
+            <button type="submit" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+              <span class="fa fa-sign-in"></span> Enviar
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modals_and_forms.js">
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/modals_and_forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Titillium+Web" rel="stylesheet">
+  <title>OBSERV</title>
+</head>
+
+<body id="page-top">
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#login">login</a>
+
+  <!-- Modal Structure -->
+  <div id="login" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <div class="row">
+        <img src="https://via.placeholder.com/50x50" class="img-responsive">
+        <h4>
+          Fazer login
+        </h4>
+        <p>
+          Como visitante você tem acesso a funcionalidade de pesquisa de observatórios
+          e pode navegar entre estes observatórios.
+        </p>
+        <section class="modal-form">
+          <form>
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password" class="validate">
+              <label for="password">Senha</label>
+            </div>
+            <button type="submit" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+              <span class="fa fa-sign-in"></span> Entrar
+            </button>
+          </form>
+        </section>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#signin">Cadastrar </a>
+
+  <!-- Modal Structure -->
+  <div id="signin" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <div class="row">
+        <img src="https://via.placeholder.com/50x50" class="img-responsive">
+        <h4>
+          Cadastro
+        </h4>
+        <p>
+          <b>AVISO: </b>Como visitante você tem acesso a funcionalidade de pesquisa de observatórios e pode navegar entre estes observatórios.
+        </p>
+        <section class="modal-form">
+          <form>
+            <div class="input-field col s12">
+              <input type="text" id="name" class="validate">
+              <label for="name">Nome</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="email" id="email" class="validate">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password" class="validate">
+              <label for="password">Senha</label>
+            </div>
+            <div class="input-field col s12">
+              <input type="password" id="password-confirmation" class="validate">
+              <label for="password-confirmation">Confirme a senha</label>
+            </div>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Li e concordo com os termos de uso</span>
+              </label>
+            </p>
+            <button type="submit" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+              <span class="fa fa-sign-in"></span> Entrar
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <a class="waves-effect waves-light btn modal-trigger" href="#new-proj">Criar projeto</a>
+  <div id="new-proj" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <h4>Criar Projeto</h4>
+      <section class="modal-form">
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name">Nome do projeto</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="theme" type="text" class="validate">
+              <label for="theme">Tema do projeto</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="description" class="materialize-textarea"></textarea>
+              <label for="description">Descrição do projeto</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="tags" class="materialize-textarea"></textarea>
+              <label for="tags">Tags do projeto</label>
+            </div>
+          </div>
+          <a class="modal-close btn-large grey lighten-1 white-text waves-effect waves-light">
+            <span class="fa fa-trash"></span> Cancelar
+          </a>
+          <button type="submit" class="btn-large blue lighten-1 white-text waves-effect waves-light">
+             <span class="fa fa-save"></span> Salvar
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+    <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#new-proj2">enviar dados</a>
+  <div id="dados0" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <h4>Inserir Dados</h4>
+      <p>passo 1: carregue o arquivo</p>
+      <section class="modal-form">
+        <form>
+          <div class="row">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Selecione o arquivo</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+            <p class="left-align">
+              <label>
+                <input type="checkbox" />
+                <span>O arquivo possui cabeçalho</span>
+              </label>
+            </p>
+          </div>
+        </form>
+      </section>
+      <div class="progress">
+        <div class="determinate" style="width: 25%"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <a href="#!" class="modal-action modal-close waves-effect waves-light grey disabled white-text btn-flat">
+            Voltar
+          </a>
+        </div>
+        <div class="col s12 offset-m4 m4">
+          <a href="#!" class="modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+            Próximo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<a class="waves-effect waves-light btn modal-trigger" href="#new-data">enviar dados 2</a>
+<div id="new-data" class="modal grey lighten-4">
+  <div class="modal-content container center-align">
+    <h4>Inserir Dados</h4>
+    <p>passo 2: Selecione os dados</p>
+    <section class="modal-form">
+      <table>
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Nome coluna</th>
+            <th>Salvar?</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              Casos
+            </td>
+            <td>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Salvar</span>
+                </label>
+              </p>
+            </td>
+            <td>
+              650
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="input-field">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Insira nome</label>
+              </div>
+            </td>
+            <td>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Salvar</span>
+                </label>
+              </p>
+            </td>
+            <td>
+              R$ 2000,00 per capita
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="progress">
+      <div class="determinate" style="width: 50%"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="row center-align">
+      <div class="col s12 m4">
+        <a href="#!" class="modal-action modal-close waves-effect waves-light grey disabled white-text btn-flat">
+          Voltar
+        </a>
+      </div>
+      <div class="col s12 offset-m4 m4">
+        <a href="#!" class="modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+          Próximo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <a class="waves-effect waves-light btn modal-trigger" href="#new-data2">enviar dados 3</a>
+  <div id="new-data2" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <h4>Inserir Dados</h4>
+      <p>passo 3: Indique os tipos</p>
+      <section class="modal-form row">
+        <table>
+          <thead>
+            <tr>
+              <th>Número</th>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Caracterização</th>
+              <th>Exemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Casos
+              </td>
+              <td>
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="1">Booleano</option>
+                    <option value="2">Inteiro</option>
+                    <option value="3">Decimal</option>
+                  </select>
+                  <label>Selecione</label>
+                </div>
+              </td>
+              <td>
+                ---
+              </td>
+              <td>
+                650
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Renda familiar
+              </td>
+              <td>
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="1">Booleano</option>
+                    <option value="2">Inteiro</option>
+                    <option value="3">Decimal</option>
+                  </select>
+                  <label>Selecione</label>
+                </div>
+              </td>
+              <td>
+                ---
+                <!-- essa coluna faz sentido apenas para o booleano,
+                  para mapear qual valor vai ser true e false -->
+              </td>
+              <td>
+                R$ 2000,00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="progress">
+        <div class="determinate" style="width: 75%"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <a href="#!" class="modal-action modal-close waves-effect waves-light grey disabled white-text btn-flat">
+            Voltar
+          </a>
+        </div>
+        <div class="col s12 offset-m4 m4">
+          <a href="#!" class="modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+            Próximo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <a class="waves-effect waves-light btn modal-trigger" href="#new-data3">enviar dados 4</a>
+    <div id="new-data3" class="modal grey lighten-4">
+      <div class="modal-content container center-align">
+        <h4>Inserir Dados</h4>
+        <p>Resumo</p>
+        <section class="modal-form row">
+          <table>
+            <thead>
+              <tr>
+                <th>Número</th>
+                <th>Nome</th>
+                <th>Salvar</th>
+                <th>Tipo</th>
+                <th>Caracterização</th>
+                <th>Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  Casos
+                </td>
+                <td>
+                  Sim
+                </td>
+                <td>
+                  Inteiro
+                </td>
+                <td>
+                  ---
+                </td>
+                <td>
+                  650
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  Renda familiar
+                </td>
+                <td>
+                  Sim
+                </td>
+                <td>
+                  Decimal
+                </td>
+                <td>
+                  ---
+                  <!-- essa coluna faz sentido apenas para o booleano,
+                      para mapear qual valor vai ser true e false -->
+                </td>
+                <td>
+                  R$ 2000,00
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="progress">
+          <div class="determinate" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row center-align">
+          <div class="col s12 m4">
+            <a href="#!" class="modal-action modal-close waves-effect waves-light grey disabled white-text btn-flat">
+              Voltar
+            </a>
+          </div>
+          <div class="col s12 offset-m4 m4">
+            <a href="#!" class="modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+              Concluir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <a class="waves-effect waves-light btn modal-trigger" href="#new-observ">novo observatório</a>
+  <div id="new-observ" class="modal grey lighten-4">
+    <div class="modal-content center-align">
+      <h4>Novo Observatório de Dados</h4>
+      <section class="modal-form">
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name">Nome do observatório</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="description" class="materialize-textarea"></textarea>
+              <label for="description">Descrição do observatório</label>
+            </div>
+            <div class="left-align">
+              <p>
+                Selecione os indicadores do observatório:
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Casos/Cidade</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Casos/Renda</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Casos/Idade</span>
+                </label>
+              </p>
+            </div>
+            <a href="" class="modal-close btn-large waves-effect waves-light grey lighten-1">
+              <span class="fa fa-trash"></span> Cancelar
+            </a>
+            <button type="submit" class="btn-large waves-effect waves-light blue lighten-1">
+              <span class="fa fa-save"></span> Salvar
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/modals_and_forms.js"></script>
+</body>
+
+</html>
