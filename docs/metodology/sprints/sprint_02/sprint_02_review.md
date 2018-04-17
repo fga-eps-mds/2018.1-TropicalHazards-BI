@@ -2,7 +2,7 @@
 
 ## Status das Histórias
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -123,7 +123,7 @@
 
 ### Rastreabilidade de impedimentos 
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -174,7 +174,7 @@
 
 ## Resultado dos focos de melhoria 
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Melhoria</th>
@@ -211,7 +211,7 @@
     </tbody>
 </table>
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>
@@ -259,4 +259,10 @@ O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a S
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint02/grafico_ev_sp02.png" class="responsive-img">
 
 ## Análise do Scrum Master
-A equipe de MDS mostrou-se bem mais integrada do que a Sprint passada, enfretaram o problema da falta de organização levantado na Sprint anterior de forma inteligente e ágil, onde eles dividiram as tarefas entre eles de maneira que todas as demandas levantadas a equipe de MDS foram completadas. Diferente da equipe de EPS que durante o decorrer da Sprint encontraram várias tarefas não planejadas essenciais para a execução do projeto, que receberam uma atenção maior do que as tarefas planejadas o que acarretou em demandas não concluídas. Um dos montivos da evolução de conhecimento da maioria dos membros do time foi o treinamento de Vue.js e a busca de meterial para entender a arquitetura de micro-serviços. O grande impedimento dessa Sprint foi a falta de planejamento nas tarefas de EPS, pois muitas atividades importantes para a execução do projeto não foram levantadas no planejamento inicial, logo impactarm na conclusão das tarefas definidas no planjamento da Sprint. 
+A equipe de MDS mostrou-se bem mais integrada do que a Sprint passada, enfretaram o problema da falta de organização levantado na Sprint anterior de forma inteligente e ágil, onde eles dividiram as tarefas entre eles de maneira que todas as demandas levantadas a equipe de MDS foram completadas.
+
+Diferente da equipe de EPS que durante o decorrer da Sprint encontraram várias tarefas não planejadas essenciais para a execução do projeto, que receberam uma atenção maior do que as tarefas planejadas o que acarretou em demandas não concluídas.
+
+Um dos montivos da evolução de conhecimento da maioria dos membros do time foi o treinamento de Vue.js e a busca de meterial para entender a arquitetura de micro-serviços.
+
+O grande impedimento dessa Sprint foi a falta de planejamento nas tarefas de EPS, pois muitas atividades importantes para a execução do projeto não foram levantadas no planejamento inicial, logo impactarm na conclusão das tarefas definidas no planjamento da Sprint. 

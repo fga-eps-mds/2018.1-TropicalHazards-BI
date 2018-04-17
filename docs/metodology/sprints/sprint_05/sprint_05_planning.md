@@ -10,7 +10,7 @@ Desenvolvimento full-stack, finalizar projetos e autenticação
 
 ## Backlog
 
-<table style="text-align:center">
+<table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -164,7 +164,7 @@ Desenvolvimento full-stack, finalizar projetos e autenticação
 <b>Product Owner:</b> Renata Souza
 
 ## Pareamento
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <tr>
         <th>Dupla</th>
     </tr>

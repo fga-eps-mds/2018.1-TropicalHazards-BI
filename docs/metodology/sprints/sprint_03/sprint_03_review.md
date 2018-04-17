@@ -2,7 +2,7 @@
 
 ## Status das Histórias
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -123,7 +123,7 @@
 
 ### Rastreabilidade de impedimentos 
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -162,7 +162,7 @@
 
 ## Resultado dos focos de melhoria 
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Melhoria</th>
@@ -193,7 +193,7 @@
     </tbody>
 </table>
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>
@@ -240,4 +240,6 @@ O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a S
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint03/grafico_ev_sp03.png" class="responsive-img">
 
 ## Análise do Scrum Master
-Débitos importantes das Sprints passadas foram pagos, um deles a primeira versão do Roadmap do projeto que vai orientar a equipe durante os próximos planejamentos de Sprint. Os membros do time de desenvolvimento(MDS) tiveram o primeiro contato com a implementação de funcionalidades, e teve um resultado muito bom, o time conseguiu completar todas as histórias de produção de código e testar o que foi criado. Toda a equipe enfrentou problemas de comunicação para esclarecer o andamento e responsabilidade de algumas tarefas, o que gerou novos débitos. O time de desenvolvimento está desnivelado em relação as contribuições para o repositório, pois o pareamento não está eficiente, devido a incompatibilidade de horário.  
+Débitos importantes das Sprints passadas foram pagos, um deles a primeira versão do Roadmap do projeto que vai orientar a equipe durante os próximos planejamentos de Sprint. Os membros do time de desenvolvimento(MDS) tiveram o primeiro contato com a implementação de funcionalidades, e teve um resultado muito bom, o time conseguiu completar todas as histórias de produção de código e testar o que foi criado.
+
+Toda a equipe enfrentou problemas de comunicação para esclarecer o andamento e responsabilidade de algumas tarefas, o que gerou novos débitos. O time de desenvolvimento está desnivelado em relação as contribuições para o repositório, pois o pareamento não está eficiente, devido a incompatibilidade de horário.  

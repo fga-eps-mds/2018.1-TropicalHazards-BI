@@ -5,7 +5,7 @@
 
 ## Status das Histórias
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -85,7 +85,7 @@
 **Release [xx.xx]()**
 ### Rastreabilidade de impedimentos 
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -149,7 +149,7 @@
 
 ## Resultado dos focos de melhoria 
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Melhoria</th>
@@ -174,7 +174,7 @@
     </thead>
 </table>
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>

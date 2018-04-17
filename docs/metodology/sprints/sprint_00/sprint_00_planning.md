@@ -8,7 +8,7 @@ Consolidação da equipe responsável pelo projeto.
 **Data de termino:** 10/03/2018
 
 ## Backlog
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>

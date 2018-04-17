@@ -1,5 +1,5 @@
 # Status das Histórias
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -36,7 +36,7 @@
 
 ## Rastreabilidade de impedimentos
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -54,7 +54,7 @@
 
 # Retrospectiva
 
-![](https://i.imgur.com/nMXkKvE.jpg)
+<img src="https://i.imgur.com/nMXkKvE.jpg" alt="" class="responsive-img">
 
 ## Resultado dos focos de melhoria 
 Não foram levantados focos de melhoria para Sprint 00.
@@ -65,7 +65,7 @@ Por se tratar da sprint 0, não houveram indicadores.
 ## Conhecimento Inicial 
 
 ### Gráfico evolutivo
-![](https://i.imgur.com/7YBk7qG.png)
+<img src="https://i.imgur.com/7YBk7qG.png" alt="" class="responsive-img">
 
 ### Quadro de Habilidades
-![](https://i.imgur.com/6CJ87M1.png)
+<img src="https://i.imgur.com/6CJ87M1.png" alt="" class="responsive-img">

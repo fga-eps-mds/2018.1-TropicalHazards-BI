@@ -2,7 +2,7 @@
 
 ## Status das Histórias
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -138,7 +138,7 @@
 
 ### Rastreabilidade de impedimentos 
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -204,7 +204,7 @@
 
 ## Resultado dos focos de melhoria 
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Melhoria</th>
@@ -235,7 +235,7 @@
     </tbody>
 </table>
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>
@@ -286,7 +286,7 @@ O Burndown de riscos avalia a evolução dos riscos selecionados pela equipe dur
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint04/burndown_riscos_sp04.png" class="responsive-img">
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td>Risco</td>
@@ -338,4 +338,10 @@ O Burndown de riscos avalia a evolução dos riscos selecionados pela equipe dur
 </table>
 
 ## Análise do Scrum Master
-A coleta de métricas e levantamento dos riscos foram realizados nessa Sprint, o time de desenvolvimento está avançando tranquilamente pela implementação do Back-end, e receberam treinamentos para capacitação no framework de desenvolvimento do Front-end. O maior problema enfretado na Sprint foi o primeiro contato com o desenvolvimento Full-stack, o time de desenvolvimento teve dificuldade para se adaptar a tecnologia, o que gerou débitos, um dos motivos também é falta de conhecimento de toda a equipe na implementação de testes no framework front-end(Vue.js). Essa primeira tentativa de desenvolvimento Full-stack gerou muito conhecimento para o time de desenvolvimento, como pode ser observado no gráfico evolutivo. Um dos riscos que cresceu foi o desnivelamento de conhecimento, pois o pareamento da Sprint não foi efetivo, dois membros estavam dispersos do resto do time. O contato com o cliente e a aproximação do Coach com a equipe esclareceu os requisitos que ainda não estavam bem definidos e concedeu uma validação do que foi contruído pela equipe, diminuindo assim o risco de o projeto não atender os requisitos. 
+A coleta de métricas e levantamento dos riscos foram realizados nessa Sprint, o time de desenvolvimento está avançando tranquilamente pela implementação do Back-end, e receberam treinamentos para capacitação no framework de desenvolvimento do Front-end.
+
+O maior problema enfretado na Sprint foi o primeiro contato com o desenvolvimento Full-stack, o time de desenvolvimento teve dificuldade para se adaptar a tecnologia, o que gerou débitos, um dos motivos também é falta de conhecimento de toda a equipe na implementação de testes no framework front-end(Vue.js).
+
+Essa primeira tentativa de desenvolvimento Full-stack gerou muito conhecimento para o time de desenvolvimento, como pode ser observado no gráfico evolutivo. Um dos riscos que cresceu foi o desnivelamento de conhecimento, pois o pareamento da Sprint não foi efetivo, dois membros estavam dispersos do resto do time.
+
+O contato com o cliente e a aproximação do Coach com a equipe esclareceu os requisitos que ainda não estavam bem definidos e concedeu uma validação do que foi contruído pela equipe, diminuindo assim o risco de o projeto não atender os requisitos. 

@@ -10,7 +10,7 @@ Preparando time para codar.
 
 ## Backlog
 
-<table style="text-align:center">
+<table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>

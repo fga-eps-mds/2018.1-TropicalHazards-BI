@@ -10,7 +10,7 @@ Atacar o Front-end, e tentar o full stack.
 
 ## Backlog
 
-<table style="text-align:center">
+<table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -156,7 +156,7 @@ Atacar o Front-end, e tentar o full stack.
 <b>Product Owner:</b> Renata Souza
 
 ## Pareamento
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <tr>
         <th>Dupla</th>
     </tr>
