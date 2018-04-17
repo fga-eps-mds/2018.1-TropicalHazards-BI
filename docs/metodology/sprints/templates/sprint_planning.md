@@ -9,7 +9,7 @@ Fechar documentação referente ao escopo do projeto e fazer treinamentos.
 
 ## Backlog
 
-<table style="text-align:center">
+<table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>

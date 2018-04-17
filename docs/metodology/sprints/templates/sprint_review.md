@@ -1,5 +1,5 @@
 # Status das Histórias
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th style="text-align:center">Issue</th>
@@ -33,7 +33,7 @@
 **Release [xx.xx]()**
 ### Rastreabilidade de impedimentos 
 
-<table>
+<table class="responsive-table highlight bordered">
   <thead>
     <tr>
       <th>Issue</th>
@@ -56,7 +56,7 @@
 Quadro de Pontos positivos, negativos e a melhorar
 
 ### Resultado dos focos de melhoria 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Melhoria</th>
@@ -78,7 +78,7 @@ Quadro de Pontos positivos, negativos e a melhorar
     </thead>
 </table>
 
-<table>
+<table class="responsive-table highlight bordered">
     <thead>
         <tr>
             <td><strong>Legenda</strong></td>
@@ -108,10 +108,13 @@ Gráfico burndown
 
 ## Velocity
 Gráfico velocity
+<img alt="" src="" class="responsive-img">
 
 ## Evolução de Conhecimento
 ### Gráfico Evolutivo
 Gráfico de evolução de conhecimento dos membros
+<img alt="" src="" class="responsive-img">
 
 ### Quadro de Habilidades
 Quadro de conhecimentos gerais do time
+<img alt="" src="" class="responsive-img">
