@@ -4,7 +4,7 @@
 
 A tabela a seguir exibe os possíveis riscos existentes no decorrer do projeto, bem como sua causa, impacto e probabilidade de ocorrência. Dessa lista serão monitorados e avaliados por Sprint os **dez primeiros** riscos, considerados os mais importantes.
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <thead>
         <tr>
             <th>Risco</th>
@@ -185,7 +185,7 @@ A tabela a seguir exibe os possíveis riscos existentes no decorrer do projeto, 
 <b>Observação:</b> Os riscos citados acima foram classificados para os campos de impacto e probabilidade a partir de valores indicados nas tabelas a seguir:
 
 ### 1.1 Tabela de Probabilidade
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
   <tr>
     <th>Probabilidade</th>
     <th>Intervalo</th>
@@ -219,7 +219,7 @@ A tabela a seguir exibe os possíveis riscos existentes no decorrer do projeto, 
 </table>
 
 ### 1.2 Tabela de Impacto
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
   <tr>
     <th>Impacto</th>
     <th>Descrição</th>
@@ -256,7 +256,7 @@ A tabela a seguir exibe os possíveis riscos existentes no decorrer do projeto, 
 
 A avaliação dos riscos é feita multiplicando o peso da probabilidade pelo peso do impacto.
 
-<table style="text-align: center">
+<table style="text-align: center" class="responsive-table highlight bordered">
     <thead>
         <th>Probabilidade/Impacto</th>
         <th>Muito Baixa</th>

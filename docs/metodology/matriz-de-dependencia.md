@@ -3,7 +3,7 @@ O objetivo deste artefato é  mapear as US que foram planejadas para o projeto T
 
 
 ###### Matriz de Dependência  
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <td><b>Features</b></td>
     <td></td>

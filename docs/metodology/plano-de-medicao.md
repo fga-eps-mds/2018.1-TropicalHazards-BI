@@ -16,8 +16,8 @@ Dessa forma, o plano de Medição visa reduzir a ocorrência desses riscos e pos
 ## 1. Objetivos Estratégicos
 A parte de gerência do projeto possui o objetivo principal de conduzir o projeto a fim de gerar um produto de qualidade e satisfação ao cliente, de acordo com o escopo definido. Alguns objetivos de gestão que necessitam do auxílio da medição:
 
-● Produtividade da equipe;<br>
-● Qualidade do código;<br>
+- Produtividade da equipe;
+- Qualidade do código;
 
 ## 2. Planejamento de Medição
 
@@ -27,7 +27,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 
 ## 3.1 Objetivo de Equipe
 ### 3.1.1 - Objetivo 1 - Equipe do projeto Tropical Hazards BI (EPS/MDS)
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <th><b>Analisar</b></th>
   <th>Para o propósito de</th>
@@ -47,7 +47,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 ## 3.2 Objetivo de Produto
 
 ### 3.2.1 - Objetivo 2 - Código fonte
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <th><b>Analisar</b></th>
     <th>Para o propósito de</th>
@@ -67,7 +67,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 ## 4. *Abstraction Sheets*
 
 ###  Abstraction Sheet 1 do Objetivo 1
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <th><b>Foco na Qualidade</b></th>
     <th><b>Fatores de Variação</b></th>
@@ -114,7 +114,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 ###  Abstraction Sheet 1 do Objetivo 2
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <th><b>Foco na Qualidade</b></th>
     <th><b>Fatores de Variação</b></th>
@@ -172,7 +172,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 ### 6.1 - Métricas do Objetivo 1 - Equipe do Projeto Tropical Hazards BI(EPS/MDS)
 
 #### Métrica 1.1 - USs executadas por Sprint
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <td><b>Métrica</b></td>
   <td>USs executadas na Sprint</td>  
@@ -220,7 +220,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 1.2 - Nível de conhecimento
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <td><b>Métrica</b></td>
   <td>Nivel de conhecimento</td>  
@@ -286,7 +286,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 1.3 - Tempo de dedicação
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <td><b>Métrica</b></td>
   <td>Tempo de dedicação ao Projeto</td>  
@@ -336,7 +336,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 1.4 - Nível de contribuição
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <td><b>Métrica</b></td>
   <td>Nível de contribuição</td>  
@@ -383,7 +383,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 01.5 - Quantidade de Story Points por Sprint
-<table>
+<table class="responsive-table highlight bordered">
 <tr>
   <td><b>Métrica</b></td>
   <td>Quantidade de Story Points por Sprint</td>  
@@ -433,7 +433,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 ### 6.2 - Métricas do Objetivo 2 - Código fonte
 
 #### Métrica 2.1 - Complexidade Ciclomática
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <td><b>Métrica</b></td>
     <td>Complexidade Ciclomática</td>
@@ -480,7 +480,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 2.2 -  Duplicação de código
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <td><b>Métrica</b></td>
     <td>Duplicação de código</td>
@@ -520,7 +520,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 </table>
 
 #### Métrica 2.3 -  Manutenibilidade
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <td><b>Métrica</b></td>
     <td>Manutenibilidade</td>
@@ -575,7 +575,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 
 
 #### Métrica 2.4 - Cobertura de Testes
-<table>
+<table class="responsive-table highlight bordered">
   <tr>
     <td><b>Métrica</b></td>
     <td>Cobertura de Teste</td>
@@ -617,7 +617,7 @@ A abordagem GQM (Goal Question Metric) será adotada para identificar as métric
 
 
 ## 7. Quadro-resumo
-<table>
+<table class="responsive-table highlight bordered">
   <tr style="text-align:center">
     <th style="text-align:center">Ferramenta</th>
     <th style="text-align:center">Métrica</th>

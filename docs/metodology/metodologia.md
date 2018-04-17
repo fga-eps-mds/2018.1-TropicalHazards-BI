@@ -1,7 +1,9 @@
 # Metodologia
+
 ## Papéis
+
 ### Scrum Master
-<p align = "justify">O Scrum Master é responsável por dar suporte a implementação do Scrum durante todo o processo. O Scrum master faz isso ajudando todos os membros do time a entender quais os valores, práticas e regras do Scrum.
+O Scrum Master é responsável por dar suporte a implementação do Scrum durante todo o processo. O Scrum master faz isso ajudando todos os membros do time a entender quais os valores, práticas e regras do Scrum.
 
 **A principal responsabilidade desse papel é identificar os riscos e impedimentos enfrentados pelos membros do time e responder o mais rápido possível com o objetivo de mitigá-los.**
 
@@ -16,14 +18,17 @@
 
 ### Product Owner
 
-<p align = "justify">O Product Owner tem o papel de colaborar e intermediar a comunicação entre o time de desenvolvimento e o cliente. Para isso, é necessária uma sólida compreensão do domínio do negócio e das diferentes necessidades das partes interessadas.
+O Product Owner tem o papel de colaborar e intermediar a comunicação entre o time de desenvolvimento e o cliente. Para isso, é necessária uma sólida compreensão do domínio do negócio e das diferentes necessidades das partes interessadas.
 
-<p align = "justify">Deve ser capaz de compreender as capacidades da equipe de desenvolvimento para que haja uma negociação consciente com o cliente e auxiliar o time para obter resultados que satisfaçam as expectativas e necessidades do cliente. Ou seja, deve consciliar a realidade da equipe de desenvolvimento com as expectativas dos stakeholders.
 
-<p align = "justify">Para esse projeto, existe a atuação do Product Owner Interno e do Product Owner Externo. O Product Owner Interno é um membro da disciplina de Engenharia de Produto de Software (EPS) que se comunica mais fortemente com o Product Owner Externo, que de fato interage  diretamente com o cliente e o representa. Ao longo de todo o projeto, o Product Owner Externo será representado por um coach das disciplinas de Engenharia de Produto de Software (EPS) e Métodos de Desenvolvimento de Software (MDS).
+Deve ser capaz de compreender as capacidades da equipe de desenvolvimento para que haja uma negociação consciente com o cliente e auxiliar o time para obter resultados que satisfaçam as expectativas e necessidades do cliente. Ou seja, deve consciliar a realidade da equipe de desenvolvimento com as expectativas dos stakeholders.
+
+
+Para esse projeto, existe a atuação do Product Owner Interno e do Product Owner Externo. O Product Owner Interno é um membro da disciplina de Engenharia de Produto de Software (EPS) que se comunica mais fortemente com o Product Owner Externo, que de fato interage  diretamente com o cliente e o representa. Ao longo de todo o projeto, o Product Owner Externo será representado por um coach das disciplinas de Engenharia de Produto de Software (EPS) e Métodos de Desenvolvimento de Software (MDS).
+
 
 ### Product Owner Externo
-<p align = "justify">O Product Owner Externo comunica-se diretamente com o cliente e apresenta suas necessidades ao time de desenvolvimento.É responsável por negociar diretamente com o cliente o escopo do projeto. Detém a propriedade dos critérios de aceitação do produto.
+O Product Owner Externo comunica-se diretamente com o cliente e apresenta suas necessidades ao time de desenvolvimento.É responsável por negociar diretamente com o cliente o escopo do projeto. Detém a propriedade dos critérios de aceitação do produto.
 
 **Responsabilidades**
 - Comunicar-se diretamente com o cliente do projeto e entender suas necessidades para o projeto.
@@ -34,7 +39,7 @@
 - Validar as entregas do produto durante a execução do projeto.
 
 ### Product Owner Interno
-<p align = "justify">O Product Owner Interno deve ter uma sólida compreensão do escopo do projeto definido com o Product Owner Interno e apresentar as necessidades para o time de desenvolvimento. Está mais próximo do time de desenvolvimento e interage mais comumente com os rituais definidos pelo Scrum junto ao time. É um membro do próprio time.
+O Product Owner Interno deve ter uma sólida compreensão do escopo do projeto definido com o Product Owner Interno e apresentar as necessidades para o time de desenvolvimento. Está mais próximo do time de desenvolvimento e interage mais comumente com os rituais definidos pelo Scrum junto ao time. É um membro do próprio time.
 
 **Responsabilidades**
 - Comunicar-se constantemente com o Product Owner Externo para verificar a aceitação dos artefatos gerados durante o processo.
@@ -50,9 +55,11 @@
 **O Product Owner não deve levar novas Histórias de Usuário durante uma Sprint em execução. O planejamento da Sprint deve ser mantido até sua conclusão.**
 
 ### Arquiteto
-<p align = "justify">O Arquiteto do Software é o responsável por conhecer profundamente o projeto e negócio do sistema desenvolvido, necessitando de um alto conhecimento técnico para garantir a visualização da arquitetura do sistema em alto nível para o resto da equipe, permitindo a compreensão de componentes, conectores e interfaces do software.
+O Arquiteto do Software é o responsável por conhecer profundamente o projeto e negócio do sistema desenvolvido, necessitando de um alto conhecimento técnico para garantir a visualização da arquitetura do sistema em alto nível para o resto da equipe, permitindo a compreensão de componentes, conectores e interfaces do software.
+
 
 **A principal responsabilidade desse papel é garantir que a estrutura do software esteja organizada de modo que os componentes mais significantes do sistema sejam compostos de sistemas e interfaces sucessivamente menores.**
+
 
 **Responsabilidades:**
 * Garantir que a equipe possa visualizar o que é fundamental para a compreensão de um sistema em seu ambiente.
@@ -63,7 +70,7 @@
 * Comunicar interações e dependências de componentes para os desenvolvedores.
 
 ### DevOps
-<p align = "justify">O especialista *DevOps* é o responsável pela criação, manutenção e evolução da infraestrutura operacional do projeto, evitando que problemas relacionados a mesma afetem a equipe de desenvolvimento ou o produto.
+O especialista *DevOps* é o responsável pela criação, manutenção e evolução da infraestrutura operacional do projeto, evitando que problemas relacionados a mesma afetem a equipe de desenvolvimento ou o produto.
 
 **A principal responsabilide desse papel é viabilisar a integração e o *deploy* continuos e automatizados do software produzido pela equipe.**
 
@@ -74,8 +81,8 @@
 - Configurar ferramentas para automatizar a itegração continua do software produzido.
 - Configurar ferramentas para automatizar o deploy continuo do software produzido.
 
-### Especialista de UX/UI
-<p align = "justify">O especialista de UX/UI é responsável por monitorar, validar, providenciar consultoria e auxiliar a equipe de desenvolvimento durante a elaboração das interfaces com o usuário.
+### Especialista de UX/UI (Designer)
+O especialista de UX/UI é responsável por monitorar, validar, providenciar consultoria e auxiliar a equipe de desenvolvimento durante a elaboração das interfaces com o usuário. Esse papel também excerce a função de **coringa** na equipe.
 
 **A principal responsabilide desse papel é auxiliar a equipe de desenvolvimento, com a prestação de serviços de consultoria, à implementar uma interface confortável para o usuário em suas macro e micro interações com o sistema.**
 
@@ -86,10 +93,12 @@
 - Providenciar treinamentos de design à equipe, quando necessário.
 - Identificar erros de front-end.
 - Garantir a qualidade visual da aplicação.
+- Auxiliar os outros papéis.
 
 ## Rituais
 ### Sprint Planning
-<p align = "justify">Tem como objetivo identificar o foco e planejar o trabalho que será realizado durante a Sprint. Esse planejamento é feito de forma colaborativa com todo o time Scrum. Ao identificar o foco e o trabalho que deve ser realizado para atingir o objetivo da Sprint o Time de Desenvolvimento decidirá como construir essas funcionalidades, dividindo cada nas tarefas necessárias para que se encaixe no conceito de **Pronto** da equipe. No planejamento da Sprint são respondidas as seguintes perguntas:
+Tem como objetivo identificar o foco e planejar o trabalho que será realizado durante a Sprint. Esse planejamento é feito de forma colaborativa com todo o time Scrum.
+Ao identificar o foco e o trabalho que deve ser realizado para atingir o objetivo da Sprint o Time de Desenvolvimento decidirá como construir essas funcionalidades, dividindo cada nas tarefas necessárias para que se encaixe no conceito de **Pronto** da equipe. No planejamento da Sprint são respondidas as seguintes perguntas:
 
 - Qual o foco dessa Sprint?
 - O que pode ser entregue como resultado para atingir o foco planejado?
@@ -102,7 +111,7 @@
 - Sprint Backlog
 
 ### Daily Meeting
-<p align = "justify">A reunião diária tem como objetivo inspecionar o progresso em direção ao objetivo da sprint, planejar as próximas 24 horas do Time de Desenvolvimento e identificar impedimentos que podem ameaçar a entrega do incremento planejado.
+A reunião diária tem como objetivo inspecionar o progresso em direção ao objetivo da sprint, planejar as próximas 24 horas do Time de Desenvolvimento e identificar impedimentos que podem ameaçar a entrega do incremento planejado.
 
 Cada membro do time deve responder:
 - O que eu fiz ontem que contribui para o time atingir o planejado para a Sprint?
@@ -112,7 +121,7 @@ Cada membro do time deve responder:
 :alarm_clock:**Time-box: 15 minutos**
 
 #### Local e horário de realização
-<table>
+<table class="responsive-table highlight bordered">
     <tr>
         <td></td>
         <td><b>Local</b></td>
@@ -146,7 +155,7 @@ Cada membro do time deve responder:
 </table>
 
 ### Sprint Review
-<p align = "justify">A Revisão da Sprint é realizada no final da Sprint e tem como objetivo inspecionar o incremento produzido e adaptar o **Backlog do Produto** se necessário.É apresentado para as partes interessadas o resultado gerado na Sprint com o propósito de obter feedback e promover a colaboração.
+A Revisão da Sprint é realizada no final da Sprint e tem como objetivo inspecionar o incremento produzido e adaptar o **Backlog do Produto** se necessário.É apresentado para as partes interessadas o resultado gerado na Sprint com o propósito de obter feedback e promover a colaboração.
 
 Elementos da revisão de Sprint:
 
@@ -163,7 +172,7 @@ Elementos da revisão de Sprint:
 :alarm_clock:**Time-box: 1 hora**
 
 #### Local e horário de realização
-<table>
+<table class="responsive-table highlight bordered">
     <tr>
         <td></td>
         <td><b>Local</b></td>
@@ -177,7 +186,7 @@ Elementos da revisão de Sprint:
 </table>
 
 ### Sprint Retrospective
-<p align = "justify">A Retrospectiva de Sprint tem como foco o Time Scrum, é uma oportunidade para a equipe inspecionar a si próprio e identificar pontos de melhoria a serem destacados na próxima Sprint em relação as pessoas, os relacionamentos e os processos e ferramentas utilizados.
+A Retrospectiva de Sprint tem como foco o Time Scrum, é uma oportunidade para a equipe inspecionar a si próprio e identificar pontos de melhoria a serem destacados na próxima Sprint em relação as pessoas, os relacionamentos e os processos e ferramentas utilizados.
 
 Na retrospectiva o Time Scrum deve responder:
 - Quais os pontos positivos da Sprint?
@@ -192,7 +201,7 @@ Ao final da retrospectiva o Time Scrum deverá identificar quais ações serão 
 :alarm_clock:**Time-box: 45 minutos**
 
 #### Local e horário de realização
-<table>
+<table class="responsive-table highlight bordered">
     <tr>
         <td></td>
         <td><b>Local</b></td>
@@ -219,7 +228,7 @@ Algumas práticas do Extreme Programming(XP) foram incorporadas à execução do
 
 - Planejamento: O time se reune, seleciona as atividades e realiza estimativas. Os desenvolvedores irão definir as estimativas. É utilizado o Planning Poker, com o sistema de pontuação de fibonacci: 1, 2, 3, 5, 8, 13.... Cada estimativa leva em consideração uma tarefa inicialmente definida como correspondente ao valor "1", conforme detalhado a seguir:  
 
-<table>
+<table class="responsive-table highlight bordered">
     <tr>
         <th>Tipo da User Storie</th>
         <th>Issue base da pontuação</th>
