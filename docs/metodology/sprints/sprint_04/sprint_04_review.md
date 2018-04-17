@@ -50,7 +50,8 @@
       </td>
       <td>Criar Projeto</td>
       <td><b>5</b></td>
-      <td><strong style="color:red">Pendente</strong> 😞 </td>      
+      <td><strong style="color:red">Pendente</strong> 😞 </td> 
+    </tr>     
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/87">87</a>
@@ -145,57 +146,57 @@
       <th>Impedimentos</th>
     </tr>
   </thead>
-    <tbody style="text-align: center">
-      <tr>
-          <td style="text-align: center">
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/4">4</a><br>
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/5">5</a><br>
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/6">6</a><br>
-          </td>
-        <td>
-            <ul>
-                <li>Dependência com sistema de autenticação não foi lavado em conta no planejamento</li>
-                <li>Não estava claro ainda os tipos de usuários do sistema</li>
-                <li>Não foi testado</li>
-            </ul>
-        </td>
-      </tr>
-      <tr>
-          <td style="text-align: center">
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/98">98</a>
-          </td>
-        <td>
-            <ul>
-                <li>Dependência com sistema de autenticação não foi lavado em conta no planejamento</li>
-                <li>Tarefa recebeu foco no final da Sprint, logo não foi possível terminar a implementação</li>
-            </ul>
-        </td>
-      </tr>
-      <tr>
-          <td style="text-align: center">
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/8">8</a>
-          </td>
-        <td>
-            <ul>
-                <li>Falta de logo</li>
-                <li>Não estava definido os papéis dos usuários</li>
-                <li>Paleta de cores incondizente</li>
-                <li>Não atendia os requisitos do cliente</li>
-            </ul>
-        </td>
-      </tr>
-      <tr>
-          <td style="text-align: center">
-            <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/67">67</a>
-          </td>
-        <td>
-            <ul>
-                <li>Houve uma falha de comunicação durante a execução da atividade, pois não ficou claro o progresso da mesma</li>
-                <li>Especificação da Issue estava incompleta</li>
-            </ul>
-        </td>
-      </tr>
-    </tbody>
+  <tbody style="text-align: center">
+    <tr>
+      <td style="text-align: center">
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/4">4</a><br>
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/5">5</a><br>
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/6">6</a><br>
+      </td>
+      <td>
+        <ul>
+          <li>Dependência com sistema de autenticação não foi lavado em conta no planejamento</li>
+          <li>Não estava claro ainda os tipos de usuários do sistema</li>
+          <li>Não foi testado</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/98">98</a>
+      </td>
+      <td>
+        <ul>
+          <li>Dependência com sistema de autenticação não foi lavado em conta no planejamento</li>
+          <li>Tarefa recebeu foco no final da Sprint, logo não foi possível terminar a implementação</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/8">8</a>
+      </td>
+      <td>
+        <ul>
+          <li>Falta de logo</li>
+          <li>Não estava definido os papéis dos usuários</li>
+          <li>Paleta de cores incondizente</li>
+          <li>Não atendia os requisitos do cliente</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">
+        <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/67">67</a>
+      </td>
+      <td>
+        <ul>
+          <li>Houve uma falha de comunicação durante a execução da atividade, pois não ficou claro o progresso da mesma</li>
+          <li>Especificação da Issue estava incompleta</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 ## Retrospectiva  
@@ -205,53 +206,53 @@
 ## Resultado dos focos de melhoria 
 
 <table class="responsive-table highlight bordered">
-    <thead>
-        <tr>
-            <th>Melhoria</th>
-            <th>Ações tomadas</th>
-            <th>Resultados</th>
-            <th>Avaliação</th>
-        </tr>
-    </thead>
-    <tbody style="text-align: center">
-      <tr>
-        <td><b>Pareamento</b></td>
-        <td>Pareamentos foram definidos no planejamento de Sprint</td>
-        <td>Apesar da maioria dos membros do time de desenvolvimento terem aplicado o pareamento, dois membros não participaram ativamente, e um deles não chegou a implementar nenhuma funcionalidade durante a Sprint, aumentando o risco de desnivelamento de conhecimento</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td><b>Fluxo e revisão dos PRs</b></td>
-        <td>Apontar no mínimo dois revisores para cada PR e adiantar as requisições em um dia</td>
-        <td>Os membros de EPS não estão divindindo a responsabilidade de revisão de PRs corretamente, logo acaba sobrecarregando alguns membros. E a grande maioria dos PRs foram feitos novamente no último dia de Sprint</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td><b>Comunicação sobre progresso de tarefas</b></td>
-        <td>Mover card no ZenHub e responder o time no principal canal de comunicação</td>
-        <td>Membros selecionam tarefas e as designam para si, mas não cumprem e não comunicam para a equipe a dificuldade de completar a atividade</td>
-        <td>❌</td>
-      </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>Melhoria</th>
+      <th>Ações tomadas</th>
+      <th>Resultados</th>
+      <th>Avaliação</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr>
+      <td><b>Pareamento</b></td>
+      <td>Pareamentos foram definidos no planejamento de Sprint</td>
+      <td>Apesar da maioria dos membros do time de desenvolvimento terem aplicado o pareamento, dois membros não participaram ativamente, e um deles não chegou a implementar nenhuma funcionalidade durante a Sprint, aumentando o risco de desnivelamento de conhecimento</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td><b>Fluxo e revisão dos PRs</b></td>
+      <td>Apontar no mínimo dois revisores para cada PR e adiantar as requisições em um dia</td>
+      <td>Os membros de EPS não estão divindindo a responsabilidade de revisão de PRs corretamente, logo acaba sobrecarregando alguns membros. E a grande maioria dos PRs foram feitos novamente no último dia de Sprint</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td><b>Comunicação sobre progresso de tarefas</b></td>
+      <td>Mover card no ZenHub e responder o time no principal canal de comunicação</td>
+      <td>Membros selecionam tarefas e as designam para si, mas não cumprem e não comunicam para a equipe a dificuldade de completar a atividade</td>
+      <td>❌</td>
+    </tr>
+  </tbody>
 </table>
 
 <table style="text-align: center" class="responsive-table highlight bordered">
-    <thead>
-        <tr>
-            <td><strong>Legenda</strong></td>
-            <td></td>
-        </tr>
-    </thead>
-    <tbody style="text-align:center">
-        <tr>
-            <td>✔</td>
-            <td>Resolvido</td>
-        </tr>
-        <tr>
-            <td>❌</td>
-            <td>Não resolvido</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <td><strong>Legenda</strong></td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody style="text-align:center">
+    <tr>
+      <td>✔</td>
+      <td>Resolvido</td>
+    </tr>
+    <tr>
+      <td>❌</td>
+      <td>Não resolvido</td>
+    </tr>
+  </tbody>
 </table>
 
 

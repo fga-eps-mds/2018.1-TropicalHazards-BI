@@ -57,25 +57,25 @@ Quadro de Pontos positivos, negativos e a melhorar
 
 ### Resultado dos focos de melhoria 
 <table class="responsive-table highlight bordered">
-    <thead>
-        <tr>
-            <th>Melhoria</th>
-            <th>Resultados</th>
-            <th>Avaliação</th>
-        </tr>
-        <tbody style="text-align: center">
-            <tr>
-                <td>Comunicação através do slack</td>
-                <td>Toda a comunicação durante a sprint foi dada através do slack, outros meios foram ignorados, então membros passaram a usar o Slack</td>
-                <td>✔</td>
-            </tr>
-            <tr>
-                <td>Commits mais atômicos </td>
-                <td>Membros foram incentivados através a revisar as políticas de commit do repositório, logo houve um melhor entendimento sobre o padrão de commits.</td>
-                <td>❌</td>
-            </tr>
-        </tbody>
-    </thead>
+  <thead>
+    <tr>
+      <th>Melhoria</th>
+      <th>Resultados</th>
+      <th>Avaliação</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+      <tr>
+        <td>Comunicação através do slack</td>
+        <td>Toda a comunicação durante a sprint foi dada através do slack, outros meios foram ignorados, então membros passaram a usar o Slack</td>
+        <td>✔</td>
+      </tr>
+      <tr>
+        <td>Commits mais atômicos </td>
+        <td>Membros foram incentivados através a revisar as políticas de commit do repositório, logo houve um melhor entendimento sobre o padrão de commits.</td>
+        <td>❌</td>
+      </tr>
+  </tbody>
 </table>
 
 <table class="responsive-table highlight bordered">

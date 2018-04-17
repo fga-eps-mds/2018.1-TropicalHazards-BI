@@ -34,29 +34,30 @@ O presente documento tem como objetivo formalizar o início do projeto Tropical 
 Esta seção representa um dicionário dos diversos  termos utilizados na descrição do projeto, procurando apresentar suas respectivas definições de acordo com os contextos do problema e organização.
 
 <table class="responsive-table highlight bordered">
-    <thead>
-      <tr>
-        <th>Termo</th>
-        <th>Descrição</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Dados de pesquisas</td>
-        <td>Coleção de dados e informações relacionadas a doenças tropicais que foram previamente tratadas e devem ser disponibilizadas.</td>
-      </tr>  
-      <tr>
-        <td>Indicadores</td>
-        <td>São levantados a partir da seleção de certos dados de pesquisas e consistem em métricas objetivas, de claro entendimento e compreensão, que transmitem informações relevantes para um determinado contexto ou estudo.</td>
-      </tr>
-      <tr>
-        <td>Observatório ou Dashboard</td>
-        <td>Funcionalidade do sistema responsável pela apresentação dos indicadores para os profissionais do NMT ou interessados.</td>
-      </tr>   
-      <tr>
-        <td>Projeto</td>
-        <td>No contexto de um usuário do NMT utilizando o sistema, um projeto possui funcionamento semelhante a um repositório de dados, ou seja, existe uma organização principal onde cada profissional pode criar um projeto pessoal que disponibiliza dados de pesquisas para diferentes observatórios.</td>
-      </tr>
+  <thead>
+    <tr>
+      <th>Termo</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dados de pesquisas</td>
+      <td>Coleção de dados e informações relacionadas a doenças tropicais que foram previamente tratadas e devem ser disponibilizadas.</td>
+    </tr>  
+    <tr>
+      <td>Indicadores</td>
+      <td>São levantados a partir da seleção de certos dados de pesquisas e consistem em métricas objetivas, de claro entendimento e compreensão, que transmitem informações relevantes para um determinado contexto ou estudo.</td>
+    </tr>
+    <tr>
+      <td>Observatório ou Dashboard</td>
+      <td>Funcionalidade do sistema responsável pela apresentação dos indicadores para os profissionais do NMT ou interessados.</td>
+    </tr>   
+    <tr>
+      <td>Projeto</td>
+      <td>No contexto de um usuário do NMT utilizando o sistema, um projeto possui funcionamento semelhante a um repositório de dados, ou seja, existe uma organização principal onde cada profissional pode criar um projeto pessoal que disponibiliza dados de pesquisas para diferentes observatórios.</td>
+    </tr>
+  </tbody>
 </table>
 
 ## 3. Descrição do Projeto
@@ -78,45 +79,46 @@ O projeto tem como critério de sucesso trabalhar com os diferentes contextos de
 
 ## 6. Requisitos de Alto Nível
  O Tropical Hazards BI será uma plataforma web que concentra a visualização de dados dos diferentes projetos de pesquisas do NMT por pesquisadores e interessados. Entre os requisitos de alto nível tem-se:
-     <ul>
-        <li>O sistema dever ser de fácil manuseio;</li>
-        <li>Os indicadores levantadas devem ser apresentados por meio de um dashboard;</li>
-        <li>O design deve ser simples e minimalista;</li>
-        <li>Um projeto criado por um profissional do NMT deve disponibilizar acesso aos seus dados para os diversos observatórios;</li>
-    </ul>
+
+<ul>
+  <li>O sistema dever ser de fácil manuseio;</li>
+  <li>Os indicadores levantadas devem ser apresentados por meio de um dashboard;</li>
+  <li>O design deve ser simples e minimalista;</li>
+  <li>Um projeto criado por um profissional do NMT deve disponibilizar acesso aos seus dados para os diversos observatórios;</li>
+</ul>
 
 
 ## 7. Riscos
 Os principais riscos do desenvolvimento do Tropical Hazards BI e suas ações preventivas são:
 <table class="responsive-table highlight bordered">
-    <thead>
-      <tr>
-        <th>Riscos</th>
-        <th>Ações Preventivas</th>
+  <thead>
+    <tr>
+      <th>Riscos</th>
+      <th>Ações Preventivas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Membro trancar ou abandonar a disciplina.</td>
+      <td>Distribuir as tarefas de maneira proporcional, sem sobrecarregar os membros da equipe.</td>
+    </tr>  
+    <tr>
+      <td>Time de desenvolvimento pouco integrado.</td>
+      <td>Promover encontros constantes para sanar dificuldades, incentivar a colaboração entre os membros da equipe.</td>
+    </tr>  
+    <tr>
+      <td>Equipe de desenvolvimento sem capacidade técnica.</td>
+      <td>Realização de treinamentos para melhorar o conhecimento da equipe e criação de canal de comunicação exclusivo para sanar dúvidas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação falha entre o time.</td>
+      <td>Proporcionar uma boa integração entre os membros da equipe com a exposição das atividades executadas entre eles, utilizar um meio de comunicação comum a todos os membros, manter encontros agendados e constantes para sanar dúvidas e dificuldades no projeto, acompanhar as atividades dos membros.</td>
       </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Membro trancar ou abandonar a disciplina.</td>
-        <td>Distribuir as tarefas de maneira proporcional, sem sobrecarregar os membros da equipe.</td>
-      </tr>  
-      <tr>
-        <td>Time de desenvolvimento pouco integrado.</td>
-        <td>Promover encontros constantes para sanar dificuldades, incentivar a colaboração entre os membros da equipe.</td>
-      </tr>  
-      <tr>
-        <td>Equipe de desenvolvimento sem capacidade técnica.</td>
-        <td>Realização de treinamentos para melhorar o conhecimento da equipe e criação de canal de comunicação exclusivo para sanar dúvidas.</td>
-      </tr>
-      <tr>
-        <td>Comunicação falha entre o time.</td>
-        <td>Proporcionar uma boa integração entre os membros da equipe com a exposição das atividades executadas entre eles, utilizar um meio de comunicação comum a todos os membros, manter encontros agendados e constantes para sanar dúvidas e dificuldades no projeto, acompanhar as atividades dos membros.</td>
-        </tr>
-      <tr>
-        <td>Membro do time que faz estágio.</td>
-        <td>Conscientizar o membro do time quanto ao comprometimento necessário para a execução do projeto e monitorar a organização de horários desse membro. </td>
-      </tr>
-    </tbody>  
+    <tr>
+      <td>Membro do time que faz estágio.</td>
+      <td>Conscientizar o membro do time quanto ao comprometimento necessário para a execução do projeto e monitorar a organização de horários desse membro. </td>
+    </tr>
+  </tbody>  
 </table>
 
 
@@ -201,7 +203,7 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
         </ul>
       </td>
     </tr>
-      </tbody>
+  </tbody>
 </table>
 
 
@@ -246,6 +248,8 @@ A equipe é composta por 10 membros e 3 Coachs, sendo todos estudantes de Engenh
     <tr>
       <th>Equipamento</th>
       <th>Requisitos</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
       <td>Internet</td>

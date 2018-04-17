@@ -130,7 +130,8 @@ Desenvolvimento full-stack, finalizar projetos e autenticação
       </td>
       <td>Criar Projeto</td>
       <td><b>5</b></td>
-      <td class="tdDebito">Débito - <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_04/sprint_04_review">Sprint 04</a> </td>      
+      <td class="tdDebito">Débito - <a href="https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/wiki/R1/sprint_04/sprint_04_review">Sprint 04</a> </td>
+    </tr>      
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/8">8</a>
@@ -165,18 +166,18 @@ Desenvolvimento full-stack, finalizar projetos e autenticação
 
 ## Pareamento
 <table style="text-align: center" class="responsive-table highlight bordered">
-    <tr>
-        <th>Dupla</th>
-    </tr>
-    <tr>
-        <td>Yoshida e Max</td>
-    </tr>
-    <tr>
-        <th>Trio</th>
-    </tr>
-    <tr>
-        <td>JP, Bargas e Baea</td>
-    </tr>
+  <tr>
+      <th>Dupla</th>
+  </tr>
+  <tr>
+      <td>Yoshida e Max</td>
+  </tr>
+  <tr>
+      <th>Trio</th>
+  </tr>
+  <tr>
+      <td>JP, Bargas e Baea</td>
+  </tr>
 </table>
 
 ## Focos de melhoria
