@@ -81,20 +81,21 @@ No front-end será utilizado o framework em javascript **Vue JS**, uma ferrament
 <br>
 <br>
 
-No Vue JS o código é dividido em componentes single file, isto é, cada componente possui html, css e javascript em um único arquivo, desta forma a arquitetura dividida em componentes permite o reproveitamento do código e facilita o desenvolvimento de aplicações Single Page.
+O front-end será desenvolvido utilizando a framework javascript Vue JS. Nesta framework o código é dividido em componentes single file, isto é, cada componente possui o css, javascript e html em um único arquivo.
 
-Para tratar da lógica do desenvolvimento de uma Single Page Application será utilizado o Vue Router, uma biblioteca oficial do Vue responsável por mapear as rotas dos componentes, sendo responsável por tratar sua renderização, sem a necessidade de atualizar completamente a página.
+Esta divisão da página em componentes auxilia no desenvolvimento de Single Page Application, também referidas como SPA. As SPA são aplicações ou sites que interagem com o usuário reescrevendo seu conteúdo de maneira dinâmica ao invés de carregar novas páginas a partir de um servidor. Nesta abordagem não há a interrupção da experiência de usuário com o carregamento de páginas, apresentando um comportamento semelhante a aplicações nativas de desktop.
 
-A comunicação entre o front-end em Vue e back-end ocorre por meio de requisições HTTP realizadas pelo front-end aos API endpoints do back-end. É necessário notar que algumas requisições necessitam da autenticação do usuário, sendo esta realizada por meio de tokens no padrão Json Web Token.
+Para a utilização dessa arquitetura Single Page será utilizada a biblioteca oficial do Vue JS, o Vue-Router. No Vue-Router os componentes tem suas rotas mapeadas e este é responsável por realizar o carregamento dinâmico de seu conteúdo. A comunicação dos componentes do front-end com o back-end ocorrem através de requisições HTTP realizadas para os end-points das APIs do back-end.
 
-Tais tokens criptografados possuem as informações necessárias para efetuar a autenticação do usuário no back-end e trazem como vantagem em relação aos tokens básicos do REST Framework a existência de uma data de expiração após a qual precisam ser renovados. Os tokens básicos do REST Framework são gerados uma única vez e atribuídos ao usuário, sendo, desta forma, mais vulneráveis.
+<img src="https://i.imgur.com/CbutZ7B.png">
 
-Ao efetuar o login, o back-end retorna ao front-end o Token JWT do usuário que deve ser incluído no cabeçalho das requisições HTTP do usuário para que este seja autenticado no back-end. Após efetuado o login, para a persistência e compartilhamento dos dados do usuário entre os diferentes componentes no front-end foi utilizada a biblioteca VueX;
+Essa comunicação entre os servidores front-end e back-end ocorre através da notação de dados **JSON** (Java Script Object Notation), devido sua facilidade de ser gerada e interpretada.
 
+Algumas requisições necessitam da autenticação de usuário, para a realização dessa autenticação adotou-se a utilização de Tokens no padrão Json Web Token. Estes tokens possuem todas as informações necessárias para autenticação do usuário no back-end, possuindo como vantagem em relação aos Tokens básicos do REST Framework a existência de uma data de expiração, possuindo, portanto, uma maior segurança.
 
-O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
+As informações do usuário obtidas a partir desse token ao efetuar o login são mantidas no front-end de forma compartilhada entre os componentes utilizando a biblioteca Vuex, responsável por manter e atualizar o estado do usuário entre os diversos componentes.
 
-
+<img src="https://i.imgur.com/DN8Tl90.png">
 
 ## 3. Metas e Restrições de Arquitetura
 O projeto Tropical Hazards possui as seguintes metas:
