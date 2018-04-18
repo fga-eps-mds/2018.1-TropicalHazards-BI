@@ -1,0 +1,120 @@
+body {
+  font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+
+p {
+  letter-spacing: .1em;
+  font-size: 1.1em;
+}
+
+header .navbar,
+header {
+  color: #efefef;
+}
+
+header .container {
+  margin-top: 20vh;
+  margin-bottom: auto;
+}
+
+form,
+button[type='submit'] {
+  margin-top: 1em;
+}
+
+section {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: .101em;
+  font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+}
+
+footer .row {
+  margin-bottom: 0;
+}
+
+.parallax {
+  background-image: url('../img/laptop-on-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filter {
+  background-color: rgba(10, 10, 10, .6);
+  height: 100%;
+}
+
+.card-content {
+  font-size: 1.5em;
+}
+
+.card-content .metric {
+  color: #42a5f5;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#to-page-top-btn {
+  position: fixed;
+  right: .6em;
+  bottom: .6em;
+  padding: .7em 1em;
+  text-decoration: none;
+  background-color: rgba(10, 10, 10, .6);
+}
+
+#stats {
+  background-color: #ddd;
+}
+
+.navbar {
+  background-color: #2b4a6ef1;
+}
+
+#mobile-menu a,
+.collection-item {
+  font-size: 1.1em;
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+@media (min-width: 993px) {
+  .navbar {
+    padding: 1em;
+    background-color: transparent !important;
+    box-shadow: none;
+    color: black;
+  }
+
+  .navbar-item {
+    font-size: 1.2em;
+    padding-left: .7em;
+    padding-right:.7em;
+  }
+  
+  .navbar-item:hover {
+    background-color: rgba(200, 200, 200, .5);
+  }
+  
+  .navbar a {
+    color: inherit !important;
+  }
+
+  .parallax {
+    background-attachment: fixed;
+  }
+  
+}
