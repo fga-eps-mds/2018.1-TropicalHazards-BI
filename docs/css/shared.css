@@ -207,6 +207,35 @@ nav li a {
   background-attachment: fixed;
 }
 
+#promo2 {
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+
+
+
+.promo-icon {
+  font-size: 3em;
+}
+
+.promo-icon,
+.promo-heading {
+  color: #1f7a8c;
+}
+
+.promo-row {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.promo-icon {
+  margin-bottom: .2em;
+}
+
+#curious {
+  text-decoration: none;
+  color: #fafafa;
+}
 
 
 @media (min-width: 600px) {
