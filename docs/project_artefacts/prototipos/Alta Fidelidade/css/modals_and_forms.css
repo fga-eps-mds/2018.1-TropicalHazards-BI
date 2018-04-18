@@ -1,0 +1,29 @@
+body {
+  font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: .101em;
+  font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border-style: dashed;
+  border-color: #888888;
+  margin-bottom: .5em;
+}
+
+.modal h4 {
+  color: #42a5f5;
+}
+
+#login,
+#new-proj {
+  padding-top: 1em !important;
+  max-height: 90% !important;
+}

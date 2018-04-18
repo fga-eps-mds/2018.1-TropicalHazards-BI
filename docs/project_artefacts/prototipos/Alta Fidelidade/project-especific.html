@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Titillium+Web" rel="stylesheet">
+  <title>OBSERV</title>
+</head>
+
+<body>
+
+  <div class="row">
+    <div id="sidebar" class="hide-on-small-only col m1 center-align grey lighten-4">
+      <ul class="">
+        <a href="landing-page.html" class="">
+          <img src="img/v3_round.png" alt="" class="responsive-img" />
+        </a>
+        <a href="homepage.html" class="sidebar-icon">
+          <li class="tooltipped" data-position="right" data-tooltip="Home">
+            <span class="fa fa-home"></span>
+          </li>
+        </a>
+        <a href="search-projects.html" class="sidebar-icon">
+          <li class="tooltipped" data-position="right" data-tooltip="Projetos">
+            <span class="fa fa-th"></span>
+          </li>
+        </a>
+        <a href="project-especific.html" class="sidebar-icon">
+          <li class="tooltipped"  data-position="right" data-tooltip="Observatórios">
+            <span class="fa fa-area-chart"></span>
+          </li>
+        </a>
+        <a href="#dados0" class="modal-trigger sidebar-icon">
+          <li class="tooltipped"  data-position="right" data-tooltip="Dados">
+            <span class="fa fa-cubes"></span>
+          </li>
+        </a>
+        <a href="#edituser" class="modal-trigger sidebar-icon">
+          <li class="tooltipped"  data-position="right" data-tooltip="Gerenciar perfil">
+            <span class="fa fa-gear"></span>
+          </li>
+        </a>
+        <a onclick="confirm('deseja sair')" href="landing-page.html" class="sidebar-icon">
+          <li class="tooltipped" data-position="right" data-tooltip="Sair">
+            <span class="fa fa-sign-out"></span>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <div id="content" class="col m11">
+      <div class="header center-align white">
+        <h3>
+          Mapa da dengue em brasília
+        </h3>
+      </div>
+      <div class="grey lighten-4">
+        <div class="custom-container">
+          <h5>Estatísticas do projeto</h5>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">6</span>
+                  <p>
+                    <span class="fa fa-line-chart"></span> Observatórios
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">14</span>
+                  <p>
+                    <span class="fa fa-users"></span> Contribuidores
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-container">
+          <h5>
+            Observatórios neste projeto:
+          </h5>
+          <a href="#new-observ" class="btn-flat blue lighten-1 grey-text text-lighten-2 modal-trigger">
+            Novo Observatório
+            <span class="fa fa-plus"></span>
+          </a>
+          <div class="row">
+            <div class="col s12 m4 l3">
+              <div class="card grey lighten-5">
+                <div class="card-content grey-text text-darken-2">
+                  <span class="card-title">Lago Norte</span>
+                  <p>
+                    Observátório sobre os dados da dengue no ano de 2010
+                  </p>
+                  <small>Criado por: João do Caminhão</small>
+                </div>
+                <div class="card-action center-align grey-text text-lighten-2">
+                  <a href="observatory.html" class="btn  blue lighten-1">
+                    <span class="fa fa-search"></span>
+                  </a>
+                  <!-- <a href="#" class="btn  blue lighten-1">
+                    <span class="fa fa-edit"></span>
+                  </a> -->
+                  <!-- <a href="#" class="btn  blue lighten-1">
+                    <span class="fa fa-user-plus"></span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 l3">
+              <div class="card grey lighten-5">
+                <div class="card-content grey-text text-darken-2">
+                  <span class="card-title">Lago Sul</span>
+                  <p>
+                    Observátório sobre os dados da dengue no ano de 2015
+                  </p>
+                  <small>Criado por: Sérgio Capixaba</small>
+                </div>
+                <div class="card-action center-align grey-text text-lighten-2">
+                  <a href="observatory.html" class="btn  blue lighten-1">
+                    <span class="fa fa-search"></span>
+                  </a>
+                  <!-- <a href="#" class="btn  blue lighten-1">
+                    <span class="fa fa-edit"></span>
+                  </a>
+                  <a href="#" class="btn  blue lighten-1">
+                    <span class="fa fa-user-plus"></span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4 l3">
+              <div class="card grey lighten-5">
+                <div class="card-content grey-text text-darken-2">
+                  <span class="card-title">Ceilândia</span>
+                  <p>
+                    Observátório sobre os dados da dengue no ano de 2011
+                  </p>
+                  <small>Criado por: Cleiton Jr.</small>
+                </div>
+                <div class="card-action center-align grey-text text-lighten-2">
+                  <a href="observatory.html" class="btn  blue lighten-1">
+                    <span class="fa fa-search"></span>
+                  </a>
+                  <!-- <a href="#" class="btn  blue lighten-1">
+                    <span class="fa fa-user-plus"></span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="new-observ" class="modal grey lighten-4">
+    <div class="modal-content center-align">
+      <h4>Novo Observatório de Dados</h4>
+      <section class="modal-form">
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name">Nome do observatório</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="description" class="materialize-textarea"></textarea>
+              <label for="description">Descrição do observatório</label>
+            </div>
+            <div class="left-align">
+              <p>
+                Selecione os indicadores do observatório:
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Casos/Cidade</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Casos/Renda</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Casos/Idade</span>
+                </label>
+              </p>
+            </div>
+            <a href="" class="modal-close btn-large waves-effect waves-light grey lighten-1">
+              <span class="fa fa-trash"></span> Cancelar
+            </a>
+            <button type="submit" class="btn-large waves-effect waves-light blue lighten-1">
+              <span class="fa fa-save"></span> Salvar
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+  <div id="dados0" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <h4>Inserir Dados</h4>
+      <p>passo 1: carregue o arquivo</p>
+      <section class="modal-form">
+        <form>
+          <div class="row">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Selecione o arquivo</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+            <p class="left-align">
+              <label>
+                <input type="checkbox" />
+                <span>O arquivo possui cabeçalho</span>
+              </label>
+            </p>
+          </div>
+        </form>
+      </section>
+      <div class="progress">
+        <div class="determinate" style="width: 25%"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <a href="#!" class="modal-action modal-close waves-effect waves-light grey disabled white-text btn-flat">
+            Voltar
+          </a>
+        </div>
+        <div class="col s12 offset-m4 m4">
+          <a href="#new-data" class="modal-trigger modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+            Próximo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="new-data" class="modal grey lighten-4">
+  <div class="modal-content container center-align">
+    <h4>Inserir Dados</h4>
+    <p>passo 2: Selecione os dados</p>
+    <section class="modal-form">
+      <table>
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Nome coluna</th>
+            <th>Salvar?</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              Casos
+            </td>
+            <td>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Salvar</span>
+                </label>
+              </p>
+            </td>
+            <td>
+              650
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="input-field">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Insira nome</label>
+              </div>
+            </td>
+            <td>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Salvar</span>
+                </label>
+              </p>
+            </td>
+            <td>
+              R$ 2000,00 per capita
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <div class="progress">
+      <div class="determinate" style="width: 50%"></div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="row center-align">
+      <div class="col s12 m4">
+        <a href="#dados0" class="modal-trigger modal-action modal-close waves-effect waves-light grey white-text btn-flat">
+          Voltar
+        </a>
+      </div>
+      <div class="col s12 offset-m4 m4">
+        <a href="#new-data2" class="modal-trigger modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+          Próximo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="new-data2" class="modal grey lighten-4">
+    <div class="modal-content container center-align">
+      <h4>Inserir Dados</h4>
+      <p>passo 3: Indique os tipos</p>
+      <section class="modal-form row">
+        <table>
+          <thead>
+            <tr>
+              <th>Número</th>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Caracterização</th>
+              <th>Exemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                Casos
+              </td>
+              <td>
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="1">Booleano</option>
+                    <option value="2">Inteiro</option>
+                    <option value="3">Decimal</option>
+                  </select>
+                  <label>Selecione</label>
+                </div>
+              </td>
+              <td>
+                ---
+              </td>
+              <td>
+                650
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Renda familiar
+              </td>
+              <td>
+                <div class="input-field">
+                  <select>
+                    <option value="" disabled selected>Selecione o tipo</option>
+                    <option value="1">Booleano</option>
+                    <option value="2">Inteiro</option>
+                    <option value="3">Decimal</option>
+                  </select>
+                  <label>Selecione</label>
+                </div>
+              </td>
+              <td>
+                ---
+                <!-- essa coluna faz sentido apenas para o booleano,
+                  para mapear qual valor vai ser true e false -->
+              </td>
+              <td>
+                R$ 2000,00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="progress">
+        <div class="determinate" style="width: 75%"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row center-align">
+        <div class="col s12 m4">
+          <a href="#new-data1" class="modal-trigger modal-action modal-close waves-effect waves-light grey white-text btn-flat">
+            Voltar
+          </a>
+        </div>
+        <div class="col s12 offset-m4 m4">
+          <a href="#new-data3" class="modal-trigger modal-action modal-close waves-effect waves-light blue lighten-1 white-text btn-flat">
+            Próximo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="new-data3" class="modal grey lighten-4">
+      <div class="modal-content container center-align">
+        <h4>Inserir Dados</h4>
+        <p>Resumo</p>
+        <section class="modal-form row">
+          <table>
+            <thead>
+              <tr>
+                <th>Número</th>
+                <th>Nome</th>
+                <th>Salvar</th>
+                <th>Tipo</th>
+                <th>Caracterização</th>
+                <th>Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  Casos
+                </td>
+                <td>
+                  Sim
+                </td>
+                <td>
+                  Inteiro
+                </td>
+                <td>
+                  ---
+                </td>
+                <td>
+                  650
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  Renda familiar
+                </td>
+                <td>
+                  Sim
+                </td>
+                <td>
+                  Decimal
+                </td>
+                <td>
+                  ---
+                  <!-- essa coluna faz sentido apenas para o booleano,
+                      para mapear qual valor vai ser true e false -->
+                </td>
+                <td>
+                  R$ 2000,00
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="progress">
+          <div class="determinate" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row center-align">
+          <div class="col s12 m4">
+            <a href="#new-data2" class="modal-trigger modal-action modal-close waves-effect waves-light grey white-text btn-flat">
+              Voltar
+            </a>
+          </div>
+          <div class="col s12 offset-m4 m4">
+            <a href="#!" class="modal-action waves-effect modal-close waves-light blue lighten-1 white-text btn-flat" onclick="alert('Dados inseridos com sucesso')">
+              Concluir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="edituser" class="modal grey lighten-4">
+      <div class="modal-content container center-align">
+        <div class="row">
+          <img src="img/v3_rect.png" class="img-responsive">
+          <h4>
+            Editar Perfil
+          </h4>
+          <section class="modal-form">
+            <form>
+              <div class="input-field col s12">
+                <input type="text" id="name" class="validate">
+                <label for="name">Nome</label>
+              </div>
+              <div class="input-field col s12">
+                <input type="email" id="email" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="input-field col s12">
+                <input type="password" id="password" class="validate">
+                <label for="password">Nova senha</label>
+              </div>
+              <div class="input-field col s12">
+                <input type="password" id="password-confirmation" class="validate">
+                <label for="password-confirmation">Confirme a nova senha</label>
+              </div>
+              <button type="submit" class="col s12 btn-large blue lighten-1 waves-effect waves-green">
+                <span class="fa fa-sign-in"></span> Enviar
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/modals_and_forms.js"></script>
+</body>
