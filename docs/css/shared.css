@@ -49,13 +49,14 @@ h6 {
   margin-top: .2em;
   margin-bottom: .2em;
   margin-left: 0;
-  margin-right: 0;  
+  margin-right: 0;
   word-break: break-word;
 }
 
 p {
   font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
   color: #303030;
+  font-size: 1.1em;
 }
 
 footer {
@@ -110,9 +111,9 @@ main .container .row {
 }
 
 #index-header {
-  background: url(https://raw.githubusercontent.com/fga-gpp-mds/2018.1-TropicalHazards-BI/gh-pages/css/optimized-banner.jpg) no-repeat center center;
+  background: url(optimized-banner.jpg) no-repeat center center;
   background-size: cover;
-  /* background-image: none; */
+  background-attachment: fixed;
   height: 90vh;
 }
 
@@ -138,7 +139,7 @@ header {
 }
 
 header h2 {
-  color: inherit;  
+  color: inherit;
   margin: 0;
 }
 header h5 {
@@ -191,6 +192,57 @@ nav li a {
   margin-bottom: 0;
 }
 
+.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+#promo1 .filter h3 {
+  color: #fafafa;
+}
+
+#promo1 {
+  background: url(banner-home-01.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#promo2 {
+  padding-bottom: 5em;
+  padding-top: 5em;
+}
+
+
+
+.promo-icon {
+  font-size: 3em;
+}
+
+.promo-icon,
+.promo-heading {
+  color: #1f7a8c;
+}
+
+.promo-row {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.promo-icon {
+  margin-bottom: .2em;
+}
+
+#curious {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.promo-row p b {
+  color: #1f7a8c;
+  text-transform: capitalize;
+}
+
 @media (min-width: 600px) {
   header div div h1 {
     margin-top: 1.3em;
@@ -203,7 +255,7 @@ nav li a {
   .nav-wrapper {
     padding-right: 2vw;
   }
-  
+
   #menu-btn {
     margin-right: 0;
   }
