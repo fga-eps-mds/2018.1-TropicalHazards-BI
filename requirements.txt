@@ -14,3 +14,4 @@ django-cors-headers==2.2.0
 django-rest-auth
 djangorestframework-jwt
 model_mommy
+coverage
