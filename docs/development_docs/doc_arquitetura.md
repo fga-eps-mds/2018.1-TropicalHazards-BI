@@ -35,7 +35,7 @@ Neste documento serão descritos os componentes de software, padrões arquitetur
   <li>NMT: <em>Núcleo de Medicina Tropical</em></li>
   <li>UNB: <em>Universidade de Brasília</em></li>
   <li>MVC: <em>Model-View-Controller</em></li>
-  <li>MVT: <em>Model-View-Template</em></li/>
+  <li>MVT: <em>Model-View-Template</em></li>
 </ul>
 
 ### 1.4 Referências
