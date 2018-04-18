@@ -106,4 +106,4 @@ As telas de interface para o usuário estão listada a seguir, para maiores deta
 
 ## 6. Avisos Legais, de Copyright e Outros
 
-Este programa é um software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da
+Este programa é um software livre, você pode redistribuí-lo e/ou modificá-lo, assim como contribuir para futuras melhorias. Demais questões de copyright estão elicitadas através da licensa MIT 2018.
