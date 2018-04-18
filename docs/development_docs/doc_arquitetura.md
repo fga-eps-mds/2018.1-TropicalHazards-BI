@@ -74,28 +74,31 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
-No front-end será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
 <br>
 <br>
 <img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-img"/>
 <br>
 <br>
 
-O front-end será desenvolvido utilizando a framework javascript Vue JS. Nesta framework o código é dividido em componentes single file, isto é, cada componente possui o css, javascript e html em um único arquivo.
+O front-end será desenvolvido utilizando a framework javascript Vue JS. Esta framework possui como padrão o código dividido em componentes single file, isto é, cada componente possui o css, javascript e html em um único arquivo.
 
 Esta divisão da página em componentes auxilia no desenvolvimento de Single Page Application, também referidas como SPA. As SPA são aplicações ou sites que interagem com o usuário reescrevendo seu conteúdo de maneira dinâmica ao invés de carregar novas páginas a partir de um servidor. Nesta abordagem não há a interrupção da experiência de usuário com o carregamento de páginas, apresentando um comportamento semelhante a aplicações nativas de desktop.
 
-Para a utilização dessa arquitetura Single Page será utilizada a biblioteca oficial do Vue JS, o Vue-Router. No Vue-Router os componentes tem suas rotas mapeadas e este é responsável por realizar o carregamento dinâmico de seu conteúdo. A comunicação dos componentes do front-end com o back-end ocorrem através de requisições HTTP realizadas para os end-points das APIs do back-end.
+Para a utilização dessa arquitetura Single Page será utilizada a biblioteca oficial do Vue JS, o Vue-Router. No Vue-Router os componentes tem suas rotas mapeadas e este é responsável por realizar o carregamento dinâmico de seu conteúdo. A comunicação dos componentes do front-end com o back-end ocorrem através de requisições HTTP realizadas para os end-points das APIs do back-end. Ao receber uma requisição HTTP, o back-end retorna uma response HTTP para o front-end que interpreta e renderiza os dados.
 
-<img src="https://i.imgur.com/CbutZ7B.png">
+<img src="https://i.imgur.com/CbutZ7B.png" class="responsive-img">
 
-Essa comunicação entre os servidores front-end e back-end ocorre através da notação de dados **JSON** (Java Script Object Notation), devido sua facilidade de ser gerada e interpretada.
+Essa comunicação entre os servidores front-end e back-end ocorre através da notação de troca de dados **JSON** (Java Script Object Notation), devido sua facilidade de ser gerada e interpretada. A notação JSON é um formato independente de linguagem e consiste em dois tipos de estruturas: coleções de pares de nomes/valores, e listas de valores.
 
 Algumas requisições necessitam da autenticação de usuário, para a realização dessa autenticação adotou-se a utilização de Tokens no padrão Json Web Token. Estes tokens possuem todas as informações necessárias para autenticação do usuário no back-end, possuindo como vantagem em relação aos Tokens básicos do REST Framework a existência de uma data de expiração, possuindo, portanto, uma maior segurança.
 
 As informações do usuário obtidas a partir desse token ao efetuar o login são mantidas no front-end de forma compartilhada entre os componentes utilizando a biblioteca Vuex, responsável por manter e atualizar o estado do usuário entre os diversos componentes.
 
-<img src="https://i.imgur.com/DN8Tl90.png">
+<img src="https://i.imgur.com/DN8Tl90.png" class="responsive-img">
+
+O Vuex provê a criação de stores centralizadas para armazenamento de dados. As stores do Vuex possuem quatro elementos principais: state, getters, mutations e actions. No state ocorre o armazenamento dos dados em si, enquanto os getters provêm formas de acesso as dados.
+
+Deve-se ressaltar que o state não pode ser alterado diretamente pelos componentes, alterações no state devem ser realizadas através das mutations, limitando a forma como ocorrem as alterações no state. As actions realizam mutations sobre o state, entretanto podem conter instruções assíncronas, enquanto as mutations são executadas de forma síncrona.
 
 ## 3. Metas e Restrições de Arquitetura
 O projeto Tropical Hazards possui as seguintes metas:
