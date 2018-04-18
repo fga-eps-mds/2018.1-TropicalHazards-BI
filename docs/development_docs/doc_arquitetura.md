@@ -47,11 +47,11 @@ O presente documento faz o detalhamento e descrição de características da arq
 
 ## 2. Representação da Arquitetura
 
-A arquitetura utilizada contém dois ambientes diferentes para a nossa aplicação, o ambiente de controle de dados que é conhecido como API e o um ambiente web para os usuarios, contemplando um portal onde a população interessada possa ter acesso as informações e um sistema de dash boards para usuários gerenciadores de conteúdo, podem assim inserir, compartilhar e salvar dados através da aplicação.
+A arquitetura utilizada contém dois ambientes diferentes para a nossa aplicação, o ambiente de controle de dados que é conhecido como API e o um ambiente web para os usuarios, contemplando um portal onde a população interessada possa ter acesso as informações e um sistema de dashboards onde usuários podem criar seus projetos, importar dados e adicionar colaboradores que podem gerar indicadores baseados nos dados dos projetos.
 
-Com relação a API o  projeto **Tropical Hazards** será desenvolvido utilizando o framework Django Rest, que conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
+Com relação a API, o  projeto **Tropical Hazards** será desenvolvido utilizando o framework Django Rest, que conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
 
-Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
+O Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
 
 No padrão MVC clássico a aplicação é dividida em três principais componentes interconectados, sendo estes:
 <ul>
@@ -74,14 +74,23 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
-No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
+No front-end será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
 <br>
 <br>
 <img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-img"/>
 <br>
 <br>
 
-Este framework de JavaScript possibilita o desenvolvimento de interfaces para o usuários com componentes reativos, ou seja pedaços de código reaproveitáveis formados por marcação, estilo e comportamento.  Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django, para isso utilizaremos a formatação JSON.  
+No Vue JS o código é dividido em componentes single file, isto é, cada componente possui html, css e javascript em um único arquivo, desta forma a arquitetura dividida em componentes permite o reproveitamento do código e facilita o desenvolvimento de aplicações Single Page.
+
+Para tratar da lógica do desenvolvimento de uma Single Page Application será utilizado o Vue Router, uma biblioteca oficial do Vue responsável por mapear as rotas dos componentes, sendo responsável por tratar sua renderização, sem a necessidade de atualizar completamente a página.
+
+A comunicação entre o front-end em Vue e back-end ocorre por meio de requisições HTTP realizadas pelo front-end aos API endpoints do back-end. É necessário notar que algumas requisições necessitam da autenticação do usuário, sendo esta realizada por meio de tokens no padrão Json Web Token.
+
+Tais tokens criptografados possuem as informações necessárias para efetuar a autenticação do usuário no back-end e trazem como vantagem em relação aos tokens básicos do REST Framework a existência de uma data de expiração após a qual precisam ser renovados. Os tokens básicos do REST Framework são gerados uma única vez e atribuídos ao usuário, sendo, desta forma, mais vulneráveis.
+
+Ao efetuar o login, o back-end retorna ao front-end o Token JWT do usuário que deve ser incluído no cabeçalho das requisições HTTP do usuário para que este seja autenticado no back-end. Após efetuado o login, para a persistência e compartilhamento dos dados do usuário entre os diferentes componentes no front-end foi utilizada a biblioteca VueX;
+
 
 O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
 
