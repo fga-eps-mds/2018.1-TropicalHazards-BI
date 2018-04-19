@@ -15,3 +15,4 @@ django-rest-auth
 djangorestframework-jwt
 model_mommy
 coverage
+PyYAML
