@@ -35,7 +35,7 @@ Neste documento serão descritos os componentes de software, padrões arquitetur
   <li>NMT: <em>Núcleo de Medicina Tropical</em></li>
   <li>UNB: <em>Universidade de Brasília</em></li>
   <li>MVC: <em>Model-View-Controller</em></li>
-  <li>MVT: <em>Model-View-Template</em></li/>
+  <li>MVT: <em>Model-View-Template</em></li>
 </ul>
 
 ### 1.4 Referências
@@ -47,11 +47,11 @@ O presente documento faz o detalhamento e descrição de características da arq
 
 ## 2. Representação da Arquitetura
 
-A arquitetura utilizada contém dois ambientes diferentes para a nossa aplicação, o ambiente de controle de dados que é conhecido como API e o um ambiente web para os usuarios, contemplando um portal onde a população interessada possa ter acesso as informações e um sistema de dash boards para usuários gerenciadores de conteúdo, podem assim inserir, compartilhar e salvar dados através da aplicação.
+A arquitetura utilizada contém dois ambientes diferentes para a nossa aplicação, o ambiente de controle de dados que é conhecido como API e o um ambiente web para os usuarios, contemplando um portal onde a população interessada possa ter acesso as informações e um sistema de dashboards onde usuários podem criar seus projetos, importar dados e adicionar colaboradores que podem gerar indicadores baseados nos dados dos projetos.
 
-Com relação a API o  projeto **Tropical Hazards** será desenvolvido utilizando o framework Django Rest, que conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
+Com relação a API, o  projeto **Tropical Hazards** será desenvolvido utilizando o framework Django Rest, que conta com um padrão arquitetural próprio conhecido como MVT, o qual será adotado, com algumas alterações, na execução desse projeto.
 
-Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
+O Django, segundo o próprio Django Book, segue o padrão MVC suficientemente para que este seja considerado um framework MVC, entretanto deve-se salientar a diferença entre os padrões arquiteturais.
 
 No padrão MVC clássico a aplicação é dividida em três principais componentes interconectados, sendo estes:
 <ul>
@@ -74,18 +74,31 @@ No padrão MVT utilizado pelo Django ocorre a separação em três partes: **Mod
 
 Juntamente com o Django utilizaremos utilizaremos uma de suas extenções o Framework Django Rest. Esta ferramenta auxiliara na construção da API do sistema, oferencendo também uma serie de outras ferramentas. Uma dessas ferramentas são os Serializers que possibilitam a conversão de tipos de dados complexos em Python, XML, JSON, entre outras. O Framework Rest também oferecem ferramentas para autenticação, e controle de requerimentos.
 
-No frontend será utilizado o framework em javascript **Vue JS**, uma ferramenta para o desenvolvimento de Single-Page Applications. O **VueJS** desempenhará o papel de unir o template à model sendo necessário que haja uma integração entre as duas ferramentas.
 <br>
 <br>
 <img src="https://i.imgur.com/CnyxnP4.png" alt="Figure 2-3"  class="responsive-img"/>
 <br>
 <br>
 
-Este framework de JavaScript possibilita o desenvolvimento de interfaces para o usuários com componentes reativos, ou seja pedaços de código reaproveitáveis formados por marcação, estilo e comportamento.  Entretanto, esta ferramenta e não consegue fazer contato direto com a camada View do Django, para isso utilizaremos a formatação JSON.  
+O front-end será desenvolvido utilizando a framework javascript Vue JS. Esta framework possui como padrão o código dividido em componentes single file, isto é, cada componente possui o css, javascript e html em um único arquivo.
 
-O **JSON** (Java Script Object Notation) é uma formatação leve de troca de dados, fácil de ser gerada e interpretada por máquinas. Sua utilização é necessária devido o fato de que as trocas de dados entre interfaces e servidores devem existir somente em formato de texto. Através do JSON é possível converter qualquer objeto JavaScript em texto e qualquer JSON recebido do servidor em objetos JavaScript. Podendo assim trabalhar com os objetos JavaScript como dados comuns.
+Esta divisão da página em componentes auxilia no desenvolvimento de Single Page Application, também referidas como SPA. As SPA são aplicações ou sites que interagem com o usuário reescrevendo seu conteúdo de maneira dinâmica ao invés de carregar novas páginas a partir de um servidor. Nesta abordagem não há a interrupção da experiência de usuário com o carregamento de páginas, apresentando um comportamento semelhante a aplicações nativas de desktop.
 
+Para a utilização dessa arquitetura Single Page será utilizada a biblioteca oficial do Vue JS, o Vue-Router. No Vue-Router os componentes tem suas rotas mapeadas e este é responsável por realizar o carregamento dinâmico de seu conteúdo. A comunicação dos componentes do front-end com o back-end ocorrem através de requisições HTTP realizadas para os end-points das APIs do back-end. Ao receber uma requisição HTTP, o back-end retorna uma response HTTP para o front-end que interpreta e renderiza os dados.
 
+<img src="https://i.imgur.com/CbutZ7B.png" class="responsive-img">
+
+Essa comunicação entre os servidores front-end e back-end ocorre através da notação de troca de dados **JSON** (Java Script Object Notation), devido sua facilidade de ser gerada e interpretada. A notação JSON é um formato independente de linguagem e consiste em dois tipos de estruturas: coleções de pares de nomes/valores, e listas de valores.
+
+Algumas requisições necessitam da autenticação de usuário, para a realização dessa autenticação adotou-se a utilização de Tokens no padrão Json Web Token. Estes tokens possuem todas as informações necessárias para autenticação do usuário no back-end, possuindo como vantagem em relação aos Tokens básicos do REST Framework a existência de uma data de expiração, possuindo, portanto, uma maior segurança.
+
+As informações do usuário obtidas a partir desse token ao efetuar o login são mantidas no front-end de forma compartilhada entre os componentes utilizando a biblioteca Vuex, responsável por manter e atualizar o estado do usuário entre os diversos componentes.
+
+<img src="https://i.imgur.com/DN8Tl90.png" class="responsive-img">
+
+O Vuex provê a criação de stores centralizadas para armazenamento de dados. As stores do Vuex possuem quatro elementos principais: state, getters, mutations e actions. No state ocorre o armazenamento dos dados em si, enquanto os getters provêm formas de acesso as dados.
+
+Deve-se ressaltar que o state não pode ser alterado diretamente pelos componentes, alterações no state devem ser realizadas através das mutations, limitando a forma como ocorrem as alterações no state. As actions realizam mutations sobre o state, entretanto podem conter instruções assíncronas, enquanto as mutations são executadas de forma síncrona.
 
 ## 3. Metas e Restrições de Arquitetura
 O projeto Tropical Hazards possui as seguintes metas:
