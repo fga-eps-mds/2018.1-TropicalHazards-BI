@@ -1,7 +1,7 @@
 # Roadmap
 
 ## Roadmap do produto
-<img src="Roadmap.png" class="responsive-img">
+<img src="Roadmapv2.png" class="responsive-img">
 
 ## Timeline do Cliente
 <img src="Timeline_Cliente.png" class="responsive-img">
