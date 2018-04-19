@@ -11,8 +11,13 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import environ
+
 # datetime will be used to set token expiration time
 import datetime
+
+env = environ.Env()
+env.read_env()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,12 +27,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr'
+SECRET_KEY = env("DJANGO_SECRET_KEY", default="CHANGEME")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+DEBUG = env("DEBUG", default=True)
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -59,10 +65,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'TropicalHazards_BI.urls'
 
-# TODO: Add host of homolog and production server
 CORS_ORIGIN_WHITELIST = (
-    'localhost:8080',
-    '0.0.0.0:8080',
+    env("FRONT_END_URL", default='localhost:8080'),
 )
 
 TEMPLATES = [
@@ -88,13 +92,7 @@ WSGI_APPLICATION = 'TropicalHazards_BI.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-  'default': {
-      'ENGINE': 'django.db.backends.postgresql',
-      'NAME': 'postgres',
-      'USER': 'postgres',
-      'HOST': 'db',
-      'PORT': 5432,
-  }
+    'default': env.db("DATABASE_URL", default="postgres://postgres:postgres@db:5432/postgres")
 }
 
 
