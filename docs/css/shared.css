@@ -127,8 +127,21 @@ main .container .row {
 }
 
 #index-header h1,
-#index-header p {
+#index-header h2 {
   color: #eee !important;
+}
+
+#index-header h2 {
+  font-weight: lighter;
+}
+
+#about {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+#about, #about .container .col {
+  background-color: #f3f3f3;
 }
 
 header {
