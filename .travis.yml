@@ -24,5 +24,22 @@ script:
 after_success:
     - docker-compose exec web coveralls
 
+    - docker login --username=_ --password=$HEROKU_AUTHTOKEN registry.heroku.com
+    - |
+      if [ "${TRAVIS_BRANCH}" == "development" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+        docker build --build-arg DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY FRONT_END_URL=$FRON_END_URL_HMG DATABASE_URL=$DATABASE_URL_HMG -f Dockerfile -t deploy_image .
+        echo "Deploying to homolog environment..."
+        docker tag deploy_image registry.heroku.com/tropical-hazards-api-hmg/web
+        docker push registry.heroku.com/tropical-hazards-api-hmg/web
+      else if [ "${TRAVIS_BRANCH}" == "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+        docker build --build-arg DJANGO_SECRET_KEY=$DJANGO_SECRET_KEY FRONT_END_URL=$FRON_END_URL_PROD DATABASE_URL=$DATABASE_URL_PROD DEBUG=$DEBUG -f Dockerfile -t deploy_image .
+        echo "Deploying to production environment..."
+        docker tag deploy_image registry.heroku.com/tropical-hazards-api/web
+        docker push registry.heroku.com/tropical-hazards-api/web
+      else
+        echo "Skipping deploy...";
+      fi;
+      fi;
+
 notifications:
   email: false
