@@ -14,6 +14,8 @@ import os
 # datetime will be used to set token expiration time
 import datetime
 
+from mongoengine import connect
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -97,6 +99,7 @@ DATABASES = {
   }
 }
 
+connect('tropical-hazards', host='mongo', port=27017)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

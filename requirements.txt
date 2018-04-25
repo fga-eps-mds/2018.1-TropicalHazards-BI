@@ -16,3 +16,4 @@ djangorestframework-jwt
 model_mommy
 coverage
 PyYAML
+mongoengine
