@@ -15,28 +15,25 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 
-@permission_classes((IsAuthenticatedOrReadOnly, ))
+@permission_classes((IsAuthenticatedOrReadOnly,))
 class ProjectList(APIView):
-    # authentication_classes = (SessionAuthentication, BasicAuthentication)
-    # permission_classes = (IsAuthenticated,)
+
     def get(self, request, format=None):
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
 
     def post(self, request, format=None):
-
-        request.data['user'] = request.user.id
+        # TODO:pass request.user.id as parameter in serializer
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            if request.user.is_staff:
-                serializer.save()
-                return Response(serializer.data,
-                                status=status.HTTP_201_CREATED)
+            serializer.save()
+        return Response(serializer.data,
+                        status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@permission_classes((IsAuthenticated, ))
+@permission_classes((IsAuthenticated,))
 class ProjectDetail(APIView):
     def get_object(self, pk):
         try:
