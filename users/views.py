@@ -11,8 +11,6 @@ from rest_framework import status
 from rest_framework import permissions
 from django.http import Http404
 from django.contrib.auth.models import User
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-from rest_framework.authentication import SessionAuthentication
 # Create your views here.
 
 
@@ -39,8 +37,6 @@ class UserList(APIView):
 
 @permission_classes((permissions.IsAuthenticatedOrReadOnly,))
 class UserDetail(APIView):
-    authentication_classes = (JSONWebTokenAuthentication,
-                              SessionAuthentication)
 
     def get_object(self, pk):
         try:

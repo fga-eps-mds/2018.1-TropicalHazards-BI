@@ -12,9 +12,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 # datetime will be used to set token expiration time
-import datetime
 
-from mongoengine import connect
+# from mongoengine import connect
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,7 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'users',
     'projects',
-    'rest_auth'
+    'rest_auth',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
@@ -99,7 +99,7 @@ DATABASES = {
   }
 }
 
-connect('tropical-hazards', host='mongo', port=27017)
+# connect('tropical-hazards', host='mongo', port=27017)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -123,19 +123,11 @@ REST_AUTH_SERIALIZERS = {
    'USER_DETAILS_SERIALIZER': 'users.serializers.UserDetailsSerializer'
 }
 
-# Configure the JWTs to expire after 1 hour, and allow users to refresh near-
-# expiration tokens
-JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(hours=1),
-    'JWT_ALLOW_REFRESH': True,
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
-    'JWT_PAYLOAD_HANDLER': 'users.utils.jwt_payload_handler'
-}
-# Set jwt as default authentication class
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-    ),
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
 }
 
 # Internationalization
@@ -158,7 +150,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/'
-REST_USE_JWT = True
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
