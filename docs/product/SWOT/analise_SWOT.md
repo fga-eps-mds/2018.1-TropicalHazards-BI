@@ -3,7 +3,7 @@
 ## Sobre a Análise SWOT
 
 A análise SWOT, segundo o SEBRAE, serve para analisar os pontos fortes e fracos, e as oportunidades e ameaças de um negócio. Assim, o empreendedor pode organizar um plano de ação para reduzir os riscos e aumentar as chances de sucesso da empresa.
-É útil porque incentiva o empreendedor a analisar sua empresa sob diversasperspectivas de forma simples, objetiva e propositiva.
+É útil porque incentiva o empreendedor a analisar sua empresa sob diversas perspectivas de forma simples, objetiva e propositiva.
 
 ## Análise SWOT no contexto do Observ
 
@@ -32,6 +32,9 @@ A análise SWOT, segundo o SEBRAE, serve para analisar os pontos fortes e fracos
 - Redução de riscos
 - Atenção às oportunidades de mercado
 - Negócio pode ser expandido
+
+![analise_swot](./analise_swot.jpg)
+Figura 1 - Análise SWOT para o negócio do produto Observ.
 
 ## Referências
 
