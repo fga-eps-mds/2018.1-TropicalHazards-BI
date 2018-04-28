@@ -34,7 +34,8 @@ A análise SWOT, segundo o SEBRAE, serve para analisar os pontos fortes e fracos
 - Negócio pode ser expandido
 
 ![analise_swot](./analise_swot.jpg)
-Figura 1 - Análise SWOT para o negócio do produto Observ.
+
+<br/>Figura 1 - Análise SWOT para o negócio do produto Observ.
 
 ## Referências
 
