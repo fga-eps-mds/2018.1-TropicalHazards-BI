@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'users',
     'projects',
-    'rest_auth'
+    'rest_auth',
+    'dashboards'
 ]
 
 MIDDLEWARE = [
