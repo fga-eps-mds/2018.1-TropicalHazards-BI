@@ -2,25 +2,23 @@ version: '2'
 
 services:
   nginx:
-    build: ./nginx/
+    image: docker.io/matheusbsilva/nginx-tropical-hazards:latest
     ports:
       - "80:80"
-    depends_on:
+    links:
       - web
       - db
       - mongo
   db:
     image: postgres
     ports:
-      - "5000:5432"
+      - "5432:5432"
   web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000 
-    volumes:
-      - .:/code
+    image: docker.io/matheusbsilva/tropical-hazards-api:latest
+    command: /bin/sh boot.sh 
     ports:
       - "8000:8000"
-    depends_on:
+    links:
       - db
       - mongo
   mongo:

@@ -5,5 +5,5 @@ RUN mkdir /code
 WORKDIR /code
 
 ADD . /code/
-RUN pip install -r requirements.txt && \
-    chmod +x boot.sh
+RUN pip install -r requirements.txt
+RUN chmod +x boot.sh
