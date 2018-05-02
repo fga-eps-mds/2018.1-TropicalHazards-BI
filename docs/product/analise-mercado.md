@@ -64,7 +64,6 @@ http://www.dataviva.info/pt/
   - Não é colaborativa
   - O cadastro não faz sentido, me cadastrei mas nenhuma opção nova foi habilitada, continuo com acesso as mesmas funcionalidades disponíveis antes do cadastro.
   - É uma ferramenta somente de visualização de dados já consolidados, não possibilita trabalhar com outros tipos de dados.
-  - Não é colaborativa
 
 <h2 id="google-drive"/> Google Drive
 
