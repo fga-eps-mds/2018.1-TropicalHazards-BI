@@ -1,6 +1,6 @@
 # Análise de mercado em relação ao Observ
 
-<h2 id="indice"> Índice
+<h2 id="indice"/> Índice
 
 ### [Data Viva](#data-viva)
 ### [Google Drive](#google-drive)
@@ -11,7 +11,7 @@
 ### [Info Dengue](#info-dengue)
 ### [Pata Data](#pata-data)
 
-<h2 id="data-viva"> Data Viva
+<h2 id="data-viva"/> Data Viva
 
 #### [Retornar para o índice](#indice)
 
@@ -66,7 +66,7 @@ http://www.dataviva.info/pt/
   - É uma ferramenta somente de visualização de dados já consolidados, não possibilita trabalhar com outros tipos de dados.
   - Não é colaborativa
 
-<h2 id="google-drive"> Google Drive
+<h2 id="google-drive"/> Google Drive
 
 #### [Retornar para o índice](#indice)
 
@@ -111,7 +111,7 @@ Sua Conta do Google vem com armazenamento gratuito do Google Drive para comparti
 - Com permissão apenas de visualização no Google Sheets não é possível gerar o gráfico no mesmo arquivo. É possível ter acesso ao que está disponibilizado, porém para criar um gráfico, ou o usuário faz o download e gera em outro contexto ou copia as informações e utiliza em outro contexto. O usuário pode conseguir realizar essa atividade de forma mais
 simplificada com o Observ, com geração direta de gráfico.
 
-<h2 id="mendeley"> Mendeley DataViva
+<h2 id="mendeley"/> Mendeley DataViva
 
 #### [Retornar para o índice](#indice)
 
@@ -144,7 +144,7 @@ O Mendeley Data é um repositório seguro baseado em nuvem, no qual você pode a
 - Não possui estrutura voltada para geração de gráfico na própria plataforma
 
 
-<h2 id="zotero"> Zotero
+<h2 id="zotero"/> Zotero
 
 #### [Retornar para o índice](#indice)
 
@@ -164,7 +164,7 @@ Zotero é um software gerenciador de referências em software livre e de código
 - Aplicação desktop
 - Aplicação não paga.
 
-<h2 id="sciehub">SCIEHUB
+<h2 id="sciehub"/>SCIEHUB
 
 #### [Retornar para o índice](#indice)
 
@@ -191,7 +191,7 @@ Voltada para uma escala mundial.
 - Não possui estrutura voltada para geração de gráficos
 - Não é colaborativa
 
-<h2 id="sage">SAGE
+<h2 id="sage"/>SAGE
 
 #### [Retornar para o índice](#indice)
 
@@ -219,7 +219,7 @@ A Sage disponibiliza informações para subsididar a tomada de decisão, a gest�
 - Não é colaborativa
 - Visualmente pode melhorar
 
-<h2 id="info-dengue"> Info Dengue
+<h2 id="info-dengue"/> Info Dengue
 
 #### [Retornar para o índice](#indice)
 
