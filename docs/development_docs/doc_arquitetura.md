@@ -180,4 +180,4 @@ Servidor de HTTP e proxy reverso. Foi escolhido para integração no sistema por
 ## 6. Visão de Dados
 Esta seção apresenta a modelagem e perspectiva da persistência dos dados nos dois bancos integrados ao sistema. A fronteira do id do projeto representa a associação de cada projeto aos diversos dados de pesquisas importados e armazenados no banco não relacional.
 
-<img src="https://i.imgur.com/G3aCHUx.png" class="responsive-img"/>
+<img src="https://i.imgur.com/mLZFbis.png" class="responsive-img"/>
