@@ -102,3 +102,7 @@ ENV/
 
 # Gh pages
 _site/
+
+# npm
+node_modules/
+package-lock.json

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "release": "release-it minor"
+  },
+  "devDependencies": {
+    "release-it": "^4.2.0"
+  }
+}
