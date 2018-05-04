@@ -13,10 +13,14 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.authentication import SessionAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
 class ProjectList(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
 
     def get(self, request, format=None):
         projects = Project.objects.all()
@@ -25,6 +29,8 @@ class ProjectList(APIView):
 
     def post(self, request, format=None):
         serializer = ProjectSerializer(data=request.data)
+        print(request.data)
+        print(request.user.id)
         request.data['user'] = request.user.id
         if serializer.is_valid():
             serializer.save()
@@ -35,6 +41,9 @@ class ProjectList(APIView):
 
 @permission_classes((IsAuthenticated,))
 class ProjectDetail(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
     def get_object(self, pk):
         try:
             return Project.objects.get(pk=pk)
