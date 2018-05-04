@@ -1,14 +1,16 @@
 version: '3'
 
 services:
+  
   db:
     image: postgres
-    ports:
-      - 5000:5432
-    enviroment:
+    environment:
         POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
         POSTGRES_DB: "${POSTGRES_DB}"
         POSTGRES_USER: "${POSTGRES_USER}"
+    ports:
+      - 5000:5432
+
   web:
     build: .
     command: /bin/sh ./boot.sh
@@ -19,10 +21,12 @@ services:
     depends_on:
       - db
       - mongo
+
   mongo:
     image: mongo
     ports:
       - 27017:27017
+
   metabase:
     image: metabase/metabase
     ports:
@@ -35,6 +39,6 @@ services:
         MB_DB_PASS: "${MB_DB_PASS}"
         MB_DB_HOST: "${MB_DB_HOST}"
     depends_on:
-      - postgres
+      - db
       - mongo
 
