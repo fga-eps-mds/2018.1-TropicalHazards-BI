@@ -1,4 +1,4 @@
-# Review/Retrospectiva [Sprint 05](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/7)
+# Review/Retrospectiva [Sprint 06](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/8)
 
 ## Status das Histórias
 
