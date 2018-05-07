@@ -13,7 +13,6 @@ from django.http import Http404
 from django.contrib.auth.models import User
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
-# Create your views here.
 
 
 @permission_classes((permissions.AllowAny,))

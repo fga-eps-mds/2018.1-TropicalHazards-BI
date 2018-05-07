@@ -79,9 +79,6 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# dotenv
-.env
-
 # virtualenv
 .venv
 venv/
@@ -102,3 +99,7 @@ ENV/
 
 # Gh pages
 _site/
+
+# npm
+node_modules/
+package-lock.json

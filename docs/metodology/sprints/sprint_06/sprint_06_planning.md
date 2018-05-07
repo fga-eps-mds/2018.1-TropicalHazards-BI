@@ -174,6 +174,6 @@ Entregar o full stack e subir arquitetura, preparando R1.
 
 ## Focos de melhoria
 
-## Nivelar conhecimen
+## Nivelar conhecimento
 Membros do time de desenvolvimento estão com o conhecimento desalinhado, pois o pareamento não foi aplicado efetivamente na Sprint passada.
 
