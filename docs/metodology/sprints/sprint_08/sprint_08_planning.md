@@ -1,4 +1,4 @@
-# Planejamento da [Sprint 07](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/9)
+# Planejamento da [Sprint 08](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/10)
 
 ## Foco 
 Importar CSV
@@ -110,4 +110,4 @@ Importar CSV
 ## Focos de melhoria
 
 ## Motivação da equipe 
-Equipe mostrou-se bastante desmotivada na Sprint anterior gerande assim vários débitos.
+Equipe mostrou-se bastante desmotivada na Sprint anterior gerando assim vários débitos.
