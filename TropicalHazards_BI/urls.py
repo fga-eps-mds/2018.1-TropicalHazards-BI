@@ -26,5 +26,6 @@ urlpatterns = [
     path('verify-token/', verify_jwt_token),
     path('obtain-token/', obtain_jwt_token),
     path('projects/', include('projects.urls'), name='projects'),
-    path('dashboards/', include('dashboards.urls'), name='dashboards')
+    path('dashboards/', include('dashboards.urls'), name='dashboards'),
+    path('tags/', include('tags.urls'), name='tags')
 ]
