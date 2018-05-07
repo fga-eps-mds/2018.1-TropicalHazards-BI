@@ -29,8 +29,11 @@ class FileUploadView(APIView):
             with default_storage.open(file_path, 'wb+') as dest:
                 for chunk in file_obj.chunks():
                     dest.write(chunk)
-
-            dataframe = pandas.read_csv(file_path)
+            try:
+                dataframe = pandas.read_csv(file_path)
+            except (pandas.errors.ParserError, UnicodeDecodeError):
+                os.remove(file_path)
+                return Response(status=status.HTTP_400_BAD_REQUEST)
             json_data = json.loads(dataframe.to_json(orient="records"))
 
             mongo_client = pymongo.MongoClient('mongo', 27017)
@@ -45,4 +48,3 @@ class FileUploadView(APIView):
         # Remove temporary file
         # os.remove(file_path)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
