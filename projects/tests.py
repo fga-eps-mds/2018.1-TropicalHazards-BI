@@ -33,7 +33,8 @@ def test_post_project_is_valid_return_201(client):
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
-    data = {'name': "nameproject", 'description': "description"}
+    data = {'name': "nameproject", 'description': "description",
+            'user': user.id}
 
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
@@ -44,11 +45,11 @@ def test_post_project_is_valid_return_201(client):
 def test_post_project_is_not_valid_return_400(client):
     url = reverse('projects:projects')
     user = User.objects.create(username='username',
-                               email='email', is_staff=True)
+                               email='email')
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
-    data = {'name': " ", 'description': "description"}
+    data = {'description': "description"}
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
                            content_type="application/json")
@@ -62,7 +63,8 @@ def test_post_project_persist_db(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    data = {'name': "nameproject", 'description': "description"}
+    data = {'name': "nameproject", 'description': "description",
+            'user': user.id}
     client.login(username='username', password='password')
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
