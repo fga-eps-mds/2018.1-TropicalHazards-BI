@@ -12,7 +12,7 @@ from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from import_data.serializers import ImportDataSerializer
 from rest_framework import status
-
+from os.path import splitext
 
 @permission_classes((permissions.AllowAny,))
 class FileUploadView(APIView):
@@ -26,25 +26,25 @@ class FileUploadView(APIView):
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
-            with default_storage.open(file_path, 'wb+') as dest:
-                for chunk in file_obj.chunks():
-                    dest.write(chunk)
-            try:
-                dataframe = pandas.read_csv(file_path)
-            except (pandas.errors.ParserError, UnicodeDecodeError):
-                os.remove(file_path)
+            if file_obj.name.endswith('.csv') == False:
                 return Response(status=status.HTTP_400_BAD_REQUEST)
-            json_data = json.loads(dataframe.to_json(orient="records"))
+                               
+            else:
+                with default_storage.open(file_path, 'wb+') as dest:
+                    for chunk in file_obj.chunks():
+                        dest.write(chunk)
 
-            mongo_client = pymongo.MongoClient('mongo', 27017)
-            mongo_db = mongo_client['main_db']
-            collection = mongo_db['collection_' + project_id]
+                dataframe = pandas.read_csv(file_path)
+                json_data = json.loads(dataframe.to_json(orient="records"))
 
-            collection.insert(json_data)
-            serializer.save()
-            return Response(serializer.data,
-                            status=status.HTTP_201_CREATED)
+                mongo_client = pymongo.MongoClient('mongo', 27017)
+                mongo_db = mongo_client['main_db']
+                collection = mongo_db['collection_' + project_id]
 
-        # Remove temporary file
-        # os.remove(file_path)
+                collection.insert(json_data)
+                serializer.save()
+                os.remove(file_path)
+
+                return Response(serializer.data,
+                                status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
