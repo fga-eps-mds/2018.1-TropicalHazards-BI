@@ -11,4 +11,4 @@ class Project(models.Model):  # Herdando da model
     description = models.TextField(verbose_name="Descrição", max_length=250)
     user = models.ForeignKey(User, limit_choices_to={'is_staff': True},
                              on_delete=models.CASCADE)
-    tags = models.ManyToManyField(Tag)
+    tags = models.ManyToManyField(Tag, blank=True)

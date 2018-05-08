@@ -10,8 +10,8 @@ class ProjectSerializer(serializers.ModelSerializer):
         model = Project
         fields = ('id', 'user', 'name', 'description', 'tags')
 
-    def create(self, validated_data):
-        tag_data = validated_data.pop('tags')
-        project = Project.objects.create(**validated_data)
-        Tag.objects.create(project=project, **tag_data)
-        return project
+    # def create(self, validated_data):
+    #     tag_data = validated_data.pop('tags')
+    #     project = Project.objects.create(**validated_data)
+    #     Tag.objects.create(project=project, **tag_data)
+    #     return project
