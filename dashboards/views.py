@@ -11,10 +11,14 @@ from rest_framework import status
 # from django.core import serializers
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly, ))
 class DashboardList(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
 
     def get(self, request, format=None):
         dashboards = Dashboard.objects.all()
@@ -23,16 +27,19 @@ class DashboardList(APIView):
 
     def post(self, request, format=None):
         serializer = DashboardSerializer(data=request.data)
+        print(serializer)
+        print(serializer.is_valid())
         if serializer.is_valid():
-            if request.user.is_staff:
-                serializer.save()
-                return Response(serializer.data,
-                                status=status.HTTP_201_CREATED)
+            serializer.save()
+            return Response(serializer.data,
+                            status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @permission_classes((IsAuthenticatedOrReadOnly, ))
 class DashboardDetail(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
 
     def get_object(self, pk):
         try:
