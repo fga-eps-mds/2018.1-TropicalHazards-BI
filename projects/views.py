@@ -62,7 +62,6 @@ class ProjectDetail(APIView):
                             status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
-        print(pk)
         project = self.get_object(pk)
         if request.user == project.user:
             project.delete()
