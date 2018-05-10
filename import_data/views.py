@@ -5,14 +5,15 @@ import os
 from django.core.files.storage import default_storage
 from rest_framework.views import APIView
 from rest_framework.response import Response
-# from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-from rest_framework.decorators import parser_classes
+# # from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+# from rest_framework.decorators import parser_classes
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from import_data.serializers import ImportDataSerializer
 from rest_framework import status
-from os.path import splitext
+# from os.path import splitext
+
 
 @permission_classes((permissions.AllowAny,))
 class FileUploadView(APIView):
@@ -26,9 +27,9 @@ class FileUploadView(APIView):
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
-            if file_obj.name.endswith('.csv') == False:
+            if not file_obj.name.endswith('.csv'):
                 return Response(status=status.HTTP_400_BAD_REQUEST)
-                               
+
             else:
                 with default_storage.open(file_path, 'wb+') as dest:
                     for chunk in file_obj.chunks():
