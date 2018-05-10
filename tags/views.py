@@ -9,17 +9,23 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.generics import ListAPIView
 
 
 @permission_classes((IsAuthenticatedOrReadOnly, ))
-class TagList(APIView):
+class TagList(ListAPIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
 
     def get(self, request, format=None):
         tags = Tag.objects.all()
         serializer = TagSerializer(tags, many=True)
+        
+        filter_backends = (DjangoFilterBackend, )
         return Response(serializer.data)
+
+    
 
     def post(self, request, format=None):
         serializer = TagSerializer(data=request.data)
@@ -27,6 +33,18 @@ class TagList(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+# @permission_classes((IsAuthenticatedOrReadOnly, ))
+# class TagSeach(ListAPIView):
+#     serializer = TagSerializer
+
+#         def get_queryset(self):
+ 
+#         queryset = Purchase.objects.all()
+#         username = self.request.query_params.get('username', None)
+#         if username is not None:
+#             queryset = queryset.filter(purchaser__username=username)
+#         return queryset
 
 
 @permission_classes((IsAuthenticated, ))
