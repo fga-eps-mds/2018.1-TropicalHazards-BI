@@ -7,10 +7,13 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.authentication import SessionAuthentication
 
 @permission_classes((IsAuthenticatedOrReadOnly, ))
 class TagList(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
     def get(self, request, format=None):
         tags = Tag.objects.all()
         serializer = TagSerializer(tags, many=True)
@@ -26,6 +29,8 @@ class TagList(APIView):
 
 @permission_classes((IsAuthenticated, ))
 class TagDetail(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
     def get_object(self, pk):
         try:
             return Tag.objects.get(pk=pk)
