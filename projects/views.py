@@ -10,12 +10,25 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
+from rest_framework import generics
+from rest_framework import filters
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
-class ProjectList(APIView):
+class ProjectList(generics.ListAPIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
+    filter_backends = (filters.SearchFilter, )
+    search_fields = ('=tags__name', '=tags__slug')
+
+    # def get_queryset(self):
+    #     tag_name = self.request.query_params.get('tag_name', None)
+    #     queryset = Project.objects.all()
+    #     if tag_name is not None:
+    #         queryset = queryset.filter(tags__name=tag_name)
+    #     return queryset
 
     def get(self, request, format=None):
         projects = Project.objects.all()
