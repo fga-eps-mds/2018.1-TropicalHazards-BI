@@ -13,12 +13,15 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly, ))
 class ProjectList(APIView):
-    # authentication_classes = (SessionAuthentication, BasicAuthentication)
-    # permission_classes = (IsAuthenticated,)
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
     def get(self, request, format=None):
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
@@ -29,15 +32,17 @@ class ProjectList(APIView):
         request.data['user'] = request.user.id
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            if request.user.is_staff:
-                serializer.save()
-                return Response(serializer.data,
-                                status=status.HTTP_201_CREATED)
+            serializer.save()
+            return Response(serializer.data,
+                            status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @permission_classes((IsAuthenticated, ))
 class ProjectDetail(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
     def get_object(self, pk):
         try:
             return Project.objects.get(pk=pk)
@@ -61,6 +66,7 @@ class ProjectDetail(APIView):
                             status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
+        print(pk)
         project = self.get_object(pk)
         if request.user == project.user:
             project.delete()
