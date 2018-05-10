@@ -10,10 +10,12 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
 
+
 @permission_classes((IsAuthenticatedOrReadOnly, ))
 class TagList(APIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
+
     def get(self, request, format=None):
         tags = Tag.objects.all()
         serializer = TagSerializer(tags, many=True)
@@ -31,6 +33,7 @@ class TagList(APIView):
 class TagDetail(APIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
+
     def get_object(self, pk):
         try:
             return Tag.objects.get(pk=pk)
@@ -56,4 +59,3 @@ class TagDetail(APIView):
         tag = self.get_object(pk)
         tag.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-        # INSERIR VALIDAÇÃO PARA QUEM PODE DELETAR AS TAGS

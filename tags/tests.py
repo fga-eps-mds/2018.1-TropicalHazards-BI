@@ -31,7 +31,7 @@ def test_post_tag_is_valid_return_201(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password')  
+    client.login(username='username', password='password')
     data = {'name': "tagname", 'slug': "tagslug"}
 
     json_data = json.dumps(data)
@@ -46,7 +46,7 @@ def test_post_tag_is_not_valid_return_400(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password')      
+    client.login(username='username', password='password')
     data = {'name': " ", 'slug': "tagslug"}
 
     json_data = json.dumps(data)
@@ -62,7 +62,7 @@ def test_post_tag_persist_db(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password')  
+    client.login(username='username', password='password')
     data = {'name': "tagname", 'slug': "tagslug"}
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
@@ -79,7 +79,7 @@ def test_get_tag_detail_return_200(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password') 
+    client.login(username='username', password='password')
     response = client.get(url)
 
     assert response.status_code == 200
@@ -91,7 +91,7 @@ def test_get_tag_detail_return_404(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password') 
+    client.login(username='username', password='password')
     url = reverse('tags:tag-detail', kwargs={'pk': 1})
     response = client.get(url)
 
@@ -103,7 +103,7 @@ def test_put_tag_detail_return_200(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password')     
+    client.login(username='username', password='password')
     tag = mommy.make('Tag')
     url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
     data = {'name': "tagname", 'slug': "tagslug"}
@@ -117,7 +117,7 @@ def test_put_project_detail_return400(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password') 
+    client.login(username='username', password='password')
     tag = mommy.make('Tag')
     url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
     data = {'name': "", 'slug': "tagslug"}
@@ -132,7 +132,7 @@ def test_delete_project_detail_return_204(client):
                                email='email', is_staff=True)
     user.set_password('password')
     user.save()
-    client.login(username='username', password='password') 
+    client.login(username='username', password='password')
     tag = mommy.make('Tag')
     url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
     response = client.delete(url, content_type='application/json')
