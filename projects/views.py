@@ -5,16 +5,11 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-# from rest_framework.permissions import IsAuthenticated
-# from rest_framework.authentication import SessionAuthentication
-# from rest_framework.authentication import BasicAuthentication
-# from django.contrib.auth.models import Project
-# from django.core import serializers
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
@@ -67,6 +62,7 @@ class ProjectDetail(APIView):
                             status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
+        print(pk)
         project = self.get_object(pk)
         if request.user == project.user:
             project.delete()
