@@ -57,7 +57,6 @@ class ProjectDetail(APIView):
     def put(self, request, pk, format=None):
         project = self.get_object(pk=pk)
         serializer = ProjectSerializer(project, data=request.data)
-        request.data['user'] = request.user.id
         if serializer.is_valid() and request.user == project.user:
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
