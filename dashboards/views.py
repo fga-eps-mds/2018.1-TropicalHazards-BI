@@ -26,10 +26,7 @@ class DashboardList(APIView):
         return Response(serializer.data)
 
     def post(self, request, format=None):
-        request.data['user'] = request.user.id
         serializer = DashboardSerializer(data=request.data)
-        print(serializer)
-        print(serializer.is_valid())
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data,
