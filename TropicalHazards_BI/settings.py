@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'projects',
     'rest_auth',
     'dashboards',
+    'tags',
     'import_data'
 ]
 
