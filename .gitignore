@@ -102,3 +102,7 @@ ENV/
 
 # Gh pages
 _site/
+
+#Temp files
+tmp/*
+!.gitkeep
