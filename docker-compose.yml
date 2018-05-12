@@ -41,6 +41,3 @@ services:
     depends_on:
       - db
       - mongo
-    links:
-      - db
-      - mongo

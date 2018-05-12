@@ -17,3 +17,5 @@ model_mommy
 coverage
 PyYAML
 mongoengine
+ipdb
+django-environ
