@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'users',
     'projects',
     'rest_auth',
-    'dashboards'
+    'dashboards',
+    'import_data'
 ]
 
 MIDDLEWARE = [
