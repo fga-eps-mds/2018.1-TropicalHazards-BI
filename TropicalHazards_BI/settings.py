@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'projects',
     'rest_auth',
     'dashboards',
-    'tags'
+    'tags',
+    'import_data'
 ]
 
 MIDDLEWARE = [

@@ -27,5 +27,6 @@ urlpatterns = [
     path('obtain-token/', obtain_jwt_token),
     path('projects/', include('projects.urls'), name='projects'),
     path('dashboards/', include('dashboards.urls'), name='dashboards'),
-    path('tags/', include('tags.urls'), name='tags')
+    path('tags/', include('tags.urls'), name='tags'),
+    path('import/', include('import_data.urls'), name='importCsv')
 ]
