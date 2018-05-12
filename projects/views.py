@@ -5,39 +5,37 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-# from rest_framework.permissions import IsAuthenticated
-# from rest_framework.authentication import SessionAuthentication
-# from rest_framework.authentication import BasicAuthentication
-# from django.contrib.auth.models import Project
-# from django.core import serializers
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
-@permission_classes((IsAuthenticatedOrReadOnly, ))
+@permission_classes((IsAuthenticatedOrReadOnly,))
 class ProjectList(APIView):
-    # authentication_classes = (SessionAuthentication, BasicAuthentication)
-    # permission_classes = (IsAuthenticated,)
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
     def get(self, request, format=None):
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
 
     def post(self, request, format=None):
-
-        request.data['user'] = request.user.id
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            if request.user.is_staff:
-                serializer.save()
-                return Response(serializer.data,
-                                status=status.HTTP_201_CREATED)
+            serializer.save()
+            return Response(serializer.data,
+                            status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-@permission_classes((IsAuthenticated, ))
+@permission_classes((IsAuthenticated,))
 class ProjectDetail(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
     def get_object(self, pk):
         try:
             return Project.objects.get(pk=pk)
@@ -52,7 +50,6 @@ class ProjectDetail(APIView):
     def put(self, request, pk, format=None):
         project = self.get_object(pk=pk)
         serializer = ProjectSerializer(project, data=request.data)
-        request.data['user'] = request.user.id
         if serializer.is_valid() and request.user == project.user:
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)

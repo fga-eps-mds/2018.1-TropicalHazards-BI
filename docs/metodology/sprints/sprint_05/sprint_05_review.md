@@ -260,7 +260,7 @@
 
 #### Quadro de Habilidades
 
-<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint04/quadro_conhecimento_sp05.png" class="responsive-img">
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint05/quadro_conhecimento_sp05.png" class="responsive-img">
 
 #### Gráfico evolutivo
 O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a Sprint anterior e a completada. A porcentagem de conhecimento geral é calculada utilzando o Quadro de Habilidades, logo o gráfico abaixo é gerado a partir da comparação das porcentagens de cada membro do time.
