@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MinLengthValidator
 from django.contrib.auth.models import User
+from tags.models import Tag
 
 
 class Project(models.Model):  # Herdando da model
@@ -10,3 +11,4 @@ class Project(models.Model):  # Herdando da model
     description = models.TextField(verbose_name="Descrição", max_length=250)
     user = models.ForeignKey(User, limit_choices_to={'is_staff': True},
                              on_delete=models.CASCADE)
+    tags = models.ManyToManyField(Tag, blank=True)

@@ -100,6 +100,12 @@ ENV/
 # Gh pages
 _site/
 
+
+#Temp files
+tmp/*
+!.gitkeep
+
 # npm
 node_modules/
 package-lock.json
+
