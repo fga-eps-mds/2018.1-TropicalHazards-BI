@@ -10,6 +10,7 @@ from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from import_data.serializers import ImportDataSerializer
 from rest_framework import status
+from .models import ImportData
 
 
 @permission_classes((permissions.AllowAny,))
@@ -17,6 +18,11 @@ class FileUploadView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
     # authentication_classes = (JSONWebTokenAuthentication, )
+    def get_object(self, pk):
+        try:
+            return ImportData.objects.get(project=pk)
+        except ImportData.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
     def post(self, request, format=None):
         file_obj = request.data['file']
@@ -37,12 +43,20 @@ class FileUploadView(APIView):
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
                 mongo_db = mongo_client['main_db']
-                collection = mongo_db['collection_' + project_id]
-
-                collection.insert(json_data)
+                collection = mongo_db['collection_' + project_id]        
+                a = collection.insert(json_data)
+                print(a)
                 serializer.save()
                 os.remove(file_path)
 
                 return Response(serializer.data,
                                 status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def get(self, request, pk, format=None):
+        import_data = self.get_object(self, pk)
+        mongo_client = pymongo.MongoClient('mongo', 27017)
+        mongo_db = mongo_client['main_db']
+        collection = mongo_db['collection_' + import_data.project.id]
+
+
