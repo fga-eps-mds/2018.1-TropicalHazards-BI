@@ -1,7 +1,6 @@
 import pytest
 from django.shortcuts import reverse
 from .models import Project
-from tags.models import Tag
 from django.contrib.auth.models import User
 from model_mommy import mommy
 import json
