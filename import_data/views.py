@@ -67,3 +67,13 @@ class FileUploadViewDetail(APIView):
                 json_doc = json.dumps(doc, default=json_util.default)
                 json_docs.append(json_doc)
             return Response(json_docs)
+
+    def put(self, request, pk, format=None):
+        remove_field = request.data['remove_field']
+        mongo_client = pymongo.MongoClient('mongo', 27017)
+        mongo_db = mongo_client['main_db']
+        collection = mongo_db['collection_' + str(pk)]
+        if collection.count() == 0:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        else:
+            collection.update({}, {'$unset': {remove_field: 1}}, multi=True)
