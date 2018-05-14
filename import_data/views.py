@@ -1,6 +1,8 @@
 import pandas
 import pymongo
+from bson import json_util
 import json
+# from flask import jsonify
 import os
 from django.core.files.storage import default_storage
 from rest_framework.views import APIView
@@ -18,12 +20,7 @@ class FileUploadView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
     # authentication_classes = (JSONWebTokenAuthentication, )
-    def get_object(self, pk):
-        try:
-            return ImportData.objects.get(project=pk)
-        except ImportData.DoesNotExist:
-            return Response(status=status.HTTP_404_NOT_FOUND)
-
+ 
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
@@ -44,8 +41,9 @@ class FileUploadView(APIView):
                 mongo_client = pymongo.MongoClient('mongo', 27017)
                 mongo_db = mongo_client['main_db']
                 collection = mongo_db['collection_' + project_id]        
-                a = collection.insert(json_data)
-                print(a)
+                collection.insert(json_data)
+                data = mongo_db.collection.find()
+                print(data)
                 serializer.save()
                 os.remove(file_path)
 
@@ -53,10 +51,21 @@ class FileUploadView(APIView):
                                 status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+@permission_classes((permissions.AllowAny,))
+class FileUploadViewDetail(APIView):
+
     def get(self, request, pk, format=None):
-        import_data = self.get_object(self, pk)
+
+        # import_data = ImportData.objects.get(project=pk)
         mongo_client = pymongo.MongoClient('mongo', 27017)
         mongo_db = mongo_client['main_db']
-        collection = mongo_db['collection_' + import_data.project.id]
-
-
+        collection = mongo_db['collection_1']
+        elements = collection.find()
+        json_docs = []
+        for doc in elements:
+            json_doc = json.dumps(doc, default=json_util.default)
+            json_docs.append(json_doc)
+        # # # data = jsonify(data=elements)
+        # data = dumps(collection.find(), json_options=DEFAULT_JSON_OPTIONS)
+        return Response(json_docs)
