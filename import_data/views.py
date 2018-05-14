@@ -2,8 +2,6 @@ import pandas
 import pymongo
 from bson import json_util
 import json
-# import bson
-# from flask import jsonify
 import os
 from django.core.files.storage import default_storage
 from rest_framework.views import APIView
@@ -20,7 +18,7 @@ class FileUploadView(APIView):
     parser_classes = (MultiPartParser, FormParser)
 
     # authentication_classes = (JSONWebTokenAuthentication, )
- 
+
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
@@ -40,10 +38,8 @@ class FileUploadView(APIView):
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
                 mongo_db = mongo_client['main_db']
-                collection = mongo_db['collection_' + project_id]        
+                collection = mongo_db['collection_' + project_id]
                 collection.insert(json_data)
-                data = mongo_db.collection.find()
-                print(data)
                 serializer.save()
                 os.remove(file_path)
 
