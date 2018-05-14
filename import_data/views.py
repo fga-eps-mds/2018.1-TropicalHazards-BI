@@ -12,7 +12,6 @@ from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from import_data.serializers import ImportDataSerializer
 from rest_framework import status
-from .models import ImportData
 
 
 @permission_classes((permissions.AllowAny,))
@@ -56,16 +55,15 @@ class FileUploadView(APIView):
 class FileUploadViewDetail(APIView):
 
     def get(self, request, pk, format=None):
-
-        # import_data = ImportData.objects.get(project=pk)
         mongo_client = pymongo.MongoClient('mongo', 27017)
         mongo_db = mongo_client['main_db']
-        collection = mongo_db['collection_1']
-        elements = collection.find()
-        json_docs = []
-        for doc in elements:
-            json_doc = json.dumps(doc, default=json_util.default)
-            json_docs.append(json_doc)
-        # # # data = jsonify(data=elements)
-        # data = dumps(collection.find(), json_options=DEFAULT_JSON_OPTIONS)
-        return Response(json_docs)
+        collection = mongo_db['collection_' + str(pk)]
+        if collection.count() == 0:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        else:
+            elements = collection.find()
+            json_docs = []
+            for doc in elements:
+                json_doc = json.dumps(doc, default=json_util.default)
+                json_docs.append(json_doc)
+            return Response(json_docs)
