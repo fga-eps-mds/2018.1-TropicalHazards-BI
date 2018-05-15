@@ -148,7 +148,7 @@ Para medir a produtividade do time durante a execução da Sprint optamos por ob
 
 ### Velocity
 
-<b>Velocity</b>: 21 
+<b>Velocity</b>: 24.57 
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint08/velocity_sp08.png" class="responsive-img"> 
 
