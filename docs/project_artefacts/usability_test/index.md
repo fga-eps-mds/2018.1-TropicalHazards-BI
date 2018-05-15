@@ -74,16 +74,39 @@ Avaliar a implementação da interface do sistema ao ser utilizada pelo usuário
 
 #### Roteiro do Teste
 
+1. O usuário estando na página principal, pesquisa pelo dashboard x.
+2. Após receber o resultado da pesquisa, o usuário entra no dashboard escolhido.
+3. O usuário confere os dados e baixa os dados do dashboard.
+4. O usuário volta para a página principal.
+5. O usuário realiza cadastro.
+6. O usuário cria um projeto.
+7. O usuário faz upload de um set de dados.
+8. O usuário cria um dashboard.
+9. O usuário entra no dashboard.
+11. O usuário baixa os dados do dashboard.
+
 ---
 
 ### Teste 02 - Teste de Workflow (usuário alterado)
 
 #### Objetivo
+Avaliar a navegação da interface, considerando que os usuários estarão sob condições adversas durante o teste.
 
 #### Justificativa
 Esse teste foi idealizado baseado na ideia de Richard Littauer, o artigo do mesmo se encontra nas referências do documento.
 
 #### Roteiro do Teste
+
+1. O usuário estando na página principal, pesquisa pelo dashboard x.
+2. Após receber o resultado da pesquisa, o usuário entra no dashboard escolhido.
+3. O usuário confere os dados e baixa os dados do dashboard.
+4. O usuário volta para a página principal.
+5. O usuário realiza cadastro.
+6. O usuário cria um projeto.
+7. O usuário faz upload de um set de dados.
+8. O usuário cria um dashboard.
+9. O usuário entra no dashboard.
+11. O usuário baixa os dados do dashboard.
 
 ---
 
