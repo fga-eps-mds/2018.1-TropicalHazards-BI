@@ -33,7 +33,7 @@ def test_post_project_is_valid_return_201(client):
     user.save()
     client.login(username='username', password='password')
     data = {'name': "nameproject", 'description': "description",
-            'user': user.id}
+            'user': user.id, "tags": []}
 
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
@@ -63,7 +63,7 @@ def test_post_project_persist_db(client):
     user.set_password('password')
     user.save()
     data = {'name': "nameproject", 'description': "description",
-            'user': user.id}
+            'user': user.id, "tags": []}
     client.login(username='username', password='password')
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,

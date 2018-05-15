@@ -8,12 +8,12 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.authentication import SessionAuthentication
 from rest_framework import generics
 from rest_framework import filters
 from .filters import ProjectFilter
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
@@ -37,9 +37,6 @@ class ProjectList(generics.ListAPIView):
 
     def post(self, request, format=None):
         serializer = ProjectSerializer(data=request.data)
-        print(request.data)
-        print(request.user.id)
-        request.data['user'] = request.user.id
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data,
@@ -66,7 +63,6 @@ class ProjectDetail(APIView):
     def put(self, request, pk, format=None):
         project = self.get_object(pk=pk)
         serializer = ProjectSerializer(project, data=request.data)
-        request.data['user'] = request.user.id
         if serializer.is_valid() and request.user == project.user:
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
