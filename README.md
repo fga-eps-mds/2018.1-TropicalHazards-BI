@@ -34,12 +34,17 @@
   #### Configuração
 
   Clone o repositório no diretório desejado
-  ```
+  ```bash
   git clone https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI.git
+  ```
+  
+  Copie o arquivo referente as variáveis de ambiente necessárias para configuração da aplicação
+  ```bash
+  cp env.tmpl .env
   ```
 
   Utilize o seguinte comando para subir a aplicação
-  ```
+  ```bash
   docker-compose up
   ```
 
