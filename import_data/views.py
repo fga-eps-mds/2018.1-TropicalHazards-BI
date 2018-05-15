@@ -1,6 +1,7 @@
 import pandas
 import pymongo
-from bson import json_util
+# from flask import jsonify, json
+# from bson import json_util
 import json
 import os
 from django.core.files.storage import default_storage
@@ -61,9 +62,9 @@ class FileUploadViewDetail(APIView):
             elements = collection.find()
             json_docs = []
             for doc in elements:
-                json_doc = json.dumps(doc, default=json_util.default,
-                                      ensure_ascii=False, sort_keys=True,
-                                      indent=4).encode('utf8')
+                print(type(doc))
+                # json_doc = json.dumps(doc, default=json_util.default)
+                json_doc = str(doc)
                 json_docs.append(json_doc)
             return Response(json_docs, status=status.HTTP_200_OK)
 
