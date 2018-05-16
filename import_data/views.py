@@ -63,11 +63,11 @@ class FileUploadViewDetail(APIView):
             json_docs = []
             for doc in elements:
                 print(type(doc))
-                # json_doc = json.dumps(doc, default=json_util.default)
-                json_doc = str(doc)
-                json_docs.append(json_doc)
-                json_data = json.dumps(json_docs, ensure_ascii=False)
-            return Response(json_data, status=status.HTTP_200_OK)
+                # Remove o campo _id do elemento, pois ele não é serializável
+                del(doc['_id'])
+                json_docs.append(doc)
+            # O campo json_docs já está no formato JSON
+            return Response(json_docs, status=status.HTTP_200_OK)
 
     def put(self, request, pk, format=None):
         remove_field = request.data['remove_field']
