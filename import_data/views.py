@@ -59,14 +59,15 @@ class FileUploadViewDetail(APIView):
         if collection.count() == 0:
             return Response(status=status.HTTP_404_NOT_FOUND)
         else:
-            elements = collection.find()
+            elements = collection.find({})
             json_docs = []
             for doc in elements:
                 print(type(doc))
                 # json_doc = json.dumps(doc, default=json_util.default)
                 json_doc = str(doc)
                 json_docs.append(json_doc)
-            return Response(json_docs, status=status.HTTP_200_OK)
+                json_data = json.dumps(json_docs, ensure_ascii=False)
+            return Response(json_data, status=status.HTTP_200_OK)
 
     def put(self, request, pk, format=None):
         remove_field = request.data['remove_field']
