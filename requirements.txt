@@ -21,3 +21,4 @@ ipdb
 django-environ
 pymongo
 pandas
+flask
