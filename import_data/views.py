@@ -23,9 +23,7 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
-        print(request.data)
         list_fields = request.POST.getlist('headers')
-        print(list_fields)
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
@@ -39,7 +37,6 @@ class FileUploadView(APIView):
 
                 dataframe = pandas.read_csv(file_path, header=0)
                 for field in list_fields:
-                    print(field)
                     dataframe = dataframe.drop(field, axis=1)
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
