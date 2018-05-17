@@ -1,7 +1,5 @@
 import pandas
 import pymongo
-# from flask import jsonify, json
-# from bson import json_util
 import json
 import os
 from django.core.files.storage import default_storage
@@ -43,7 +41,12 @@ class FileUploadView(APIView):
 
                 for dfield in to_define_list_fields:
                     for type in type_list_fields:
-                        dataframe[dfield] = dataframe[dfield].astype(type)
+                        try:
+                            dataframe[dfield] = dataframe[dfield].astype(type)
+                        except ValueError:
+                            return Response(serializer.errors,
+                                            status=status.
+                                            HTTP_400_BAD_REQUEST)
 
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
