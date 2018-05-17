@@ -23,7 +23,9 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
-        list_fields = request.POST.getlist('headers')
+        to_remove_list_fields = request.POST.getlist('headers')
+        to_define_list_fields = request.POST.getlist('define')
+        type_list_fields = request.POST.getlist('types')
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
@@ -36,8 +38,13 @@ class FileUploadView(APIView):
                         dest.write(chunk)
 
                 dataframe = pandas.read_csv(file_path, header=0)
-                for field in list_fields:
-                    dataframe = dataframe.drop(field, axis=1)
+
+                dataframe = dataframe.drop(to_remove_list_fields, axis=1)
+
+                for dfield in to_define_list_fields:
+                    for type in type_list_fields:
+                        dataframe[dfield] = dataframe[dfield].astype(type)
+
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
