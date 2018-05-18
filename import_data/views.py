@@ -39,15 +39,16 @@ class FileUploadView(APIView):
 
                 dataframe = dataframe.drop(to_remove_list_fields, axis=1)
 
-                for dfield in to_define_list_fields:
-                    for type in type_list_fields:
-                        try:
-                            dataframe[dfield] = dataframe[dfield].astype(type)
-                        except ValueError:
-                            return Response(serializer.errors,
-                                            status=status.
-                                            HTTP_400_BAD_REQUEST)
-
+                for dfield, type in zip(to_define_list_fields,
+                                        type_list_fields):
+                    try:
+                        dataframe[dfield] = dataframe[dfield].astype(type)
+                        break
+                    except ValueError:
+                        return Response(serializer.errors,
+                                        status=status.
+                                        HTTP_400_BAD_REQUEST)
+                print(dataframe.dtypes)
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
