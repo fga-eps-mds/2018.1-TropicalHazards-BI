@@ -16,8 +16,6 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
-
-
 @permission_classes((IsAuthenticatedOrReadOnly,))
 class ProjectList(generics.ListAPIView):
     authentication_classes = (JSONWebTokenAuthentication,
@@ -29,7 +27,6 @@ class ProjectList(generics.ListAPIView):
 
     def get(self, request, format=None):
         tag_name = self.request.query_params.get('tag_name', None)
-        print(tag_name)
         if tag_name is None:
             projects = Project.objects.all()
         else:
