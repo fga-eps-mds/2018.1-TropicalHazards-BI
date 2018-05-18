@@ -9,6 +9,16 @@ import json
 pytestmark = pytest.mark.django_db
 
 
+@pytest.fixture
+def create_user(client):
+    user = User.objects.create(username='username',
+                               email='email', is_staff=True)
+    user.set_password('password')
+    user.save()
+    client.login(username='username', password='password')
+    return user
+
+
 def test_get_dashboard_return_200(client):
     url = reverse('dashboards:dashboards')
     response = client.get(url)
@@ -26,14 +36,9 @@ def test_list_dashboards_return_list_dashboards(client):
     assert response.data[0]['name'] == dashboard.name
 
 
-def test_post_dashboard_is_valid_return_201(client):
+def test_post_dashboard_is_valid_return_201(client, create_user):
     url = reverse('dashboards:dashboards')
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+    user = create_user
     project = mommy.make(Project, user=user)
     data = {'user': user.id, 'name': "namedashboard", 'project':
             project.id}
@@ -44,14 +49,9 @@ def test_post_dashboard_is_valid_return_201(client):
     assert response.status_code == 201
 
 
-def test_post_dashboard_is_not_valid_return_400(client):
+def test_post_dashboard_is_not_valid_return_400(client, create_user):
     url = reverse('dashboards:dashboards')
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+    user = create_user
     project = mommy.make(Project, user=user)
     data = {'user': user.id, 'name': " ", 'project':
             project.id}
@@ -62,14 +62,9 @@ def test_post_dashboard_is_not_valid_return_400(client):
     assert response.status_code == 400
 
 
-def test_post_dashboard_persist_db(client):
+def test_post_dashboard_persist_db(client, create_user):
     url = reverse('dashboards:dashboards')
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+    user = create_user
     project = mommy.make(Project, user=user)
     data = {'user': user.id, 'name': "dashboardname", 'project':
             project.id}
@@ -81,13 +76,8 @@ def test_post_dashboard_persist_db(client):
     assert dashboards.count() == 1
 
 
-def test_get_dashboard_detail_return_200(client):
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+def test_get_dashboard_detail_return_200(client, create_user):
+    user = create_user
     project = mommy.make(Project, user=user)
     dashboard = mommy.make(Dashboard, user=user, project=project)
     url = reverse('dashboards:dashboard-detail', kwargs={'pk': dashboard.id})
@@ -97,26 +87,15 @@ def test_get_dashboard_detail_return_200(client):
     assert response.data['id'] == dashboard.id
 
 
-def test_get_dashboard_detail_return_404(client):
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+def test_get_dashboard_detail_return_404(client, create_user):
     url = reverse('dashboards:dashboard-detail', kwargs={'pk': 1})
     response = client.get(url)
 
     assert response.status_code == 404
 
 
-def test_put_dashboard_detail_return_200(client):
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+def test_put_dashboard_detail_return_200(client, create_user):
+    user = create_user
     project = mommy.make(Project, user=user)
     dashboard = mommy.make(Dashboard, user=user, project=project)
     url = reverse('dashboards:dashboard-detail', kwargs={'pk': dashboard.id})
@@ -127,13 +106,8 @@ def test_put_dashboard_detail_return_200(client):
     assert response.status_code == 200
 
 
-def test_put_dashboard_detail_return400(client):
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+def test_put_dashboard_detail_return400(client, create_user):
+    user = create_user
     project = mommy.make(Project, user=user)
     dashboard = mommy.make(Dashboard, user=user, project=project)
     url = reverse('dashboards:dashboard-detail', kwargs={'pk': dashboard.id})
@@ -145,13 +119,8 @@ def test_put_dashboard_detail_return400(client):
     assert response.status_code == 400
 
 
-def test_delete_dashboard_detail_return_204(client):
-    user = User.objects.create(username='username',
-                               email='email', is_staff=True)
-    user.set_password('password')
-    user.save()
-    client.login(username='username', password='password')
-
+def test_delete_dashboard_detail_return_204(client, create_user):
+    user = create_user
     project = mommy.make(Project, user=user)
     dashboard = mommy.make(Dashboard, user=user, project=project)
     url = reverse('dashboards:dashboard-detail', kwargs={'pk': dashboard.id})
