@@ -24,5 +24,15 @@ script:
 after_success:
     - docker-compose exec web coveralls
 
+    - |
+        if [ "${TRAVIS_BRANCH}" == "development" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+            echo "Deploying to homolog environment..."
+            docker build -f Dockerfile -t $DOCKERHUB_USER/tropical-hazards-back:prod .
+            docker login --username=$DOCKERHUB_USER --password=$DOCKERHUB_PASSWORD
+            docker push arthur0496/tropical-hazards-back:prod
+            docker run cdrx/rancher-gitlab-deploy upgrade --rancher-url $RANCHER_URL --rancher-key $RANCHER_ACCESS_KEY --rancher-secret $RANCHER_SECRET_KEY --environment Default --stack Observ --service back --finish-upgrade
+        else
+            echo "Skipping deploy...";
+        fi;
 notifications:
   email: false

@@ -13,6 +13,9 @@
 
 <p align="justify"> O Tropical Hazards Business Intelligence é um sistema cujo a finalidade é auxiliar os pesquisadores e profissionais de saúde do Núcleo de Medicina Tropical da UnB, permitindo o gerenciamento e compartilhamento de dados e indicadores referentes às doenças tropicais. O sistema foi projetado de modo a permitir que os profissionais possam fazer análises estatísticas, compartilhar informações gerenciadas em dashboards e disponibilizar esses dados para o público.</p>
 
+## Deploy
+[Homolog](http://159.65.190.38)
+
 ## Documentação
 
   Se você quiser saber como utilizar o sistema ou como o mesmo foi projetado, a [documentação](https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/tree/master/docs) do projeto pode ser encontrada no link em destaque ou pode ser acessada através do [github pages](https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI) do projeto. Para contribuir com o projeto solicitamos que acesse o nosso workflow de repositório com a [política de branches](https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/politica_de_branches), [política de commits](https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/politica_de_commit) e [issue workflow](https://fga-gpp-mds.github.io/2018.1-TropicalHazards-BI/workflow/issue_workflow).

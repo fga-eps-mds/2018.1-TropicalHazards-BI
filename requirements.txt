@@ -17,5 +17,10 @@ model_mommy
 coverage
 PyYAML
 mongoengine
-pandas
 django-filter
+ipdb
+django-environ
+pymongo
+pandas
+flask
+

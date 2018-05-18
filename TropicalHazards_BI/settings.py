@@ -29,7 +29,7 @@ SECRET_KEY = 'o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','0.0.0.0','159.65.190.38']
 
 
 # Application definition
@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'rest_auth',
     'dashboards',
     'tags',
-    'django_filters'
+    'django_filters',
+    'import_data'
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,8 @@ ROOT_URLCONF = 'TropicalHazards_BI.urls'
 # TODO: Add host of homolog and production server
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080',
-    '0.0.0.0:8080',
+    '0.0.0.0:8000',
+    '159.65.190.38:8000',
 )
 
 TEMPLATES = [

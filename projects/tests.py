@@ -33,7 +33,7 @@ def test_post_project_is_valid_return_201(client):
     user.save()
     client.login(username='username', password='password')
     data = {'name': "nameproject", 'description': "description",
-            'user': user.id}
+            'user': user.id, "tags": []}
 
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
@@ -63,7 +63,7 @@ def test_post_project_persist_db(client):
     user.set_password('password')
     user.save()
     data = {'name': "nameproject", 'description': "description",
-            'user': user.id}
+            'user': user.id, "tags": []}
     client.login(username='username', password='password')
     json_data = json.dumps(data)
     response = client.post(url, data=json_data,
@@ -80,7 +80,7 @@ def test_get_project_detail_return_200(client):
     user.save()
     client.login(username='username', password='password')
     project = mommy.make('Project', user=user)
-    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    url = reverse('projects:project-detail', kwargs={'pk': project.id})
     response = client.get(url)
 
     assert response.status_code == 200
@@ -94,7 +94,7 @@ def test_get_project_detail_return_404(client):
     user.save()
     client.login(username='username', password='password')
 
-    url = reverse('projects:projects-detail', kwargs={'pk': 1})
+    url = reverse('projects:project-detail', kwargs={'pk': 1})
     response = client.get(url)
 
     assert response.status_code == 404
@@ -107,7 +107,7 @@ def test_put_project_detail_return_200(client):
     user.save()
     client.login(username='username', password='password')
     project = mommy.make('Project', user=user)
-    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    url = reverse('projects:project-detail', kwargs={'pk': project.id})
     data = {'name': "nameproject", 'description': "description",
             'user': user.id}
     json_data = json.dumps(data)
@@ -122,7 +122,7 @@ def test_put_project_detail_return400(client):
     user.save()
     client.login(username='username', password='password')
     project = mommy.make('Project', user=user)
-    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    url = reverse('projects:project-detail', kwargs={'pk': project.id})
     data = {'name': "", 'description': "description", 'user': user.id}
     json_data = json.dumps(data)
     response = client.put(url, data=json_data, content_type='application/json')
@@ -137,7 +137,7 @@ def test_delete_project_detail_return_204(client):
     user.save()
     client.login(username='username', password='password')
     project = mommy.make('Project', user=user)
-    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    url = reverse('projects:project-detail', kwargs={'pk': project.id})
     response = client.delete(url, content_type='application/json')
 
     assert response.status_code == 204
