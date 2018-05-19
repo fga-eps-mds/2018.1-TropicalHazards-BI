@@ -1,7 +1,5 @@
 import pandas
 import pymongo
-# from flask import jsonify, json
-# from bson import json_util
 import json
 import os
 from django.core.files.storage import default_storage
@@ -23,7 +21,11 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
-        list_fields = request.POST.getlist('headers')
+        # Fix temporária por probelmas com forma append
+        to_remove_list_fields = json.loads(request.data['headers'])
+        to_define_list_fields = json.loads(request.data['define'])
+        type_list_fields = json.loads(request.data['types'])
+
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
@@ -36,8 +38,18 @@ class FileUploadView(APIView):
                         dest.write(chunk)
 
                 dataframe = pandas.read_csv(file_path, header=0)
-                for field in list_fields:
-                    dataframe = dataframe.drop(field, axis=1)
+
+                dataframe = dataframe.drop(to_remove_list_fields, axis=1)
+
+                for dfield, type in zip(to_define_list_fields,
+                                        type_list_fields):
+                    try:
+                        dataframe[dfield] = dataframe[dfield].astype(type)
+                        break
+                    except ValueError:
+                        return Response(serializer.errors,
+                                        status=status.
+                                        HTTP_400_BAD_REQUEST)
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
@@ -65,7 +77,6 @@ class FileUploadViewDetail(APIView):
             elements = collection.find({})
             json_docs = []
             for doc in elements:
-                print(type(doc))
                 # Remove o campo _id do elemento, pois ele não é serializável
                 del(doc['_id'])
                 json_docs.append(doc)
