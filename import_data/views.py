@@ -21,9 +21,13 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
-        to_remove_list_fields = request.POST.getlist('headers')
-        to_define_list_fields = request.POST.getlist('define')
-        type_list_fields = request.POST.getlist('types')
+        # Fix temporária por probelmas com forma aappend
+        to_remove_list_fields = json.loads(request.data['headers'])
+        to_define_list_fields = json.loads(request.data['define'])
+        # Problemas na passagem de tipo de dado como string
+        # type_list_fields = json.loads(request.data['types'])
+        type_list_fields = []
+
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
