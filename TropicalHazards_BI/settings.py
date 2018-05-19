@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'dashboards',
     'tags',
+    'django_filters',
     'import_data'
 ]
 

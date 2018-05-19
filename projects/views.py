@@ -9,16 +9,28 @@ from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.authentication import SessionAuthentication
+from rest_framework import generics
+from rest_framework import filters
+from .filters import ProjectFilter
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
-class ProjectList(APIView):
+class ProjectList(generics.ListAPIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter)
+    filter_class = ProjectFilter
 
     def get(self, request, format=None):
-        projects = Project.objects.all()
+        tag_name = self.request.query_params.get('tag_name', None)
+        if tag_name is None:
+            projects = Project.objects.all()
+        else:
+            projects = Project.objects.filter(tags__name=tag_name)
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
 
