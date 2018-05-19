@@ -8,7 +8,7 @@ O principal objetivo do Teste de Usabilidade do sistema Observ é determinar as 
 * Usuários com experiência em aplicações para manipulação de dados.
 
 ### Ambiente
-* Notebook
+* Notebook com a ferramenta SimpleScreenRecorder instalado;
 
 ### Regras
 Duração de 10 minutos.
@@ -80,11 +80,19 @@ Para os testes de usabilidade que serão usados no projeto, serão avaliados os 
 ## Testes Utilizados
 Aqui estão definidos os testes de usabilidade que serão aplicados pela equipe.
 É importante resaltar que existem testes que cobrem vários dos tópicos de análise.
+Antes de iniciar os testes, deve-se passar algumas informações ao usuário:
+* Informar que quem será testado é o sistema e não o usuário.
+* Pedir para o usuário falar em voz alta o que ele está pensando.
+* Será utilizada a ferramenta de captura de tela "SimpleScreenRecorder" para acompanhar os passos de navegação do usuário pelo sistema Observ.
+
 
 ### Teste 01 - Teste de Workflow
 
 #### Objetivo
 Avaliar a implementação da interface do sistema ao ser utilizada pelo usuário.
+
+#### Duração
+* Máximo de 5 minutos.
 
 #### Roteiro do Teste
 
@@ -109,6 +117,9 @@ Avaliar a navegação da interface, considerando que os usuários estarão sob c
 #### Justificativa
 Esse teste foi idealizado baseado na ideia de Richard Littauer, o artigo do mesmo se encontra nas referências do documento.
 
+#### Duração
+* Máximo de 5 minutos.
+
 #### Roteiro do Teste
 
 1. O usuário estando na página principal, pesquisa pelo dashboard x.
@@ -116,13 +127,30 @@ Esse teste foi idealizado baseado na ideia de Richard Littauer, o artigo do mesm
 3. O usuário confere os dados e baixa os dados do dashboard.
 4. O usuário volta para a página principal.
 5. O usuário realiza cadastro.
-6. O usuário cria um projeto.
-7. O usuário faz upload de um set de dados.
-8. O usuário cria um dashboard.
-9. O usuário entra no dashboard.
-11. O usuário baixa os dados do dashboard.
+6. O usuário cria um projeto com tags.
+7. O usuário faz upload de um set de dados com extensão .csv.
+8. O usuário parametriza os dados.
+9. O usuário cria um dashboard.
+12. O usuário entra no dashboard.
+13. O usuário baixa os dados do dashboard.
 
 ---
+## Teste 03 - Teste de Workflow - Gerar indicadores  
+
+#### Duração
+* Máximo de 5 minutos.
+
+#### Roteiro do Teste
+
+* Meta da tarefa: Gerar indicadores.
+
+1. O usuário realiza cadastro.
+2. O usuário realiza o login.
+2. O usuário seleciona um projeto.
+3. O usuário seleciona um dataset.
+4. O usuário seleciona os dados.
+6. O usuário gera um gráfico com indicadores.
+
 
 ## Referências
 
