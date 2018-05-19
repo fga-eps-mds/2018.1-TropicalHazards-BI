@@ -27,7 +27,6 @@ class ProjectList(generics.ListAPIView):
 
     def get(self, request, format=None):
         tag_name = self.request.query_params.get('tag_name', None)
-        print(tag_name)
         if tag_name is None:
             projects = Project.objects.all()
         else:
