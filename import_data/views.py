@@ -21,12 +21,10 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
-        # Fix temporária por probelmas com forma aappend
+        # Fix temporária por probelmas com forma append
         to_remove_list_fields = json.loads(request.data['headers'])
         to_define_list_fields = json.loads(request.data['define'])
-        # Problemas na passagem de tipo de dado como string
-        # type_list_fields = json.loads(request.data['types'])
-        type_list_fields = []
+        type_list_fields = json.loads(request.data['types'])
 
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
@@ -52,7 +50,6 @@ class FileUploadView(APIView):
                         return Response(serializer.errors,
                                         status=status.
                                         HTTP_400_BAD_REQUEST)
-                print(dataframe.dtypes)
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
@@ -80,7 +77,6 @@ class FileUploadViewDetail(APIView):
             elements = collection.find({})
             json_docs = []
             for doc in elements:
-                print(type(doc))
                 # Remove o campo _id do elemento, pois ele não é serializável
                 del(doc['_id'])
                 json_docs.append(doc)
