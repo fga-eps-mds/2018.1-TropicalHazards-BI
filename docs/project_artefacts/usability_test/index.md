@@ -1,8 +1,17 @@
-# Testes de Usabilidade
-## Introdução
-Um teste de usabilidade tem como principal objetivo observar e avaliar o uso da
-aplicação por parte dos usuários reais, visando encontrar problemas e pontos de
-melhorias.
+# Planejamento dos Testes de Usabilidade
+
+### Objetivo
+O principal objetivo do Teste de Usabilidade do sistema Observ é determinar as respostas emocionais, feedback, tempo, passos e número de erros resultantes da interação do usuário com a aplicação. Ao final dos testes a equipe visa encontrar problemas e oportunidades de melhorias.
+
+### Perfil de usuário
+* Usuários que tenham experiência no dia a dia com websites.
+* Usuários com experiência em aplicações para manipulação de dados.
+
+### Ambiente
+* Notebook
+
+### Regras
+Duração de 10 minutos.
 
 ## Tópicos de Análise
 Para os testes de usabilidade que serão usados no projeto, serão avaliados os seguintes tópicos:
@@ -60,6 +69,11 @@ Para os testes de usabilidade que serão usados no projeto, serão avaliados os 
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>Número de erros cometidos</th>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
 
@@ -112,4 +126,5 @@ Esse teste foi idealizado baseado na ideia de Richard Littauer, o artigo do mesm
 
 ## Referências
 
-- The User Has Sobered Up - Littauer, Richard https://medium.com/@richlitt/the-user-has-sobered-up-df0b411997ea
+- [The User Has Sobered Up - Littauer, Richard](https://medium.com/@richlitt/the-user-has-sobered-up-df0b411997ea)
+- [Testes de Usabilidade](https://www.caelum.com.br/apostila-ux-usabilidade-mobile-web/usabilidade/#o-que--medido)
