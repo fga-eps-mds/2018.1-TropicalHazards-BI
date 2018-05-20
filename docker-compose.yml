@@ -28,7 +28,7 @@ services:
       - 27017:27017
 
   metabase:
-    image: metabase/metabase
+    build: metabase-docker/
     ports:
       - "3000:3000"
     environment:
@@ -38,6 +38,10 @@ services:
         MB_DB_USER: "${MB_DB_USER}"
         MB_DB_PASS: "${MB_DB_PASS}"
         MB_DB_HOST: "${MB_DB_HOST}"
+        MB_FIRST_NAME: "${MB_FIRST_NAME}" 
+        MB_LAST_NAME: "${MB_LAST_NAME}" 
+        MB_EMAIL: "${MB_EMAIL}" 
+        MB_PASSWORD: "${MB_PASSWORD}" 
     depends_on:
       - db
       - mongo
