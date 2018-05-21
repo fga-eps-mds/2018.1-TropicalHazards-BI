@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from tags.models import Tag
 
 
-class Project(models.Model):  # Herdando da model
+class Project(models.Model):
 
     name = models.CharField(max_length=80, validators=[MinLengthValidator(5)],
                             blank=False, verbose_name="Nome")

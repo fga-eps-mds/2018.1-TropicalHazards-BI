@@ -21,6 +21,11 @@ class FileUploadView(APIView):
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = request.data['project']
+        # Fix temporária por probelmas com forma append
+        to_remove_list_fields = json.loads(request.data['headers'])
+        to_define_list_fields = json.loads(request.data['define'])
+        type_list_fields = json.loads(request.data['types'])
+
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
@@ -32,13 +37,24 @@ class FileUploadView(APIView):
                     for chunk in file_obj.chunks():
                         dest.write(chunk)
 
-                dataframe = pandas.read_csv(file_path)
+                dataframe = pandas.read_csv(file_path, header=0)
+
+                dataframe = dataframe.drop(to_remove_list_fields, axis=1)
+
+                for dfield, type in zip(to_define_list_fields,
+                                        type_list_fields):
+                    try:
+                        dataframe[dfield] = dataframe[dfield].astype(type)
+                        break
+                    except ValueError:
+                        return Response(serializer.errors,
+                                        status=status.
+                                        HTTP_400_BAD_REQUEST)
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
                 mongo_db = mongo_client['main_db']
                 collection = mongo_db['collection_' + project_id]
-
                 collection.insert(json_data)
                 serializer.save()
                 os.remove(file_path)
@@ -46,3 +62,33 @@ class FileUploadView(APIView):
                 return Response(serializer.data,
                                 status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+@permission_classes((permissions.AllowAny,))
+class FileUploadViewDetail(APIView):
+
+    def get(self, request, pk, format=None):
+        mongo_client = pymongo.MongoClient('mongo', 27017)
+        mongo_db = mongo_client['main_db']
+        collection = mongo_db['collection_' + str(pk)]
+        if collection.count() == 0:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        else:
+            elements = collection.find({})
+            json_docs = []
+            for doc in elements:
+                # Remove o campo _id do elemento, pois ele não é serializável
+                del(doc['_id'])
+                json_docs.append(doc)
+            # O campo json_docs já está no formato JSON
+            return Response(json_docs, status=status.HTTP_200_OK)
+
+    def put(self, request, pk, format=None):
+        remove_field = request.data['remove_field']
+        mongo_client = pymongo.MongoClient('mongo', 27017)
+        mongo_db = mongo_client['main_db']
+        collection = mongo_db['collection_' + str(pk)]
+        if collection.count() == 0:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+        else:
+            collection.update({}, {'$unset': {remove_field: 1}}, multi=True)
