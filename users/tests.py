@@ -12,7 +12,7 @@ def create_user(client):
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
-    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    url = reverse('users:user-detail', kwargs={'pk': user.id})
     return user, url
 
 
