@@ -100,7 +100,7 @@ def test_get_tag_detail_return_404(client):
 
 def test_put_tag_detail_return_200(client):
     user = User.objects.create(username='username',
-                               email='email', is_staff=True)
+                               email='email', is_superuser=True)
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
@@ -110,6 +110,20 @@ def test_put_tag_detail_return_200(client):
     json_data = json.dumps(data)
     response = client.put(url, data=json_data, content_type='application/json')
     assert response.status_code == 200
+
+
+def test_put_tag_detail_return_401(client):
+    user = User.objects.create(username='username',
+                               email='email')
+    user.set_password('password')
+    user.save()
+    client.login(username='username', password='password')
+    tag = mommy.make('Tag')
+    url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
+    data = {'name': "tagname", 'slug': "tagslug"}
+    json_data = json.dumps(data)
+    response = client.put(url, data=json_data, content_type='application/json')
+    assert response.status_code == 401
 
 
 def test_put_project_detail_return400(client):
@@ -129,7 +143,7 @@ def test_put_project_detail_return400(client):
 
 def test_delete_project_detail_return_204(client):
     user = User.objects.create(username='username',
-                               email='email', is_staff=True)
+                               email='email', is_superuser=True)
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
@@ -138,3 +152,16 @@ def test_delete_project_detail_return_204(client):
     response = client.delete(url, content_type='application/json')
 
     assert response.status_code == 204
+
+
+def test_delete_project_detail_return_401(client):
+    user = User.objects.create(username='username',
+                               email='email')
+    user.set_password('password')
+    user.save()
+    client.login(username='username', password='password')
+    tag = mommy.make('Tag')
+    url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
+    response = client.delete(url, content_type='application/json')
+
+    assert response.status_code == 401
