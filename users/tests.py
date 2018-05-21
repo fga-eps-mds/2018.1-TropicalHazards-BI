@@ -65,6 +65,7 @@ def test_post_user_persist_db(client):
     assert users.count() == 1
 
 
+
 def test_get_user_detail_return_200(client, create_user):
     user, url = create_user
     response = client.get(url)
@@ -74,7 +75,7 @@ def test_get_user_detail_return_200(client, create_user):
 
 
 def test_get_user_detail_return_404(client):
-    url = reverse('users:users-detail', kwargs={'pk': 1})
+    url = reverse('users:user-detail', kwargs={'pk': 1})
     response = client.get(url)
 
     assert response.status_code == 404
@@ -95,7 +96,6 @@ def test_put_user_detail_return_400(client, create_user):
             'password': "password_edit"}
     json_data = json.dumps(data)
     response = client.put(url, data=json_data, content_type='application/json')
-
     assert response.status_code == 400
 
 

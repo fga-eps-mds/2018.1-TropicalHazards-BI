@@ -78,12 +78,14 @@ def test_post_project_persist_db(client, create_user):
     assert projects.count() == 1
 
 
+
 def test_get_project_detail_return_200(client, create_project):
     project, url = create_project
     response = client.get(url)
 
     assert response.status_code == 200
     assert response.data['id'] == project.id
+
 
 
 def test_get_project_detail_return_404(client, create_user):

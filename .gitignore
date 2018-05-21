@@ -24,6 +24,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*migrations*
+
+# Python migrations
+migrations/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -108,4 +112,3 @@ tmp/*
 # npm
 node_modules/
 package-lock.json
-
