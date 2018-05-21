@@ -12,7 +12,7 @@ def create_user(client):
     user.set_password('password')
     user.save()
     client.login(username='username', password='password')
-    url = reverse('users:users-detail', kwargs={'pk': user.id})
+    url = reverse('users:user-detail', kwargs={'pk': user.id})
     return user, url
 
 
@@ -63,7 +63,6 @@ def test_post_user_persist_db(client):
     users = User.objects.all()
 
     assert users.count() == 1
-
 
 
 def test_get_user_detail_return_200(client, create_user):

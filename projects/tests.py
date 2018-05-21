@@ -22,7 +22,7 @@ def create_user(client):
 def create_project(client, create_user):
     user = create_user
     project = mommy.make('Project', user=user)
-    url = reverse('projects:projects-detail', kwargs={'pk': project.id})
+    url = reverse('projects:project-detail', kwargs={'pk': project.id})
     return project, url
 
 
@@ -78,7 +78,6 @@ def test_post_project_persist_db(client, create_user):
     assert projects.count() == 1
 
 
-
 def test_get_project_detail_return_200(client, create_project):
     project, url = create_project
     response = client.get(url)
@@ -87,9 +86,8 @@ def test_get_project_detail_return_200(client, create_project):
     assert response.data['id'] == project.id
 
 
-
 def test_get_project_detail_return_404(client, create_user):
-    url = reverse('projects:projects-detail', kwargs={'pk': 1})
+    url = reverse('projects:project-detail', kwargs={'pk': 1})
     response = client.get(url)
 
     assert response.status_code == 404
