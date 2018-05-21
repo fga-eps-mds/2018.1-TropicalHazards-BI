@@ -28,6 +28,7 @@ wheels/
 
 # Python migrations
 migrations/
+!__init__.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -112,3 +113,6 @@ tmp/*
 # npm
 node_modules/
 package-lock.json
+
+#Env file
+.env
