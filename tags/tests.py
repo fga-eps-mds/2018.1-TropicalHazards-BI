@@ -95,6 +95,17 @@ def test_put_tag_detail_return_200(client, create_user, create_tag):
     assert response.status_code == 200
 
 
+def test_put_tag_detail_return_401(client, create_tag):
+    user = User.objects.create(username='username',
+                               email='email')
+    user.set_password('password')
+    user.save()
+    client.login(username='username', password='passord')
+    url, json_data = create_tag
+    response = client.put(url, data=json_data, content_type='application/json')
+    assert response.status_code == 401
+
+
 def test_put_project_detail_return400(client, create_user, create_tag):
     tag = mommy.make('Tag')
     url = reverse('tags:tag-detail', kwargs={'pk': tag.id})
