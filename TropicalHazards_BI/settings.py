@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import environ
+import raven
+
 # datetime will be used to set token expiration time
 import datetime
 
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'raven.contrib.django.raven_compat',
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
@@ -170,3 +174,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     )
 }
+
+if(DEBUG is False):
+    RAVEN_CONFIG = {
+        'dsn': env('RAVEN_DSN_URL'),
+    }
