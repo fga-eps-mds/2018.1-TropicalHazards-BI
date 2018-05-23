@@ -23,4 +23,4 @@ django-environ
 pymongo
 pandas
 flask
-
+raven
