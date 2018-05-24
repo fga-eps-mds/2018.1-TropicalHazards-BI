@@ -20,18 +20,21 @@ class FileUploadView(APIView):
 
     def post(self, request, format=None):
         file_obj = request.data['file']
+        print(file_obj)
         project_id = request.data['project']
+        print(project_id)
         # Fix temporária por probelmas com forma append
-        to_remove_list_fields = json.loads(request.data['headers'])
-        to_define_list_fields = json.loads(request.data['define'])
-        type_list_fields = json.loads(request.data['types'])
+        headersList = json.loads(request.data['headers'])
+        print(type(headersList))
+        print(type(headersList[0]))
+        # to_define_list_fields = json.loads(request.data['define'])
+        # type_list_fields = json.loads(request.data['types'])
 
         serializer = ImportDataSerializer(data=request.data)
         if serializer.is_valid():
             file_path = '/code/tmp/' + file_obj.name
             if not file_obj.name.endswith('.csv'):
                 return Response(status=status.HTTP_400_BAD_REQUEST)
-
             else:
                 with default_storage.open(file_path, 'wb+') as dest:
                     for chunk in file_obj.chunks():
@@ -39,18 +42,21 @@ class FileUploadView(APIView):
 
                 dataframe = pandas.read_csv(file_path, header=0)
 
-                dataframe = dataframe.drop(to_remove_list_fields, axis=1)
+                for header in headersList:
+                    if header['selected'] is False:
+                        dataframe = dataframe.drop(header['name'], axis=1)
+                    else:
+                        try:
+                            dataframe[header['name']] =\
+                                dataframe[header['name']].\
+                                astype(header['type'])
+                        except ValueError:
+                            return Response(serializer.errors,
+                                            status=status.
+                                            HTTP_400_BAD_REQUEST)
 
-                for dfield, type in zip(to_define_list_fields,
-                                        type_list_fields):
-                    try:
-                        dataframe[dfield] = dataframe[dfield].astype(type)
-                        break
-                    except ValueError:
-                        return Response(serializer.errors,
-                                        status=status.
-                                        HTTP_400_BAD_REQUEST)
                 json_data = json.loads(dataframe.to_json(orient="records"))
+                print(json_data)
 
                 mongo_client = pymongo.MongoClient('mongo', 27017)
                 mongo_db = mongo_client['main_db']
