@@ -28,5 +28,6 @@ urlpatterns = [
     path('projects/', include('projects.urls'), name='projects'),
     path('dashboards/', include('dashboards.urls'), name='dashboards'),
     path('tags/', include('tags.urls'), name='tags'),
-    path('import/', include('import_data.urls'), name='importCsv')
+    path('import/', include('import_data.urls'), name='importCsv'),
+    path('metabase/', include('metabase.urls'), name='metabase')
 ]

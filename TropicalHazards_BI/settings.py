@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'dashboards',
     'tags',
     'django_filters',
-    'import_data'
+    'import_data',
+    'metabase'
 ]
 
 MIDDLEWARE = [
