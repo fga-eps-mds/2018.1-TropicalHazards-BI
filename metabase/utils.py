@@ -19,7 +19,8 @@ def login_metabase():
     else:
         login = requests.post(url, json=data)
         if login.status_code == 200:
-            session = MetabaseSession.objects.create(session_id=login.json()['id'])
+            session = MetabaseSession.objects.\
+                        create(session_id=login.json()['id'])
             session_id = session.session_id
         else:
             raise Exception('Cannot login on metabase - ' + login.json())

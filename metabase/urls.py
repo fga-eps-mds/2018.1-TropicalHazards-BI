@@ -4,6 +4,6 @@ from . import views
 app_name = 'iframes'
 
 urlpatterns = [
-    path("", views.DashboardIframes.as_view(),
-         name='dashboard-iframes'),
+        path("<int:pk>", views.DashboardIframes.as_view(),
+             name='dashboard-iframes'),
 ]

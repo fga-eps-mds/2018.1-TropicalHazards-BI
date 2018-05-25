@@ -1,61 +1,96 @@
-from rest_framework.views import APIView
 import requests
+
+from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from rest_framework import status
-    
+
+from metabase.utils import login_metabase
+from metabase.utils import get_database_id
+from metabase.utils import get_table_id
+from metabase.utils import MB_URL
+from metabase.serializers import IframeSerializerCreate
+from metabase.serializers import IframeSerializerList
+from metabase.models import Iframe
+from dashboards.models import Dashboard
+
+DB_NAME = 'mongo'
 
 
 @permission_classes((permissions.AllowAny,))
 class DashboardIframes(APIView):
 
+    def get_session_id(self):
+        return login_metabase()
 
-    def post(self, request, format=None):
-        # name = request.data['name']
-        # display_type = request.data['display_type']
-        # fields = request.data['fields']
-        data_base_id = 2 #usando o mongo como database do metabase
-        table_id = 12 #usando a collection_Exemplo.csv
+    def get_dashboard(self, pk):
+        dashboard = Dashboard.objects.get(pk=pk)
 
-        # r = requests.post("http://metabase:3000/api/session",
-        #                   headers={"Content-Type": "application/json"},
-        #                   json={"username": "joaok8@gmail.com",
-        #                         "password": "jpgomes250595"})
+        return dashboard
 
-        # print(r.json())
-        header = {'Cookie': 'metabase.SESSION_ID=6f199c99-88a8-49bf-b7c8-baaae72ac652'}
-        # .format(r.json()['id']) 
-        print (header)
+    def create_card_metabase(self, data, header):
+        url_card = MB_URL + '/card'
+        card = requests.post(url_card, json=data,
+                             headers=header)
+        if card.status_code == 200:
+            return card
+        else:
+            raise Exception("Could not create the card on metabase")
 
+    def make_card_public(self, id, header):
+        url_public_card = MB_URL + '/card/{}/public_link'.format(id)
 
+        public_card = requests.post(url_public_card, headers=header)
 
+        if public_card.status_code == 200:
+            return public_card
+        else:
+            raise Exception("Could not make the card public on metabase")
+
+    def post(self, request, pk, format=None):
+        session_id = self.get_session_id()
+        database_id = get_database_id(DB_NAME)
+        dashboard = self.get_dashboard(pk)
+        table_name = "collection_{}".format(dashboard.project.id)
+        table_id = get_table_id(database_id, table_name)
+
+        header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
         data = {
-            "name": "card1",
-            "display": "table",
+            "name": request.data['name'],
+            "display": request.data['display'],
             "dataset_query": {
-                "database": data_base_id,
+                "database": database_id,
                 "type": "query",
                 "query": {
-                    "source_table": table_id,                                                    
+                    "source_table": table_id,
                 }
             },
-            "visualization_settings": {}                 
+            "visualization_settings": {}
 
         }
-        card = requests.post("http://metabase:3000/api/card",
-                            json=data,
-                            headers=header
-                            )
-        print(card.json())
 
-        public_card = requests.post("http://metabase:3000/api/card/{}/public_link".format(card.json()['id']),
-                                    headers=header)
-        print(public_card.json())
-        # .format(card.json()['id']), json={})        
-        # public_card = requests.post("http://metabase:3000/api/card/{}/public_link".format(card.json()['id']), json={})        
+        iframe_data = {
+                "name": request.data['name'],
+                "user": request.user.id,
+                "dashboard": dashboard.id,
+        }
 
-        # print(public_card.json())
+        serializer = IframeSerializerCreate(data=iframe_data)
 
-        return Response(status=status.HTTP_200_OK)
+        if serializer.is_valid():
+            card = self.create_card_metabase(data, header)
+            public_card = self.make_card_public(card.json()['id'], header)
+            iframe = serializer.save()
+            iframe.uuid = public_card.json()['uuid']
+            iframe.save()
+            return Response(status=status.HTTP_200_OK)
+        else:
+            return Response(status=status.HTTP_400_BAD_REQUEST,
+                            data=serializer.errors)
+
+    def get(self, request, pk, format=None):
+        iframes = Iframe.objects.filter(dashboard_id=pk)
+        serializer = IframeSerializerList(iframes, many=True)
+
+        return Response(status=status.HTTP_200_OK, data=serializer.data)
