@@ -35,11 +35,20 @@ class FileUploadView(APIView):
                         dest.write(chunk)
 
                     dataframe = pandas.read_csv(file_path, header=0)
+                    # true_values=headersList['true'],
+                    # false_values=headersList['false'])
 
                     for header in headersList:
                         if header['selected'] is False:
                             dataframe = dataframe.drop(header['name'], axis=1)
                         else:
+                            if header['type'] == 'bool':
+                                dataframe[header['name']] =\
+                                    dataframe[header['name']].\
+                                    replace(header['true'], True)
+                                dataframe[header['name']] =\
+                                    dataframe[header['name']].\
+                                    replace(header['false'], False)
                             try:
                                 dataframe[header['name']] =\
                                     dataframe[header['name']].\
