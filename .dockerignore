@@ -1,3 +1,4 @@
 *nginx*
 .env
 *metabase*
+*__pycache__*
