@@ -42,13 +42,15 @@ class FileUploadView(APIView):
                         if header['selected'] is False:
                             dataframe = dataframe.drop(header['name'], axis=1)
                         else:
-                            # if header['type'] == 'bool':
-                            #     dataframe[header['name']] =\
-                            #         dataframe[header['name']].\
-                            #         replace(header['true'], True)
-                            #     dataframe[header['name']] =\
-                            #         dataframe[header['name']].\
-                            #         replace(header['false'], False)
+                            if header['type'] == 'bool':
+                                dataframe[header['name']] =\
+                                    dataframe[header['name']].\
+                                    replace(to_replace=header['true'],
+                                            value=True)
+                                dataframe[header['name']] =\
+                                    dataframe[header['name']].\
+                                    replace(to_replace=header['false'],
+                                            value=False)
                             try:
                                 dataframe[header['name']] =\
                                     dataframe[header['name']].\
@@ -57,14 +59,12 @@ class FileUploadView(APIView):
                                 return Response(serializer.errors,
                                                 status=status.
                                                 HTTP_400_BAD_REQUEST)
-                            print(dataframe.dtypes)
                             if header['transform'] == 'upper':
                                 dataframe[header['name']] =\
                                     dataframe[header['name']].str.upper()
                             elif header['transform'] == 'lower':
                                 dataframe[header['name']] =\
                                     dataframe[header['name']].str.lower()
-                            print(dataframe)
 
                 json_data = json.loads(dataframe.to_json(orient="records"))
 
