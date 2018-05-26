@@ -58,11 +58,41 @@ def initial_setup():
         print("Set up of superuser {} finished".format(FIRST_NAME))
     else:
         sys.exit("Setup failed")
-    return 0
+    return response.json()['id']
+
+
+def connect_mongo(session_id):
+    """ Set mongo as usable db for metabase """
+
+    url = METABASE_URL + '/database'
+    session_cookie = "metabase.SESSION_ID={}".format(session_id)
+    header = {'Cookie': session_cookie}
+
+    data = {
+        "name": "mongo",
+        "engine": "mongo",
+
+        "details": {
+            "dbname": "main_db",
+            "host": "mongo",
+            "port": 27017
+        }
+    }
+
+    print("Adding mongo database...")
+
+    response = requests.post(url, json=data, headers=header)
+
+    if response.status_code == 200:
+        print("Mongo database added!!")
+        return response.json()['id']
+    else:
+        raise ConnectionError(response.json())
 
 
 if __name__ == "__main__":
     print("Waiting metabase start")
     time.sleep(60)
 
-    initial_setup()
+    session_id = initial_setup()
+    connect_mongo(session_id)
