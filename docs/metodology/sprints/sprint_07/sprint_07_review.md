@@ -143,7 +143,7 @@
 
 ## Retrospectiva  
 
-<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/retro_sp06.jpg" class="responsive-img">
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint07/retro_sp07.jpg" class="responsive-img">
 
 ## Resultado dos focos de melhoria 
 

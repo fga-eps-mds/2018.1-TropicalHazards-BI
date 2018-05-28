@@ -23,4 +23,5 @@ django-environ
 pymongo
 pandas
 flask
-
+raven
+requests

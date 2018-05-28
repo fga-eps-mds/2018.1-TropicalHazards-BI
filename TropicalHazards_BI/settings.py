@@ -11,26 +11,29 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import environ
+import raven
+
 # datetime will be used to set token expiration time
 import datetime
 
-from mongoengine import connect
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_DIR = BASE_DIR + '/.env'
 
+env = environ.Env()
+env.read_env(ENV_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr'
+SECRET_KEY = env("SECRET_KEY_DJANGO", default='o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['localhost','0.0.0.0','159.65.190.38']
-
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '159.65.190.38', 'back']
 
 # Application definition
 
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'raven.contrib.django.raven_compat',
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
@@ -49,7 +53,8 @@ INSTALLED_APPS = [
     'dashboards',
     'tags',
     'django_filters',
-    'import_data'
+    'import_data',
+    'metabase'
 ]
 
 MIDDLEWARE = [
@@ -65,12 +70,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'TropicalHazards_BI.urls'
 
-# TODO: Add host of homolog and production server
-CORS_ORIGIN_WHITELIST = (
-    'localhost:8080',
-    '0.0.0.0:8000',
-    '159.65.190.38:8000',
-)
+if DEBUG is False:
+    whitelist = (env("PROD_FRONT_HOST"),)
+else:
+    whitelist = ('localhost:8080', 'localhost:8000', '0.0.0.0:8080')
+
+CORS_ORIGIN_WHITELIST = whitelist
 
 TEMPLATES = [
     {
@@ -95,16 +100,9 @@ WSGI_APPLICATION = 'TropicalHazards_BI.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-  'default': {
-      'ENGINE': 'django.db.backends.postgresql',
-      'NAME': 'postgres',
-      'USER': 'postgres',
-      'HOST': 'db',
-      'PORT': 5432,
-  }
-}
+  'default': env.db()
 
-connect('tropical-hazards', host='mongo', port=27017)
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -170,3 +168,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     )
 }
+
+if(DEBUG is False):
+    RAVEN_CONFIG = {
+        'dsn': env('RAVEN_DSN_URL'),
+    }
