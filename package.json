@@ -1,4 +1,5 @@
 {
+  "name": "th_bi-api",
   "scripts": {
     "release": "release-it minor"
   },
