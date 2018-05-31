@@ -10,6 +10,7 @@ from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from rest_framework import status
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.exceptions import ValidationError
 
 from import_data.serializers import ImportDataSerializer
 
@@ -47,6 +48,17 @@ class FileUploadView(APIView):
             result = False
         return result
 
+    def check_file_type(self, file):
+        if file.name.endswith('.csv'):
+            return 'csv'
+        else:
+            raise ValidationError("Type of file not supported")
+
+    def create_data_frame(self, file_path, file_type, **kwargs):
+        if file_type is 'csv':
+            sep = kwargs.get('sep', ',')
+            return pandas.read_csv(file_path, header=0, sep=sep)
+
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = int(request.data['project'])
@@ -54,51 +66,54 @@ class FileUploadView(APIView):
         headersList = json.loads(request.data['headers'])
 
         serializer = ImportDataSerializer(data={'project': project_id})
+
         if serializer.is_valid():
-            if not file_obj.name.endswith('.csv'):
-                return Response(status=status.HTTP_400_BAD_REQUEST)
-            else:
-                file_path = '/code/tmp/' + file_obj.name
-                self.save_file_tmp(file_obj, file_path)
+            file_type = self.check_file_type(file_obj)
 
-                dataframe = pandas.read_csv(file_path, header=0)
+            file_path = '/code/tmp/' + file_obj.name
+            self.save_file_tmp(file_obj, file_path)
 
-                for header in headersList:
-                    if header['selected'] is False:
-                        dataframe = dataframe.drop(header['name'], axis=1)
-                    else:
-                        if header['type'] == 'bool':
-                            dataframe[header['name']] =\
-                                dataframe[header['name']].\
-                                replace(to_replace=header['true'],
-                                        value=True)
-                            dataframe[header['name']] =\
-                                dataframe[header['name']].\
-                                replace(to_replace=header['false'],
-                                        value=False)
-                        try:
-                            dataframe[header['name']] =\
-                                dataframe[header['name']].\
-                                astype(header['type'])
-                        except ValueError:
-                            return Response(serializer.errors,
-                                            status=status.
-                                            HTTP_400_BAD_REQUEST)
-                        if header['transform'] == 'upper':
-                            dataframe[header['name']] =\
-                                dataframe[header['name']].str.upper()
-                        elif header['transform'] == 'lower':
-                            dataframe[header['name']] =\
-                                dataframe[header['name']].str.lower()
+            dataframe = self.create_data_frame(file_path, file_type)
 
-                json_data = json.loads(dataframe.to_json(orient="records"))
-                self.save_on_mongo(json_data, project_id)
+            for header in headersList:
+                if header['selected'] is False:
+                    dataframe = dataframe.drop(header['name'], axis=1)
+                else:
+                    if header['type'] == 'bool':
+                        dataframe[header['name']] =\
+                            dataframe[header['name']].\
+                            replace(to_replace=header['true'],
+                                    value=True)
+                        dataframe[header['name']] =\
+                            dataframe[header['name']].\
+                            replace(to_replace=header['false'],
+                                    value=False)
+                    try:
+                        dataframe[header['name']] =\
+                            dataframe[header['name']].\
+                            astype(header['type'])
+                    except ValueError:
+                        return Response(serializer.errors,
+                                        status=status.
+                                        HTTP_400_BAD_REQUEST)
+                    if header['transform'] == 'upper':
+                        dataframe[header['name']] =\
+                            dataframe[header['name']].str.upper()
+                    elif header['transform'] == 'lower':
+                        dataframe[header['name']] =\
+                            dataframe[header['name']].str.lower()
 
+            json_data = json.loads(dataframe.to_json(orient="records"))
+
+            if self.save_on_mongo(json_data, project_id):
                 serializer.save()
                 os.remove(file_path)
 
                 return Response(serializer.data,
                                 status=status.HTTP_201_CREATED)
+            else:
+                return Response("Data format error",
+                                status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
