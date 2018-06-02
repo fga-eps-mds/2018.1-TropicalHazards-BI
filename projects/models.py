@@ -12,3 +12,4 @@ class Project(models.Model):
     user = models.ForeignKey(User, limit_choices_to={'is_staff': True},
                              on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, blank=True)
+    table_id = models.IntegerField(blank=True, null=True)
