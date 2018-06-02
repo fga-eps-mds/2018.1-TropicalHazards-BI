@@ -1,5 +1,5 @@
 import requests
-
+import time
 from TropicalHazards_BI import settings
 from metabase.models import MetabaseSession
 
@@ -58,3 +58,15 @@ def get_table_id(database_id, table_name):
                     return table['id']
 
     return None
+
+
+def sync_schema(database_id):
+    url = MB_URL + '/database/{}/sync_schema'.format(database_id)
+
+    session_id = login_metabase()
+    header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
+    response = requests.post(url, headers=header)
+    if(response.status_code == 200):
+        time.sleep(2)
+        return True
+    return False

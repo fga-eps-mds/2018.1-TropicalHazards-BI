@@ -1,6 +1,7 @@
 import pandas
 import pymongo
 import json
+from metabase import utils
 import os
 from django.core.files.storage import default_storage
 from rest_framework.views import APIView
@@ -72,6 +73,8 @@ class FileUploadView(APIView):
                 mongo_db = mongo_client['main_db']
                 collection = mongo_db['collection_' + project_id]
                 collection.insert(json_data)
+                db_id = utils.get_database_id('mongo')
+                utils.sync_schema(db_id)
                 serializer.save()
                 os.remove(file_path)
 

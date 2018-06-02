@@ -1,4 +1,5 @@
-
+import pymongo
+from metabase import utils
 from .models import Project
 from projects.serializers import ProjectSerializer
 from django.http import Http404
@@ -37,9 +38,21 @@ class ProjectList(generics.ListAPIView):
     def post(self, request, format=None):
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data,
-                            status=status.HTTP_201_CREATED)
+            project = serializer.save()
+            mongo_client = pymongo.MongoClient('mongo', 27017)
+            mongo_db = mongo_client['main_db']
+            mongo_db.create_collection('collection_' + str(project.id))
+            db_id = utils.get_database_id('mongo')
+            if(utils.sync_schema(db_id)):
+                table_id = utils.get_table_id(db_id, 'collection_'
+                                              + str(project.id))
+                project.table_id = table_id
+                project.save()
+                return Response(serializer.data,
+                                status=status.HTTP_201_CREATED)
+            else:
+                return Response(serializer.errors,
+                                status=status.HTTP_503_SERVICE_UNAVAILABLE)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
