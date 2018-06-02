@@ -126,7 +126,7 @@
 
 ## Retrospectiva  
 
-<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint09/retro_sp10.jpg" class="responsive-img">
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint10/retro_sp10.jpg" class="responsive-img">
 
 ## Indicadores
 ### Produtividade
