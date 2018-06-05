@@ -90,12 +90,12 @@ Gerar metadados
       <th>Dupla</th>
   </tr>
   <tr>
-      <td>Bargas, JP e Max</td>
+      <td>Yoshida e Baea</td>
   </tr>
   <tr>
       <th>Trio</th>
   </tr>
   <tr>
-      <td> Yoshida e Baea</td>
+      <td> Bargas, JP e Max </td>
   </tr>
 </table>
