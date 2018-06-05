@@ -167,3 +167,40 @@ def test_saved_data_throught_post_import_data(factory, file_csv, url,
     assert ImportData.objects.all().count() is 1
     assert collection in mongo_db.collection_names()
     assert mongo_db[collection].find_one({'Col1': 1})
+
+
+def test_return_400_for_wrong_type_file(factory, url, project, mongo_db, user,
+                                        valid_table_headers):
+
+    """ Test return of import data when upload a wrong type of file """
+
+    file = SimpleUploadedFile('test.png', b'conent', content_type='image/png')
+    data = {"file": file, "project": project.id,
+            "headers": valid_table_headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+
+    fileupload = views.FileUploadView()
+    response = fileupload.as_view(mongo_db=mongo_db)(request)
+
+    assert response.status_code == 400
+
+
+def test_check_file_type_right_type_import_data(file_csv):
+    """ Test check_file_type of FileUploadView for the right type of file """
+
+    fileupload = views.FileUploadView()
+    file_type = fileupload.check_file_type(file_csv)
+
+    assert file_type is 'csv'
+
+
+def test_check_file_type_wrong_type_import_data():
+    """ Test check_file_type of FileUploadView for the wrong type of file """
+
+    file = SimpleUploadedFile('test.png', b'conent', content_type='image/png')
+    fileupload = views.FileUploadView()
+    with pytest.raises(ValidationError):
+        fileupload.check_file_type(file)
+
