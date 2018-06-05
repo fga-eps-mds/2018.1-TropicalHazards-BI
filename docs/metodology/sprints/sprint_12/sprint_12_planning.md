@@ -1,7 +1,7 @@
 # Planejamento da [Sprint 12](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/14)
 
 ## Foco
-Gerar metadados
+Trabalhar na interface das funcionalidades implementadas na sprint anterior, consertar problemas de DevOps e Trabalhar na implementação e apresentação dos indicadores de dados.
 
 ## Datas
 <b>Data de início:</b> 26/05/2018
@@ -64,7 +64,7 @@ Gerar metadados
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/102">102</a>
       </td>
-      <td>Interface para apresentar Iframes no Dashboardx</td>
+      <td>Interface para apresentar Iframes no Dashboard</td>
       <td><b>3</b></td>
       <td>Nova</td>      
     </tr>
