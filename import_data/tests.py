@@ -118,3 +118,52 @@ def test_result_sucess_for_save_mongo(mongo_db):
     assert 'collection_1' in mongo_db.collection_names()
     assert mongo_db['collection_1'].find_one({'data': 1})
 
+
+def test_post_import_data_user_not_logged(factory, url, mongo_db):
+    """ Test post using FileUploadView with no user logged in """
+
+    request = factory.post(url, data={}, format='multipart')
+
+    fileupload = views.FileUploadView()
+    response = fileupload.as_view(mongo_db=mongo_db)(request)
+
+    assert response.status_code == 401
+
+
+def test_post_import_data_user_logged_in(factory, file_csv, url,
+                                         project, mongo_db, user,
+                                         valid_table_headers):
+    """ Test post using FileUploadView with user logged in """
+
+    data = {"file": file_csv, "project": project.id,
+            "headers": valid_table_headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+
+    fileupload = views.FileUploadView()
+    fileupload.mongo_db = mongo_db
+    response = fileupload.as_view()(request)
+
+    assert response.status_code == 201
+
+
+def test_saved_data_throught_post_import_data(factory, file_csv, url,
+                                              project, mongo_db, user,
+                                              valid_table_headers):
+    """ Test saved data throught post using FileUploadView """
+
+    data = {"file": file_csv, "project": project.id,
+            "headers": valid_table_headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+
+    fileupload = views.FileUploadView()
+    fileupload.as_view(mongo_db=mongo_db)(request)
+
+    collection = "collection_{}".format(project.id)
+
+    assert ImportData.objects.all().count() is 1
+    assert collection in mongo_db.collection_names()
+    assert mongo_db[collection].find_one({'Col1': 1})
