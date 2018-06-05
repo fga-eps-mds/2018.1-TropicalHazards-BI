@@ -248,3 +248,94 @@ def test_dropped_columns_import_data(factory, file_csv, url,
     assert collection in mongo_db.collection_names()
     assert not mongo_db[collection].find_one({'Col3': 3})
 
+
+def test_bool_column_treatment(factory, url, project, mongo_db, user):
+    """ Test conversion of bool columns when saved
+    throught post of FileUploadView """
+
+    file = SimpleUploadedFile('test.csv', b"Col1,Col2,Col3\n1,2,3\n0,3,4",
+                              content_type='text/csv')
+
+    headers = [
+            {"name": "Col1", "type": "bool", "selected": True,
+                "transform": "", "true": 1, "false": 0},
+            {"name": "Col2", "type": "int", "selected": True,
+                "transform": ""},
+            {"name": "Col3", "type": "int", "selected": False,
+                "transform": ""}
+            ]
+    headers = json.dumps(headers)
+
+    data = {"file": file, "project": project.id,
+            "headers": headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+    fileupload = views.FileUploadView()
+    fileupload.as_view(mongo_db=mongo_db)(request)
+
+    collection = "collection_{}".format(project.id)
+
+    assert ImportData.objects.all().count() is 1
+    assert collection in mongo_db.collection_names()
+    assert mongo_db[collection].find_one({'Col1': True})
+    assert mongo_db[collection].find_one({'Col1': False})
+
+
+def test_upper_lower_case_treatment(factory, url, project, mongo_db, user):
+    """ Test conversion of columns to upper or lower case when saved
+    throught post of FileUploadView """
+
+    file = SimpleUploadedFile('test.csv',
+                              b"Col1,Col2\nLOWER,upper\nLOWER,upper",
+                              content_type='text/csv')
+
+    headers = [
+            {"name": "Col1", "type": "str", "selected": True,
+                "transform": "lower"},
+            {"name": "Col2", "type": "str", "selected": True,
+                "transform": "upper"}
+            ]
+    headers = json.dumps(headers)
+
+    data = {"file": file, "project": project.id,
+            "headers": headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+    fileupload = views.FileUploadView()
+    fileupload.as_view(mongo_db=mongo_db)(request)
+
+    collection = "collection_{}".format(project.id)
+    assert ImportData.objects.all().count() is 1
+    assert collection in mongo_db.collection_names()
+    assert mongo_db[collection].find_one({'Col1': 'lower'})
+    assert mongo_db[collection].find_one({'Col2': 'UPPER'})
+
+
+def test_type_conversion_on_columns(factory, url, project, mongo_db,
+                                    user, file_csv):
+    """ Test type conversion of columns when saved through
+    post on FileUploadView"""
+
+    headers = [
+            {"name": "Col1", "type": "int64", "selected": True,
+                "transform": ""},
+            {"name": "Col2", "type": "int64", "selected": True,
+                "transform": ""},
+            ]
+    headers = json.dumps(headers)
+
+    data = {"file": file_csv, "project": project.id,
+            "headers": headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+    fileupload = views.FileUploadView()
+    fileupload.as_view(mongo_db=mongo_db)(request)
+
+    collection = "collection_{}".format(project.id)
+    assert ImportData.objects.all().count() is 1
+    assert collection in mongo_db.collection_names()
+    assert isinstance(mongo_db[collection].find_one()['Col1'], int)
+    assert isinstance(mongo_db[collection].find_one()['Col2'], int)
