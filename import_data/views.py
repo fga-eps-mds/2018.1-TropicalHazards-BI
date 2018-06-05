@@ -59,6 +59,29 @@ class FileUploadView(APIView):
             sep = kwargs.get('sep', ',')
             return pandas.read_csv(file_path, header=0, sep=sep)
 
+    def treat_bool_column(self, dataframe, header):
+        dataframe[header['name']].replace(to_replace=header['true'],
+                                          value=True, inplace=True)
+        dataframe[header['name']].replace(to_replace=header['false'],
+                                          value=False, inplace=True)
+
+    def treat_upper_lower_case(self, dataframe, header):
+        if header['transform'] == 'upper':
+            dataframe[header['name']] =\
+                dataframe[header['name']].str.upper()
+        elif header['transform'] == 'lower':
+            dataframe[header['name']] =\
+                dataframe[header['name']].str.lower()
+        return dataframe
+
+    def type_conversion(self, dataframe, header):
+        try:
+            dataframe[header['name']] = dataframe[header['name']].\
+                astype(header['type'])
+        except ValueError:
+            raise ValidationError("Type conversion failed")
+        return dataframe
+
     def post(self, request, format=None):
         file_obj = request.data['file']
         project_id = int(request.data['project'])
@@ -80,28 +103,10 @@ class FileUploadView(APIView):
                     dataframe = dataframe.drop(header['name'], axis=1)
                 else:
                     if header['type'] == 'bool':
-                        dataframe[header['name']] =\
-                            dataframe[header['name']].\
-                            replace(to_replace=header['true'],
-                                    value=True)
-                        dataframe[header['name']] =\
-                            dataframe[header['name']].\
-                            replace(to_replace=header['false'],
-                                    value=False)
-                    try:
-                        dataframe[header['name']] =\
-                            dataframe[header['name']].\
-                            astype(header['type'])
-                    except ValueError:
-                        return Response(serializer.errors,
-                                        status=status.
-                                        HTTP_400_BAD_REQUEST)
-                    if header['transform'] == 'upper':
-                        dataframe[header['name']] =\
-                            dataframe[header['name']].str.upper()
-                    elif header['transform'] == 'lower':
-                        dataframe[header['name']] =\
-                            dataframe[header['name']].str.lower()
+                        self.treat_bool_column(dataframe, header)
+
+                    dataframe = self.type_conversion(dataframe, header)
+                    dataframe = self.treat_upper_lower_case(dataframe, header)
 
             json_data = json.loads(dataframe.to_json(orient="records"))
 
