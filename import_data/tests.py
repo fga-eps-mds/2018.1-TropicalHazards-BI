@@ -204,3 +204,47 @@ def test_check_file_type_wrong_type_import_data():
     with pytest.raises(ValidationError):
         fileupload.check_file_type(file)
 
+
+def test_dataframe_import_data(file_csv, path_csv):
+    """ Test create_data_frame of FileUploadView """
+
+    fileupload = views.FileUploadView()
+    file_type = fileupload.check_file_type(file_csv)
+    fileupload.save_file_tmp(file_csv, path_csv)
+    dataframe = fileupload.create_data_frame(path_csv, file_type)
+
+    assert not dataframe.empty
+    assert dataframe.Col1[0] == 1
+    assert dataframe.Col2[0] == 2
+    assert dataframe.Col3[0] == 3
+
+
+def test_dropped_columns_import_data(factory, file_csv, url,
+                                     project, mongo_db, user):
+    """ Test columns dropped when post on FileUploadView """
+
+    headers = [
+            {"name": "Col1", "type": "int", "selected": True,
+                "transform": ""},
+            {"name": "Col2", "type": "int", "selected": True,
+                "transform": ""},
+            {"name": "Col3", "type": "int", "selected": False,
+                "transform": ""}
+            ]
+    headers = json.dumps(headers)
+
+    data = {"file": file_csv, "project": project.id,
+            "headers": headers}
+
+    request = factory.post(url, data=data, format='multipart')
+    force_authenticate(request, user=user)
+
+    fileupload = views.FileUploadView()
+    fileupload.as_view(mongo_db=mongo_db)(request)
+
+    collection = "collection_{}".format(project.id)
+
+    assert ImportData.objects.all().count() is 1
+    assert collection in mongo_db.collection_names()
+    assert not mongo_db[collection].find_one({'Col3': 3})
+
