@@ -68,7 +68,6 @@
       <td><b>2</b></td>
       <td><strong style="color:green">Concluída</strong> 😎 </td>      
     </tr>
-
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/69">69</a>
