@@ -87,7 +87,7 @@
 <a name="proposito"></a>
 ## 1.1	Propósito
 
-<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>Webapp</em> Tropical Hazards BI deixando claro o seu escopo, funcionalidade e objetivo da aplicação.</p>
+<p align = "justify">O documento de visão tem como objetivo demonstrar uma visão completa sobre o <em>Webapp</em> Observ deixando claro o seu escopo, funcionalidade e objetivo da aplicação.</p>
 
 <a name="escopo"></a>
 ## 1.2	Escopo
@@ -218,7 +218,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 
    <tr>
-	   	<td><strong><em>O Tropical Hazards</em></strong> </td>
+	   	<td><strong><em>O Observ</em></strong> </td>
 	   	<td>É um Web App.</td>
    </tr>
 
@@ -295,7 +295,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 
    <tr>
-	   	<td> <strong>Pesquisadores/Interessados</strong> </td>
+	   	<td> <strong>Pesquisadores/Interessados em análise e estatística</strong> </td>
 	   	<td> Pesquisadores relacionados a área de doenças tropicais </td>
    </tr>
 
