@@ -8,6 +8,9 @@ from rest_framework import status
 
 from metabase.utils import login_metabase
 from metabase.utils import get_database_id
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework.authentication import SessionAuthentication
+
 from metabase.utils import get_table_id
 from metabase.utils import MB_URL
 from metabase.serializers import IframeSerializerCreate
@@ -20,6 +23,9 @@ DB_NAME = 'mongo'
 
 @permission_classes((permissions.AllowAny,))
 class DashboardIframes(APIView):
+
+    authentication_classes = (JSONWebTokenAuthentication,
+                             SessionAuthentication)
 
     def get_session_id(self):
         return login_metabase()
@@ -73,10 +79,11 @@ class DashboardIframes(APIView):
         iframe_data = {
                 "name": request.data['name'],
                 "user": request.user.id,
-                "dashboard": dashboard.id,
+                "dashboard": dashboard.id,                
         }
 
-        serializer = IframeSerializerCreate(data=iframe_data)
+        serializer = IframeSerializerCreate(data=iframe_data)        
+
 
         if serializer.is_valid():
             card = self.create_card_metabase(data, header)
@@ -84,7 +91,7 @@ class DashboardIframes(APIView):
             iframe = serializer.save()
             iframe.uuid = public_card.json()['uuid']
             iframe.save()
-            return Response(status=status.HTTP_200_OK)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST,
                             data=serializer.errors)
