@@ -63,7 +63,7 @@ class DashboardIframes(APIView):
 
     def post(self, request, pk, format=None):
         session_id = self.get_session_id()
-        database_id = get_database_id(DB_NAME)
+        database_id = 2
         dashboard = self.get_dashboard(pk)
         table_name = "collection_{}".format(dashboard.project.id)
         table_id = get_table_id(database_id, table_name)
@@ -95,6 +95,7 @@ class DashboardIframes(APIView):
         serializer = IframeSerializerCreate(data=iframe_data)
 
         if serializer.is_valid():
+            print(data)
             card = self.create_card_metabase(data, header)
             public_card = self.make_card_public(card.json()['id'], header)
             uuid = public_card.json()['uuid']
@@ -104,8 +105,9 @@ class DashboardIframes(APIView):
                 "dashboard": dashboard.id,
                 "uuid": uuid,
             }
-            serializer = IframeSerializerCreate(data=iframe_data)            
-            serializer.save()
+            serializer = IframeSerializerCreate(data=iframe_data)
+            if serializer.is_valid():            
+                serializer.save()
             return Response(status=status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST,

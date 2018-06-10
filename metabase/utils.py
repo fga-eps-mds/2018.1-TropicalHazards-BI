@@ -1,4 +1,5 @@
 import requests
+import json
 
 from TropicalHazards_BI import settings
 from metabase.models import MetabaseSession
@@ -11,6 +12,7 @@ MB_URL = 'http://metabase:3000/api'
 
 def login_metabase():
     url = MB_URL + '/session'
+    print(MB_USERNAME + MB_PASSWORD)
     data = {'username': MB_USERNAME, 'password': MB_PASSWORD}
     session = MetabaseSession.objects.first()
 
@@ -26,6 +28,7 @@ def login_metabase():
             raise Exception('Cannot login on metabase - ' + login.json())
 
     return session_id
+
 
 
 def get_database_id(database_name: str):
