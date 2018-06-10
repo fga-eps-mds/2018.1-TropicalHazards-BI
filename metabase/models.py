@@ -10,7 +10,7 @@ class Iframe(models.Model):
     user = models.ForeignKey(User, limit_choices_to={'is_staff': True},
                              on_delete=models.CASCADE)
     dashboard = models.ForeignKey(Dashboard, on_delete=models.CASCADE)
-    uuid = models.CharField(max_length=40)
+    uuid = models.CharField(max_length=40, blank=True)
 
 
 class MetabaseSession(models.Model):
