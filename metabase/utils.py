@@ -1,5 +1,4 @@
 import requests
-import json
 
 from TropicalHazards_BI import settings
 from metabase.models import MetabaseSession
@@ -30,8 +29,7 @@ def login_metabase():
     return session_id
 
 
-
-def get_database_id(database_name: str):
+def get_database_id(database_name):
     url = MB_URL + '/database'
     session_id = login_metabase()
     header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
