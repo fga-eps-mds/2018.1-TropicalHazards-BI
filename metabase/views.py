@@ -5,7 +5,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from rest_framework import status
-
 from metabase.utils import login_metabase
 from metabase.utils import get_database_id
 from metabase.utils import get_table_id
@@ -14,12 +13,16 @@ from metabase.serializers import IframeSerializerCreate
 from metabase.serializers import IframeSerializerList
 from metabase.models import Iframe
 from dashboards.models import Dashboard
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 DB_NAME = 'mongo'
 
 
 @permission_classes((permissions.AllowAny,))
 class DashboardIframes(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
 
     def get_session_id(self):
         return login_metabase()

@@ -9,7 +9,7 @@ class ProjectSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Project
-        fields = ('id', 'user', 'name', 'description', 'tags')
+        fields = ('id', 'user', 'name', 'description', 'tags', 'table_id')
 
     def create(self, validated_data):
         tag_data = validated_data.pop('tags')
