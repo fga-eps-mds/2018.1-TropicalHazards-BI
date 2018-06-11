@@ -33,7 +33,7 @@ SECRET_KEY = env("SECRET_KEY_DJANGO", default='o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', '159.65.190.38', 'back']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '159.203.102.150', 'back']
 
 # Application definition
 

@@ -6,6 +6,16 @@ import json
 pytestmark = pytest.mark.django_db
 
 
+@pytest.fixture
+def create_user(client):
+    user = User.objects.create(username='username', email='email')
+    user.set_password('password')
+    user.save()
+    client.login(username='username', password='password')
+    url = reverse('users:user-detail', kwargs={'pk': user.id})
+    return user, url
+
+
 def test_get_user_return_200(client):
     url = reverse('users:users')
     response = client.get(url)
@@ -55,11 +65,8 @@ def test_post_user_persist_db(client):
     assert users.count() == 1
 
 
-def test_get_user_detail_return_200(client):
-
-    user = User.objects.create(username='username',
-                               email='email', password='password')
-    url = reverse('users:user-detail', kwargs={'pk': user.id})
+def test_get_user_detail_return_200(client, create_user):
+    user, url = create_user
     response = client.get(url)
 
     assert response.status_code == 200
@@ -73,48 +80,33 @@ def test_get_user_detail_return_404(client):
     assert response.status_code == 404
 
 
-def test_put_user_detail_return_200(client):
-    user = User.objects.create(username='username', email='email')
-    user.set_password('password')
-    user.save()
-    url = reverse('users:user-detail', kwargs={'pk': user.id})
+def test_put_user_detail_return_200(client, create_user):
+    user, url = create_user
     data = {'username': "username", 'email': "email@email.com",
             'password': "password"}
     json_data = json.dumps(data)
-    client.login(username='username', password='password')
     response = client.put(url, data=json_data, content_type='application/json')
     assert response.status_code == 200
 
 
-def test_put_user_detail_return_400(client):
-    user = User.objects.create(username='username', email='email')
-    user.set_password('password')
-    user.save()
-    url = reverse('users:user-detail', kwargs={'pk': user.id})
+def test_put_user_detail_return_400(client, create_user):
+    user, url = create_user
     data = {'username': "", 'email': "email_edit@email.com",
             'password': "password_edit"}
     json_data = json.dumps(data)
-    client.login(username='username', password='password')
     response = client.put(url, data=json_data, content_type='application/json')
 
     assert response.status_code == 400
 
 
-def test_delete_user_detail_return_204(client):
-    user = User.objects.create(username='username', email='email')
-    user.set_password('password')
-    user.save()
-    url = reverse('users:user-detail', kwargs={'pk': user.id})
-    client.login(username='username', password='password')
+def test_delete_user_detail_return_204(client, create_user):
+    user, url = create_user
     response = client.delete(url, content_type='application/json')
 
     assert response.status_code == 204
 
 
-def test_login_user_return_200(client):
-    user = User.objects.create(username='username', email='email')
-    user.set_password('password')
-    user.save()
+def test_login_user_return_200(client, create_user):
     url = reverse('rest_login')
     data = {'username': "username",
             'password': "password"}
@@ -124,9 +116,6 @@ def test_login_user_return_200(client):
 
 
 def test_login_user_return_400(client):
-    user = User.objects.create(username='username', email='email')
-    user.set_password('password')
-    user.save()
     url = reverse('rest_login')
     data = {'username': "wronguser",
             'password': "wrongpass"}

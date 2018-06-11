@@ -25,3 +25,4 @@ pandas
 flask
 raven
 requests
+mongomock
