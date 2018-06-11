@@ -1,7 +1,6 @@
 import pandas
 import pymongo
 import json
-from metabase import utils
 import os
 
 from rest_framework.views import APIView
@@ -14,13 +13,7 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.exceptions import ValidationError
 
 from import_data.serializers import ImportDataSerializer
-
-
-def connect_mongo(engine=pymongo, host='mongo', port=27017):
-    mongo_client = engine.MongoClient(host, port)
-    mongo_db = mongo_client['main_db']
-
-    return mongo_db
+from TropicalHazards_BI.utils import connect_mongo
 
 
 @permission_classes((permissions.IsAuthenticatedOrReadOnly,))

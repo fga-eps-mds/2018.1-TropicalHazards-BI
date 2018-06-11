@@ -1,5 +1,6 @@
 import requests
 import time
+
 from TropicalHazards_BI import settings
 from metabase.models import MetabaseSession
 
@@ -23,7 +24,8 @@ def login_metabase():
                         create(session_id=login.json()['id'])
             session_id = session.session_id
         else:
-            raise Exception('Cannot login on metabase - ' + login.json())
+            raise Exception('Cannot login on metabase - ' +
+                            login.json()['errors']['username'])
 
     return session_id
 
