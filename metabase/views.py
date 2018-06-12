@@ -1,5 +1,4 @@
 import requests
-import json
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
@@ -19,18 +18,19 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 DB_NAME = 'mongo'
 
 
+def get_session_id():
+    return login_metabase()
+
+
+def get_dashboard(pk):
+    dashboard = Dashboard.objects.get(pk=pk)
+    return dashboard
+
+
 @permission_classes((permissions.AllowAny,))
 class DashboardIframes(APIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
-
-    def get_session_id(self):
-        return login_metabase()
-
-    def get_dashboard(self, pk):
-        dashboard = Dashboard.objects.get(pk=pk)    
-
-        return dashboard
 
     def create_card_metabase(self, data, header):
         url_card = MB_URL + '/card'
@@ -52,9 +52,9 @@ class DashboardIframes(APIView):
             raise Exception("Could not make the card public on metabase")
 
     def post(self, request, pk, format=None):
-        session_id = self.get_session_id()
+        session_id = get_session_id()
         database_id = get_database_id(DB_NAME)
-        dashboard = self.get_dashboard(pk)
+        dashboard = get_dashboard(pk)
         table_name = "collection_{}".format(dashboard.project.id)
         table_id = get_table_id(database_id, table_name)
 
@@ -104,18 +104,10 @@ class DashboardFields(APIView):
     authentication_classes = (JSONWebTokenAuthentication,
                               SessionAuthentication)
 
-    def get_session_id(self):
-        return login_metabase()
-
-    def get_dashboard(self, pk):
-        dashboard = Dashboard.objects.get(pk=pk)    
-
-        return dashboard
-
     def get(self, request, pk, format=None):
-        session_id = self.get_session_id()
+        session_id = get_session_id()
         database_id = get_database_id(DB_NAME)
-        dashboard = self.get_dashboard(pk)
+        dashboard = get_dashboard(pk)
         table_name = "collection_{}".format(dashboard.project.id)
         table_id = get_table_id(database_id, table_name)
 
