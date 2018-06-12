@@ -122,3 +122,15 @@ def test_login_user_return_400(client):
     response = client.post(url, data=data)
 
     assert response.status_code == 400
+
+
+def test_create_user_same_email(client):
+    url = reverse('users:users')
+    data = {'username': "username", 'email': "email@email.com",
+            'password': "password"}
+    data2 = {'username': "username2", 'email': "email@email.com",
+             'password': "password"}
+    client.post(url, data=data)
+    response2 = client.post(url, data=data2)
+
+    assert response2.status_code == 400
