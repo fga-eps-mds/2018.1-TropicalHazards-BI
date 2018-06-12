@@ -51,6 +51,19 @@ class DashboardIframes(APIView):
         else:
             raise Exception("Could not make the card public on metabase")
 
+    def make_visualization_settings(self, display, dimension, metric):
+        if display == "pie":
+            data = {
+                "pie.metric": metric,
+                "pie.dimension": dimension
+            }
+        else:
+            data = {
+                "graph.dimensions": dimension,
+                "graph.metrics": metric
+            }
+        return data
+
     def post(self, request, pk, format=None):
         session_id = get_session_id()
         database_id = get_database_id(DB_NAME)
@@ -69,7 +82,10 @@ class DashboardIframes(APIView):
                     "source_table": table_id,
                 }
             },
-            "visualization_settings": {}
+            "visualization_settings": self.make_visualization_settings(
+                                      request.data['display'],
+                                      request.data['dimension'],
+                                      request.data['metric'])
 
         }
 
@@ -84,10 +100,17 @@ class DashboardIframes(APIView):
         if serializer.is_valid():
             card = self.create_card_metabase(data, header)
             public_card = self.make_card_public(card.json()['id'], header)
-            iframe = serializer.save()
-            iframe.uuid = public_card.json()['uuid']
-            iframe.save()
-            return Response(status=status.HTTP_200_OK)
+            uuid = public_card.json()['uuid']
+            iframe_data = {
+                "name": request.data['name'],
+                "user": request.user.id,
+                "dashboard": dashboard.id,
+                "uuid": uuid,
+            }
+            serializer = IframeSerializerList(data=iframe_data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(status=status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST,
                             data=serializer.errors)

@@ -12,6 +12,7 @@ MB_URL = 'http://metabase:3000/api'
 
 def login_metabase():
     url = MB_URL + '/session'
+    print(MB_USERNAME + MB_PASSWORD)
     data = {'username': MB_USERNAME, 'password': MB_PASSWORD}
     session = MetabaseSession.objects.first()
 
@@ -30,7 +31,7 @@ def login_metabase():
     return session_id
 
 
-def get_database_id(database_name: str):
+def get_database_id(database_name):
     url = MB_URL + '/database'
     session_id = login_metabase()
     header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
