@@ -1,5 +1,5 @@
 import requests
-
+import json
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
@@ -28,7 +28,7 @@ class DashboardIframes(APIView):
         return login_metabase()
 
     def get_dashboard(self, pk):
-        dashboard = Dashboard.objects.get(pk=pk)
+        dashboard = Dashboard.objects.get(pk=pk)    
 
         return dashboard
 
@@ -97,3 +97,33 @@ class DashboardIframes(APIView):
         serializer = IframeSerializerList(iframes, many=True)
 
         return Response(status=status.HTTP_200_OK, data=serializer.data)
+
+
+@permission_classes((permissions.AllowAny,))
+class DashboardFields(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
+    def get_session_id(self):
+        return login_metabase()
+
+    def get_dashboard(self, pk):
+        dashboard = Dashboard.objects.get(pk=pk)    
+
+        return dashboard
+
+    def get(self, request, pk, format=None):
+        session_id = self.get_session_id()
+        database_id = get_database_id(DB_NAME)
+        dashboard = self.get_dashboard(pk)
+        table_name = "collection_{}".format(dashboard.project.id)
+        table_id = get_table_id(database_id, table_name)
+
+        header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
+
+        url_get_fields = MB_URL + '/table/{}/query_metadata'.format(table_id)
+
+        data = requests.get(url_get_fields, headers=header)
+        ndata = data.json()
+
+        return Response(status=status.HTTP_200_OK, data=ndata)
