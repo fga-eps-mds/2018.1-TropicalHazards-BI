@@ -90,3 +90,15 @@ class ProjectDetail(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+@permission_classes((IsAuthenticated,))
+class ProjectUserList(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+    serializer_class = ProjectSerializer
+
+    def get(self, request, format=None):
+        projects = Project.objects.filter(user__id=request.user.id)
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
