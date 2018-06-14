@@ -215,3 +215,23 @@ def test_delete_project_detail_return_204(client, create_user, create_project):
     response = client.delete(url, content_type='application/json')
 
     assert response.status_code == 204
+
+
+def test_get_project_user_list_return_200(client,  create_user):
+    user = create_user
+    mommy.make('Project', user=user)
+    url = reverse('projects:project-user-list')
+    response = client.get(url)
+
+    assert response.status_code == 200
+
+
+def test_list_project_user_return_list_project_user(client, create_user):
+    user = create_user
+    mommy.make('Project', user=user)
+    url = reverse('projects:project-user-list')
+    response = client.get(url)
+
+    assert response.data
+    assert isinstance(response.data, list)
+    assert response.data[0]['user'] == user.id
