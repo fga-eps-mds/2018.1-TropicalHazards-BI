@@ -148,9 +148,9 @@
 #### Commits/dia
 Para medir a produtividade do time durante a execução da Sprint optamos por observar os commits de cada integrante, levando em conta também participação como co-autor, em cada dia da semana.
 
-<img src="a" class="responsive-img">
+<img src="https://i.imgur.com/WDhTGD0.png" class="responsive-img">
 
-<img src="a" class="responsive-img">
+<img src="https://i.imgur.com/uHK5cKj.png" class="responsive-img">
 
 ### Velocity
 <b>Velocity</b>: 21.86
