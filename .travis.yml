@@ -29,5 +29,7 @@ deploy:
      skip_cleanup: true
      on:
        branch: development 
+after_deploy:
+    - curl -X POST $PINGOUT_URL/$PINGOUT_UUID/ping
 notifications:
   email: false
