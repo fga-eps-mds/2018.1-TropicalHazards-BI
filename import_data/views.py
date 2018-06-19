@@ -45,6 +45,8 @@ class FileUploadView(APIView):
     def check_file_type(self, file):
         if file.name.endswith('.csv'):
             return 'csv'
+        if file.name.endswith('.xls'):
+            return 'xls'
         else:
             raise ValidationError("Type of file not supported")
 
@@ -52,6 +54,9 @@ class FileUploadView(APIView):
         if file_type is 'csv':
             sep = kwargs.get('sep', ',')
             return pandas.read_csv(file_path, header=0, sep=sep)
+        if file_type is 'xls':
+            sep = kwargs.get('sep', ',')
+            return pandas.read_xls(file_path, header=0, sep=sep)
 
     def treat_bool_column(self, dataframe, header):
         dataframe[header['name']].replace(to_replace=header['true'],
