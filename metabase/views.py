@@ -80,6 +80,10 @@ class DashboardIframes(APIView):
                 "type": "query",
                 "query": {
                     "source_table": table_id,
+                    "aggregation": request.data['query_aggregation'],
+                    "breakout": request.data['query_breakout'],
+                    "filter": request.data['query_filter'],
+
                 }
             },
             "visualization_settings": self.make_visualization_settings(
