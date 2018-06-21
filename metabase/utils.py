@@ -11,15 +11,22 @@ MB_URL = 'http://metabase:3000/api'
 
 
 def login_metabase():
-    url = MB_URL + '/session'
-    print(MB_USERNAME + MB_PASSWORD)
+    url_session = MB_URL + '/session'
+    url_current = MB_URL + '/user/current'
+
     data = {'username': MB_USERNAME, 'password': MB_PASSWORD}
     session = MetabaseSession.objects.first()
 
     if session:
         session_id = session.session_id
+        header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
+        if requests.get(url_current, headers=header).status_code == 401:
+            response = requests.post(url_session, json=data)
+            session_id = response.json()['id']
+            session.session_id = session_id
+            session.save()
     else:
-        login = requests.post(url, json=data)
+        login = requests.post(url_session, json=data)
         if login.status_code == 200:
             session = MetabaseSession.objects.\
                         create(session_id=login.json()['id'])
