@@ -88,8 +88,8 @@ class DashboardIframes(APIView):
             },
             "visualization_settings": self.make_visualization_settings(
                                       request.data['display'],
-                                      request.data['dimension'],
-                                      request.data['metric'])
+                                      request.data.get('dimension', ''),
+                                      request.data.get('metric', ''))
 
         }
 
