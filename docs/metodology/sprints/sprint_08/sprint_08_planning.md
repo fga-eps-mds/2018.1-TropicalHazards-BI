@@ -1,11 +1,11 @@
 # Planejamento da [Sprint 08](https://github.com/fga-gpp-mds/2018.1-Grupo3/milestone/10)
 
-## Foco 
+## Foco
 Importar CSV
 
 ## Datas
-<b>Data de início:</b> 28/04/2018
 
+<b>Data de início:</b> 28/04/2018
 <b>Data de termino:</b> 04/05/2018
 
 ## Backlog
@@ -27,6 +27,7 @@ Importar CSV
       <td>Configurar metabase no ambiente de dev</td>
       <td><b>3</b></td>
       <td>Nova</td>
+    </tr>
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/47">47</a>
@@ -78,7 +79,7 @@ Importar CSV
   </tbody>
 </table>
 
-<b>Total de pontos:</b> 28 
+<b>Total de pontos:</b> 28
 
 ## Papéis
 <b>Scrum Master:</b> Matheus Batista
@@ -109,5 +110,5 @@ Importar CSV
 
 ## Focos de melhoria
 
-## Motivação da equipe 
+## Motivação da equipe
 Equipe mostrou-se bastante desmotivada na Sprint anterior gerando assim vários débitos.
