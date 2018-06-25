@@ -28,7 +28,8 @@ env.read_env(ENV_DIR)
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECRET_KEY_DJANGO", default='o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr')
+SECRET_KEY = env("SECRET_KEY_DJANGO",
+                 default='o8i3(1r3=nl%)y-9hd@0=_u26$--1t$+%4x=g8ul-3%fdj$6yr')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG", default=False)
@@ -160,6 +161,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+ACCOUNT_LOGOUT_ON_GET = True
 LOGIN_REDIRECT_URL = '/'
 REST_USE_JWT = True
 
