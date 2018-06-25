@@ -12,7 +12,7 @@ Trabalhar na interface das funcionalidades implementadas na sprint anterior, con
 
 <table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
-    <atr>
+    <tr>
       <th>Issue</th>
       <th>Descrição</th>
       <th>Pontuação</th>
