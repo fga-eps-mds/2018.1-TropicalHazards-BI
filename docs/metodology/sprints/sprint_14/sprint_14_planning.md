@@ -12,7 +12,7 @@ Continuar a refatoração do front end após testes de usabilidade e revisão do
 
 <table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
-    <atr>
+    <tr>
       <th>Issue</th>
       <th>Descrição</th>
       <th>Pontuação</th>
@@ -59,7 +59,8 @@ Continuar a refatoração do front end após testes de usabilidade e revisão do
       <td>Definir dimensões ao gerar um gráfico</td>
       <td><b>3</b></td>
       <td>Débito</td>
-    </tr><tr>
+    </tr>
+    <tr>
       <td>
         <a href=https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI/issues/344">344</a>
       </td>
