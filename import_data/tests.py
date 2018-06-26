@@ -12,6 +12,7 @@ from rest_framework.test import force_authenticate
 from rest_framework.exceptions import ValidationError
 from model_mommy import mommy
 
+from TropicalHazards_BI.utils import connect_mongo
 from import_data import views
 from import_data.models import ImportData
 
@@ -54,7 +55,7 @@ def factory():
 def mongo_db():
     """Mock mongo connection with mongomock and the
     view function connect_mongo """
-    return views.connect_mongo(engine=mongomock, host='test', port=0)
+    return connect_mongo(engine=mongomock, host='test', port=0)
 
 
 @pytest.fixture

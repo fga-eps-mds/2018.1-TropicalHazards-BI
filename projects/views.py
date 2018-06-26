@@ -1,7 +1,6 @@
-
-from .models import Project
-from projects.serializers import ProjectSerializer
 from django.http import Http404
+from django_filters.rest_framework import DjangoFilterBackend
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -11,9 +10,13 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.authentication import SessionAuthentication
 from rest_framework import generics
 from rest_framework import filters
-from .filters import ProjectFilter
-from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+
+from TropicalHazards_BI.utils import connect_mongo
+from projects.models import Project
+from projects.filters import ProjectFilter
+from projects.serializers import ProjectSerializer
+from metabase import utils
 
 
 @permission_classes((IsAuthenticatedOrReadOnly,))
@@ -24,6 +27,7 @@ class ProjectList(generics.ListAPIView):
     serializer_class = ProjectSerializer
     filter_backends = (DjangoFilterBackend, filters.SearchFilter)
     filter_class = ProjectFilter
+    mongo_db = connect_mongo()
 
     def get(self, request, format=None):
         tag_name = self.request.query_params.get('tag_name', None)
@@ -37,9 +41,19 @@ class ProjectList(generics.ListAPIView):
     def post(self, request, format=None):
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data,
-                            status=status.HTTP_201_CREATED)
+            project = serializer.save()
+            self.mongo_db.create_collection('collection_' + str(project.id))
+            db_id = utils.get_database_id('mongo')
+            if(utils.sync_schema(db_id)):
+                table_id = utils.get_table_id(db_id, 'collection_'
+                                              + str(project.id))
+                project.table_id = table_id
+                project.save()
+                return Response(serializer.data,
+                                status=status.HTTP_201_CREATED)
+            else:
+                return Response(serializer.errors,
+                                status=status.HTTP_503_SERVICE_UNAVAILABLE)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -76,3 +90,15 @@ class ProjectDetail(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+@permission_classes((IsAuthenticated,))
+class ProjectUserList(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+    serializer_class = ProjectSerializer
+
+    def get(self, request, format=None):
+        projects = Project.objects.filter(user__id=request.user.id)
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)

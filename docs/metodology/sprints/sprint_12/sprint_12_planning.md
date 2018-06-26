@@ -79,7 +79,7 @@ Trabalhar na interface das funcionalidades implementadas na sprint anterior, con
   </tbody>
 </table>
 
-<b>Total de pontos:</b> 33
+<b>Total de pontos:</b> 30
 
 ## Papéis
 <b>Scrum Master:</b> Iago Carvalho

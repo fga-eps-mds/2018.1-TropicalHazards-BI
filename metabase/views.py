@@ -1,11 +1,9 @@
 import requests
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
 from rest_framework import permissions
 from rest_framework import status
-
 from metabase.utils import login_metabase
 from metabase.utils import get_database_id
 from metabase.utils import get_table_id
@@ -14,20 +12,25 @@ from metabase.serializers import IframeSerializerCreate
 from metabase.serializers import IframeSerializerList
 from metabase.models import Iframe
 from dashboards.models import Dashboard
+from rest_framework.authentication import SessionAuthentication
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 DB_NAME = 'mongo'
 
 
+def get_session_id():
+    return login_metabase()
+
+
+def get_dashboard(pk):
+    dashboard = Dashboard.objects.get(pk=pk)
+    return dashboard
+
+
 @permission_classes((permissions.AllowAny,))
 class DashboardIframes(APIView):
-
-    def get_session_id(self):
-        return login_metabase()
-
-    def get_dashboard(self, pk):
-        dashboard = Dashboard.objects.get(pk=pk)
-
-        return dashboard
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
 
     def create_card_metabase(self, data, header):
         url_card = MB_URL + '/card'
@@ -48,10 +51,23 @@ class DashboardIframes(APIView):
         else:
             raise Exception("Could not make the card public on metabase")
 
+    def make_visualization_settings(self, display, dimension, metric):
+        if display == "pie":
+            data = {
+                "pie.metric": metric,
+                "pie.dimension": dimension
+            }
+        else:
+            data = {
+                "graph.dimensions": dimension,
+                "graph.metrics": metric
+            }
+        return data
+
     def post(self, request, pk, format=None):
-        session_id = self.get_session_id()
+        session_id = get_session_id()
         database_id = get_database_id(DB_NAME)
-        dashboard = self.get_dashboard(pk)
+        dashboard = get_dashboard(pk)
         table_name = "collection_{}".format(dashboard.project.id)
         table_id = get_table_id(database_id, table_name)
 
@@ -64,9 +80,16 @@ class DashboardIframes(APIView):
                 "type": "query",
                 "query": {
                     "source_table": table_id,
+                    "aggregation": request.data['query_aggregation'],
+                    "breakout": request.data['query_breakout'],
+                    "filter": request.data['query_filter'],
+
                 }
             },
-            "visualization_settings": {}
+            "visualization_settings": self.make_visualization_settings(
+                                      request.data['display'],
+                                      request.data['dimension'],
+                                      request.data['metric'])
 
         }
 
@@ -81,10 +104,17 @@ class DashboardIframes(APIView):
         if serializer.is_valid():
             card = self.create_card_metabase(data, header)
             public_card = self.make_card_public(card.json()['id'], header)
-            iframe = serializer.save()
-            iframe.uuid = public_card.json()['uuid']
-            iframe.save()
-            return Response(status=status.HTTP_200_OK)
+            uuid = public_card.json()['uuid']
+            iframe_data = {
+                "name": request.data['name'],
+                "user": request.user.id,
+                "dashboard": dashboard.id,
+                "uuid": uuid,
+            }
+            serializer = IframeSerializerList(data=iframe_data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(status=status.HTTP_200_OK)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST,
                             data=serializer.errors)
@@ -94,3 +124,25 @@ class DashboardIframes(APIView):
         serializer = IframeSerializerList(iframes, many=True)
 
         return Response(status=status.HTTP_200_OK, data=serializer.data)
+
+
+@permission_classes((permissions.AllowAny,))
+class DashboardFields(APIView):
+    authentication_classes = (JSONWebTokenAuthentication,
+                              SessionAuthentication)
+
+    def get(self, request, pk, format=None):
+        session_id = get_session_id()
+        database_id = get_database_id(DB_NAME)
+        dashboard = get_dashboard(pk)
+        table_name = "collection_{}".format(dashboard.project.id)
+        table_id = get_table_id(database_id, table_name)
+
+        header = {'Cookie': 'metabase.SESSION_ID=' + session_id}
+
+        url_get_fields = MB_URL + '/table/{}/query_metadata'.format(table_id)
+
+        data = requests.get(url_get_fields, headers=header)
+        ndata = data.json()
+
+        return Response(status=status.HTTP_200_OK, data=ndata)
