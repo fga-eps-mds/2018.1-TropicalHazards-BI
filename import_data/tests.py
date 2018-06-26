@@ -11,6 +11,7 @@ from rest_framework.test import APIRequestFactory
 from rest_framework.test import force_authenticate
 from rest_framework.exceptions import ValidationError
 from model_mommy import mommy
+from unittest.mock import patch
 
 from TropicalHazards_BI.utils import connect_mongo
 from import_data import views
@@ -74,6 +75,33 @@ def valid_table_headers():
                 "transform": ""}
             ]
     return json.dumps(table_headers)
+
+
+@pytest.fixture(scope="function", autouse=True)
+def mock_metabase_sync_schema():
+    """ Mock return of function sync_schema from metabase.utils module"""
+
+    mock_sync_schema_patch = patch('metabase.utils.sync_schema')
+    mock_sync_schema = mock_sync_schema_patch.start()
+    mock_sync_schema.return_value = True
+
+
+@pytest.fixture(scope="function", autouse=True)
+def mock_metabase_login():
+    """ Mock return of function login_metabase from metabase.utils module"""
+
+    mock_login_patch = patch('metabase.utils.login_metabase')
+    mock_login = mock_login_patch.start()
+    mock_login.return_value = "tokenofmetabase"
+
+
+@pytest.fixture(scope="function", autouse=True)
+def mock_metabase_get_database():
+    """ Mock return of function get_database_id from metabase.utils module"""
+
+    mock_get_db_patch = patch('metabase.utils.get_database_id')
+    mock_get_db_id = mock_get_db_patch.start()
+    mock_get_db_id.return_value = 1
 
 
 def teardown_file():
