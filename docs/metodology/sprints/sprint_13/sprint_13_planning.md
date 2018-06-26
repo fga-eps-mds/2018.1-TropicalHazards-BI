@@ -12,7 +12,7 @@ Iniciar a refatoração do front end após testes de usabilidade e revisão do p
 
 <table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
-    <atr>
+    <tr>
       <th>Issue</th>
       <th>Descrição</th>
       <th>Pontuação</th>

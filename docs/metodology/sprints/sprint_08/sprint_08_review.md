@@ -19,6 +19,7 @@
       <td>Configurar metabase no ambiente de dev</td>
       <td><b>3</b></td>
       <td><strong style="color:green">Concluída</strong>  😎 </td>
+    </tr>
     <tr>
       <td>
         <a href="https://github.com/fga-gpp-mds/2018.1-TropicalHazards-BI-FrontEnd/issues/47">47</a>
@@ -73,7 +74,7 @@
 
 **Release [xx.xx]()**
 
-### Rastreabilidade de impedimentos 
+### Rastreabilidade de impedimentos
 
 <table class="responsive-table highlight bordered">
   <thead>
@@ -133,13 +134,13 @@
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint08/retro_sp08.jpg" class="responsive-img">
 
 ## Indicadores
-### Produtividade 
+### Produtividade
 
-<b>Pontos Planejados</b>: 28 
+<b>Pontos Planejados</b>: 28
 
-<b>Pontos Concluídos</b>: 7 
+<b>Pontos Concluídos</b>: 7
 
-#### Commits/dia 
+#### Commits/dia
 Para medir a produtividade do time durante a execução da Sprint optamos por observar os commits de cada integrante, levando em conta também participação como co-autor, em cada dia da semana.
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint08/prod_integrantes_sp08.png" class="responsive-img">
@@ -148,9 +149,9 @@ Para medir a produtividade do time durante a execução da Sprint optamos por ob
 
 ### Velocity
 
-<b>Velocity</b>: 24.57 
+<b>Velocity</b>: 24.57
 
-<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint08/velocity_sp08.png" class="responsive-img"> 
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint08/velocity_sp08.png" class="responsive-img">
 
 ### Evolução de Conhecimento
 
@@ -165,4 +166,7 @@ O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a S
 
 ## Análise do Scrum Master
 A importação de dados a partir de CSV, uma funcionalidade crítica para aplicação recebeu mais atenção durante a Sprint, com isso a equipe foi capaz de implementar a parte mais importante da funcionalidade, mas ainda não foi dada como finalizada pois alguns detalhes precisam ser ajustados.
-O time scrum encontra-se muito desmotivado, durante a Sprint um dos membros do time de desenvolvimento teve problemas com outras matérias, e acabou não contribuindo para a produtividade do time, com isso mais débitos foram gerados. A equipe de EPS enfrentou dificuldade para estabelecer uma comunicação efetiva durante a execução da Sprint, pois outras matérias demandaram muito esforço durante a semana, e a equipe de desenvolvimento acabou não recebendo o suporte necessário para resolução de todos os problemas. Pode-se observar nos indicadores de produtivdade que a equipe apresenta um gráfico de contribuição bem instável, onde inclusive alguns membros não participaram na execução das tarefas.
+
+O time scrum encontra-se muito desmotivado, durante a Sprint um dos membros do time de desenvolvimento teve problemas com outras matérias, e acabou não contribuindo para a produtividade do time, com isso mais débitos foram gerados.
+
+A equipe de EPS enfrentou dificuldade para estabelecer uma comunicação efetiva durante a execução da Sprint, pois outras matérias demandaram muito esforço durante a semana, e a equipe de desenvolvimento acabou não recebendo o suporte necessário para resolução de todos os problemas. Pode-se observar nos indicadores de produtivdade que a equipe apresenta um gráfico de contribuição bem instável, onde inclusive alguns membros não participaram na execução das tarefas.
