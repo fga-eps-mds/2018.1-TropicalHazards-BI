@@ -12,7 +12,7 @@ Continuar a refatoração do front end, resolver bugs no Front que impedem que a
 
 <table style="text-align:center" class="responsive-table highlight bordered">
   <thead>
-    <atr>
+    <tr>
       <th>Issue</th>
       <th>Descrição</th>
       <th>Pontuação</th>

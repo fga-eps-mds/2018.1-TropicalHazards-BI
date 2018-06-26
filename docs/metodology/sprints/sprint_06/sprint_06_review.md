@@ -137,7 +137,7 @@
 
 **Release [xx.xx]()**
 
-### Rastreabilidade de impedimentos 
+### Rastreabilidade de impedimentos
 
 <table class="responsive-table highlight bordered">
   <thead>
@@ -189,7 +189,7 @@
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/retro_sp06.jpg" class="responsive-img">
 
-## Resultado dos focos de melhoria 
+## Resultado dos focos de melhoria
 
 <table class="responsive-table highlight bordered">
   <thead>
@@ -233,17 +233,17 @@
 ## Indicadores
 ### Burndown
 
-<b>Pontos Planejados</b>: 44 
+<b>Pontos Planejados</b>: 44
 
-<b>Pontos Concluídos</b>: 29 
+<b>Pontos Concluídos</b>: 29
 
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/burndown_sp06.png" class="responsive-img">
 
 ### Velocity
 
-<b>Velocity</b>: 27,83 
+<b>Velocity</b>: 27,83
 
-<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/velocity_sp06.png" class="responsive-img"> 
+<img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/velocity_sp06.png" class="responsive-img">
 
 ### Evolução de Conhecimento
 
@@ -257,8 +257,10 @@ O gráfico evolutivo mostra a evolução geral de conhecimento do time entre a S
 <img src="https://raw.githubusercontent.com/wiki/fga-gpp-mds/2018.1-TropicalHazards-BI/imagens/sprint06/grafico_ev_sp06.png" class="responsive-img">
 
 ## Análise do Scrum Master
-    O time de desenvolvimento apresentou uma produtividade muito boa ao entregar todas as tarefas antes do fim da Sprint, implementando funcionalidades Full-stack. Membros que estavam desalinhandos em relação a evolução de conhecimento mostraram-se mais ativos em seus pareamentos durante a Sprint o que resultou em um progresso em diferente áreas de conhecimento. O time enfrentou dificuldades em configurar o deploy contínuo do back-end, assim como o deploy dos serviços complementares para o funcionamento da aplicação, Metabase e Mongodb.
+
+O time de desenvolvimento apresentou uma produtividade muito boa ao entregar todas as tarefas antes do fim da Sprint, implementando funcionalidades Full-stack. Membros que estavam desalinhandos em relação a evolução de conhecimento mostraram-se mais ativos em seus pareamentos durante a Sprint o que resultou em um progresso em diferente áreas de conhecimento. O time enfrentou dificuldades em configurar o deploy contínuo do back-end, assim como o deploy dos serviços complementares para o funcionamento da aplicação, Metabase e Mongodb.
 Durante essa Sprint ocorreu a **primeira Release** do projeto, os principais pontos de melhoria levantados pela banca avaliadora foram:
+
 - Compreensão do escopo
 - Melhor apresentação do produto
 - Vantagens do produto desenvolvimento em relação ao que já existe no mercado

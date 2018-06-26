@@ -25,7 +25,7 @@
       </td>
       <td>Coletar o id dos fields de uma tabela no metabase</td>
       <td><b>5</b></td>
-      <td><strong style="color:green">Concluída</strong>  😎
+      <td><strong style="color:green">Concluída</strong>  😎</td>
     </tr>
     <tr>
       <td>
