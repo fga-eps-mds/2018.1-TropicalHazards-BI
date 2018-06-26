@@ -14,6 +14,7 @@ from rest_framework.exceptions import ValidationError
 
 from import_data.serializers import ImportDataSerializer
 from TropicalHazards_BI.utils import connect_mongo
+from metabase import utils
 
 
 @permission_classes((permissions.IsAuthenticatedOrReadOnly,))
@@ -105,6 +106,8 @@ class FileUploadView(APIView):
             json_data = json.loads(dataframe.to_json(orient="records"))
 
             if self.save_on_mongo(json_data, project_id):
+                db_id = utils.get_database_id('mongo')
+                utils.sync_schema(db_id)
                 serializer.save()
                 os.remove(file_path)
 
