@@ -4,7 +4,7 @@
 Documento de Especificação Suplementar
 ===================
 
-<table>
+<table class="table-responsive">
 
    <tr>
 	   	<td> <strong>Data</strong> </td>
