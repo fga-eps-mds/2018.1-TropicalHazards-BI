@@ -147,7 +147,7 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 
 
 <a name="descricaoproblema"></a>
-<h3>2.2 Descrição do problema</h3> 
+<h3>2.2 Descrição do problema</h3>
 
 <table class="responsive-table highlight bordered">
 
@@ -245,12 +245,12 @@ BATISTA, Matheus; ARAÚJO, Igor; WILLER, Guilherme; OLIVEIRA, Vinícius; BARCELO
 # 3. Descrições da parte interessada e dos Usuários
 
 
-<table class+"responsive-table highlight bordered">
+<table class="responsive-table highlight bordered">
 
    <tr>
-	   	<td> <strong>Nome</strong></td>
-	   	<td> <strong>Descrição</strong> </td>
-	   	<td><strong> Responsabilidade</strong></td>
+	   	<th> <strong>Nome</strong></th>
+	   	<th> <strong>Descrição</strong> </th>
+	   	<th><strong> Responsabilidade</strong></th>
    </tr>
 
 

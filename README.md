@@ -13,7 +13,7 @@
 <p align="justify"> O Observ é uma plataforma online de observatórios de dados científicos com suporte à geração de mapas e gráficos. É intuitivo e colaborativo. O objetivo do sistema é auxiliar os pesquisadores e pessoas interessadas em análise de dados e estatísticas. Permite o gerenciamento e compartilhamento de dados e indicadores do seu projeto de pesquisa, seja qual for o escopo do seu trabalho. Com o Observ você pode fazer análises estatísticas, compartilhar informações gerenciadas em dashboards e disponibilizar esses dados para o público.</p>
 
 ## Deploy
-[Homolog](http://159.203.102.150)
+[Homolog]()
 
 ## Documentação
 
