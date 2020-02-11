@@ -1,4 +1,4 @@
-Django==2.0.3
+Django==2.2.10
 python-decouple==3.1
 flake8==3.5.0
 py==1.5.3
